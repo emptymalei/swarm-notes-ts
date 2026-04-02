@@ -1,0 +1,205 @@
+[
+  {
+    "paper_id": "2604.01216",
+    "paper_source": "arxiv",
+    "title": "LAtent Phase Inference from Short time sequences using SHallow REcurrent Decoders (LAPIS-SHRED)",
+    "authors": [
+      "Yuxuan Bao",
+      "Xingyue Zhang",
+      "J. Nathan Kutz"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.01216",
+    "domain": "time-series",
+    "tags": [
+      "forecasting-horizon",
+      "irregular-time-step-forecasting",
+      "physics-spatiotemporal-masked-autoencoder"
+    ],
+    "summary": "LAPIS-SHRED is a modular framework designed to reconstruct full spatio-temporal dynamics from hyper-sparse, short-window sensor observations. The method employs a three-stage pipeline involving pre-trained latent space mapping and temporal state propagation to overcome limitations in observational data. By leveraging simulation-trained models and modular decoders, the framework enables robust inference in scenarios ranging from turbulent flows to satellite-derived environmental fields. LAPIS-SHRED supports bidirectional trajectory reconstruction and is specifically tailored for operational settings with extreme physical or logistical observational constraints.",
+    "processed_at": "2026-04-02T05:41:10.694739+00:00"
+  },
+  {
+    "paper_id": "2604.01215",
+    "paper_source": "arxiv",
+    "title": "The Recipe Matters More Than the Kitchen: Mathematical Foundations of the AI Weather Prediction Pipeline",
+    "authors": [
+      "Piyush Garg",
+      "Diana R. Gergel",
+      "Andrew E. Shao",
+      "Galen J. Yacalis"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.01215",
+    "domain": "weather-forecasting",
+    "tags": [
+      "weather-prediction",
+      "learning-theory",
+      "information-theory",
+      "model-evaluation",
+      "extreme-event-forecasting"
+    ],
+    "summary": "This paper proposes a unified mathematical framework to analyze the AI weather prediction pipeline, shifting the focus from individual architecture selection to the interplay between loss functions, training strategies, and data distribution. By establishing a Learning Pipeline Error Decomposition, the authors demonstrate that estimation error, rather than architectural approximation error, is the primary driver of forecast failure. The work further introduces a Loss Function Spectral Theory to explain why standard MSE training leads to spectral blurring in spherical coordinates and provides analytical bounds on the systematic underestimation of extreme weather events. Empirical validation using ERA5-based experiments confirms these theoretical findings, offering a prescriptive toolset for evaluating forecasting pipelines before training.",
+    "processed_at": "2026-04-02T05:41:10.694756+00:00"
+  },
+  {
+    "paper_id": "2604.01175",
+    "paper_source": "arxiv",
+    "title": "NeuroDDAF: Neural Dynamic Diffusion-Advection Fields with Evidential Fusion for Air Quality Forecasting",
+    "authors": [
+      "Prasanjit Dey",
+      "Soumyabrata Dev",
+      "Angela Meyer",
+      "Bianca Schoen-Phelan"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.01175",
+    "domain": "nlp",
+    "tags": [],
+    "summary": "NeuroDDAF is a hybrid forecasting framework that integrates neural representation learning with physics-based diffusion-advection modeling to address spatiotemporal air quality challenges. The architecture leverages a GRU-Graph Attention encoder for temporal and spatial dynamics, a Fourier-domain transport module, and a wind-modulated latent Neural ODE. An evidential fusion mechanism is employed to adaptively combine neural and physical forecasts, simultaneously delivering high predictive accuracy and well-calibrated uncertainty estimates across diverse urban environments.",
+    "processed_at": "2026-04-02T05:41:10.694759+00:00"
+  },
+  {
+    "paper_id": "2604.01015",
+    "paper_source": "arxiv",
+    "title": "Forecasting Motion in the Wild",
+    "authors": [
+      "Neerja Thakkar",
+      "Shiry Ginosar",
+      "Jacob Walker",
+      "Jitendra Malik",
+      "Joao Carreira",
+      "Carl Doersch"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.01015",
+    "domain": "computer-vision",
+    "tags": [
+      "computer-vision",
+      "forecasting",
+      "diffusion-transformers",
+      "motion-prediction"
+    ],
+    "summary": "This paper addresses the challenge of predictive visual intelligence by proposing dense point trajectories as a generalized, category-agnostic representation of behavior. The authors implement a diffusion transformer that processes these trajectories as unordered sets, allowing for coherent motion forecasting that accounts for complex occlusions. To evaluate the model's performance in unconstrained settings, they introduce a large-scale dataset of animal motion, demonstrating superior generalization to rare species and morphologies compared to existing baselines.",
+    "processed_at": "2026-04-02T05:41:10.694761+00:00"
+  },
+  {
+    "paper_id": "2604.00969",
+    "paper_source": "arxiv",
+    "title": "DLWM: Dual Latent World Models enable Holistic Gaussian-centric Pre-training in Autonomous Driving",
+    "authors": [
+      "Yiyao Zhu",
+      "Ying Xue",
+      "Haiming Zhang",
+      "Guangfeng Jiang",
+      "Wending Zhou",
+      "Xu Yan",
+      "Jiantao Gao",
+      "Yingjie Cai",
+      "Bingbing Liu",
+      "Zhen Li",
+      "Shaojie Shen"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.00969",
+    "domain": "computer-vision",
+    "tags": [],
+    "summary": "DLWM is a two-stage pre-training framework that utilizes dual latent world models to learn temporal dynamics for Gaussian-centric autonomous driving. The first stage reconstructs semantic and depth information via 3D Gaussians, while the second stage employs Gaussian-flow-guided and ego-planning-guided latent prediction to improve downstream occupancy forecasting and motion planning. This approach provides a holistic representation for sparse scene understanding, demonstrating significant gains over traditional BEV and query-based methods on the nuScenes and SurroundOcc datasets.",
+    "processed_at": "2026-04-02T05:41:10.694763+00:00"
+  },
+  {
+    "paper_id": "2604.00897",
+    "paper_source": "arxiv",
+    "title": "Super-Resolving Coarse-Resolution Weather Forecasts With Flow Matching",
+    "authors": [
+      "Aymeric Delefosse",
+      "Anastase Charantonis",
+      "Dominique Béréziat"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.00897",
+    "domain": "time-series",
+    "tags": [],
+    "summary": "This paper addresses the computational expense of high-resolution weather forecasting by decoupling forecast generation from spatial refinement. The authors propose a modular framework that uses flow matching to apply generative super-resolution as a post-processing step on coarse-resolution trajectories. By formulating the process as a residual-based stochastic inverse problem, the model effectively reconstructs unresolved variability while maintaining the large-scale physical consistency of the original forecasts. Evaluation confirms that the framework achieves competitive probabilistic skill at 0.25° resolution against operational baselines.",
+    "processed_at": "2026-04-02T05:41:10.694766+00:00"
+  },
+  {
+    "paper_id": "2604.00803",
+    "paper_source": "arxiv",
+    "title": "A novel three-step approach to forecast firm-specific technology convergence opportunity via multi-dimensional feature fusion",
+    "authors": [
+      "Fu Gu",
+      "Ao Chen",
+      "Yingwen Wu"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.00803",
+    "domain": "nlp",
+    "tags": [
+      "forecasting",
+      "attention-mechanisms",
+      "ensemble-learning",
+      "retrieval-augmented-generation",
+      "large-language-models"
+    ],
+    "summary": "This paper presents a three-step framework for forecasting firm-specific technology convergence (TC) by integrating multidimensional patent data including bibliometric, network, and textual features. The approach uses attention-based feature fusion, an ensemble learning model for identifying IPC-level convergence, and an LLM-driven RAG pipeline to evaluate and refine these opportunities for specific firms. Empirical results demonstrate the framework's effectiveness in predicting emerging opportunities for a leading manufacturer in the thermal management and robotics sectors.",
+    "processed_at": "2026-04-02T05:41:10.694768+00:00"
+  },
+  {
+    "paper_id": "2604.00800",
+    "paper_source": "arxiv",
+    "title": "MIRANDA: MId-feature RANk-adversarial Domain Adaptation toward climate change-robust ecological forecasting with deep learning",
+    "authors": [
+      "Yuchang Jiang",
+      "Jan Dirk Wegner",
+      "Vivien Sainte Fare Garnot"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.00800",
+    "domain": "time-series",
+    "tags": [
+      "irregular-time-step-forecasting",
+      "causal-insight"
+    ],
+    "summary": "MIRANDA addresses the limitations of deep learning models in predicting plant phenology under the non-stationary conditions of climate change. Unlike standard domain adaptation methods that typically focus on output representations, MIRANDA applies adversarial regularization to intermediate features and utilizes a rank-based objective to enforce year-invariance. This approach effectively handles the temporal continuum of domains and the concurrent covariate and label shifts, leading to more robust ecological forecasting. Validation on a 70-year country-scale dataset confirms that MIRANDA outperforms traditional DA techniques and approaches the performance of established mechanistic models.",
+    "processed_at": "2026-04-02T05:41:10.694770+00:00"
+  },
+  {
+    "paper_id": "2604.00669",
+    "paper_source": "arxiv",
+    "title": "Embedded Variational Neural Stochastic Differential Equations for Learning Heterogeneous Dynamics",
+    "authors": [
+      "Sandeep Kumar Samota",
+      "Reema Gupta",
+      "Snehashish Chakraverty"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.00669",
+    "domain": "time-series",
+    "tags": [
+      "time-series",
+      "stochastic-differential-equations",
+      "variational-inference",
+      "heterogeneous-dynamics",
+      "latent-variable-modeling"
+    ],
+    "summary": "This paper proposes a Variational Neural Stochastic Differential Equation (V-NSDE) model to capture complex socioeconomic trends and noise. By combining the latent dynamics of Neural SDEs with the generative structure of VAEs, the model learns continuous-time trajectories conditioned on region-specific embeddings. The approach addresses heterogeneity across districts by incorporating these embeddings into both the latent initial distribution and the governing drift and diffusion functions. Experimental results indicate that this framework effectively disentangles deterministic trends from stochastic fluctuations in sparse, regional time-series data.",
+    "processed_at": "2026-04-02T05:41:10.694773+00:00"
+  },
+  {
+    "paper_id": "2604.00632",
+    "paper_source": "arxiv",
+    "title": "Neural Ordinary Differential Equations for Modeling Socio-Economic Dynamics",
+    "authors": [
+      "Sandeep Kumar Samota",
+      "Snehashish Chakraverty",
+      "Narayan Sethi"
+    ],
+    "published": "2026-04-01",
+    "url": "https://arxiv.org/abs/2604.00632",
+    "domain": "time-series",
+    "tags": [],
+    "summary": "This paper explores the application of Neural Ordinary Differential Equations (Neural ODEs) to model complex socio-economic dynamics, specifically poverty reduction in Odisha, India. By utilizing an MLP to represent the system's temporal gradient and employing the adjoint sensitivity method for training, the approach successfully captures continuous-time dynamics from historical indicators (2007-2020). The results demonstrate that Neural ODEs provide a robust, data-driven framework for generating reliable socio-economic projections to support policy decision-making.",
+    "processed_at": "2026-04-02T05:41:10.694775+00:00"
+  }
+]
