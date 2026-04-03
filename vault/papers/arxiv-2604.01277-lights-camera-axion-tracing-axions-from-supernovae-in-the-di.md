@@ -1,6 +1,6 @@
 ---
 # CSL-compatible fields
-title: "Lights, Camera, Axion: Tracing Axions from Supernovae in the Diffuse \gamma-ray Sky"
+title: "Lights, Camera, Axion: Tracing Axions from Supernovae in the Diffuse gamma-ray Sky"
 author:
   - literal: "Brijesh Kanodia"
   - literal: "Debajit Bose"
