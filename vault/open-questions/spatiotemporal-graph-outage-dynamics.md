@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-07T04:52:44Z'
+modified_at: '2026-04-08T04:58:15Z'
 source_papers:
 - '[[arxiv-260404916-empowering-power-outage-prediction-with-spatially-aware-hybr]]'
-title: Spatio-Temporal Outage Dynamics Modeling
+title: Spatiotemporal graph outage dynamics
 ---
 
 **Background:** Extreme weather data in outage prediction models is often provided as static snapshots, which ignores the temporal evolution of storm events.

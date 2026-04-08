@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-07T04:52:57Z'
+modified_at: '2026-04-08T04:58:27Z'
 source_papers:
 - '[[arxiv-260404913-a-frame-is-worth-one-token-efficient-generative-world-modeli]]'
-title: Mitigating Autoregressive Error Accumulation
+title: Long-term Autoregressive Error Accumulation
 ---
 
 **Background:** Autoregressive generation models often suffer from error accumulation when repeatedly conditioning predictions on previous outputs, leading to temporal drift.

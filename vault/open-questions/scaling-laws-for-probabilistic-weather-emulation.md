@@ -1,8 +1,10 @@
 ---
 created_at: '2026-03-29T20:17:44Z'
+modified_at: '2026-04-08T04:57:56Z'
 source_papers:
 - '[[openalex-2603.25687-on-neural-scaling-laws-for-weather-emulation-through-continu]]'
-title: Probabilistic Scaling Law Investigation
+- '[[arxiv-260405068-towards-scaling-law-analysis-for-spatiotemporal-weather-data]]'
+title: Scaling Laws for Probabilistic Weather Emulation
 ---
 
 **Background:** The inherent chaotic nature of weather systems means that probabilistic forecasts, which quantify uncertainty, are often more informative than deterministic forecasts.

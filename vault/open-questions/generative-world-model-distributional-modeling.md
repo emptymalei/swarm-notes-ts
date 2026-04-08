@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-07T04:52:57Z'
+modified_at: '2026-04-08T04:58:27Z'
 source_papers:
 - '[[arxiv-260404913-a-frame-is-worth-one-token-efficient-generative-world-modeli]]'
-title: Formal Distributional Objectives
+title: Principled Distributional Modeling Objectives
 ---
 
 **Background:** Generative world models often lack formal mechanisms to ensure that sampled future states align with the underlying probability distribution of observed data.

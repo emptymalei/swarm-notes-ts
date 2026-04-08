@@ -16,22 +16,21 @@ url: "https://arxiv.org/abs/2604.04573"
 # Custom fields
 paper_id: "2604.04573"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "computer-vision"
 tags:
-  []
+  - "uncertainty-aware-trajectory-prediction"
+  - "causal-insight"
 architectures:
   []
 datasets:
-  - "nuscenes"
-  - "eth-ucy"
+  []
 concept_slugs:
   []
 dataset_slugs:
-  - "nuscenes"
-  - "eth-ucy"
+  []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-07T04:53:11Z"
-created_at: "2026-04-07T04:53:11Z"
+processed_at: "2026-04-08T04:58:39Z"
+created_at: "2026-04-08T04:58:39Z"
 ---
 
 # SAIL: Scene-aware Adaptive Iterative Learning for Long-Tail Trajectory Prediction in Autonomous Vehicles
@@ -42,13 +41,13 @@ created_at: "2026-04-07T04:53:11Z"
 
 ## Summary
 
-SAIL is a trajectory prediction framework designed to improve safety in autonomous vehicles by focusing on rare, high-risk, long-tail traffic scenarios. The method characterizes trajectories using three dimensions—prediction error, collision risk, and state complexity—to guide a specialized contrastive learning process. Key components include attribute-guided augmentation, similarity-weighted hard-negative mining, and dynamic pseudo-labeling, which together enable the model to prioritize challenging, infrequent maneuvers without sacrificing overall accuracy. Experiments demonstrate significant performance gains on the most difficult 1% of samples in the nuScenes and ETH/UCY benchmarks.
+SAIL is an adaptive framework designed to improve autonomous vehicle trajectory prediction for safety-critical long-tail scenarios. By defining trajectories through prediction error, collision risk, and state complexity, the model employs attribute-guided augmentation and an iterative contrastive learning mechanism to prioritize rare, challenging behaviors. Evaluations on the nuScenes and ETH/UCY datasets show that SAIL significantly outperforms state-of-the-art baselines on extreme long-tail samples while maintaining high performance on common scenarios.
 
 ## Key Contributions
 
-- Proposes SAIL, a framework for long-tail trajectory prediction based on multi-dimensional trajectory characterization (prediction error, collision risk, state complexity).
-- Introduces a synergy of attribute-guided augmentation and adaptive contrastive learning, featuring a continuous cosine momentum schedule and similarity-weighted hard-negative mining.
-- Achieves a 28.8% reduction in prediction error on the hardest 1% of long-tail samples on nuScenes and ETH/UCY datasets while maintaining competitive general performance.
+- Introduced a multi-attribute trajectory modeling approach (error, risk, complexity) to formally identify long-tail scenarios in autonomous driving.
+- Developed an adaptive contrastive learning strategy incorporating similarity-weighted hard-negative mining and dynamic pseudo-labeling.
+- Achieved a 28.8% reduction in prediction error on the most challenging 1% of long-tail samples across nuScenes and ETH/UCY datasets.
 
 ## Open Questions & Future Work
 
@@ -56,18 +55,13 @@ SAIL is a trajectory prediction framework designed to improve safety in autonomo
 
 ## Archivist Review
 
-I approved the two datasets (nuScenes and ETH/UCY) as they are the primary benchmarks in the field, and the open question regarding V2X integration for robustness, which addresses a significant bottleneck in trajectory prediction. I rejected the SAIL framework concept as it is a paper-specific architectural ensemble rather than a reusable methodological primitive.
+I reviewed the SAIL framework and identified that its contributions—while effective for the specific problem of long-tail trajectory prediction—are largely composed of established contrastive learning components applied to a domain-specific taxonomy. I approved the open question regarding V2X integration as it addresses a fundamental limitation in the field of autonomous navigation beyond the specific model architecture proposed in the paper. I rejected the SAIL concept to maintain focus on more generalizable, fundamental temporal modeling mechanisms.
 
 ### Approved Open Questions
-- V2X integration for robustness: This is a critical unresolved bottleneck in autonomous navigation, as vision-based history and local map data alone are fundamentally limited in high-occlusion, signal-dependent scenarios, leading to safety-critical prediction failures.
+- V2X Integration for Occlusion Robustness: This is a technically significant unresolved bottleneck because it addresses the fundamental limitation of history-based prediction models in safety-critical, partially observable environments. Providing a mechanism to integrate V2X data is critical for scaling autonomous driving systems to complex, real-world urban traffic.
 
 ### Rejected Candidates
-- [concept] SAIL (Scene-aware Adaptive Iterative Learning) (`sail-framework`) - paper_local: This is a specific framework name for a trajectory prediction model rather than a generalizable architectural or learning mechanism.
-
-## Datasets
-
-- [[nuscenes]]
-- [[eth-ucy]]
+- [concept] Scene-aware Adaptive Iterative Learning (SAIL) (`sail-scene-aware-adaptive-iterative-learning`) - not_novel: The framework is an application-specific architecture; the individual techniques like hard-negative mining and pseudo-labeling are already well-represented in the literature.
 
 ## Links
 

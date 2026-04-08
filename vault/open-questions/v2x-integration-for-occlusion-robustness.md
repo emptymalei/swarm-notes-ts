@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-07T04:53:11Z'
+modified_at: '2026-04-08T04:58:39Z'
 source_papers:
 - '[[arxiv-260404573-sail-scene-aware-adaptive-iterative-learning-for-long-tail-t]]'
-title: V2X integration for robustness
+title: V2X Integration for Occlusion Robustness
 ---
 
 **Background:** Trajectory prediction models often struggle with extreme edge cases in complex traffic environments where critical safety cues are obscured or insufficient. Integrating external information sources like Vehicle-to-Everything (V2X) communication has been proposed as a potential solution to recover occluded interactions and provide missing environmental context.

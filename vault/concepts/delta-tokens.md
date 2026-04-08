@@ -1,12 +1,13 @@
 ---
-title: "Delta Tokens"
-slug: "delta-tokens"
-type: concept
+created_at: '2026-04-07T04:52:57Z'
 generated_stub: true
+modified_at: '2026-04-08T04:58:27Z'
+processed_at: '2026-04-07T04:52:57Z'
+slug: delta-tokens
 source_papers:
-  - "[[arxiv-260404913-a-frame-is-worth-one-token-efficient-generative-world-modeli]]"
-processed_at: "2026-04-07T04:52:57Z"
-created_at: "2026-04-07T04:52:57Z"
+- '[[arxiv-260404913-a-frame-is-worth-one-token-efficient-generative-world-modeli]]'
+title: Delta Tokens
+type: concept
 ---
 
 # Delta Tokens

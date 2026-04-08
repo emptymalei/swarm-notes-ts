@@ -1,12 +1,14 @@
 ---
-title: "Train-to-Test Scaling Laws"
-slug: "train-to-test-scaling-laws"
-type: concept
+created_at: '2026-04-03T05:24:46Z'
 generated_stub: true
+modified_at: '2026-04-08T04:57:56Z'
+processed_at: '2026-04-03T05:24:46Z'
+slug: train-to-test-scaling-laws
 source_papers:
-  - "[[arxiv-2604.01411-test-time-scaling-makes-overtraining-compute-optimal]]"
-processed_at: "2026-04-03T05:24:46Z"
-created_at: "2026-04-03T05:24:46Z"
+- '[[arxiv-2604.01411-test-time-scaling-makes-overtraining-compute-optimal]]'
+- '[[arxiv-260405068-towards-scaling-law-analysis-for-spatiotemporal-weather-data]]'
+title: Train-to-Test Scaling Laws
+type: concept
 ---
 
 # Train-to-Test Scaling Laws
@@ -27,3 +29,4 @@ Integrates test-time compute into the pretraining optimization objective, fillin
 ## Related Papers
 
 - [[arxiv-2604.01411-test-time-scaling-makes-overtraining-compute-optimal]]
+- [[arxiv-260405068-towards-scaling-law-analysis-for-spatiotemporal-weather-data]]
