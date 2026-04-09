@@ -1,5 +1,6 @@
 ---
 created_at: '2026-04-08T04:54:38Z'
+modified_at: '2026-04-09T04:56:47Z'
 source_papers:
 - '[[arxiv-260406143-deep-spectroscopy-with-desi-for-photometric-redshift-trainin]]'
 title: Automated Redshift Reliability Metrics

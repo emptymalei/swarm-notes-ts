@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-08T04:54:55Z"
-created_at: "2026-04-08T04:54:55Z"
+processed_at: "2026-04-09T04:57:04Z"
+created_at: "2026-04-09T04:57:04Z"
 ---
 
 # Beyond Black-Scholes: A Computational Framework for Option Pricing Using Heston, GARCH, and Jump Diffusion Models
@@ -36,27 +36,27 @@ created_at: "2026-04-08T04:54:55Z"
 
 ## Summary
 
-This paper develops a computational framework for option pricing by moving beyond the Black-Scholes assumption of constant volatility and continuous price paths. By integrating the Heston stochastic volatility model, GARCH, and Merton jump-diffusion, the researchers perform Monte Carlo simulations to improve estimation accuracy. Empirical results using live market data demonstrate that the Heston model excels in capturing volatility clustering and skew, while jump-diffusion models better handle sudden market discontinuities.
+This paper presents a computational framework for option pricing that moves beyond the limitations of the standard Black-Scholes model by integrating GARCH, Heston, and Merton jump-diffusion models. Using Monte Carlo simulations, the authors incorporate time-varying volatility and sudden price discontinuities to achieve more accurate pricing estimates. Empirical evaluation on live market data reveals that while the Heston model is generally more precise, the Merton model excels in scenarios involving high volatility and sudden market shocks.
 
 ## Key Contributions
 
-- Evaluated three advanced option pricing frameworks (Heston, GARCH, and Merton Jump-Diffusion) using Monte Carlo simulation to address Black-Scholes limitations.
-- Demonstrated that the Heston model provides the highest accuracy for market-price alignment compared to classical benchmarks.
-- Validated the effectiveness of the Merton jump-diffusion model for pricing highly volatile assets characterized by discontinuous price movements.
+- Develops a computational framework utilizing Monte Carlo simulations to integrate GARCH, Heston, and Merton Jump-Diffusion models for option pricing.
+- Demonstrates that the Heston model provides superior accuracy in aligning with market prices compared to traditional Black-Scholes.
+- Identifies that the Merton Jump-Diffusion model is better suited for capturing sudden price discontinuities in volatile assets.
 
 ## Open Questions & Future Work
 
-- [[stochastic-model-parameter-optimization-bottlenecks]]
+- [[advanced-computational-paradigms-for-option-pricing]]
 
 ## Archivist Review
 
-The paper provides a straightforward comparison of classic quantitative finance models (Heston, GARCH, Merton) rather than proposing novel ML methodologies or architectural breakthroughs that require permanent vault entries. I have approved a refined version of the open question regarding parameter optimization, as the integration of dynamic learning with classical stochastic systems is a recurring challenge in time-series finance.
+I reviewed the submission and found no concepts worth adding, as the paper primarily evaluates existing well-known financial models (Heston, GARCH, Merton) rather than proposing a new, reusable methodological innovation. The candidate open question was rejected because it proposed a loose collection of buzzword-driven future work (neural networks and quantum walks) rather than a specific, tractable research bottleneck. No datasets were provided for consideration.
 
 ### Approved Open Questions
-- Stochastic Model Parameter Optimization: Developing more robust, adaptive, and computationally efficient simulation methods is crucial for precise derivative pricing and risk management in volatile environments where historical-only calibration often fails.
+- Advanced Computational Paradigms for Pricing: The paper explicitly identifies these as necessary next-generation approaches to overcome the limitations of classical stochastic pricing models like Heston and Merton.
 
 ### Rejected Candidates
-- [open_question] Advanced Optimization and Quantum Walks for Option Pricing (`next-gen-stochastic-modelling-and-quantum-finance`) - other: The title and content were too broad/aspirational; the slug was renamed to focus on the identified bottleneck of parameter optimization.
+- [open_question] Advanced Computational Paradigms for Pricing (`advanced-computational-paradigms-for-option-pricing`) - other: The request was too vague and speculative, listing multiple disparate technologies rather than a specific unresolved research bottleneck.
 
 ## Links
 

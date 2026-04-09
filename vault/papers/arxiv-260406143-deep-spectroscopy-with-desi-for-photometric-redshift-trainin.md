@@ -75,9 +75,9 @@ url: "https://arxiv.org/abs/2604.06143"
 # Custom fields
 paper_id: "2604.06143"
 paper_source: "arxiv"
-domain: "other"
+domain: "computer-vision"
 tags:
-  []
+  - "computer-vision"
 architectures:
   []
 datasets:
@@ -87,8 +87,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-08T04:54:38Z"
-created_at: "2026-04-08T04:54:38Z"
+processed_at: "2026-04-09T04:56:47Z"
+created_at: "2026-04-09T04:56:47Z"
 ---
 
 # Deep Spectroscopy with DESI for Photometric Redshift Training and Calibration
@@ -99,27 +99,26 @@ created_at: "2026-04-08T04:54:38Z"
 
 ## Summary
 
-This paper presents the results of the 'DESI-Deep pilot' program, evaluating the suitability of the Dark Energy Spectroscopic Instrument (DESI) for training and calibrating photometric redshift estimates for future wide-field imaging surveys like LSST. The study demonstrates that DESI achieves high redshift success rates for faint targets (m_i <= 24.5) with significantly higher multiplexing capabilities than 10m-class telescopes. These findings provide a strategic foundation for designing a dedicated spectroscopic survey to mitigate systematic uncertainties in cosmological inference for upcoming imaging experiments.
+This paper reports on the 'DESI-Deep pilot' program, which evaluates the capacity of the Dark Energy Spectroscopic Instrument (DESI) to provide precise redshift measurements for faint galaxies (m_i <= 24.5) essential for calibrating photometric redshift estimates. The study finds that DESI achieves exceptional efficiency and multiplexing compared to 10m-class telescopes, making it a highly effective facility for generating benchmark samples for future imaging surveys like LSST. These findings provide a clear roadmap for using DESI-Deep observations to mitigate systematic errors in cosmological inference.
 
 ## Key Contributions
 
-- Demonstrated that the DESI facility is highly efficient for faint galaxy redshift measurements, matching 10m-class telescope performance with ~30x greater multiplexing.
-- Validated that signal-to-noise ratios follow background-limited scaling for deep exposures (up to 7 hours) at m_i <= 24.5.
-- Provided updated time-requirement predictions for spectroscopic calibration samples of imaging-based cosmological surveys.
+- Demonstrated that the Dark Energy Spectroscopic Instrument (DESI) achieves high redshift success rates for faint targets (m_i <= 24.5) comparable to 10m-class telescopes with significantly higher multiplexing.
+- Validated that DESI's signal-to-noise ratio remains background-limited even for extended exposure times (up to ~7 hours).
+- Developed a strategy for using deep spectroscopic samples to train and calibrate photometric redshift (photo-z) estimates for large-scale imaging surveys like the Vera C. Rubin Observatory's LSST.
 
 ## Open Questions & Future Work
 
 - [[automated-redshift-reliability-metrics]]
+- [[cosmological-impact-spectroscopic-incompleteness]]
 
 ## Archivist Review
 
-The paper provides an empirical evaluation of spectroscopic hardware for astrophysical survey design. It does not introduce reusable machine learning methodologies, architectures, or unique datasets. I approved the open question regarding automated redshift reliability, as it identifies a clear, persistent bottleneck in automating scientific pipeline quality control for large-scale astronomical data analysis.
+The paper provides a domain-specific evaluation of DESI for calibrating future photometric redshift surveys. I have approved two open questions that capture the fundamental statistical and reliability challenges in scaling spectroscopic training sets for cosmology. No new concepts or datasets were approved as the findings are primarily domain-specific empirical results within astrophysics rather than reusable ML methodology.
 
 ### Approved Open Questions
-- Automated Redshift Reliability Metrics: Automated reliability metrics are essential for scaling deep spectroscopic surveys to the sample sizes required for next-generation photometric redshift calibration (e.g., for LSST), as manual inspection is too labor-intensive for the tens of thousands of spectra needed.
-
-### Rejected Candidates
-- [concept] DESI-Deep Pilot (`desi-deep-pilot`) - paper_local: This is a specific, one-off project or survey program rather than a reusable architectural pattern or ML method.
+- Automated Redshift Reliability Metrics: Automated reliability assessment is crucial for scaling spectroscopic training sets to the size and depth required for future imaging experiments like LSST, as manual visual inspection campaigns are not sustainable at large scales.
+- Cosmological Impact of Incompleteness: A better understanding of how spectroscopic incompleteness maps into cosmological biases is essential for designing efficient training sets that maximize the constraining power of upcoming surveys like LSST.
 
 ## Links
 
