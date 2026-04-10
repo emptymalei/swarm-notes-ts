@@ -16,9 +16,8 @@ paper_source: "arxiv"
 domain: "cosmology"
 tags:
   - "cosmology"
-  - "primordial-magnetic-fields"
-  - "21-cm-cosmology"
-  - "fisher-forecast"
+  - "forecasting"
+  - "signal-processing"
 architectures:
   []
 datasets:
@@ -28,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-09T04:52:24Z"
-created_at: "2026-04-09T04:52:24Z"
+processed_at: "2026-04-10T15:30:43Z"
+created_at: "2026-04-10T15:30:43Z"
 ---
 
 # Primordial magnetic fields in the light of upcoming post-EoR Lyman-$α$ and 21-cm observations
@@ -40,26 +39,26 @@ created_at: "2026-04-09T04:52:24Z"
 
 ## Summary
 
-This paper investigates the potential of using post-reionization era observables—the Ly$α$ power spectrum, the 21 cm power spectrum, and their cross-spectrum—to constrain primordial magnetic fields (PMF). Using Fisher forecast techniques for upcoming surveys like DESI, SKA1-Mid, and PUMA, the authors show that these observables are sensitive to the Lorentz force effects of sub-nG strength fields at small scales. The study highlights the Ly$α$-21 cm cross-correlation as a particularly promising, foreground-immune probe for determining PMF parameters.
+This paper investigates the constraining power of post-reionization era observables—specifically the Lyman-α power spectrum, the 21 cm power spectrum, and their cross-spectrum—on primordial magnetic fields (PMF). Using Fisher forecast and SNR estimation, the authors evaluate future survey combinations, including DESI-like spectroscopic surveys paired with SKA1-Mid and PUMA. The findings suggest that the Lyα-21 cm cross-correlation, being largely immune to foreground interference, offers a superior path for precisely constraining sub-nG PMF parameters (B₀, n_B) compared to individual auto-spectra.
 
 ## Key Contributions
 
-- Demonstrates that the Ly$α$-21 cm cross-spectrum serves as a foreground-robust probe for primordial magnetic fields (PMF) in the post-reionization era.
-- Performs Fisher forecasts for future DESI-like, SKA1-Mid, and PUMA surveys, showing that the DESI-like+SKA1-Mid combination can constrain PMF amplitude and spectral index with $\lesssim10\%$ relative error.
-- Shows that the Ly$α$-21 cm cross-correlation provides competitive constraints for a fiducial $B_0=0.8$ nG and $n_{\rm B}=-2.9$, achieving $1\sigma$ uncertainties of $\Delta B_0 \approx 0.07$ nG and $\Delta n_{\rm B} \approx 0.02$.
+- Provides a Fisher forecast analysis for constraining primordial magnetic field (PMF) parameters using post-reionization Lyα, 21-cm, and cross-correlation spectra.
+- Identifies the Lyα-21 cm cross-correlation as a foreground-robust probe for detecting sub-nG PMFs with upcoming observational facilities.
+- Quantifies potential constraints on PMF amplitude (B₀) and spectral index (n_B) for DESI-like surveys combined with SKA1-Mid and PUMA, showing ≤10% relative errors for the DESI-like+SKA1-Mid setup.
 
 ## Open Questions & Future Work
 
-- [[21cm-foreground-impact-pmf-constraints]]
-- [[self-consistent-hi-bias-pmf-modeling]]
+- [[mhd-based-hi-bias-modeling]]
+- [[realistic-foreground-modeling-21cm]]
 
 ## Archivist Review
 
-The paper presents cosmological Fisher forecasts for primordial magnetic fields (PMF). The proposed open questions are approved as they identify fundamental bottlenecks in 21-cm cosmology—namely the impact of foregrounds and the necessity of self-consistent bias modeling in non-standard physical scenarios. No concepts were approved because the methodology (Fisher forecasting) is a standard statistical tool, and the PMF analysis is specific to the astrophysical context rather than a generalizable ML algorithmic pattern.
+The paper is highly domain-specific, focusing on Fisher forecasts for primordial magnetic fields. I have rejected all concept candidates as they were either generic (e.g., Fisher forecasting) or specific to the cosmology domain without a broader ML methodology contribution. I approved two open questions that reflect significant bottlenecks in computational cosmology and signal processing for intensity mapping, as these are recurring challenges in modern observational ML.
 
 ### Approved Open Questions
-- 21-cm foreground impact on cosmological constraints: This is a fundamental bottleneck for 21-cm intensity mapping science; without realistic foreground modeling, forecast constraints remain overly optimistic.
-- Self-consistent HI bias modeling for PMF studies: Using a bias model derived from standard CDM in a non-standard scenario introduces systematic errors in forecasts, as the bias is likely intrinsically modified by the physics being tested.
+- MHD-based HI bias modeling: This is a fundamental bottleneck for precision cosmology as we move beyond standard LCDM assumptions in interpreting non-linear tracers.
+- Foregrounds in 21cm surveys: This remains the primary systematic bottleneck for the utilization of 21-cm data in cosmology.
 
 ## Links
 

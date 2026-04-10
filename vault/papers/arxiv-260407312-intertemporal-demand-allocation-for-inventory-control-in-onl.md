@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-09T04:52:49Z"
-created_at: "2026-04-09T04:52:49Z"
+processed_at: "2026-04-10T15:31:07Z"
+created_at: "2026-04-10T15:31:07Z"
 ---
 
 # Intertemporal Demand Allocation for Inventory Control in Online Marketplaces
@@ -36,26 +36,29 @@ created_at: "2026-04-09T04:52:49Z"
 
 ## Summary
 
-This paper explores how online marketplaces can influence seller inventory strategies by strategically allocating order demand over time. By adjusting the predictability of individual seller sales streams, the platform directly impacts the sellers' safety-stock needs and their adoption of platform-managed fulfillment services. The authors demonstrate that the platform can control these inventory outcomes through non-discriminatory, low-memory routing policies that intentionally obfuscate aggregate demand signals from sellers.
+This paper studies how online marketplaces can influence seller inventory and fulfillment choices by strategically allocating demand across sellers over time. By manipulating the predictability of individual seller sales streams, the platform effectively modulates safety-stock requirements for fulfill-by-merchant (FBM) versus fulfill-by-platform (FBP) models. The authors derive a class of nondiscriminatory allocation policies that trade off platform fulfillment adoption against inventory holding costs. Their work demonstrates that informational control through demand routing is a potent lever for operational design in digital marketplaces.
 
 ## Key Contributions
 
-- Develops a theoretical framework for intertemporal demand allocation as a mechanism to influence seller inventory replenishment policies in online marketplaces.
-- Identifies that a platform can modulate seller safety-stock requirements by adjusting the predictability of their individual sales streams, independent of total demand share.
-- Proves that uniform order splitting minimizes seller forecast uncertainty, whereas specific low-memory allocation rules can increase uncertainty to manage fulfillment adoption trade-offs.
+- Develops a framework for intertemporal demand allocation in online marketplaces to influence seller inventory replenishment behavior.
+- Identifies that platform-controlled demand predictability serves as a key operational lever to manage seller safety-stock requirements and FBP adoption.
+- Proves that uniform order splitting minimizes forecast uncertainty, while higher-uncertainty regimes require allocation rules that obscure aggregate demand signals from sellers.
 
 ## Open Questions & Future Work
 
 - [[neutrality-constraints-platform-design]]
-- [[dynamic-marketplace-governance-extensions]]
+- [[non-stationary-demand-allocation]]
 
 ## Archivist Review
 
-This paper proposes a theoretical framework for demand-routing-as-a-control-mechanism. While highly insightful, the primary contributions are formulated as theoretical proofs rather than reusable algorithmic concepts, and therefore no new concepts are added. The open questions regarding neutrality constraints and marketplace governance are approved as they address fundamental, unresolved challenges in platform operations and algorithmic policy.
+The paper proposes an interesting operational mechanism for influencing inventory via demand routing, but the core concepts are specific to marketplace economics and inventory theory rather than broadly reusable ML forecasting methods. I approved the neutrality constraint question as it addresses fundamental limitations of platform algorithm design, but rejected the non-stationary demand question as it is a duplicate of existing open questions regarding non-stationarity and regime shifts.
 
 ### Approved Open Questions
-- Neutrality constraints in platform design: This question is critical because neutrality constraints are often loosely defined in policy and regulatory contexts; understanding how different rigorous formulations constrain operational levers is essential for platform design and competition policy.
-- Dynamic marketplace governance extensions: Extending this framework to non-stationary and strategic environments is necessary to translate these theoretical insights into practical, robust operational strategies for real-world digital marketplaces.
+- Broadening Neutrality in Platform Design: This is technically important as it defines the boundary of the platform's design flexibility under increasingly common regulatory and reputational pressures regarding algorithmic fairness.
+- Allocation Under Non-Stationary Demand: Real-world marketplace demand is rarely stationary; thus, this extension is critical for bridging the gap between theoretical models and operational practice in e-commerce.
+
+### Rejected Candidates
+- [open_question] Allocation Under Non-Stationary Demand (`non-stationary-demand-allocation`) - duplicate_existing: This is a duplicate entry; a similar question exists in the vault.
 
 ## Links
 

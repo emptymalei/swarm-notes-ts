@@ -1,12 +1,13 @@
 ---
-title: "Sequential Conformalized Density Regions"
-slug: "sequential-conformalized-density-regions-scdr"
-type: concept
+created_at: '2026-04-09T04:52:35Z'
 generated_stub: true
+modified_at: '2026-04-10T15:30:55Z'
+processed_at: '2026-04-09T04:52:35Z'
+slug: sequential-conformalized-density-regions-scdr
 source_papers:
-  - "[[arxiv-260407325-conformal-prediction-with-time-series-data-via-sequential-co]]"
-processed_at: "2026-04-09T04:52:35Z"
-created_at: "2026-04-09T04:52:35Z"
+- '[[arxiv-260407325-conformal-prediction-with-time-series-data-via-sequential-co]]'
+title: Sequential Conformalized Density Regions
+type: concept
 ---
 
 # Sequential Conformalized Density Regions

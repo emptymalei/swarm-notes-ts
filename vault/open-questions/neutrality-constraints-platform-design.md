@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-09T04:52:49Z'
+modified_at: '2026-04-10T15:31:07Z'
 source_papers:
 - '[[arxiv-260407312-intertemporal-demand-allocation-for-inventory-control-in-onl]]'
-title: Neutrality constraints in platform design
+title: Broadening Neutrality in Platform Design
 ---
 
 **Background:** Digital platforms that function as market makers frequently exert control over order routing, affecting seller-level inventory through the informational properties of demand streams. This mechanism is particularly significant when platforms also offer fulfillment services, which give the platform an economic stake in seller inventory despite decentralized decision-making.
