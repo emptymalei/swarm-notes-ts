@@ -19,7 +19,7 @@ url: "https://arxiv.org/abs/2604.08458"
 # Custom fields
 paper_id: "2604.08458"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "nlp"
 tags:
   []
 architectures:
@@ -31,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:26:31Z"
-created_at: "2026-04-10T15:26:31Z"
+processed_at: "2026-04-11T04:43:30Z"
+created_at: "2026-04-11T04:43:30Z"
 ---
 
 # LITE: Lightweight Channel Gain Estimation with Reduced X-Haul CSI Signaling in O-RAN
@@ -43,27 +43,29 @@ created_at: "2026-04-10T15:26:31Z"
 
 ## Summary
 
-LITE is a lightweight pipeline designed to address X-haul bandwidth constraints in Cell-Free Massive MIMO O-RAN systems by reducing frequent CSI signaling. It employs a 1-D convolutional autoencoder at the Distributed Unit for 50% data compression and an SE-enhanced BiLSTM at the Near-RT-RIC for channel gain forecasting. The implementation achieves significant improvements in throughput and complexity reduction while maintaining competitive accuracy, making it suitable for real-time deployment in O-RAN environments.
+LITE is a lightweight CSI forecasting pipeline designed for Cell-Free Massive MIMO in O-RAN environments to mitigate X-haul bandwidth congestion. The framework integrates a 1D-convolutional autoencoder for 50% data compression with an asymmetric Squeeze-and-Excitation (SE)-enhanced BiLSTM for channel gain prediction. By optimizing for both transport efficiency and inference latency, LITE provides a deployment-ready solution that significantly outperforms baseline approaches in model complexity and throughput while maintaining high predictive accuracy.
 
 ## Key Contributions
 
-- Proposes LITE, a pipeline for X-haul-efficient CSI signaling in O-RAN using 50% CSI compression.
-- Achieves 83.39% model complexity reduction and 5% accuracy improvement over a standard BiLSTM baseline.
-- Demonstrates 147k QPS throughput via TensorRT optimization, facilitating deployment-ready channel-gain prediction.
+- Introduces LITE, a lightweight pipeline for channel state information (CSI) forecasting in O-RAN that enables 50% CSI compression for reduced X-haul signaling.
+- Achieves an 83.39% reduction in model complexity compared to standard BiLSTM baselines through an asymmetric SE-BiLSTM architecture.
+- Demonstrates a 4.6x throughput gain and 147k Queries per Second (QPS) performance using a TensorRT-optimized deployment.
 
 ## Open Questions & Future Work
 
-- [[optimizing-oran-channel-prediction-scalability]]
+- [[adaptive-csi-compression-prediction-o-ran]]
+- [[model-efficiency-for-ran-controllers]]
 
 ## Archivist Review
 
-I approved a refined open question regarding the challenges of deploying channel prediction in O-RAN systems, as this is a distinct and unresolved research bottleneck. I rejected the proposed concept LITE because it represents a specific system-level pipeline instantiation rather than a reusable algorithmic mechanism. The existing vault already contains sophisticated methods for time-series forecasting and uncertainty estimation that cover the underlying components of this architecture.
+I have approved the two open questions as they address the critical and non-trivial challenge of balancing transport-layer constraints (signaling/X-haul) with predictive performance in real-time RAN environments. The proposed concept of 'LITE' was rejected as it represents a specific pipeline configuration rather than a fundamentally new, reusable architectural primitive suitable for the vault.
 
 ### Approved Open Questions
-- Optimizing O-RAN Channel Prediction: This addresses the gap between proof-of-concept research and practical O-RAN deployments, ensuring that theoretical gains in transport efficiency translate into tangible system-level performance improvements.
+- Adaptive CSI Compression Optimization: Optimizing the balance between compression and prediction is critical for scaling Cell-Free Massive MIMO in O-RAN, as fixed-ratio compression may be suboptimal under fluctuating network conditions.
+- Efficient Model Deployment Methods: This is essential for the practical, large-scale deployment of AI-based channel prediction in resource-constrained edge computing environments.
 
 ### Rejected Candidates
-- [concept] Lightweight Intelligent Trajectory Estimator (LITE) (`lite-lightweight-intelligent-trajectory-estimator`) - paper_local: This is a paper-specific architectural proposal rather than a generalizable algorithmic concept.
+- [concept] LITE (Lightweight Intelligent Trajectory Estimator) (`lite-architecture`) - paper_local: The LITE architecture is a paper-local integration of existing modules (autoencoder and SE-BiLSTM) rather than a novel, reusable algorithmic paradigm.
 
 ## Links
 

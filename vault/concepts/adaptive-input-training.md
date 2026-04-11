@@ -1,12 +1,13 @@
 ---
-title: "ADAPTive Input Training"
-slug: "adaptive-input-training"
-type: concept
+created_at: '2026-04-10T15:27:10Z'
 generated_stub: true
+modified_at: '2026-04-11T04:44:07Z'
+processed_at: '2026-04-10T15:27:10Z'
+slug: adaptive-input-training
 source_papers:
-  - "[[arxiv-260408398-adaptive-input-training-for-many-to-one-pre-training-on-time]]"
-processed_at: "2026-04-10T15:27:10Z"
-created_at: "2026-04-10T15:27:10Z"
+- '[[arxiv-260408398-adaptive-input-training-for-many-to-one-pre-training-on-time]]'
+title: ADAPTive Input Training
+type: concept
 ---
 
 # ADAPTive Input Training

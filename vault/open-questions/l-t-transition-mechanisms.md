@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-10T15:27:18Z'
+modified_at: '2026-04-11T04:44:18Z'
 source_papers:
 - '[[arxiv-260408387-searching-for-ultracool-dwarfs-in-early-lsst-data-products]]'
-title: L/T transition mechanisms
+title: Mechanisms of L/T Transition
 ---
 
 **Background:** The transition from cloudy to cloudless atmospheres in brown dwarfs is a complex process occurring at the L/T spectral transition, where dust settles in the photosphere.

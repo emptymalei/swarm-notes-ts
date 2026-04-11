@@ -1,12 +1,13 @@
 ---
-title: "Mixing Capacity"
-slug: "mixing-capacity"
-type: concept
+created_at: '2026-04-10T15:26:41Z'
 generated_stub: true
+modified_at: '2026-04-11T04:43:40Z'
+processed_at: '2026-04-10T15:26:41Z'
+slug: mixing-capacity
 source_papers:
-  - "[[arxiv-260408427-multivariate-quantum-reservoir-computing-with-discrete-and-c]]"
-processed_at: "2026-04-10T15:26:41Z"
-created_at: "2026-04-10T15:26:41Z"
+- '[[arxiv-260408427-multivariate-quantum-reservoir-computing-with-discrete-and-c]]'
+title: Mixing Capacity
+type: concept
 ---
 
 # Mixing Capacity

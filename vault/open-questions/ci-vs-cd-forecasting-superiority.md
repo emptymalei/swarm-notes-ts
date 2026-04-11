@@ -1,5 +1,6 @@
 ---
 created_at: '2026-04-10T15:27:01Z'
+modified_at: '2026-04-11T04:43:58Z'
 source_papers:
 - '[[arxiv-260408400-zero-shot-multivariate-time-series-forecasting-using-tabular]]'
 title: CI vs CD Forecasting Superiority

@@ -23,8 +23,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:27:58Z"
-created_at: "2026-04-10T15:27:58Z"
+processed_at: "2026-04-11T04:44:55Z"
+created_at: "2026-04-11T04:44:55Z"
 ---
 
 # Quantifying Decarbonization Speed Across Climate Scenarios
@@ -35,26 +35,30 @@ created_at: "2026-04-10T15:27:58Z"
 
 ## Summary
 
-This paper introduces a quantitative framework to measure the decarbonization speed inherent in narrative-based Integrated Assessment Model (IAM) climate scenarios. By mapping high-dimensional scenario time series into a single numerical metric, the author enables transparent cross-scenario comparisons consistent with established climate concentration pathways. The study analyzes 126 publicly available scenarios, providing both empirical and parametric distributions to characterize the range of mitigation policy speeds.
+This paper addresses the complexity of analyzing high-dimensional climate scenarios by proposing a numerical metric for decarbonization speed. By applying this metric to 126 Integrated Assessment Model (IAM) scenarios, the author enables transparent ranking and comparative analysis of diverse climate projections. The study further validates this approach by linking the decarbonization speed to concentration pathway assumptions and providing statistical characterizations of the distribution of these mitigation speeds.
 
 ## Key Contributions
 
-- Introduces a numerical metric to quantify the implied decarbonization speed of complex, narrative-based IAM climate scenarios.
-- Enables transparent ranking and comparison of 126 climate scenarios across different representative concentration pathway (RCP) assumptions.
-- Provides an empirical and parametric distribution analysis of decarbonization speeds, including bootstrap-based confidence intervals for key statistics.
+- Introduces a numerical decarbonization speed metric to quantify and compare high-dimensional climate Integrated Assessment Model (IAM) scenarios.
+- Demonstrates that the proposed metric correlates with representative concentration pathways, validating its utility as a summary statistic for mitigation policy.
+- Provides empirical and parametric distribution modeling of decarbonization speed across 126 publicly available IAM climate scenarios.
 
 ## Open Questions & Future Work
 
-- [[integrating-simplified-climate-metrics]]
-- [[capturing-abrupt-policy-changes]]
+- [[capturing-abrupt-transition-dynamics]]
+- [[multi-dimensional-climate-scenario-metrics]]
 
 ## Archivist Review
 
-The paper proposes a summary statistic (decarbonization speed) for high-dimensional IAM scenarios. Since this is a specific domain-driven metric rather than a generalized machine learning technique, I have rejected concepts derived from it to prevent cluttering the vault with application-specific metrics. I approved the open questions as they address fundamental challenges in bridging high-dimensional climate modeling with simplified, actionable interpretation for policy analysis, which is a recurring bottleneck in time-series forecasting for complex physical systems.
+The paper proposes a specialized decarbonization metric, which, while useful, is too application-specific to warrant a standalone concept note. I have approved two open questions that reflect broader challenges in climate scenario analysis: the need to account for non-linear, abrupt policy shifts and the development of multidimensional metrics that integrate complex IAM output across disparate domains. These questions align with existing vault entries on climate and transition modeling.
 
 ### Approved Open Questions
-- Integrating Simplified Climate Metrics: Understanding the relationship between reduced metrics and high-dimensional model output is critical for accurately communicating the policy implications of climate scenarios to stakeholders who need to grasp both the overall trend and the specific drivers of a transition.
-- Capturing Abrupt Policy Changes: Capturing the timing and severity of policy interventions is essential for accurate risk analysis, particularly in economic modeling where 'shock' events have non-linear consequences on transition pathways.
+- Capturing Abrupt Transition Dynamics: Climate policy analysis often relies on scenarios with non-linear or delayed transitions; failing to capture these dynamics limits the utility of summary metrics in high-stakes policy modeling.
+- Multi-dimensional Climate Scenario Metrics: A comprehensive understanding of transition pathways requires aggregating information across domains to better represent the full scope of climate mitigation efforts.
+
+### Rejected Candidates
+- [open_question] Capturing Abrupt Decarbonization Shifts (`capturing-abrupt-decarbonization-shifts`) - other: The proposed title and background are too narrow; a more generalized version covering structural breaks in transition scenarios is better.
+- [open_question] Multi-dimensional Transition Metrics (`multi-dimensional-transition-metrics`) - other: Renamed for better alignment with existing vault naming conventions regarding climate and scenario metrics.
 
 ## Links
 

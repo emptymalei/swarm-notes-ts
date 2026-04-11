@@ -1,12 +1,13 @@
 ---
-title: "Multi-Scale Bi-Branch Convolutional Neural Network (MS-BCNN)"
-slug: "ms-bcnn"
-type: concept
+created_at: '2026-04-10T15:29:21Z'
 generated_stub: true
+modified_at: '2026-04-11T04:46:14Z'
+processed_at: '2026-04-10T15:29:21Z'
+slug: ms-bcnn
 source_papers:
-  - "[[arxiv-260407610-auto-configured-networks-for-multi-scale-multi-output-time-s]]"
-processed_at: "2026-04-10T15:29:21Z"
-created_at: "2026-04-10T15:29:21Z"
+- '[[arxiv-260407610-auto-configured-networks-for-multi-scale-multi-output-time-s]]'
+title: Multi-Scale Bi-Branch Convolutional Neural Network (MS-BCNN)
+type: concept
 ---
 
 # Multi-Scale Bi-Branch Convolutional Neural Network (MS-BCNN)

@@ -1,12 +1,13 @@
 ---
-title: "MAGMAR Model"
-slug: "magmar-model"
-type: concept
+created_at: '2026-04-10T15:29:40Z'
 generated_stub: true
+modified_at: '2026-04-11T04:46:39Z'
+processed_at: '2026-04-10T15:29:40Z'
+slug: magmar-model
 source_papers:
-  - "[[arxiv-260407567-climate-aware-copula-models-for-sovereign-rating-migration-r]]"
-processed_at: "2026-04-10T15:29:40Z"
-created_at: "2026-04-10T15:29:40Z"
+- '[[arxiv-260407567-climate-aware-copula-models-for-sovereign-rating-migration-r]]'
+title: MAGMAR Model
+type: concept
 ---
 
 # MAGMAR Model

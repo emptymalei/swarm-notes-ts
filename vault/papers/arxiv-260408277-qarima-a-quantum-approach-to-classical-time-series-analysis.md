@@ -16,20 +16,18 @@ paper_id: "2604.08277"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series-forecasting"
-  - "quantum-machine-learning"
-  - "arima-variants"
+  []
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "quantum-autocorrelation-function-qacf"
+  - "quantum-assisted-time-series-forecasting"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:27:38Z"
-created_at: "2026-04-10T15:27:38Z"
+processed_at: "2026-04-11T04:44:36Z"
+created_at: "2026-04-11T04:44:36Z"
 ---
 
 # QARIMA: A Quantum Approach To Classical Time Series Analysis
@@ -40,36 +38,40 @@ created_at: "2026-04-10T15:27:38Z"
 
 ## Summary
 
-This paper introduces QARIMA, a quantum-inspired framework for time series analysis that replaces traditional autocorrelation methods with swap-test-driven quantum primitives (QACF/QPACF) for order identification. The method utilizes fixed-configuration variational quantum circuits (VQCs) for both parameter estimation and a specialized weak-lag refinement stage. By maintaining a fixed circuit ansatz and training budget, the approach mitigates hyperparameter leakage and achieves competitive performance against automated classical ARIMA baselines across environmental and industrial datasets.
+QARIMA is a quantum-inspired framework that hybridizes classical ARIMA with variational quantum circuits (VQCs) for robust time-series forecasting. It utilizes swap-test-based quantum autocorrelation (QACF) and partial autocorrelation (QPACF) to identify differencing and lag orders, followed by VQC-based estimation for AR and MA coefficients. By maintaining a fixed-configuration VQC ansatz, the model avoids hyperparameter leakage and achieves superior predictive performance and reduced computational overhead compared to classical ARIMA baselines.
 
 ## Key Contributions
 
-- Introduces QARIMA, a quantum-inspired ARIMA methodology using swap-test-driven quantum autocorrelation (QACF) and partial autocorrelation (QPACF) for lag identification.
-- Implements a fixed-configuration VQC framework for AR/MA coefficient estimation to prevent hyperparameter leakage while reducing meta-optimization overhead.
-- Provides a weak-lag refinement mechanism that re-weights or prunes lags without modifying the ARIMA(p,d,q) structure, improving forecast accuracy on environmental and industrial datasets.
+- Proposes QARIMA, a quantum-inspired ARIMA framework that replaces classical lag selection and parameter estimation with quantum-assisted counterparts.
+- Introduces swap-test-driven QACF and QPACF to derive differencing and AR/MA lag orders through quantum projections.
+- Demonstrates significant reduction in meta-optimization overhead while achieving improved out-of-sample MSE and MAPE across industrial datasets compared to classical automated ARIMA.
 
 ## Open Questions & Future Work
 
-- [[vqc-estimation-stability-in-tsf]]
+- [[scalability-robustness-quantum-arima-hybrids]]
 
 ## Key Concepts
 
-- [[quantum-autocorrelation-function-qacf]]: A swap-test-driven method for identifying time-series lags and differencing orders in a quantum-inspired feature selection framework.
+- [[quantum-assisted-time-series-forecasting]]: A hybrid framework that replaces classical autocorrelation-based lag selection and parameter estimation with swap-test-driven quantum primitives and variational quantum circuits.
 
 ## Archivist Review
 
-I approved the Quantum Autocorrelation Function (QACF) as a novel primitive for feature selection in hybrid quantum forecasting and an open question regarding the stability of VQC-based estimation in time series. I rejected the framework name QARIMA itself and its weak-lag refinement subcomponent to adhere to the policy of focusing on reusable mechanisms rather than specific implementations.
+The paper presents a comprehensive hybrid approach. I approved the overarching concept of quantum-assisted time series forecasting as a reusable methodology, while rejecting the specific submodules (QACF, VQC-AR, etc.) as they are implementations of the primary framework. The open question was renamed slightly to maintain clarity and avoid duplication with existing vault items while retaining the core inquiry into hybrid model scalability.
 
 ### Approved Concepts
-- Quantum Autocorrelation Function (QACF): Provides a novel, quantum-inspired primitive for time-series feature engineering that replaces classical counterparts, offering a reusable mechanism for feature selection in hybrid quantum-classical pipelines.
+- Quantum-Assisted Time Series Forecasting: Integrates quantum primitives (QACF, QPACF, VQC) into a classical statistical forecasting workflow, providing a blueprint for future hybrid model development.
 
 ### Approved Open Questions
-- VQC Estimation Stability in TSF: Determining the robustness of VQC-based estimation is critical for transitioning quantum-enhanced forecasting tools from controlled simulations to high-dimensional, real-world temporal modeling.
+- Scalability and Robustness of Quantum-ARIMA Hybrids: As ARIMA remains a core statistical benchmark, understanding the limits and stability of its quantum-classical hybridizations is crucial for assessing their practical utility in econometrics and real-world forecasting.
 
 ### Rejected Candidates
-- [open_question] VQC Estimation Sensitivity Analysis (`vqc-parameter-estimation-stability`) - other: Renamed for better alignment with vault naming conventions (adding -in-tsf suffix and tightening the title).
-- [concept] QARIMA (`qarima`) - paper_local: QARIMA is a specific methodology name rather than a reusable mechanism.
-- [concept] VQC weak-lag refinement (`weak-lag-refinement`) - subcomponent_of_broader_mechanism: This is a subcomponent of the overarching QARIMA framework and does not have enough standalone utility or conceptual depth yet to warrant a permanent vault entry.
+- [concept] differencing selection (`1`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
+- [concept] QACF (`2`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
+- [concept] QPACF (`3`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
+- [concept] swap-test primitives with delayed-matrix construction (`4`) - paper_local: Implementation-specific detail of the framework.
+- [concept] VQC-AR (`5`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
+- [concept] VQC weak-lag refinement (`6`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
+- [concept] VQC-MA (`7`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
 
 ## Links
 

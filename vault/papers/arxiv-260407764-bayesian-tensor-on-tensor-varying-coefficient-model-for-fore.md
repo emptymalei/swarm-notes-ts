@@ -3,7 +3,8 @@
 title: "Bayesian Tensor-on-Tensor Varying Coefficient Model for Forecasting Alzheimer's Disease Progression"
 author:
   - literal: "Yajie Liu"
-  - literal: "Hengrui Luo, Suprateek Kundu"
+  - literal: "Hengrui Luo"
+  - literal: "Suprateek Kundu"
 issued:
   date-parts:
     - [2026, 4, 9]
@@ -14,18 +15,23 @@ paper_id: "2604.07764"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "forecasting"
+  - "medical-imaging"
+  - "longitudinal-forecasting"
+  - "bayesian-inference"
+  - "spatial-modeling"
+  - "neuroscience"
 architectures:
   []
 datasets:
   - "adni"
 concept_slugs:
-  []
+  - "bayesian-tensor-on-tensor-varying-coefficient-model"
 dataset_slugs:
   - "adni"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:28:52Z"
-created_at: "2026-04-10T15:28:52Z"
+processed_at: "2026-04-11T04:45:44Z"
+created_at: "2026-04-11T04:45:44Z"
 ---
 
 # Bayesian Tensor-on-Tensor Varying Coefficient Model for Forecasting Alzheimer's Disease Progression
@@ -36,28 +42,31 @@ created_at: "2026-04-10T15:28:52Z"
 
 ## Summary
 
-This paper introduces a Bayesian tensor-on-tensor varying coefficient model designed to forecast Alzheimer's disease progression through longitudinal MRI analysis. The framework integrates Gaussian process priors for nonlinearity with low-rank tensor coefficients to capture complex spatial structure and heterogeneity at the voxel level. An efficient parallel MCMC algorithm is developed to enable scalable inference, with experimental results on the ADNI dataset confirming the model's accuracy in predicting cortical thickness and neurobiological brain aging.
+This paper introduces a Bayesian tensor-on-tensor varying coefficient model designed to forecast longitudinal neuroimaging data, such as cortical thickness. The framework leverages Gaussian process priors to capture nonlinear relationships while utilizing low-rank tensor structures to account for spatial dependencies. An efficient parallel MCMC algorithm is developed to handle the computational demands of high-dimensional imaging data. Experimental results on the ADNI dataset demonstrate the model's effectiveness in predicting future biological changes and its potential for early clinical detection of Alzheimer's disease.
 
 ## Key Contributions
 
-- Proposes a novel Bayesian tensor-on-tensor varying coefficient model for capturing nonlinear voxel-level relationships via GP priors and low-rank tensor coefficients.
-- Develops an efficient parallelized MCMC algorithm to handle high-dimensional image data, enabling scalability for voxel-specific spatial modeling.
-- Demonstrates superior performance in forecasting cortical thickness and brain aging using longitudinal MRI data from the ADNI dataset compared to baseline methods.
+- Introduces a Bayesian tensor-on-tensor model that captures nonlinearity and spatial heterogeneity in longitudinal medical image data.
+- Develops an MCMC algorithm with parallel structure for scalable estimation of voxel-specific GP atoms and low-rank tensor coefficients.
+- Demonstrates superior performance in forecasting cortical thickness and brain aging using the ADNI longitudinal dataset.
 
 ## Open Questions & Future Work
 
-- [[nonlinear-dependency-modeling-in-tot]]
+- [[non-linear-tot-modeling-limitations]]
+
+## Key Concepts
+
+- [[bayesian-tensor-on-tensor-varying-coefficient-model]]: A Bayesian modeling framework that forecasts longitudinal voxel-level data by combining Gaussian process priors for nonlinearity with low-rank tensor decompositions for spatial structure.
 
 ## Archivist Review
 
-I have approved the ADNI dataset as it is a standard, highly identifiable benchmark in longitudinal neuroimaging. The open question on nonlinear modeling in tensor-on-tensor regression was approved for its importance in high-dimensional medical imaging. I rejected the model and MCMC algorithms as they are specific technical implementations rather than general-purpose modeling primitives.
+The paper introduces a structured Bayesian approach for high-dimensional longitudinal forecasting. I approved the proposed model framework as a reusable concept for spatial-temporal modeling and the ADNI dataset as it is a standard, critical benchmark for neuroimaging forecasting. I also approved the open question regarding non-linear TOT modeling, as it identifies a clear, persistent theoretical limitation in current tensor regression literature.
+
+### Approved Concepts
+- Bayesian Tensor-on-Tensor Varying Coefficient Model: This framework introduces a principled way to integrate Gaussian processes into tensor-on-tensor structures for spatial-temporal forecasting in high-dimensional domains like neuroimaging.
 
 ### Approved Open Questions
-- Nonlinear dependency modeling in TOT: This question addresses the critical bottleneck of scaling flexible, non-linear Bayesian modeling to high-dimensional tensors, which is central to advancing longitudinal image analysis.
-
-### Rejected Candidates
-- [concept] Bayesian Tensor-on-Tensor Varying Coefficient Model (`bayesian-tensor-on-tensor-varying-coefficient-model`) - paper_local: This is a specific model architecture instance rather than a foundational or widely reusable conceptual primitive.
-- [concept] Parallelized MCMC for voxel-specific GP atoms (`parallelized-mcmc-for-voxel-specific-gp-atoms`) - subcomponent_of_broader_mechanism: This is an implementation-specific optimization technique rather than a reusable conceptual framework.
+- Non-linear TOT Modeling Limitations: This is a critical limitation for applying tensor models to real-world, complex longitudinal datasets where physical or biological change is non-linear.
 
 ## Datasets
 

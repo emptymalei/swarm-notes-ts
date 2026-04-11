@@ -1,12 +1,13 @@
 ---
-title: "Core Spatial Association"
-slug: "core-spatial-association"
-type: concept
+created_at: '2026-04-10T15:30:07Z'
 generated_stub: true
+modified_at: '2026-04-11T04:47:08Z'
+processed_at: '2026-04-10T15:30:07Z'
+slug: core-spatial-association
 source_papers:
-  - "[[arxiv-260407475-eliciting-core-spatial-association-from-spatial-time-series]]"
-processed_at: "2026-04-10T15:30:07Z"
-created_at: "2026-04-10T15:30:07Z"
+- '[[arxiv-260407475-eliciting-core-spatial-association-from-spatial-time-series]]'
+title: Core Spatial Association
+type: concept
 ---
 
 # Core Spatial Association

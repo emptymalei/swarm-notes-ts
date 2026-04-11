@@ -1,12 +1,13 @@
 ---
-title: "Tree-of-Evidence (ToE)"
-slug: "tree-of-evidence-toe"
-type: concept
+created_at: '2026-04-10T15:29:10Z'
 generated_stub: true
+modified_at: '2026-04-11T04:46:01Z'
+processed_at: '2026-04-10T15:29:10Z'
+slug: tree-of-evidence-toe
 source_papers:
-  - "[[arxiv-260407692-tree-of-evidence-efficient-system-2-search-for-faithful-mult]]"
-processed_at: "2026-04-10T15:29:10Z"
-created_at: "2026-04-10T15:29:10Z"
+- '[[arxiv-260407692-tree-of-evidence-efficient-system-2-search-for-faithful-mult]]'
+title: Tree-of-Evidence (ToE)
+type: concept
 ---
 
 # Tree-of-Evidence (ToE)

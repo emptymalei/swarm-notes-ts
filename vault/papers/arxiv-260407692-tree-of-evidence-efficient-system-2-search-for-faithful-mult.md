@@ -27,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:29:10Z"
-created_at: "2026-04-10T15:29:10Z"
+processed_at: "2026-04-11T04:46:01Z"
+created_at: "2026-04-11T04:46:01Z"
 ---
 
 # Tree-of-Evidence: Efficient "System 2" Search for Faithful Multimodal Grounding
@@ -39,31 +39,31 @@ created_at: "2026-04-10T15:29:10Z"
 
 ## Summary
 
-Large Multimodal Models often lack transparency in complex, high-stakes reasoning tasks involving heterogeneous data like time-series and text. The authors introduce Tree-of-Evidence (ToE), an inference-time search algorithm that frames interpretability as a discrete optimization problem, utilizing Evidence Bottlenecks to select compact data subsets that reproduce model predictions. Evaluation across clinical and industrial datasets confirms that ToE maintains predictive performance while providing auditable evidence traces, significantly outperforming existing saliency-based methods in sparse-budget scenarios.
+The paper introduces Tree-of-Evidence (ToE), an inference-time search algorithm designed to improve the transparency of Large Multimodal Models (LMMs). By replacing traditional soft attention with discrete Evidence Bottlenecks, ToE identifies compact, auditable sets of data units that justify a model's prediction. The method demonstrates robust performance across healthcare and fault detection tasks, maintaining high predictive accuracy while offering significantly better fidelity and interpretability than existing post-hoc saliency methods.
 
 ## Key Contributions
 
-- Introduces Tree-of-Evidence (ToE), a beam search algorithm that interprets multimodal model decisions by identifying compact, discrete evidence sets.
-- Demonstrates that ToE retains >0.98 of full-model AUROC using only five evidence units across healthcare and industrial fault detection tasks.
-- Shows superior decision agreement and lower probability fidelity error compared to standard saliency-based interpretability methods in sparse budget regimes.
+- Introduces Tree-of-Evidence (ToE), an inference-time search algorithm that identifies compact evidence sets for multimodal LMM predictions.
+- Demonstrates ToE retains over 98% of full-model AUROC using only five evidence units across diverse clinical and fault detection tasks.
+- Provides superior decision agreement and lower fidelity error compared to attention-based interpretability methods under sparse evidence constraints.
 
 ## Open Questions & Future Work
 
-- [[toe-architecture-extensibility]]
+- [[toe-grounding-in-complex-fusions]]
 
 ## Key Concepts
 
-- [[tree-of-evidence-toe]]: An inference-time beam search algorithm that identifies minimal, discrete subsets of multimodal evidence required to reproduce a Large Multimodal Model's prediction.
+- [[tree-of-evidence-toe]]: An inference-time search algorithm that frames model interpretability as a discrete optimization problem using Evidence Bottlenecks.
 
 ## Archivist Review
 
-I approved the Tree-of-Evidence algorithm as it provides a distinct, search-based paradigm for multimodal interpretability, moving beyond traditional saliency or soft-attention methods. I also approved the open question regarding architecture extensibility because the transition from late-fusion to deep cross-attention is a known bottleneck for discrete interpretability techniques. MIMIC-IV and eICU were rejected as they are routine, widely used clinical benchmarks rather than novel research datasets.
+I approved the Tree-of-Evidence concept as a novel, reusable inference-time interpretability strategy. I also approved a refined version of the open question regarding the extension of discrete interpretability methods to modern, tightly coupled multimodal architectures. Other datasets were rejected as they are standard, established benchmarks in clinical and fault-detection literature.
 
 ### Approved Concepts
-- Tree-of-Evidence (ToE): Provides a novel search-based approach to multimodal interpretability that treats evidence selection as a discrete optimization problem rather than relying on soft-attention weights.
+- Tree-of-Evidence (ToE): Provides a novel inference-time discrete search strategy for multimodal interpretability, offering a scalable alternative to opaque soft attention mechanisms.
 
 ### Approved Open Questions
-- ToE Cross-Architecture Extensibility: As LMMs increasingly utilize deep cross-attention, developing interpretability methods that maintain auditability across these architectures is critical for high-stakes deployment.
+- ToE grounding in complex fusions: As LMMs shift towards deeper cross-modal interaction, maintaining auditable grounding is essential for deployment in high-stakes domains.
 
 ## Links
 

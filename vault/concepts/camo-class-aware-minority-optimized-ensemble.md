@@ -1,12 +1,13 @@
 ---
-title: "CAMO (Class-Aware Minority-Optimized)"
-slug: "camo-class-aware-minority-optimized-ensemble"
-type: concept
+created_at: '2026-04-10T15:29:30Z'
 generated_stub: true
+modified_at: '2026-04-11T04:46:23Z'
+processed_at: '2026-04-10T15:29:30Z'
+slug: camo-class-aware-minority-optimized-ensemble
 source_papers:
-  - "[[arxiv-260407583-camo-a-class-aware-minority-optimized-ensemble-for-robust-la]]"
-processed_at: "2026-04-10T15:29:30Z"
-created_at: "2026-04-10T15:29:30Z"
+- '[[arxiv-260407583-camo-a-class-aware-minority-optimized-ensemble-for-robust-la]]'
+title: CAMO (Class-Aware Minority-Optimized)
+type: concept
 ---
 
 # CAMO (Class-Aware Minority-Optimized)

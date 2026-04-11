@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:28:31Z"
-created_at: "2026-04-10T15:28:31Z"
+processed_at: "2026-04-11T04:45:24Z"
+created_at: "2026-04-11T04:45:24Z"
 ---
 
 # Skewness Dispersion and Stock Market Returns
@@ -37,31 +37,31 @@ created_at: "2026-04-10T15:28:31Z"
 
 ## Summary
 
-This paper introduces skewness dispersion—the cross-sectional variance of firm-level realized skewness—as a novel, robust predictor of future stock market returns. Empirical analysis demonstrates that this measure consistently outperforms existing market predictors and yields significant economic benefits in portfolio management strategies. The authors link this predictive capability to an information-processing mechanism, showing that the effect is most pronounced during periods of monetary policy shifts where macro news is gradually incorporated into aggregate asset prices.
+This paper introduces skewness dispersion as a significant and robust negative predictor for future stock market returns. By analyzing the cross-sectional distribution of firm-level realized skewness, the authors demonstrate that this measure provides incremental predictive power over traditional financial metrics. The analysis further suggests an information-based mechanism, noting that the forecasting strength is particularly concentrated during months with monetary policy announcements. These findings indicate that skewness dispersion effectively captures the gradual integration of macroeconomic news into market prices through aggregate risk and valuation adjustments.
 
 ## Key Contributions
 
-- Identifies cross-sectional dispersion in firm-level realized skewness as a robust negative predictor of future stock market returns.
-- Demonstrates that skewness dispersion offers incremental predictive power over traditional financial predictors and provides significant economic gains in portfolio allocation.
-- Establishes that the predictive performance of skewness dispersion is amplified during months with monetary policy announcements, suggesting a mechanism rooted in the gradual processing of macroeconomic information.
+- Demonstrates that cross-sectional dispersion in realized firm-level skewness acts as a significant negative predictor of future aggregate stock market returns.
+- Establishes that the predictive power of skewness dispersion remains robust across both in-sample and out-of-sample tests and provides incremental information beyond established financial predictors.
+- Identifies an information-based mechanism where the predictive power of skewness dispersion intensifies during months with monetary policy announcements, reflecting the incorporation of macroeconomic news.
 
 ## Open Questions & Future Work
 
-- [[risk-vs-behavioral-skewness-dispersion]]
+- [[macro-announcements-predictability-mechanism]]
 
 ## Key Concepts
 
-- [[skewness-dispersion]]: The cross-sectional variance of firm-level realized skewness, used as an aggregate predictor for future market returns.
+- [[skewness-dispersion]]: A cross-sectional dispersion measure of firm-level realized skewness used for forecasting aggregate stock market returns.
 
 ## Archivist Review
 
-The paper introduces a novel cross-sectional statistic ('skewness dispersion') for asset return forecasting. I have approved this as a concept due to its potential for reuse in financial time-series modeling. I have also approved one open question regarding the theoretical mechanism underlying this signal, as it touches on a significant, unresolved debate in financial economics.
+I have approved 'Skewness Dispersion' as a reusable cross-sectional metric for financial forecasting and the associated open question regarding the mechanisms driving its predictive performance during macroeconomic events. These selections adhere to the vault's focus on robust, recurring indicators and fundamental unresolved bottlenecks in financial time series predictability.
 
 ### Approved Concepts
-- Skewness Dispersion: It introduces a specific cross-sectional moment-based signal as a robust temporal predictor, which is distinct from traditional mean/volatility-based forecasting.
+- Skewness Dispersion: Establishes a novel, robust predictor of aggregate market returns with incremental predictive power over traditional financial metrics.
 
 ### Approved Open Questions
-- Mechanisms of Skewness Dispersion: Distinguishing between risk-based and behavioral mechanisms is a fundamental challenge in asset pricing with significant implications for market efficiency and policy design.
+- Predictability mechanism around announcements: Distinguishing between rational risk-based channels and behavioral mispricing channels is a fundamental challenge in financial economics with implications for market efficiency and policy analysis.
 
 ## Links
 

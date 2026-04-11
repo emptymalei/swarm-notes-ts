@@ -1,12 +1,13 @@
 ---
-title: "Skewness Dispersion"
-slug: "skewness-dispersion"
-type: concept
+created_at: '2026-04-10T15:28:31Z'
 generated_stub: true
+modified_at: '2026-04-11T04:45:24Z'
+processed_at: '2026-04-10T15:28:31Z'
+slug: skewness-dispersion
 source_papers:
-  - "[[arxiv-260407870-skewness-dispersion-and-stock-market-returns]]"
-processed_at: "2026-04-10T15:28:31Z"
-created_at: "2026-04-10T15:28:31Z"
+- '[[arxiv-260407870-skewness-dispersion-and-stock-market-returns]]'
+title: Skewness Dispersion
+type: concept
 ---
 
 # Skewness Dispersion

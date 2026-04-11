@@ -18,20 +18,20 @@ url: "https://arxiv.org/abs/2604.07437"
 # Custom fields
 paper_id: "2604.07437"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "computer-vision"
 tags:
   []
 architectures:
   []
 datasets:
-  []
+  - "kepler-tess-stellar-light-curves"
 concept_slugs:
   []
 dataset_slugs:
-  []
+  - "kepler-tess-stellar-light-curves"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:30:31Z"
-created_at: "2026-04-10T15:30:31Z"
+processed_at: "2026-04-11T04:47:30Z"
+created_at: "2026-04-11T04:47:30Z"
 ---
 
 # ASTRAFier: A Novel and Scalable Transformer-based Stellar Variability Classifier
@@ -42,29 +42,31 @@ created_at: "2026-04-10T15:30:31Z"
 
 ## Summary
 
-ASTRAFier is a novel, end-to-end Transformer-based architecture designed for stellar variability classification, which integrates BiLSTM and CNN components to process raw photometric light curves. By removing the need for manual feature engineering, the model provides a scalable and efficient framework for large-scale astronomical data analysis. The model's effectiveness is validated on Kepler and TESS datasets, achieving high classification accuracy, and its practical utility is demonstrated through the classification of 2.8 million TESS light curves and the release of a new stellar variability catalog.
+ASTRAFier is an end-to-end Transformer-based classification framework designed for stellar light curve analysis without the need for manual feature engineering. By combining BiLSTM and CNN components, the model achieves high classification accuracy on benchmark datasets from the Kepler and TESS missions. The authors demonstrate the system's scalability by processing approximately 2.8 million light curves and releasing the resulting catalog for the astronomical community.
 
 ## Key Contributions
 
-- Introduces ASTRAFier, a hybrid Transformer, BiLSTM, and CNN model for light curve classification that eliminates the need for manual feature engineering.
-- Achieves 94.26% classification accuracy on Kepler data and 88.22% on TESS data.
-- Demonstrates scalability by classifying approximately 2.8 million TESS light curves and releasing the resulting catalog.
+- Introduces ASTRAFier, a Transformer-based architecture that integrates BiLSTM and CNN modules for end-to-end stellar light curve classification.
+- Eliminates the need for manual feature engineering by processing raw time series data directly.
+- Demonstrates large-scale efficacy by classifying 2.8 million TESS light curves and releasing a public stellar variability catalog.
 
 ## Open Questions & Future Work
 
-- [[overfitting-in-small-labeled-astronomical-datasets]]
-- [[scaling-transformer-models-to-long-sequences]]
+- [[self-supervised-astronomical-foundation-models]]
 
 ## Archivist Review
 
-The paper introduces a domain-specific model (ASTRAFier) that combines existing architectural components, which does not merit a new standalone concept note as it is an application rather than a methodological contribution. However, the identified challenges regarding overfitting in small labeled scientific datasets and the computational limitations of Transformers on long-range light curve sequences represent significant, recurring open research questions in time-series analysis and were approved accordingly. The Kepler and TESS datasets were rejected as they are standard, broad-utility astronomical benchmarks already widely utilized and not unique to this specific research work.
+The paper proposes a specific architectural combination (Transformer + BiLSTM + CNN) for stellar classification, which is treated as a local implementation detail rather than a distinct, reusable paradigm shift. I approved the Kepler and TESS datasets as they represent a massive, shared standard resource in the domain, and identified the transition to self-supervised astronomical foundation models as a key, tracking-worthy research direction. Other candidates were rejected for being domain-specific implementation challenges rather than foundational scientific questions.
 
 ### Approved Open Questions
-- Overfitting in astronomical classification: Scaling classification accuracy without proportional increases in human-labeled data is a fundamental bottleneck in high-throughput astronomical surveys.
-- Scalability to long sequences: Efficiently handling longer temporal sequences is crucial for maximizing scientific throughput in future high-cadence space missions.
+- Self-supervised Foundation Models for Astronomy: Addressing the dependence on labeled data is a fundamental bottleneck in scaling machine learning models to the millions of light curves produced by modern space missions.
 
 ### Rejected Candidates
-- [concept] ASTRAFier (`astrafier`) - subcomponent_of_broader_mechanism: This is a specific model implementation (a hybrid architecture) rather than a reusable architectural pattern or methodology; the individual components (BiLSTM, CNN, Transformer) are well-known, and the combination is a domain-specific instance.
+- [open_question] Modeling Extended Mission Light Curves (`modeling-extended-mission-light-curves`) - other: This is a routine technical optimization problem regarding input length and sequence processing rather than a fundamental research bottleneck.
+
+## Datasets
+
+- [[kepler-tess-stellar-light-curves]]
 
 ## Links
 

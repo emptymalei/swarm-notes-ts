@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-09T04:52:35Z'
 generated_stub: true
-modified_at: '2026-04-10T15:30:55Z'
+modified_at: '2026-04-11T04:47:50Z'
 processed_at: '2026-04-09T04:52:35Z'
 slug: sequential-conformalized-density-regions-scdr
 source_papers:

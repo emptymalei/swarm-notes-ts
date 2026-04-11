@@ -14,7 +14,9 @@ paper_id: "2604.07505"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
+  - "time-series-forecasting"
+  - "anomaly-detection"
+  - "simulation-study"
 architectures:
   []
 datasets:
@@ -24,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:29:58Z"
-created_at: "2026-04-10T15:29:58Z"
+processed_at: "2026-04-11T04:46:58Z"
+created_at: "2026-04-11T04:46:58Z"
 ---
 
 # What's the (RV) Point? A $3.5\times$ Enhancement in Super-Jupiters with Saturn-like Periods from a Critical Observation
@@ -36,28 +38,27 @@ created_at: "2026-04-10T15:29:58Z"
 
 ## Summary
 
-This paper evaluates the impact of observational gaps in radial velocity (RV) datasets, specifically concerning the transition between the Keck-HIRES and Keck-KPF instruments. By performing injection-recovery experiments on 2,000 synthetic long-period planetary systems, the authors quantify how adding a single 'critical' RV measurement between disjoint baselines influences planet detection. Results demonstrate a 3.5x improvement in the recovery of super-Jupiters with Saturn-like orbital periods, highlighting the importance of strategic observation scheduling to maintain long-term RV baselines for exoplanet discovery.
+This paper examines the impact of sparse, critical radial velocity (RV) measurements on the recovery of long-period giant exoplanets when transitioning between observational instruments. Using injection-recovery experiments with the Octofitter code on 2000 simulated 1-planet systems, the authors show that a single bridging RV measurement can significantly improve recovery rates, particularly for super-Jupiters with Saturn-like periods (8-55 years). The findings highlight how targeted sampling strategies can preserve the scientific value of long-term stable RV baselines despite instrument retirement and potential zeropoint offsets.
 
 ## Key Contributions
 
-- Demonstrated that a single 'critical RV' measurement bridging observational gaps between instrument baselines significantly improves long-period planet detection.
-- Quantified a 3.5x recovery enhancement for super-Jupiters with Saturn-like periods using injection-recovery experiments with Octofitter.
-- Provided a quantitative framework for assessing the impact of instrument retirement on long-term radial velocity (RV) baseline continuity.
+- Quantified the impact of a single 'critical RV' measurement on bridging observational gaps in radial velocity (RV) baselines for long-period planet detection.
+- Demonstrated a 3.5x improvement in recovery rates specifically for super-Jupiters with Saturn-like orbital periods (8-55 years).
+- Validated the effectiveness of sparse, targeted observations to maintain the scientific utility of legacy instrument baselines during transitions to new hardware (e.g., Keck-HIRES to KPF).
 
 ## Open Questions & Future Work
 
-- [[rv-gap-bridging-complexity]]
+- [[bridge-observation-efficiency-limits-for-complex-systems]]
 
 ## Archivist Review
 
-The paper provides a domain-specific analysis of radial velocity baseline continuity. While the findings are valuable for exoplanet research, the concepts identified are specific to astronomical observation scheduling rather than general ML or time-series methodologies. The open question regarding the complexity of bridging observational gaps was approved as it captures a broader challenge in long-term time-series signal recovery under non-stationary instrument conditions.
+The paper offers a well-defined simulation-based study on the utility of sparse 'critical' observations for maintaining temporal baseline integrity, which is a specific, actionable insight for long-term time-series collection. I approved a refined version of the open question regarding the extension of this methodology to more complex dynamical systems, as this addresses a tangible limitation in applying the results to real-world astronomical data. No concepts were approved as the 'critical observation' strategy is a domain-specific application of known sampling principles rather than a general-purpose ML concept.
 
 ### Approved Open Questions
-- Complexity in RV Gap Bridging: This question is technically important because it addresses the scalability of observational gap mitigation from simplified models to complex, realistic orbital architectures in long-term time-series analysis.
+- Bridge observation efficiency limits for complex systems: This research is essential for generalizing the efficacy of sparse observational strategies from idealized single-planet scenarios to the more complex, realistic populations encountered in long-term astronomical surveys.
 
 ### Rejected Candidates
-- [concept] Critical RV measurement (`critical-rv-measurement`) - not_reusable: This refers to a specific operational strategy for astronomical observations rather than a reusable machine learning or time-series methodology.
-- [concept] Octofitter injection-recovery framework (`octofitter-injection-recovery-framework`) - paper_local: This is a specific domain-specific software tool/workflow rather than a generalizable ML concept.
+- [open_question] Complexity in long-term RV recovery (`complexity-in-long-term-rv-recovery`) - other: The title and phrasing were slightly generic; a more specific slug and background were generated to better capture the research question in the context of temporal bridge observations.
 
 ## Links
 

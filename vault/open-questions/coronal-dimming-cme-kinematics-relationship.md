@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-10T15:29:49Z'
+modified_at: '2026-04-11T04:46:48Z'
 source_papers:
 - '[[arxiv-260407537-solar-extreme-ultraviolet-spectrograph-and-high-energy-image]]'
-title: Coronal Dimming and CME Kinematics
+title: Coronal Dimming CME Kinematics
 ---
 
 **Background:** Coronal dimming is an observation of reduced extreme ultraviolet (EUV) emissions, serving as a proxy for the plasma evacuated during a coronal mass ejection (CME). The precise relationship between coronal dimming features and the mass, speed, and geomagnetic impact of a CME remains an area of ongoing investigation.

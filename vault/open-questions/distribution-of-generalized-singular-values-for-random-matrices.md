@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-10T15:30:07Z'
+modified_at: '2026-04-11T04:47:08Z'
 source_papers:
 - '[[arxiv-260407475-eliciting-core-spatial-association-from-spatial-time-series]]'
-title: Distribution of Generalized Singular Values
+title: Theoretical GSV Distributions for Random Matrices
 ---
 
 **Background:** Generalized singular values (GSV) characterize the relationship between two matrices in a way analogous to how singular values characterize a single matrix. Distributions of these values for random matrices remain largely unknown in the literature.

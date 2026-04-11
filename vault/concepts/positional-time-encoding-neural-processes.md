@@ -1,12 +1,13 @@
 ---
-title: "Positional Time Encoding in Neural Processes"
-slug: "positional-time-encoding-neural-processes"
-type: concept
+created_at: '2026-04-10T15:26:51Z'
 generated_stub: true
+modified_at: '2026-04-11T04:43:49Z'
+processed_at: '2026-04-10T15:26:51Z'
+slug: positional-time-encoding-neural-processes
 source_papers:
-  - "[[arxiv-260408418-exploring-temporal-representation-in-neural-processes-for-mu]]"
-processed_at: "2026-04-10T15:26:51Z"
-created_at: "2026-04-10T15:26:51Z"
+- '[[arxiv-260408418-exploring-temporal-representation-in-neural-processes-for-mu]]'
+title: Positional Time Encoding in Neural Processes
+type: concept
 ---
 
 # Positional Time Encoding in Neural Processes

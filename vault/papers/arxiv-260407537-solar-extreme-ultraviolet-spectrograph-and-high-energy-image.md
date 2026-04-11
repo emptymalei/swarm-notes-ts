@@ -20,9 +20,12 @@ url: "https://arxiv.org/abs/2604.07537"
 # Custom fields
 paper_id: "2604.07537"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "computer-vision"
 tags:
-  []
+  - "computer-vision"
+  - "hardware"
+  - "physics"
+  - "remote-sensing"
 architectures:
   []
 datasets:
@@ -32,8 +35,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-10T15:29:49Z"
-created_at: "2026-04-10T15:29:49Z"
+processed_at: "2026-04-11T04:46:48Z"
+created_at: "2026-04-11T04:46:48Z"
 ---
 
 # Solar Extreme Ultraviolet Spectrograph and High-energy Imager (SEUSHI): Design, Development, and Pre-Flight Calibration
@@ -44,13 +47,13 @@ created_at: "2026-04-10T15:29:49Z"
 
 ## Summary
 
-The Solar Extreme Ultraviolet Spectrograph and High-energy Imager (SEUSHI) is a new integrated instrument designed for small satellite platforms to observe solar coronal dynamics. By combining multi-pinhole SXR imaging and grazing-incidence EUV spectroscopy, SEUSHI provides high-cadence diagnostics for predicting solar flares and CMEs. The instrument utilizes a shared camera system to deliver temperature-resolved mapping and photon-counting spectroscopy with a low power and mass footprint. This development, currently calibrated for sounding rocket demonstration, aims to bridge critical measurement gaps in space weather forecasting.
+The Solar Extreme Ultraviolet Spectrograph and High-energy Imager (SEUSHI) is an instrument designed to bridge diagnostic gaps in solar flare and coronal mass ejection observations by integrating SXR imaging and EUV spectroscopy on small satellite platforms. SEUSHI provides spatially-resolved coronal temperature and emission measure maps with 1 arcminute resolution and 5-second cadence to facilitate early space weather alerts. Additionally, it features high-cadence photon-counting spectroscopy and EUV spectral measurements to investigate coronal heating and active region evolution. This paper outlines the instrument's design, development, and pre-flight calibration ahead of a sounding rocket technology demonstration.
 
 ## Key Contributions
 
-- Introduces the SEUSHI instrument, a compact integrated spectrograph and imager designed for small satellite platforms to monitor solar flare and CME precursors.
-- Enables high-cadence (5s) spatially-resolved temperature/emission maps and 100 Hz photon-counting spectroscopy (1.1-6.8 keV) for early flare detection.
-- Provides 0.2 nm spectral resolution in the 16.1-33.8 nm EUV range to support coronal dimming studies and CME early warnings.
+- Introduces the SEUSHI instrument, a compact, multi-pinhole SXR imager and grazing-incidence EUV spectrograph designed for small satellite platforms.
+- Enables high-cadence (100 Hz) photon-counting spectroscopy (1.1-6.8 keV) and EUV spectral measurements (16.1-33.8 nm) to identify Hot Onset Precursor Events for space weather forecasting.
+- Demonstrates a design achieving 1 arcminute resolution and 5-second temporal cadence for spatially-resolved temperature and emission measure maps of the solar corona.
 
 ## Open Questions & Future Work
 
@@ -58,10 +61,13 @@ The Solar Extreme Ultraviolet Spectrograph and High-energy Imager (SEUSHI) is a 
 
 ## Archivist Review
 
-This paper focuses on instrument design and hardware development for solar physics, which falls outside the scope of core ML methodological advancements. The open question regarding the relationship between coronal dimming and CME kinematics is approved because it identifies a substantial, domain-specific predictive bottleneck in space weather forecasting that is suitable for tracking in our scientific ML vault. No new concepts or datasets were approved as the contributions are highly specific to the physical instrumentation of the SEUSHI device rather than reusable ML algorithms or architectural patterns.
+The review process identified one significant open research question regarding the physics of coronal dimming as a precursor for CMEs, which aligns with existing vault interests in space weather forecasting. The SEUSHI instrument design was rejected as a concept because it represents a specific hardware engineering achievement rather than a reusable machine learning methodology or conceptual framework. I renamed the suggested open question to 'coronal-dimming-cme-kinematics-relationship' to better reflect existing vault nomenclature conventions.
 
 ### Approved Open Questions
-- Coronal Dimming and CME Kinematics: This addresses a fundamental limitation in space weather forecasting where the mapping between observable EUV phenomena and CME properties is currently underdetermined, hindering reliable early warning systems.
+- Coronal Dimming CME Kinematics: Refining the predictive capability of coronal dimming requires moving beyond simplistic intensity metrics to include the influence of the local magnetic environment on plasma evacuation, which is critical for achieving reliable space weather alerts.
+
+### Rejected Candidates
+- [concept] SEUSHI Instrument (`seushi-instrument`) - paper_local: The instrument itself is a specific hardware implementation rather than a generalizable ML concept or architectural pattern.
 
 ## Links
 

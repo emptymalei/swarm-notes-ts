@@ -1,5 +1,6 @@
 ---
 created_at: '2026-04-10T15:30:43Z'
+modified_at: '2026-04-11T04:47:41Z'
 source_papers:
 - '[[arxiv-260407327-primordial-magnetic-fields-in-the-light-of-upcoming-post-eor]]'
 title: MHD-based HI bias modeling

@@ -14,7 +14,7 @@ paper_id: "2604.07475"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "time-series"
 architectures:
   []
 datasets:
@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-10T15:30:07Z"
-created_at: "2026-04-10T15:30:07Z"
+processed_at: "2026-04-11T04:47:08Z"
+created_at: "2026-04-11T04:47:08Z"
 ---
 
 # Eliciting core spatial association from spatial time series: a random matrix approach
@@ -36,13 +36,13 @@ created_at: "2026-04-10T15:30:07Z"
 
 ## Summary
 
-This paper proposes a Random Matrix Theory (RMT)-based framework to address the challenge of conflated spatial and temporal dependencies in spatial time series (STS) data. By applying Hilbert space filling curves and Bergsma's correlation measure, the method systematically filters out routine temporal signals to reveal core spatial associations. When tested on Indian diurnal temperature range (DTR) data, the approach successfully identifies spatial anomalies influenced by topography and urbanization that are missed by standard analytical techniques. This framework provides a statistically robust foundation for modeling climate variability and assessing regional resilience.
+This paper proposes a Random Matrix Theory (RMT)-based framework designed to disentangle core spatial associations from temporal co-evolution in spatial time series (STS). By filtering out routine temporal signals while preserving underlying spatial dependencies, the method provides a clearer view of subtle climate anomalies. The approach incorporates Hilbert space filling curves and Bergsma’s correlation measure, demonstrating its utility in analyzing diurnal temperature range (DTR) data over India to identify geography- and human-driven climate variability.
 
 ## Key Contributions
 
-- Introduces a Random Matrix Theory (RMT)-based framework to isolate core spatial association by filtering routine temporal co-evolution from spatiotemporal signals.
-- Integrates Hilbert space filling curves and Bergsma’s correlation measure into a pipeline for robust spatial dependence analysis in climate modeling.
-- Identifies topographically and anthropogenically driven climatic anomalies in Indian DTR data (1951-2022) that conventional methods obscure.
+- Introduced a Random Matrix Theory (RMT)-based framework to isolate core spatial association from spatio-temporal data.
+- Integrated Hilbert space filling curves and Bergsma’s correlation measure for robust statistical dependence analysis in climate modeling.
+- Demonstrated the extraction of spatial anomalies in Indian diurnal temperature range (DTR) data (1951-2022) correlated with topography and urbanization.
 
 ## Open Questions & Future Work
 
@@ -50,17 +50,17 @@ This paper proposes a Random Matrix Theory (RMT)-based framework to address the 
 
 ## Key Concepts
 
-- [[core-spatial-association]]: A framework that uses random matrix theory to isolate genuine spatial dependencies by filtering out dominant temporal signals in spatial time series.
+- [[core-spatial-association]]: A framework that utilizes Random Matrix Theory to isolate genuine spatial dependence in spatio-temporal data by filtering out dominant temporal signals.
 
 ## Archivist Review
 
-The paper introduces a RMT-based framework for isolating spatial signals from temporal noise, which offers a clear methodological contribution to spatiotemporal analysis. I have approved 'Core Spatial Association' as a concept and the 'Distribution of Generalized Singular Values' as an open question, as both represent high-level contributions and foundational theoretical challenges respectively. No other datasets or concepts met the threshold for permanence.
+I have approved the core concept of 'Core Spatial Association' as it represents a robust methodological contribution to disentangling spatio-temporal dependencies. I also approved the open question regarding the theoretical distribution of GSVs for random matrices, as it addresses a fundamental limitation in the current Random Matrix Theory approach that hinders analytical rigor. Existing vault entries were checked to ensure no duplication, and generic terms were excluded in favor of these specific, impactful contributions.
 
 ### Approved Concepts
-- Core Spatial Association: This provides a principled method for disentangling spatial dependence from temporal co-evolution in spatiotemporal time series, which is a common bottleneck in climate and geophysical modeling.
+- Core Spatial Association: It is the central novel metric proposed to disentangle spatial dependence from temporal co-evolution in spatio-temporal data.
 
 ### Approved Open Questions
-- Distribution of Generalized Singular Values: Defining the theoretical limits of GSV for random matrices is a foundational problem that would enable more robust statistical inference in high-dimensional correlation analysis.
+- Theoretical GSV Distributions for Random Matrices: The absence of these theoretical distributions makes it difficult to distinguish true signals from noise during complex data-comparison tasks, necessitating a heavy reliance on empirical, computationally intensive permutation methods.
 
 ## Links
 
