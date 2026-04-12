@@ -13,13 +13,9 @@ url: "https://arxiv.org/abs/2604.08398"
 # Custom fields
 paper_id: "2604.08398"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  - "time-series"
-  - "foundation-models"
-  - "self-supervised-learning"
-  - "representation-learning"
-  - "classification"
+  []
 architectures:
   []
 datasets:
@@ -29,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-11T04:44:07Z"
-created_at: "2026-04-11T04:44:07Z"
+processed_at: "2026-04-12T05:02:51Z"
+created_at: "2026-04-12T05:02:51Z"
 ---
 
 # ADAPTive Input Training for Many-to-One Pre-Training on Time-Series Classification
@@ -41,31 +37,33 @@ created_at: "2026-04-11T04:44:07Z"
 
 ## Summary
 
-This paper addresses the challenge of generalizing time-series foundation models across diverse datasets with inconsistent input sizes and channel dimensions. The authors propose ADAPT (ADAPTive Input Training), a paradigm that aligns the physical properties of heterogeneous time-series data to allow for effective mixed-batch pre-training. By training on 162 classification datasets simultaneously, the model demonstrates significant improvements, setting new state-of-the-art performance on standard classification benchmarks.
+The paper addresses the scalability challenge in time-series foundation models, where conventional pre-training struggles to integrate diverse datasets with varying input dimensions. The authors propose ADAPT (ADAPTive Input Training), a pre-training paradigm that dynamically aligns disparate time-series input structures to facilitate efficient mixed-batch learning. By training on 162 diverse classification datasets, the proposed method achieves state-of-the-art results, representing a significant advancement toward generalist foundation models for time-series data.
 
 ## Key Contributions
 
-- Introduced ADAPT (ADAPTive Input Training), a pre-training paradigm that enables mixed-batch training for time-series models across datasets with heterogeneous input and channel dimensions.
-- Demonstrated the effectiveness of ADAPT by pre-training on a massive collection of 162 time-series classification datasets simultaneously.
-- Achieved new state-of-the-art performance on various time-series classification benchmarks, establishing a scalable foundation for generalist time-series modeling.
+- Introduces ADAPT, a pre-training paradigm for time-series foundation models that aligns varying input sizes and channel dimensions to enable simultaneous mixed-batch pre-training.
+- Demonstrates that ADAPT enables effective training on a large-scale collection of 162 time-series classification datasets.
+- Sets new state-of-the-art performance on time-series classification benchmarks by overcoming the limitations of previous one-to-many pre-training approaches.
 
 ## Open Questions & Future Work
 
 - [[adaptive-pooling-fidelity-impact]]
+- [[scaling-diversity-in-time-series-pretraining]]
 
 ## Key Concepts
 
-- [[adaptive-input-training]]: A pre-training paradigm that aligns physical properties of heterogeneous time-series data to facilitate mixed-batch training.
+- [[adaptive-input-training]]: A pre-training paradigm for time-series foundation models that aligns disparate physical data properties to enable efficient mixed-batch training.
 
 ## Archivist Review
 
-I approved 'Adaptive Input Training' as it defines a novel and highly reusable paradigm for aligning heterogeneous time-series data at scale. The open question 'Adaptive pooling fidelity impact' was approved (using the existing vault slug 'adaptive-pooling-fidelity-impact') because it addresses a critical, unresolved trade-off in the development of time-series foundation models. No datasets were approved as none were specifically named or described as unique contributions.
+The approved concepts and questions focus on the core contribution of handling heterogeneous time-series input structures and the fundamental challenges associated with scaling data diversity. I renamed one open question to match existing vault nomenclature styles ('adaptive-pooling-fidelity-impact'). No datasets were approved as none were specifically named or identified as distinct, canonical benchmarks worth tracking.
 
 ### Approved Concepts
-- Adaptive Input Training: Enables simultaneous pre-training on a diverse collection of time-series datasets with varying input dimensions, which is a fundamental requirement for time-series foundation models.
+- Adaptive Input Training: It addresses the fundamental challenge of discrepancy in input sizes and channel dimensions in time-series pre-training, which is critical for scaling to many datasets.
 
 ### Approved Open Questions
-- Adaptive pooling fidelity impact: Adaptive pooling is a core component for scaling time-series models across diverse, heterogeneous datasets, but the trade-off between alignment efficiency and feature preservation is not yet well-quantified.
+- Adaptive Pooling Fidelity Impact: This is critical for understanding the theoretical limitations of current alignment strategies and ensuring that pre-trained models do not discard nuances essential for specialized downstream tasks.
+- Scaling Data Diversity for Time-Series Foundation Models: Understanding the scaling laws of time-series pre-training is essential for building robust, generalist foundation models that can consistently benefit from increasingly diverse data sources.
 
 ## Links
 

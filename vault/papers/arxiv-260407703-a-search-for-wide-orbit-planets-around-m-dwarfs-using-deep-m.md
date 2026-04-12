@@ -20,12 +20,9 @@ url: "https://arxiv.org/abs/2604.07703"
 # Custom fields
 paper_id: "2604.07703"
 paper_source: "arxiv"
-domain: "astronomy"
+domain: "computer-vision"
 tags:
-  - "exoplanet-detection"
-  - "astronomy-imaging"
-  - "mid-infrared-observation"
-  - "time-series-analysis"
+  - "computer-vision"
 architectures:
   []
 datasets:
@@ -35,8 +32,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-11T04:45:52Z"
-created_at: "2026-04-11T04:45:52Z"
+processed_at: "2026-04-12T05:04:44Z"
+created_at: "2026-04-12T05:04:44Z"
 ---
 
 # A Search for Wide-orbit Planets Around M-dwarfs using Deep MIRI 15-micron Images
@@ -47,13 +44,13 @@ created_at: "2026-04-11T04:45:52Z"
 
 ## Summary
 
-This paper investigates the population of wide-orbit gas giant planets around M-dwarf systems by repurposing archival JWST MIRI 15-micron time-series imaging. By utilizing reference differential imaging for precise point spread function (PSF) subtraction, the researchers achieved significant contrast sensitivity capable of detecting cool (approx. 170 K) Jupiter-mass planets. Their findings establish that archival mid-infrared datasets are an underutilized yet powerful resource for expanding our understanding of the architectures of nearby planetary systems.
+This paper presents a systematic search for wide-orbit gas giant planets around M-dwarf stars using archival 15-micron MIRI time-series imaging from JWST. By employing reference differential imaging (RDI) for advanced PSF subtraction, the authors achieve high-contrast sensitivities capable of detecting Jupiter-sized planets at wide separations. The study validates the utility of repurposing transit-survey data for high-contrast imaging, providing new constraints on the population statistics of gas giants in long-period orbits.
 
 ## Key Contributions
 
-- Analyzed archival JWST MIRI 15-micron time-series data to search for wide-orbit gas giants (>10 AU) around ten nearby M-dwarf systems.
-- Achieved high-contrast sensitivity with 5-sigma contrast limits reaching up to 1.2e-4 at separations beyond 3 arcseconds.
-- Demonstrated that archival MIRI observations, originally intended for transiting planet studies, provide a viable, sensitive method for detecting cold Jupiter-sized companions around M-dwarfs.
+- Achieved high-contrast sensitivity for wide-orbit exoplanet detection using archival JWST/MIRI 15-micron time-series data.
+- Developed a detection pipeline using reference differential imaging (RDI) for precise PSF subtraction, reaching 5-sigma contrast limits of 10^-4 in the mid-infrared.
+- Established mass-separation sensitivity limits for M-dwarf planetary systems, confirming the feasibility of using transit-targeted archival data to survey wide-orbit gas giants.
 
 ## Open Questions & Future Work
 
@@ -61,15 +58,14 @@ This paper investigates the population of wide-orbit gas giant planets around M-
 
 ## Archivist Review
 
-The submission focused on astronomy-specific tasks and did not present novel algorithmic concepts or reusable forecasting techniques suited for the vault. One valid open question regarding planetary evolutionary models was approved due to its specific impact on the interpretation of high-contrast imaging datasets.
+The review focused on identifying core scientific limitations that impede progress across observational studies rather than implementation details. I approved one open question regarding gaps in planetary evolutionary models, as this is a fundamental bottleneck for astronomical population studies. Other candidates were rejected for being established techniques or too specific to the paper's data processing pipeline.
 
 ### Approved Open Questions
-- Low-mass old-age evolutionary models: This is a critical bottleneck for interpreting high-contrast imaging data of mature planetary systems and limits the ability to perform statistical surveys of the wide-orbit gas giant population around M-dwarfs.
+- Low-mass old-age evolutionary models gaps: Accurate mass constraints are fundamental to demographic studies of wide-orbit planets, and current model gaps directly impede the utility of deep imaging surveys for older populations.
 
 ### Rejected Candidates
-- [concept] exoplanet-detection (`exoplanet-detection`) - generic: This is a broad domain label, not a specific reusable concept.
-- [concept] astronomy-imaging (`astronomy-imaging`) - generic: This is a broad field of study rather than a distinct, reusable methodology.
-- [concept] mid-infrared-observation (`mid-infrared-observation`) - generic: This refers to an observational modality rather than a distinct algorithmic concept.
+- [concept] Reference Differential Imaging (RDI) (`reference-differential-imaging`) - not_novel: RDI is a well-established standard technique in high-contrast astronomical imaging and does not represent a new conceptual contribution in this context.
+- [concept] Archival MIRI time-series imaging for exoplanet search (`archival-miri-time-series-imaging`) - paper_local: This describes an application of existing data and techniques rather than a novel methodology or theoretical framework suitable for a standalone concept note.
 
 ## Links
 

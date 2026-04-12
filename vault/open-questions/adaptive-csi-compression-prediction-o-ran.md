@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-11T04:43:30Z'
+modified_at: '2026-04-12T05:02:07Z'
 source_papers:
 - '[[arxiv-260408458-lite-lightweight-channel-gain-estimation-with-reduced-x-haul]]'
-title: Adaptive CSI Compression Optimization
+title: Adaptive CSI Compression Prediction
 ---
 
 **Background:** Cell-Free Massive MIMO systems integrated with O-RAN architectures rely on frequent CSI exchange, which can lead to significant X-haul bandwidth consumption. While data-driven channel gain prediction has been proposed as a solution to reduce signaling, the impact of combining compression with predictive modeling for real-time forecasting remains a challenge.

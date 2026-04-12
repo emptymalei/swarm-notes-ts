@@ -1,12 +1,13 @@
 ---
-title: "Quantum-Assisted Time Series Forecasting"
-slug: "quantum-assisted-time-series-forecasting"
-type: concept
+created_at: '2026-04-11T04:44:36Z'
 generated_stub: true
+modified_at: '2026-04-12T05:03:21Z'
+processed_at: '2026-04-11T04:44:36Z'
+slug: quantum-assisted-time-series-forecasting
 source_papers:
-  - "[[arxiv-260408277-qarima-a-quantum-approach-to-classical-time-series-analysis]]"
-processed_at: "2026-04-11T04:44:36Z"
-created_at: "2026-04-11T04:44:36Z"
+- '[[arxiv-260408277-qarima-a-quantum-approach-to-classical-time-series-analysis]]'
+title: Quantum-Assisted Time Series Forecasting
+type: concept
 ---
 
 # Quantum-Assisted Time Series Forecasting

@@ -1,12 +1,13 @@
 ---
-title: "Bayesian Tensor-on-Tensor Varying Coefficient Model"
-slug: "bayesian-tensor-on-tensor-varying-coefficient-model"
-type: concept
+created_at: '2026-04-11T04:45:44Z'
 generated_stub: true
+modified_at: '2026-04-12T05:04:34Z'
+processed_at: '2026-04-11T04:45:44Z'
+slug: bayesian-tensor-on-tensor-varying-coefficient-model
 source_papers:
-  - "[[arxiv-260407764-bayesian-tensor-on-tensor-varying-coefficient-model-for-fore]]"
-processed_at: "2026-04-11T04:45:44Z"
-created_at: "2026-04-11T04:45:44Z"
+- '[[arxiv-260407764-bayesian-tensor-on-tensor-varying-coefficient-model-for-fore]]'
+title: Bayesian Tensor-on-Tensor Varying Coefficient Model
+type: concept
 ---
 
 # Bayesian Tensor-on-Tensor Varying Coefficient Model

@@ -1,12 +1,13 @@
 ---
-title: "MobiWM"
-slug: "mobiwm"
-type: concept
+created_at: '2026-04-11T04:44:45Z'
 generated_stub: true
+modified_at: '2026-04-12T05:03:29Z'
+processed_at: '2026-04-11T04:44:45Z'
+slug: mobiwm
 source_papers:
-  - "[[arxiv-260408199-beyond-static-forecasting-unleashing-the-power-of-world-mode]]"
-processed_at: "2026-04-11T04:44:45Z"
-created_at: "2026-04-11T04:44:45Z"
+- '[[arxiv-260408199-beyond-static-forecasting-unleashing-the-power-of-world-mode]]'
+title: MobiWM
+type: concept
 ---
 
 # MobiWM

@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-11T04:45:52Z'
+modified_at: '2026-04-12T05:04:44Z'
 source_papers:
 - '[[arxiv-260407703-a-search-for-wide-orbit-planets-around-m-dwarfs-using-deep-m]]'
-title: Low-mass old-age evolutionary models
+title: Low-mass old-age evolutionary models gaps
 ---
 
 **Background:** Planetary atmospheric evolutionary models for low-mass substellar objects currently lack consistent coverage for masses below 2-4 Jupiter masses at system ages greater than 5 billion years.

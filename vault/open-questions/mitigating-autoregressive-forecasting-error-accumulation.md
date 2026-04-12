@@ -1,7 +1,9 @@
 ---
 created_at: '2026-04-10T15:28:20Z'
+modified_at: '2026-04-12T05:04:02Z'
 source_papers:
 - '[[arxiv-260407928-generative-3d-gaussian-splatting-for-arbitrary-resolution-at]]'
+- '[[arxiv-260407928-generative-3d-gaussian-splatting-for-arbitrary-resolutionatm]]'
 title: Mitigating Autoregressive Forecasting Error Accumulation
 ---
 

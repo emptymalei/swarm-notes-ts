@@ -12,9 +12,12 @@ url: "https://arxiv.org/abs/2604.08493"
 # Custom fields
 paper_id: "2604.08493"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "physics"
 tags:
-  []
+  - "gravitational-waves"
+  - "cosmology"
+  - "non-gaussianity"
+  - "reheating"
 architectures:
   []
 datasets:
@@ -24,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-11T04:43:21Z"
-created_at: "2026-04-11T04:43:21Z"
+processed_at: "2026-04-12T05:01:58Z"
+created_at: "2026-04-12T05:01:58Z"
 ---
 
 # Probing non-Gaussianity during reheating with SIGW in the LISA band
@@ -36,30 +39,26 @@ created_at: "2026-04-11T04:43:21Z"
 
 ## Summary
 
-This paper investigates how non-standard cosmological evolution during the reheating epoch affects the spectrum of scalar-induced gravitational waves (SIGWs). By incorporating primordial non-Gaussianity into the calculation, the authors demonstrate that specific reheating parameters, such as the equation of state w and sound speed cs^2, imprint characteristic signals onto the SIGW spectrum. The study uses Fisher forecasting to show that these unique signatures are potentially detectable by future gravitational wave detectors like LISA, providing a new probe into early Universe physics.
+This paper investigates how non-standard cosmological evolution during the reheating epoch affects the spectrum of scalar-induced gravitational waves (SIGWs). The authors account for the influence of primordial non-Gaussianity and demonstrate that parameters describing the reheating phase—specifically the equation of state and sound speed—leave distinctive spectral signatures. Through a Fisher forecast, the study highlights that these effects are potentially detectable by the LISA gravitational wave observatory, offering a new probe into early-Universe physics.
 
 ## Key Contributions
 
-- Established the theoretical relationship between non-standard reheating epoch parameters (w, cs^2) and the resulting scalar-induced gravitational wave (SIGW) power spectrum.
-- Demonstrated that primordial non-Gaussianity leaves distinctive, potentially detectable spectral features in SIGWs within the frequency range observable by LISA.
-- Performed Fisher information forecasts to quantify the parameter estimation sensitivity of future space-based interferometers to reheating dynamics.
+- Analytically demonstrated that non-standard reheating parameters (equation of state w and sound speed squared cs2) imprint unique features on the scalar-induced gravitational wave (SIGW) spectrum.
+- Established that primordial non-Gaussianity during the reheating epoch significantly alters the SIGW signal, potentially enhancing or suppressing detectability in the LISA frequency band.
+- Performed a Fisher forecast analysis to quantify the detectability of non-Gaussian reheating signatures by the future LISA interferometer across varying thermodynamic scenarios.
 
 ## Open Questions & Future Work
 
-- [[non-instantaneous-reheating-sigw-kernel]]
-- [[non-perturbative-non-gaussianity-sigw-framework]]
+- [[sigw-kernel-reheating-transition]]
+- [[general-non-gaussianity-sigw-modeling]]
 
 ## Archivist Review
 
-I approved two open questions that highlight fundamental theoretical limitations in the modeling of scalar-induced gravitational waves (SIGWs). I rejected no concepts because the paper, while mathematically rigorous in its application of Fisher forecasting, did not propose new reusable architectural patterns or methods that distinguish themselves from established cosmological perturbative frameworks. The approved questions capture specific bottlenecks (analytical kernels and non-perturbative treatments) that will be relevant as the field moves towards high-precision gravitational wave cosmology.
+The paper focuses on specific astrophysical modeling (SIGW) which does not introduce generalizable ML methods or architectures that would recur in typical ML research. Therefore, no new concepts were approved. Two open questions were approved as they address significant, well-defined bottlenecks in theoretical physics/cosmology modeling that are central to the study's stated limitations.
 
 ### Approved Open Questions
-- SIGW kernels for non-instantaneous reheating: This is a critical technical bottleneck because the current reliance on the instantaneous reheating approximation may lead to inaccurate predictions for signals whose characteristic frequencies are close to the reheating temperature scale.
-- Non-perturbative non-Gaussianity for SIGWs: Moving beyond perturbative non-Gaussianity is essential for precise parameter estimation of the early Universe, especially for scenarios where non-linear effects may become significant or where non-local non-Gaussianity is predicted.
-
-### Rejected Candidates
-- [open_question] SIGW kernels for non-instantaneous reheating (`non-instantaneous-reheating-sigw-kernel`) - other: Re-submitted with minor edits to improve clarity and reduce reliance on paper-specific context.
-- [open_question] Non-perturbative non-Gaussianity for SIGWs (`general-non-gaussianity-sigw-framework`) - other: Re-submitted with minor edits to improve clarity and reduce reliance on paper-specific context.
+- SIGW Reheating Transition Kernel: This is a critical limitation for accurately forecasting signal detectability and performing parameter estimation for gravitational wave observatories like LISA when the reheating scale is within the sensitive range.
+- General Non-Gaussianity SIGW Modeling: Simple local NG models may not capture the full phenomenology required to interpret future observational data from next-generation gravitational wave detectors.
 
 ## Links
 

@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-11T04:45:33Z'
+modified_at: '2026-04-12T05:04:23Z'
 source_papers:
 - '[[arxiv-260407838-we-need-strong-preconditions-for-using-simulations-in-policy]]'
-title: Validating Generative Social Simulations
+title: Validation of Social Simulations
 ---
 
 **Background:** Validation techniques commonly used in classical machine learning are often ineffective for generative social simulations due to the unavailability of ground-truth data for counterfactual policy scenarios and the systemic nature of existing datasets.

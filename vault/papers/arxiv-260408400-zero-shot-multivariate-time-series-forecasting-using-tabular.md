@@ -16,7 +16,7 @@ url: "https://arxiv.org/abs/2604.08400"
 # Custom fields
 paper_id: "2604.08400"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "nlp"
 tags:
   []
 architectures:
@@ -24,12 +24,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "tabular-prior-fitted-networks-for-forecasting"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-11T04:43:58Z"
-created_at: "2026-04-11T04:43:58Z"
+processed_at: "2026-04-12T05:02:41Z"
+created_at: "2026-04-12T05:02:41Z"
 ---
 
 # Zero-shot Multivariate Time Series Forecasting Using Tabular Prior Fitted Networks
@@ -40,29 +40,31 @@ created_at: "2026-04-11T04:43:58Z"
 
 ## Summary
 
-This paper presents a novel framework for zero-shot multivariate time series forecasting that leverages the reasoning capabilities of tabular foundation models, specifically TabPFN. By recasting multivariate time series data into a sequence of scalar regression tasks, the method avoids the limitations of independent univariate forecasting approaches that fail to model cross-channel dependencies. The authors validate their approach using the TabPFN-TS backbone, demonstrating improved performance in zero-shot multivariate settings compared to established tabular baselines.
+This paper addresses the limitations of applying tabular foundation models to multivariate time series, which often default to independent univariate modeling. The authors propose a framework that recasts multivariate time series forecasting as a series of scalar regression problems, allowing tabular foundation models to solve them in a zero-shot manner. By utilizing the TabPFN-TS backbone, the approach effectively accounts for inter-channel interactions while leveraging the predictive power of tabular foundation models. Experimental results demonstrate that this method achieves state-of-the-art performance compared to existing tabular forecasting approaches.
 
 ## Key Contributions
 
-- Introduces a framework that recasts multivariate time series forecasting as a series of scalar regression problems to leverage tabular foundation models zero-shot.
-- Demonstrates that the proposed method captures inter-channel interactions that are typically lost when treating multivariate problems as independent univariate forecasting tasks.
-- Evaluates performance using the TabPFN-TS backbone against existing tabular and state-of-the-art forecasting baselines.
+- Introduces a framework that recasts multivariate time series forecasting as a series of scalar regression problems.
+- Enables zero-shot multivariate forecasting using tabular foundation models like TabPFN while capturing inter-channel interactions.
+- Demonstrates competitive performance against state-of-the-art tabular methods on multivariate time series forecasting benchmarks.
 
 ## Open Questions & Future Work
 
 - [[ci-vs-cd-forecasting-superiority]]
-- [[probabilistic-forecast-calibration-improvement]]
+
+## Key Concepts
+
+- [[tabular-prior-fitted-networks-for-forecasting]]: A zero-shot forecasting framework that transforms multivariate time series into a sequence of scalar regression problems solvable by tabular foundation models.
 
 ## Archivist Review
 
-The paper explores adapting TabPFN to multivariate time series by recasting the problem as scalar regression. I have approved two open questions that capture the fundamental trade-offs and calibration challenges identified in the paper's discussion, while rejecting the concept candidates as they represent application-specific framing rather than novel, reusable theoretical mechanisms.
+Approved the core conceptual framework for bridging tabular foundation models and multivariate time series, as well as a fundamental open question regarding the trade-offs of channel-independent versus channel-dependent forecasting strategies. Rejected the probabilistic calibration question as it is currently too generic and overlaps with existing broader concerns about uncertainty quantification in time series.
+
+### Approved Concepts
+- Tabular-Prior-Fitted Networks for Forecasting: Proposes a novel bridge between tabular foundation models and multivariate forecasting by recasting the time series problem into scalar regression tasks.
 
 ### Approved Open Questions
-- CI vs CD Forecasting Superiority: This is a fundamental trade-off in multivariate time series forecasting that impacts model selection and performance; understanding the underlying factors would guide future architecture design.
-- Probabilistic Forecast Calibration Improvement: Uncertainty quantification is vital for real-world deployment of time series models, and existing tabular PFN adaptations currently struggle to produce well-calibrated probabilistic outputs for multivariate data.
-
-### Rejected Candidates
-- [open_question] Probabilistic Forecast Calibration Improvement (`probabilistic-forecast-calibration`) - other: Renamed for consistency and clarity.
+- CI vs CD Forecasting Superiority: This is a fundamental methodological trade-off in multivariate time series forecasting that directly impacts model selection and performance optimization across diverse domains.
 
 ## Links
 

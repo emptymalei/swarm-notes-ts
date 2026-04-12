@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-11T04:44:36Z'
+modified_at: '2026-04-12T05:03:21Z'
 source_papers:
 - '[[arxiv-260408277-qarima-a-quantum-approach-to-classical-time-series-analysis]]'
-title: Scalability and Robustness of Quantum-ARIMA Hybrids
+title: Scalability of Quantum ARIMA
 ---
 
 **Background:** Autoregressive Integrated Moving Average (ARIMA) models are fundamental for time series analysis but rely on classical heuristics for parameter estimation and order selection that can be computationally intensive or sub-optimal in complex environments. Recent hybrid approaches integrate variational quantum circuits (VQCs) to address these limitations.

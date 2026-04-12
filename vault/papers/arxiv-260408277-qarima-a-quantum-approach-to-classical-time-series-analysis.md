@@ -16,7 +16,9 @@ paper_id: "2604.08277"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "time-series"
+  - "forecasting"
+  - "quantum-computing"
 architectures:
   []
 datasets:
@@ -26,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-11T04:44:36Z"
-created_at: "2026-04-11T04:44:36Z"
+processed_at: "2026-04-12T05:03:21Z"
+created_at: "2026-04-12T05:03:21Z"
 ---
 
 # QARIMA: A Quantum Approach To Classical Time Series Analysis
@@ -38,13 +40,13 @@ created_at: "2026-04-11T04:44:36Z"
 
 ## Summary
 
-QARIMA is a quantum-inspired framework that hybridizes classical ARIMA with variational quantum circuits (VQCs) for robust time-series forecasting. It utilizes swap-test-based quantum autocorrelation (QACF) and partial autocorrelation (QPACF) to identify differencing and lag orders, followed by VQC-based estimation for AR and MA coefficients. By maintaining a fixed-configuration VQC ansatz, the model avoids hyperparameter leakage and achieves superior predictive performance and reduced computational overhead compared to classical ARIMA baselines.
+QARIMA introduces a quantum-assisted methodology for classical time series analysis by replacing traditional order discovery and parameter estimation with variational quantum circuits (VQCs). The framework employs swap-test-driven quantum autocorrelation and partial autocorrelation functions to determine model orders, followed by fixed-configuration VQCs to estimate autoregressive and moving-average coefficients. A lightweight weak-lag refinement step further prunes redundant temporal dependencies. Experimental results across environmental and industrial datasets show that this approach reduces meta-optimization overhead and offers a rigorous, explainable integration of quantum primitives into classical statistical forecasting.
 
 ## Key Contributions
 
-- Proposes QARIMA, a quantum-inspired ARIMA framework that replaces classical lag selection and parameter estimation with quantum-assisted counterparts.
-- Introduces swap-test-driven QACF and QPACF to derive differencing and AR/MA lag orders through quantum projections.
-- Demonstrates significant reduction in meta-optimization overhead while achieving improved out-of-sample MSE and MAPE across industrial datasets compared to classical automated ARIMA.
+- Introduces QARIMA, a hybrid framework that utilizes quantum autocorrelation (QACF) and partial autocorrelation (QPACF) via swap-tests for automated order discovery (p, d, q).
+- Implements VQC-based estimation for autoregressive (VQC-AR) and moving-average (VQC-MA) components, combined with a weak-lag refinement step that prunes redundant features.
+- Demonstrates that fixed-configuration VQCs reduce meta-optimization overhead while achieving competitive out-of-sample MSE and MAPE across diverse industrial and environmental benchmarks.
 
 ## Open Questions & Future Work
 
@@ -52,26 +54,17 @@ QARIMA is a quantum-inspired framework that hybridizes classical ARIMA with vari
 
 ## Key Concepts
 
-- [[quantum-assisted-time-series-forecasting]]: A hybrid framework that replaces classical autocorrelation-based lag selection and parameter estimation with swap-test-driven quantum primitives and variational quantum circuits.
+- [[quantum-assisted-time-series-forecasting]]: A hybrid quantum-classical framework that utilizes VQCs for order discovery, lag refinement, and parameter estimation within the ARIMA modeling pipeline.
 
 ## Archivist Review
 
-The paper presents a comprehensive hybrid approach. I approved the overarching concept of quantum-assisted time series forecasting as a reusable methodology, while rejecting the specific submodules (QACF, VQC-AR, etc.) as they are implementations of the primary framework. The open question was renamed slightly to maintain clarity and avoid duplication with existing vault items while retaining the core inquiry into hybrid model scalability.
+I approved the overarching hybrid framework concept and the open question regarding its scalability, as these reflect the core theoretical and practical contributions. I rejected individual components like 'swap-test-driven autocorrelation' as they are sub-components of the broader quantum-assisted forecasting mechanism already being vaulted. The open question was renamed to be more general and consistent with existing vault nomenclature.
 
 ### Approved Concepts
-- Quantum-Assisted Time Series Forecasting: Integrates quantum primitives (QACF, QPACF, VQC) into a classical statistical forecasting workflow, providing a blueprint for future hybrid model development.
+- Quantum-assisted Time Series Forecasting: This paper formalizes a hybrid quantum-classical approach to the classical ARIMA framework, providing a structured methodology for replacing key statistical components with quantum primitives.
 
 ### Approved Open Questions
-- Scalability and Robustness of Quantum-ARIMA Hybrids: As ARIMA remains a core statistical benchmark, understanding the limits and stability of its quantum-classical hybridizations is crucial for assessing their practical utility in econometrics and real-world forecasting.
-
-### Rejected Candidates
-- [concept] differencing selection (`1`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
-- [concept] QACF (`2`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
-- [concept] QPACF (`3`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
-- [concept] swap-test primitives with delayed-matrix construction (`4`) - paper_local: Implementation-specific detail of the framework.
-- [concept] VQC-AR (`5`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
-- [concept] VQC weak-lag refinement (`6`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
-- [concept] VQC-MA (`7`) - subcomponent_of_broader_mechanism: Subcomponent of the broader QARIMA framework.
+- Scalability of Quantum ARIMA: This addresses the core transition from theoretical quantum-inspired methodology to practical, large-scale application, which is the primary hurdle for adopting quantum approaches in time series analysis.
 
 ## Links
 

@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-10T15:26:41Z'
+modified_at: '2026-04-12T05:02:17Z'
 source_papers:
 - '[[arxiv-260408427-multivariate-quantum-reservoir-computing-with-discrete-and-c]]'
-title: Linking quantum resources to capacity
+title: Quantum resources-computational capacity link
 ---
 
 **Background:** Quantum reservoir computing (QRC) has demonstrated performance gains in time series tasks, but a systematic understanding of the underlying relationship between non-classical quantum resources and computational power is lacking.

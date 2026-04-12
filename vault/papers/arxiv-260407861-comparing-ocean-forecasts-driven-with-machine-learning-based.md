@@ -20,9 +20,8 @@ paper_source: "arxiv"
 domain: "time-series"
 tags:
   - "forecasting"
-  - "ocean-modeling"
-  - "nwp"
-  - "ml-integration"
+  - "machine-learning-applications"
+  - "numerical-weather-prediction"
 architectures:
   []
 datasets:
@@ -32,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-11T04:45:26Z"
-created_at: "2026-04-11T04:45:26Z"
+processed_at: "2026-04-12T05:04:16Z"
+created_at: "2026-04-12T05:04:16Z"
 ---
 
 # Comparing Ocean Forecasts Driven with Machine Learning-based and Physics-based Atmospheric Forcings
@@ -44,13 +43,13 @@ created_at: "2026-04-11T04:45:26Z"
 
 ## Summary
 
-This study assesses the impact of using ML-based atmospheric forcing, specifically the ECMWF AIFS model, as an alternative to traditional physics-based numerical weather prediction (NWP) forcing for ocean forecasting systems. Using the NEMO dynamical ocean model (GOSI9 configuration), the authors compared 10-day forecasts initialized monthly throughout 2023-2024. The results demonstrate that ML-driven forcing provides comparable or enhanced forecast skill for surface variables, suggesting that machine learning models can effectively replace conventional NWP forcing in operational settings.
+This study investigates the suitability of substituting traditional physics-based numerical weather prediction (NWP) forcing with machine learning-based atmospheric models in operational ocean forecasting. By utilizing the NEMO dynamical ocean model, the authors compare the performance of forecasts driven by ECMWF's AIFS model against those driven by the Australian Bureau of Meteorology's ACCESS-G3 NWP model. Experimental results over a two-year evaluation period indicate that ML-based forcing consistently yields ocean forecast skills equivalent to or better than standard physics-based methods for surface variables such as temperature, salinity, and sea level. These findings highlight the potential for integrating data-driven atmospheric models into operational oceanography to enhance both predictive skill and computational performance.
 
 ## Key Contributions
 
-- Evaluated the viability of replacing physics-based NWP atmospheric forcing with ML-based atmospheric models (AIFS) in operational ocean forecasting systems.
-- Demonstrated that NEMO dynamical ocean model forecasts driven by AIFS exhibit comparable or superior predictive skill for sea surface temperature, salinity, sea level, and currents compared to ACCESS-G3 physics-based forcing.
-- Analyzed 10-day forecast performance over 2023-2024, highlighting the potential for improved accuracy and computational efficiency in operational oceanography.
+- Demonstrates that ML-based atmospheric forcing (AIFS) produces ocean forecasts with comparable or superior accuracy to physics-based NWP forcing (ACCESS-G3) within the NEMO dynamical ocean model.
+- Provides a comprehensive comparative analysis of 10-day ocean forecasts initialized monthly over a 2-year period (2023-2024).
+- Validates the feasibility of substituting traditional NWP forcing with ML-based weather models in operational ocean forecasting systems to improve accuracy and computational efficiency.
 
 ## Links
 

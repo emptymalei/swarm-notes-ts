@@ -1,9 +1,9 @@
 ---
 created_at: '2026-04-10T15:27:10Z'
-modified_at: '2026-04-11T04:44:07Z'
+modified_at: '2026-04-12T05:02:51Z'
 source_papers:
 - '[[arxiv-260408398-adaptive-input-training-for-many-to-one-pre-training-on-time]]'
-title: Adaptive pooling fidelity impact
+title: Adaptive Pooling Fidelity Impact
 ---
 
 **Background:** Time-series data is characterized by diverse modalities, variable sampling rates, and inconsistent input lengths/channel dimensions, which complicates the development of unified foundation models.

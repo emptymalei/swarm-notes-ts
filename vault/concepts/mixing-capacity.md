@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-10T15:26:41Z'
 generated_stub: true
-modified_at: '2026-04-11T04:43:40Z'
+modified_at: '2026-04-12T05:02:17Z'
 processed_at: '2026-04-10T15:26:41Z'
 slug: mixing-capacity
 source_papers:
