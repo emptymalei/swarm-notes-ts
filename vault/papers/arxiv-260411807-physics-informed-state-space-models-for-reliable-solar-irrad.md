@@ -13,20 +13,18 @@ paper_id: "2604.11807"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series-forecasting"
-  - "physics-informed-machine-learning"
-  - "solar-irradiance-forecasting"
+  []
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "thermodynamic-liquid-manifold-network"
+  - "physics-informed-state-space-model"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-14T05:01:50Z"
-created_at: "2026-04-14T05:01:50Z"
+processed_at: "2026-04-15T05:06:16Z"
+created_at: "2026-04-15T05:06:16Z"
 ---
 
 # Physics-Informed State Space Models for Reliable Solar Irradiance Forecasting in Off-Grid Systems
@@ -37,28 +35,24 @@ created_at: "2026-04-14T05:01:50Z"
 
 ## Summary
 
-This paper introduces the Thermodynamic Liquid Manifold Network to address common failures in solar irradiance forecasting, such as phase lags during cloud transients and physically impossible nocturnal generation. By projecting inputs into a Koopman-linearized Riemannian manifold and incorporating thermodynamic gates, the model strictly enforces celestial geometry constraints. The resulting architecture is highly efficient, with approximately 63k parameters, and proves effective for stable, real-time deployment in off-grid photovoltaic microgrid controllers.
+This paper introduces the Physics-Informed State Space Model (PISSM) to address the dual challenges of computational overhead and physical inconsistency in off-grid solar irradiance forecasting. By replacing attention mechanisms with linear state space layers and incorporating a dynamic Hankel matrix embedding, PISSM effectively denoises input signals while maintaining parallelizable temporal modeling. A novel Physics-Informed Gating mechanism forces predictions to respect solar geometry, ensuring reliability for edge-based control applications. Experiments demonstrate that PISSM provides superior accuracy with under 40,000 parameters compared to traditional deep learning baselines.
 
 ## Key Contributions
 
-- Introduced the Thermodynamic Liquid Manifold Network, a model that integrates celestial mechanics and atmospheric thermodynamics into a Koopman-linearized manifold.
-- Achieved zero-magnitude nocturnal forecasting error while maintaining sub-30-minute phase response during high-frequency weather transients.
-- Demonstrated robust performance in semi-arid climate conditions with an RMSE of 18.31 Wh/m2 and a Pearson correlation of 0.988 over a five-year horizon.
-
-## Limitations
-
-Evaluation is limited to a single five-year dataset in a semi-arid climate; broader generalization to diverse climate types remains to be demonstrated.
+- Introduces PISSM, a parameter-efficient state space model designed for edge-deployed microcontrollers.
+- Implements a dynamic Hankel matrix embedding for robust stochastic noise filtration in meteorological data.
+- Develops a Physics-Informed Gating mechanism that leverages solar zenith angles to enforce physical diurnal cycle constraints on model outputs.
 
 ## Key Concepts
 
-- [[thermodynamic-liquid-manifold-network]]: A neural network architecture that projects meteorological and geometric variables into a Koopman-linearized Riemannian manifold to enforce atmospheric thermodynamic consistency.
+- [[physics-informed-state-space-model]]: An ultra-lightweight state space model that incorporates solar geometry physics to bound predictions in off-grid solar forecasting.
 
 ## Archivist Review
 
-The Thermodynamic Liquid Manifold Network is approved as it provides a distinct, theoretically grounded approach to enforcing physical constraints within a neural manifold, which is a reusable pattern for time-series forecasting in scientific domains. Other components (such as the spectral calibration unit or alpha-gate) were rejected as subcomponents of this overarching mechanism. No open questions or datasets met the rigorous threshold for independent long-term tracking.
+I approved the PISSM concept as it provides a clear, reusable architectural template for combining linear state space modeling with hard-coded domain-specific physical constraints, which is highly relevant for edge-deployed time-series forecasting. Other potential concepts (like the specific gating or Hankel embedding) were deemed subcomponents of the primary PISSM architecture and thus rejected to keep the vault focused on overarching mechanisms.
 
 ### Approved Concepts
-- Thermodynamic Liquid Manifold Network: This is the central methodological innovation, combining Koopman linearization with Riemannian manifolds to enforce physics constraints in a deep learning framework.
+- Physics-Informed State Space Model (PISSM): Combines linear state space efficiency with domain-specific physics constraints for reliable, low-power forecasting.
 
 ## Links
 

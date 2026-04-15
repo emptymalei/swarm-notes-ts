@@ -1,12 +1,14 @@
 ---
-title: "Thermodynamic Liquid Manifold Network"
-slug: "thermodynamic-liquid-manifold-network"
-type: concept
+created_at: '2026-04-14T05:01:50Z'
 generated_stub: true
+modified_at: '2026-04-15T05:06:07Z'
+processed_at: '2026-04-14T05:01:50Z'
+slug: thermodynamic-liquid-manifold-network
 source_papers:
-  - "[[arxiv-260411807-physics-informed-state-space-models-for-reliable-solar-irrad]]"
-processed_at: "2026-04-14T05:01:50Z"
-created_at: "2026-04-14T05:01:50Z"
+- '[[arxiv-260411807-physics-informed-state-space-models-for-reliable-solar-irrad]]'
+- '[[arxiv-260411909-thermodynamic-liquid-manifold-networks-physics-bounded-deep]]'
+title: Thermodynamic Liquid Manifold Network
+type: concept
 ---
 
 # Thermodynamic Liquid Manifold Network
@@ -27,3 +29,4 @@ This is the central methodological innovation, combining Koopman linearization w
 ## Related Papers
 
 - [[arxiv-260411807-physics-informed-state-space-models-for-reliable-solar-irrad]]
+- [[arxiv-260411909-thermodynamic-liquid-manifold-networks-physics-bounded-deep]]

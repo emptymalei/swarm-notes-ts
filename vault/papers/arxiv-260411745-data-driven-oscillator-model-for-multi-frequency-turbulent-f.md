@@ -14,9 +14,11 @@ url: "https://arxiv.org/abs/2604.11745"
 # Custom fields
 paper_id: "2604.11745"
 paper_source: "arxiv"
-domain: "fluid-dynamics"
+domain: "fluid-dynamics-ml"
 tags:
-  []
+  - "reduced-order-modeling"
+  - "fluid-dynamics"
+  - "oscillator-dynamics"
 architectures:
   []
 datasets:
@@ -26,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-14T05:02:06Z"
-created_at: "2026-04-14T05:02:06Z"
+processed_at: "2026-04-15T05:06:35Z"
+created_at: "2026-04-15T05:06:35Z"
 ---
 
 # Data-driven oscillator model for multi-frequency turbulent flows
@@ -38,31 +40,31 @@ created_at: "2026-04-14T05:02:06Z"
 
 ## Summary
 
-This paper proposes a data-driven framework for reduced-order modeling of multi-frequency turbulent flows by representing complex dynamics through a set of extracted oscillators. The method employs specially designed autoencoders to identify representative oscillators from flow field data and uses neural networks to learn their governing dynamics. The framework is validated on three-dimensional supersonic turbulent cavity flow, demonstrating its capability to accurately forecast long-term multi-frequency oscillatory behavior and capture dominant flow features.
+This paper addresses the difficulty of applying phase-reduction analysis to complex, multi-frequency turbulent flows. The authors propose a data-driven framework that extracts representative oscillators from flow data using specialized autoencoders and models their subsequent evolution with neural networks. Validated on supersonic cavity flows, the approach successfully captures large-scale flow features and provides accurate long-term forecasts of multi-frequency oscillatory dynamics.
 
 ## Key Contributions
 
-- Introduces a data-driven framework that utilizes autoencoders to extract representative oscillators from high-dimensional, multi-frequency turbulent flow fields.
-- Develops a neural network-based oscillator dynamics model capable of long-term forecasting of multi-frequency oscillatory behavior in turbulent flows.
-- Demonstrates the model's effectiveness through successful application to three-dimensional supersonic turbulent flow over a cavity, recovering large-scale flow features.
+- Introduced a data-driven framework that extends phase-reduction analysis to multi-frequency turbulent flows by modeling them as a system of oscillators.
+- Utilized custom autoencoders to extract physically meaningful representative oscillators directly from high-dimensional flow field data.
+- Demonstrated that the model accurately captures long-term oscillatory behavior in three-dimensional supersonic turbulent cavity flows.
 
 ## Open Questions & Future Work
 
-- [[phase-reduction-for-turbulent-flows]]
+- [[phase-reduction-for-multi-frequency-turbulence]]
 
 ## Key Concepts
 
-- [[data-driven-oscillator-modeling]]: A reduced-order modeling approach that extracts representative oscillators from complex dynamical systems using autoencoders and models their evolution via neural networks.
+- [[data-driven-oscillator-modeling]]: A framework that extracts representative oscillators from complex flow field data using autoencoders and models their temporal dynamics with neural networks.
 
 ## Archivist Review
 
-The paper introduces a novel data-driven approach to reduced-order modeling in fluid dynamics. I have approved 'data-driven-oscillator-modeling' as it captures the specific architectural pattern of using autoencoders to isolate oscillatory dynamics for subsequent learning. The open question regarding phase reduction in multi-frequency turbulent flows is a significant theoretical challenge that warrants tracking as a research bottleneck. No datasets were approved as none were explicitly provided as novel contributions or specific benchmarks.
+I have approved the concept of 'Data-driven oscillator modeling' as it represents a robust architectural approach for spatio-temporal dimensionality reduction in dynamical systems, distinct from existing graph or flow-based methods in the vault. The open question regarding 'Phase reduction for multi-frequency turbulence' is approved as it addresses a fundamental mathematical challenge in non-periodic fluid dynamics that persists across current reduced-order modeling paradigms. Both entries are carefully scoped to reflect their specific domain utility while maintaining generalizability for future research.
 
 ### Approved Concepts
-- Data-driven Oscillator Modeling: This represents a shift from traditional analytical phase reduction to a learnable framework capable of capturing multi-frequency, non-linear dynamics from data.
+- Data-driven oscillator modeling: Provides a structured way to reduce high-dimensional turbulent flow dynamics into a manageable set of oscillators for multi-frequency scenarios, bridging phase-reduction analysis with data-driven neural modeling.
 
 ### Approved Open Questions
-- Phase-reduction for turbulent flows: This is a fundamental bottleneck in applying non-linear dynamical systems theory to complex fluid flows and other multi-scale chaotic physical systems.
+- Phase reduction for multi-frequency turbulence: This is a central bottleneck for using reduced-order oscillator models in complex turbulent engineering applications. Addressing it is necessary to move beyond current limitations that restrict phase-based control and analysis to simplified, quasi-periodic flows.
 
 ## Links
 

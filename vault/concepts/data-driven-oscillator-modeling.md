@@ -1,12 +1,13 @@
 ---
-title: "Data-driven Oscillator Modeling"
-slug: "data-driven-oscillator-modeling"
-type: concept
+created_at: '2026-04-14T05:02:06Z'
 generated_stub: true
+modified_at: '2026-04-15T05:06:35Z'
+processed_at: '2026-04-14T05:02:06Z'
+slug: data-driven-oscillator-modeling
 source_papers:
-  - "[[arxiv-260411745-data-driven-oscillator-model-for-multi-frequency-turbulent-f]]"
-processed_at: "2026-04-14T05:02:06Z"
-created_at: "2026-04-14T05:02:06Z"
+- '[[arxiv-260411745-data-driven-oscillator-model-for-multi-frequency-turbulent-f]]'
+title: Data-driven Oscillator Modeling
+type: concept
 ---
 
 # Data-driven Oscillator Modeling

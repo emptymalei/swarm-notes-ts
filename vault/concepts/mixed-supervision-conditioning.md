@@ -1,12 +1,13 @@
 ---
-title: "Mixed Supervision Conditioning"
-slug: "mixed-supervision-conditioning"
-type: concept
+created_at: '2026-04-14T05:02:20Z'
 generated_stub: true
+modified_at: '2026-04-15T05:06:46Z'
+processed_at: '2026-04-14T05:02:20Z'
+slug: mixed-supervision-conditioning
 source_papers:
-  - "[[arxiv-260411707-representations-before-pixels-semantics-guided-hierarchical]]"
-processed_at: "2026-04-14T05:02:20Z"
-created_at: "2026-04-14T05:02:20Z"
+- '[[arxiv-260411707-representations-before-pixels-semantics-guided-hierarchical]]'
+title: Mixed Supervision Conditioning
+type: concept
 ---
 
 # Mixed Supervision Conditioning

@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-14T05:02:31Z"
-created_at: "2026-04-14T05:02:31Z"
+processed_at: "2026-04-15T05:06:54Z"
+created_at: "2026-04-15T05:06:54Z"
 ---
 
 # Asymptotic behavior of spatio-temporal point processes of exceedances
@@ -36,24 +36,24 @@ created_at: "2026-04-14T05:02:31Z"
 
 ## Summary
 
-This paper provides a theoretical analysis of the asymptotic properties of spatio-temporal exceedance point processes. By modeling exceedances via flexible, site-dependent risk functionals, the authors prove the weak convergence of these processes to a specific limit distribution. The framework leverages the theory of stationary regularly varying multivariate time series, enabling a rigorous treatment of extremes in complex spatio-temporal systems.
+This paper investigates the asymptotic properties of spatio-temporal point processes defined by exceedances over high, site-dependent thresholds. By utilizing the framework of stationary regularly varying multivariate time series, the authors demonstrate the weak convergence of these processes and derive their explicit limit distribution. This contribution provides a rigorous theoretical foundation for modeling spatio-temporal extremes across varying risk-based domains.
 
 ## Key Contributions
 
-- Establishes the weak convergence of spatio-temporal point processes of exceedances over high thresholds using site-dependent risk functionals.
-- Provides an explicit characterization of the limit distribution for rescaled exceedance occurrence times, spatial locations, and magnitude values.
-- Extends stationary multivariate regular variation theory to incorporate dynamic, site-specific thresholds in a unified spatio-temporal framework.
+- Establishes the weak convergence of spatio-temporal point processes for exceedances under site-dependent risk functionals.
+- Derives the explicit limit distribution for rescaled occurrence times, sites, and extreme values.
+- Provides a unified asymptotic framework leveraging stationary regularly varying multivariate time series for spatio-temporal extremes.
 
 ## Open Questions & Future Work
 
-- [[statistical-inference-for-spatiotemporal-extremes]]
+- [[spatio-temporal-limit-theorems-for-exceedances]]
 
 ## Archivist Review
 
-The paper provides a rigorous theoretical development for spatio-temporal exceedance processes but does not introduce a new computational method, architecture, or empirical benchmark that requires a permanent concept note. I approved the open question regarding statistical inference for these processes, as it highlights a significant bridge between the theoretical limit theorems presented and the practical application of these models in real-world time-series forecasting.
+The paper provides a rigorous mathematical derivation of limit distributions for spatio-temporal exceedance processes. I approved the proposed open question as it identifies a clear theoretical gap in extreme value theory relevant to time series analysis. I rejected the concept candidate implicitly, as the work is primarily a theoretical derivation in extreme value statistics rather than a new algorithmic mechanism or representation architecture.
 
 ### Approved Open Questions
-- Inference for spatio-temporal extremes: This work provides the theoretical foundation for spatio-temporal extremes, but the gap between theoretical limit theorems and practical statistical inference remains substantial for applied researchers.
+- Spatio-temporal limit theorems for exceedances: Developing these theoretical foundations is essential for improving risk assessment and modeling of climate-related extremes, which are inherently complex and spatio-temporal in nature.
 
 ## Links
 

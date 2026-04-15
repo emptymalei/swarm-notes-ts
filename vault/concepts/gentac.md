@@ -1,12 +1,13 @@
 ---
-title: "GenTac"
-slug: "gentac"
-type: concept
+created_at: '2026-04-14T05:01:56Z'
 generated_stub: true
+modified_at: '2026-04-15T05:06:26Z'
+processed_at: '2026-04-14T05:01:56Z'
+slug: gentac
 source_papers:
-  - "[[arxiv-260411786-gentac-generative-modeling-and-forecasting-of-soccer-tactics]]"
-processed_at: "2026-04-14T05:01:56Z"
-created_at: "2026-04-14T05:01:56Z"
+- '[[arxiv-260411786-gentac-generative-modeling-and-forecasting-of-soccer-tactics]]'
+title: GenTac
+type: concept
 ---
 
 # GenTac
