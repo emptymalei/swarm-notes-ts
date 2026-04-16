@@ -18,7 +18,12 @@ paper_id: "2604.12180"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "forecasting"
+  - "multi-modal"
+  - "probabilistic-forecasting"
+  - "spatiotemporal-modeling"
+  - "interpretability"
+  - "deep-learning"
 architectures:
   []
 datasets:
@@ -28,8 +33,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:04:53Z"
-created_at: "2026-04-15T05:04:53Z"
+processed_at: "2026-04-16T05:08:50Z"
+created_at: "2026-04-16T05:08:50Z"
 ---
 
 # CycloneMAE: A Scalable Multi-Task Learning Model for Global Tropical Cyclone Probabilistic Forecasting
@@ -40,35 +45,34 @@ created_at: "2026-04-15T05:04:53Z"
 
 ## Summary
 
-CycloneMAE is a multi-task, structure-aware masked autoencoder designed to address the limitations of traditional NWP and deterministic DL models in tropical cyclone forecasting. By leveraging a discrete probabilistic gridding mechanism and a pre-train/fine-tune paradigm, the model generates both deterministic and probabilistic forecasts from multi-modal data. The framework achieves superior performance across five ocean basins compared to leading NWP systems, with significant improvements in track, pressure, and wind speed accuracy. Attribution analysis confirms the model effectively learns physically interpretable representations, transitioning from core structural analysis to environmental context over longer forecasting horizons.
+CycloneMAE is a multi-task masked autoencoder architecture designed for probabilistic tropical cyclone forecasting using multi-modal data. The model utilizes a structure-aware representation learning approach combined with a discrete probabilistic gridding mechanism to overcome the limitations of deterministic deep learning models and high-cost numerical weather prediction systems. Evaluation across five global ocean basins indicates significant improvements in accuracy for pressure, wind, and track forecasting, while integrated gradient analysis confirms the model's ability to interpretably weigh internal and external meteorological drivers over varying horizons.
 
 ## Key Contributions
 
-- Introduces CycloneMAE, a multi-task masked autoencoder model that enables scalable, joint deterministic and probabilistic tropical cyclone forecasting.
-- Outperforms state-of-the-art NWP models in pressure and wind speed prediction up to 120 hours and track forecasting up to 24 hours across five global ocean basins.
-- Demonstrates via integrated gradients that the model shifts focus from internal convective structures to external environmental factors as the forecast horizon increases.
+- Introduces CycloneMAE, a multi-task masked autoencoder model that concurrently provides deterministic and probabilistic tropical cyclone forecasts.
+- Demonstrates state-of-the-art performance against NWP systems in pressure and wind forecasting (up to 120h) and track forecasting (up to 24h) across five global basins.
+- Uncovers distinct spatiotemporal attention patterns where short-term predictions prioritize internal convective structures while long-term predictions favor external environmental drivers.
 
 ## Open Questions & Future Work
 
-- [[local-global-atmospheric-context-integration]]
+- [[global-context-integration-forecasting-bottlenecks]]
 
 ## Key Concepts
 
-- [[structure-aware-masked-autoencoder]]: A masked autoencoder variant that explicitly incorporates spatial structural constraints of physical entities into the representation learning process.
+- [[structure-aware-masked-autoencoder]]: A masked autoencoder architecture that incorporates domain-specific spatial structural constraints to learn better representations for high-dimensional, multi-modal spatiotemporal data.
 
 ## Archivist Review
 
-The approved concept defines a generalizable approach for integrating physical object structure into masked autoencoder training, which is a significant advancement for atmospheric modeling. The approved open question addresses the fundamental tension between localized high-resolution prediction and global-scale context integration, which is a major bottleneck in weather forecasting literature. Other candidates were rejected to prioritize clarity and broader utility within the vault.
+I approved the concept of structure-aware masked autoencoders as a generalized mechanism for incorporating spatial inductive bias into reconstruction-based models. I also approved a refined version of the open question regarding global-local context integration in forecasting, as this represents a significant structural challenge for modern deep learning weather models. Tropical cyclone-specific terminology was abstracted to allow for broader applicability.
 
 ### Approved Concepts
-- Structure-Aware Masked Autoencoder: Introduces an inductive bias for modeling localized extreme weather phenomena by explicitly structuring the masked autoencoder process around feature geometries.
+- Structure-Aware Masked Autoencoder: Provides a generalized approach for injecting domain-specific spatial inductive biases into masked autoencoders for spatiotemporal forecasting.
 
 ### Approved Open Questions
-- Local-global atmospheric context integration: Identifying how to effectively bridge localized structural representation learning with global-scale atmospheric context is essential for scaling data-driven weather models to long-range forecasting.
+- Global Context Integration Bottlenecks: This bottleneck defines the fundamental limitation of current data-driven approaches in meteorology compared to physics-based dynamical cores.
 
 ### Rejected Candidates
-- [concept] TC structure-aware masked autoencoder (`tc-structure-aware-masked-autoencoder`) - other: Renamed to a more general term for wider reusability in the vault.
-- [open_question] Integrating global meteorological context (`integrating-global-context-for-tc-tracking`) - other: Renamed to a more standard technical slug for the vault.
+- [concept] TC structure-aware masked autoencoder (`tc-structure-aware-masked-autoencoder`) - duplicate_existing: Renamed to a more generalized version 'structure-aware-masked-autoencoder' to improve reusability across domains.
 
 ## Links
 

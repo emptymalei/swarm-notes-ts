@@ -1,12 +1,13 @@
 ---
-title: "Semantic Perceptual Dissonance"
-slug: "semantic-perceptual-dissonance"
-type: concept
+created_at: '2026-04-15T05:03:59Z'
 generated_stub: true
+modified_at: '2026-04-16T05:08:13Z'
+processed_at: '2026-04-15T05:03:59Z'
+slug: semantic-perceptual-dissonance
 source_papers:
-  - "[[arxiv-260412648-timesaf-towards-llm-guided-semantic-asynchronous-fusion-for]]"
-processed_at: "2026-04-15T05:03:59Z"
-created_at: "2026-04-15T05:03:59Z"
+- '[[arxiv-260412648-timesaf-towards-llm-guided-semantic-asynchronous-fusion-for]]'
+title: Semantic Perceptual Dissonance
+type: concept
 ---
 
 # Semantic Perceptual Dissonance

@@ -1,12 +1,13 @@
 ---
-title: "Gondauri Index"
-slug: "gondauri-index"
-type: concept
+created_at: '2026-04-15T05:04:11Z'
 generated_stub: true
+modified_at: '2026-04-16T05:08:21Z'
+processed_at: '2026-04-15T05:04:11Z'
+slug: gondauri-index
 source_papers:
-  - "[[arxiv-260412368-a-diagnostics-first-composite-index-for-macro-financial-resi]]"
-processed_at: "2026-04-15T05:04:11Z"
-created_at: "2026-04-15T05:04:11Z"
+- '[[arxiv-260412368-a-diagnostics-first-composite-index-for-macro-financial-resi]]'
+title: Gondauri Index
+type: concept
 ---
 
 # Gondauri Index

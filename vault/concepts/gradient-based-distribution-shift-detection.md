@@ -1,12 +1,13 @@
 ---
-title: "Gradient-Based Distribution Shift Detection"
-slug: "gradient-based-distribution-shift-detection"
-type: concept
+created_at: '2026-04-15T05:04:05Z'
 generated_stub: true
+modified_at: '2026-04-16T05:08:17Z'
+processed_at: '2026-04-15T05:04:05Z'
+slug: gradient-based-distribution-shift-detection
 source_papers:
-  - "[[arxiv-260412425-forecasting-the-past-gradient-based-distribution-shift-detec]]"
-processed_at: "2026-04-15T05:04:05Z"
-created_at: "2026-04-15T05:04:05Z"
+- '[[arxiv-260412425-forecasting-the-past-gradient-based-distribution-shift-detec]]'
+title: Gradient-Based Distribution Shift Detection
+type: concept
 ---
 
 # Gradient-Based Distribution Shift Detection

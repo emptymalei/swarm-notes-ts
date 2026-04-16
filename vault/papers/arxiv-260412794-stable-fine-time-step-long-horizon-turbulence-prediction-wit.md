@@ -18,21 +18,20 @@ paper_id: "2604.12794"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
+  - "time-series"
   - "forecasting"
-  - "neural-operator"
-  - "turbulence-prediction"
-  - "mixture-of-experts"
+  - "physics-informed-machine-learning"
 architectures:
-  []
+  - "IFactFormer"
 datasets:
   []
 concept_slugs:
-  - "ms-moe"
+  - "multi-stepsize-mixture-of-experts-ms-moe"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:03:12Z"
-created_at: "2026-04-15T05:03:12Z"
+processed_at: "2026-04-16T05:07:58Z"
+created_at: "2026-04-16T05:07:58Z"
 ---
 
 # Stable Fine-Time-Step Long-Horizon Turbulence Prediction with a Multi-Stepsize Mixture-of-Experts Neural Operator
@@ -43,31 +42,34 @@ created_at: "2026-04-15T05:03:12Z"
 
 ## Summary
 
-The paper addresses the stability issues in autoregressive turbulence forecasting caused by error accumulation at fine temporal resolutions. The authors propose the Multi-stepsize Mixture-of-Experts (Ms-MoE) neural operator, built on an Implicit Factorized Transformer, to learn a family of stride-parameterized operators. This approach enables stable long-horizon rollouts by conditioning on time strides and employing a router to activate task-specific experts. Evaluation on forced homogeneous isotropic turbulence and turbulent channel flow demonstrates superior stability and adherence to long-time-averaged physical statistics.
+This paper addresses the instability and error accumulation challenges inherent in fine-grained, long-horizon autoregressive turbulence prediction. The authors introduce the Ms-MoE-IFactFormer, a neural operator architecture that utilizes a time-step router to conditionally activate scale-specific experts based on the requested temporal stride. By training on datasets with significantly finer resolution than prior benchmarks, the model achieves more stable long-time rollouts and improved statistical convergence in forced isotropic turbulence and channel flows.
 
 ## Key Contributions
 
-- Proposes Ms-MoE, a neural operator architecture that enables stable long-horizon autoregressive forecasting at fine temporal resolutions by conditioning on relative time strides.
-- Introduces a time-step router mechanism that dynamically activates scale-specific and shared experts, effectively parameterizing time-advancement operators.
-- Demonstrates improved stability and accuracy in long-time-averaged statistics for forced homogeneous isotropic turbulence and turbulent channel flow, evaluated at temporal resolutions 20 times finer than typical benchmarks.
+- Introduces Ms-MoE, a mixture-of-experts neural operator that dynamically routes time-steps to scale-specific experts for stable long-horizon turbulence prediction.
+- Achieves stable autoregressive rollouts at 20 times finer temporal resolution than previous baseline models.
+- Demonstrates superior agreement with long-time-averaged statistics on HIT and turbulent channel flow datasets.
 
 ## Open Questions & Future Work
 
-- [[compositional-consistency-in-neural-operators]]
+- [[compositional-consistency-objectives]]
 
 ## Key Concepts
 
-- [[ms-moe]]: A mixture-of-experts neural operator architecture that uses a time-step router to select scale-specific experts for stable, fine-resolution temporal forecasting.
+- [[multi-stepsize-mixture-of-experts-ms-moe]]: A neural operator architecture that uses a time-step router to select scale-specific experts, enabling stable fine-time-step turbulence forecasting.
 
 ## Archivist Review
 
-I approved the Ms-MoE architecture as a novel approach to stride-aware forecasting in neural operators and added an open question regarding formal compositional consistency, which addresses a fundamental limitation in current autoregressive physical modeling. I rejected the IFactFormer backbone mention as it is a local architectural implementation detail rather than a distinct, reusable paradigm.
+I approved the Ms-MoE architecture as it presents a novel, reusable mechanism for addressing the temporal stride sensitivity in long-horizon forecasting. The open question on compositional consistency is also approved for its relevance to fundamental stability in neural operator surrogates. Other candidates were rejected for being generic implementation tuning (routing budgets) or lack of novelty.
 
 ### Approved Concepts
-- Multi-stepsize Mixture-of-Experts (Ms-MoE): This architectural innovation addresses the common instability of fine-resolution autoregressive forecasting by routing computations based on the requested time stride.
+- Multi-stepsize Mixture-of-Experts (Ms-MoE): It enables a single neural operator architecture to perform stable long-horizon autoregressive predictions across multiple temporal resolutions by routing between scale-specific experts, addressing the instability of autoregressive error accumulation.
 
 ### Approved Open Questions
-- Compositional consistency in operators: Ensuring formal compositional consistency is a critical theoretical hurdle for reliable, long-horizon autoregressive physical simulators that must function at arbitrary temporal resolutions.
+- Compositional Consistency Objectives: Compositional consistency is a theoretical property of exact flow maps; enforcing it during training is a promising avenue to reduce error accumulation and improve long-term physical fidelity in neural PDE surrogates.
+
+### Rejected Candidates
+- [open_question] MoE Routing Budget Tradeoffs (`moe-routing-budget-tradeoffs`) - generic: This is a standard implementation tuning concern for MoE models, rather than a fundamental scientific bottleneck in time-series forecasting.
 
 ## Links
 

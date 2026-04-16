@@ -18,22 +18,20 @@ paper_id: "2604.12905"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "forecasting"
-  - "time-series"
-  - "transfer-learning"
+  - "time-series-forecasting"
   - "robotics"
-  - "probabilistic-forecasting"
+  - "transfer-learning"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "frequency-aware-spectral-decomposition"
+  - "frequency-aware-decomposition-network-fdn"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:02:53Z"
-created_at: "2026-04-15T05:02:53Z"
+processed_at: "2026-04-16T05:07:44Z"
+created_at: "2026-04-16T05:07:44Z"
 ---
 
 # Frequency-aware Decomposition Learning for Sensorless Wrench Forecasting on a Vibration-rich Hydraulic Manipulator
@@ -44,35 +42,37 @@ created_at: "2026-04-15T05:02:53Z"
 
 ## Summary
 
-The paper presents the Frequency-aware Decomposition Network (FDN) to enable sensorless wrench forecasting for robots operating in high-vibration environments like grinding. FDN improves upon existing methods by spectrally decomposing the wrench signal, using a deterministic head for predictable components and a probabilistic head for high-frequency residuals. The model incorporates learned input filtering and frequency-band priors to refine spectral awareness. Evaluation on a 6-DoF hydraulic manipulator shows superior forecasting performance compared to standard baselines, particularly in capturing challenging high-frequency dynamics.
+The Frequency-aware Decomposition Network (FDN) is introduced to address sensorless wrench forecasting in high-vibration robotic applications like grinding, where traditional methods struggle. By leveraging spectral decomposition and asymmetric prediction heads, the model treats the low-frequency signal deterministically and the high-frequency residual as a conditional distribution. FDN further integrates learned frequency filtering to adaptively improve input spectral representation. Empirical results on a 6-DoF hydraulic manipulator confirm that FDN significantly outperforms baseline models in high-frequency regimes and benefits from large-scale pretraining.
 
 ## Key Contributions
 
-- Introduced the Frequency-aware Decomposition Network (FDN) which utilizes asymmetric heads to model low-frequency deterministic wrench and high-frequency probabilistic residuals.
-- Demonstrated effective sensorless wrench forecasting on a 6-DoF hydraulic manipulator during high-frequency grinding tasks, outperforming baseline models in the high-frequency spectrum.
-- Verified the efficacy of large-scale pretraining and transfer learning for proprioception-to-wrench mapping, facilitating improved performance in downstream robotic interaction scenarios.
+- Proposes the Frequency-aware Decomposition Network (FDN) for sensorless wrench forecasting in vibration-rich robotic environments.
+- FDN utilizes an asymmetric architecture with deterministic heads for low-frequency signals and probabilistic heads for high-frequency residuals.
+- Demonstrates superior forecasting performance on real-world grinding excavation data compared to existing baseline estimators and forecasters.
+- Validates the effectiveness of cross-domain transfer learning from large-scale pretrained proprioceptive representations to downstream hydraulic manipulation tasks.
 
 ## Open Questions & Future Work
 
-- [[generalization-bounds-for-sensorless-wrench-forecasting]]
+- [[generalization-scaling-wrench-estimation]]
+- [[real-world-forecasting-deployment]]
 
 ## Key Concepts
 
-- [[frequency-aware-spectral-decomposition]]: A forecasting paradigm that partitions signal components into frequency-specific bands, using deterministic heads for trend and probabilistic heads for high-frequency residuals.
+- [[frequency-aware-decomposition-network-fdn]]: A forecasting architecture that spectrally decomposes signals to model low-frequency components deterministically and high-frequency residuals as conditional distributions.
 
 ## Archivist Review
 
-I approved the frequency-aware spectral decomposition concept as it generalizes the paper's core innovation—the dual-head modeling of deterministic and stochastic spectral components—into a reusable time-series modeling pattern. I rejected the FDN architecture itself as being too paper-specific. I approved one focused open question regarding generalization bounds for sensorless forecasting, while rejecting the other as generic boilerplate regarding scaling behavior.
+I approved the FDN architecture because its hybrid decomposition (deterministic low-frequency + probabilistic high-frequency) is a powerful, reusable forecasting inductive bias. I also approved two open questions that delineate the path from offline research toward scalable foundation models and real-time deployment, respectively. Datasets were rejected as the paper did not propose a canonical named benchmark but rather evaluated on internal industrial data.
 
 ### Approved Concepts
-- Frequency-Aware Spectral Decomposition: The dual-head architecture separating low-frequency deterministic components from high-frequency probabilistic residuals provides a robust paradigm for modeling multi-modal, vibration-heavy time series.
+- Frequency-aware Decomposition Network (FDN): The architecture introduces a distinct hybrid approach to forecasting by separating signals into deterministic and probabilistic components based on frequency.
 
 ### Approved Open Questions
-- Generalization Bounds for Sensorless Forecasting: Determining the boundaries of generalization for proprioceptive-to-wrench mapping is necessary to move beyond isolated case studies toward universal, robust robotic interaction models.
+- Scaling Sensorless Wrench Estimation: This addresses the core question of whether foundation model paradigms can effectively transfer to specialized robotic sensing and interaction tasks.
+- Real-time Wrench Forecasting Deployment: Establishing the gap between offline accuracy and real-time control utility is essential for the industrial adoption of predictive sensing.
 
 ### Rejected Candidates
-- [concept] Frequency-aware Decomposition Network (FDN) (`frequency-aware-decomposition-network-fdn`) - subcomponent_of_broader_mechanism: The specific network architecture is a paper-local implementation; the underlying decomposition mechanism is more abstractly useful and has been captured as a broader concept.
-- [open_question] Scaling and transfer in wrench estimation (`scaling-and-transfer-in-wrench-estimation`) - generic: This covers standard empirical desiderata (scaling and few-shot generalization) that are too broad and boilerplate for a specialized vault.
+- [open_question] Generalization in Sensorless Wrench Estimation (`generalization-scaling-wrench-estimation`) - other: Renamed to 'Scaling Sensorless Wrench Estimation' for better conciseness and alignment with vault style.
 
 ## Links
 

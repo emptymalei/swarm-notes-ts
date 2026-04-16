@@ -21,12 +21,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "quantile-bayesian-vector-autoregression-qbvar"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:02:37Z"
-created_at: "2026-04-15T05:02:37Z"
+processed_at: "2026-04-16T05:07:37Z"
+created_at: "2026-04-16T05:07:37Z"
 ---
 
 # Forecasting Oil Prices Across the Distribution: A Quantile VAR Approach
@@ -37,27 +37,31 @@ created_at: "2026-04-15T05:02:37Z"
 
 ## Summary
 
-This paper introduces a Quantile Bayesian Vector Autoregression (QBVAR) to forecast oil prices, specifically capturing asymmetries across different quantiles of the conditional distribution that standard mean-focused models neglect. By training on monthly data from 1975 to 2025, the authors demonstrate that the model significantly improves both median point forecasts and tail risk assessment. Their findings highlight the importance of quantile-specific dynamics for capturing downside risks, especially during periods of market volatility and financial instability.
+This paper introduces a Quantile Bayesian Vector Autoregression (QBVAR) to model real oil prices, enabling researchers to forecast across the entire conditional distribution rather than focusing solely on the mean. By allowing predictor effects to vary across quantiles, the model captures complex asymmetries in oil market dynamics. Empirical results demonstrate significant gains in both median point forecasts and tail-risk assessment compared to traditional Bayesian VAR and stochastic volatility models. The approach proves particularly effective at predicting downside risk during periods of significant market disruption.
 
 ## Key Contributions
 
-- Introduces a Quantile Bayesian Vector Autoregression (QBVAR) to model conditional distributions and capture asymmetric predictor effects in oil prices.
-- Demonstrates that QBVAR improves median point forecast accuracy by 2-5% compared to standard Bayesian VARs.
-- Achieves 10-25% improvement in left-tail risk forecasting, particularly during crisis episodes, by leveraging uncertainty and financial condition indicators.
+- Introduces a Quantile Bayesian Vector Autoregression (QBVAR) to capture asymmetric predictor effects across the conditional distribution of real oil prices.
+- Demonstrates that QBVAR improves median point forecast accuracy by 2-5% over standard BVAR baselines.
+- Achieves a 10-25% improvement in left-tail risk forecasting, particularly during identified economic crisis episodes.
 
 ## Open Questions & Future Work
 
-- [[upside-tail-risk-forecasting-challenges]]
+- [[hybrid-tail-risk-forecasting]]
+
+## Key Concepts
+
+- [[quantile-bayesian-vector-autoregression-qbvar]]: A vector autoregressive framework that models the conditional distribution of time series by allowing predictor effects to vary across quantiles.
 
 ## Archivist Review
 
-The paper presents an empirical application of Quantile Bayesian VARs to oil price forecasting. I rejected the model name (QBVAR) as it is a standard extension of known techniques rather than a novel, reusable architecture. I approved one open question regarding the asymmetry in tail risk predictability, as this touches on a fundamental limitation in current time-series forecasting paradigms.
+The review focused on identifying core methodological contributions and substantive research bottlenecks. I approved the Quantile Bayesian Vector Autoregression (QBVAR) as a foundational concept for distribution-aware time series modeling and the open question regarding hybridizing quantile and stochastic volatility models to resolve asymmetries in tail-risk forecasting performance. Other candidate concepts and datasets were rejected as they were either too specific to the paper's local domain or failed to provide sufficient, novel, and reusable modeling primitives.
+
+### Approved Concepts
+- Quantile Bayesian Vector Autoregression (QBVAR): Provides a methodology for modeling asymmetric predictor effects across the entire conditional distribution, moving beyond mean-only forecasting in vector autoregressive settings.
 
 ### Approved Open Questions
-- Upside Oil Price Risk Forecasting: Understanding the fundamental disconnect between forecasting downside versus upside tail risks is critical for improving systemic risk management tools in commodity markets.
-
-### Rejected Candidates
-- [concept] Quantile Bayesian Vector Autoregression (`qbvar`) - not_novel: This is a specific application of established Bayesian Vector Autoregression (BVAR) and Quantile Regression techniques, which do not individually or collectively qualify as a reusable architectural novelty for this vault.
+- Hybrid Models for Upside Risks: Improving upside tail risk prediction is essential for energy market risk management, where models currently struggle compared to downside risk assessment.
 
 ## Links
 

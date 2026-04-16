@@ -3,7 +3,8 @@
 title: "TimeSAF: Towards LLM-Guided Semantic Asynchronous Fusion for Time Series Forecasting"
 author:
   - literal: "Fan Zhang"
-  - literal: "Shiming Fan, Hua Wang"
+  - literal: "Shiming Fan"
+  - literal: "Hua Wang"
 issued:
   date-parts:
     - [2026, 4, 14]
@@ -14,10 +15,9 @@ paper_id: "2604.12648"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "time-series-forecasting"
-  - "large-language-models"
-  - "multi-modal-learning"
-  - "representation-learning"
+  - "forecasting"
+  - "multimodal"
+  - "llm"
 architectures:
   []
 datasets:
@@ -28,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:03:59Z"
-created_at: "2026-04-15T05:03:59Z"
+processed_at: "2026-04-16T05:08:13Z"
+created_at: "2026-04-16T05:08:13Z"
 ---
 
 # TimeSAF: Towards LLM-Guided Semantic Asynchronous Fusion for Time Series Forecasting
@@ -40,33 +40,36 @@ created_at: "2026-04-15T05:03:59Z"
 
 ## Summary
 
-TimeSAF is a novel framework for LLM-guided time-series forecasting that replaces standard synchronous fusion with a hierarchical asynchronous approach. By decoupling unimodal feature processing from cross-modal interaction, it resolves 'semantic perceptual dissonance' where LLM priors interfere with low-level temporal signals. The model utilizes a dedicated fusion trunk and a stage-wise refinement decoder to integrate global semantic guidance efficiently, leading to state-of-the-art results across long-term forecasting benchmarks and improved transfer performance.
+TimeSAF addresses the limitations of standard deep synchronous fusion in LLM-enhanced time-series forecasting, where semantic priors often interfere with fine-grained numerical temporal dynamics. The framework introduces a hierarchical asynchronous fusion mechanism that decouples unimodal feature learning from cross-modal interaction. By utilizing an independent fusion trunk and stage-wise semantic refinement, TimeSAF effectively injects global semantics without compromising low-level temporal accuracy, resulting in improved long-term forecasting and enhanced transfer learning performance.
 
 ## Key Contributions
 
-- Introduces TimeSAF, a framework using hierarchical asynchronous fusion to decouple unimodal learning from cross-modal interaction in time-series forecasting.
-- Addresses 'semantic perceptual dissonance' by utilizing a dedicated cross-modal fusion trunk and stage-wise semantic refinement decoder.
-- Achieves state-of-the-art performance on standard long-term forecasting benchmarks while demonstrating superior few-shot and zero-shot transfer capabilities.
+- Identifies 'semantic perceptual dissonance' as a core failure mode in existing deep synchronous fusion strategies for LLM-based time-series forecasting.
+- Introduces TimeSAF, a framework that employs an independent cross-modal semantic fusion trunk with learnable queries for bottom-up global semantic aggregation.
+- Achieves superior performance on standard long-term forecasting benchmarks and demonstrates robust few-shot and zero-shot generalization capabilities.
 
 ## Open Questions & Future Work
 
-- [[llm-forecasting-scaling-and-prompting-bottlenecks]]
+- [[unstructured-knowledge-integration-for-forecasting]]
 
 ## Key Concepts
 
-- [[semantic-perceptual-dissonance]]: A phenomenon where high-level semantic priors from LLMs become incorrectly entangled with low-level numerical time-series dynamics.
-- [[hierarchical-asynchronous-fusion]]: A fusion paradigm that decouples unimodal feature learning from cross-modal interaction to prevent semantic entanglement.
+- [[semantic-perceptual-dissonance]]: The interference caused by forcing high-level semantic LLM priors to entangle with low-level fine-grained numerical temporal dynamics.
+- [[hierarchical-asynchronous-fusion]]: A decoupling strategy that separates unimodal feature learning from cross-modal interaction, injecting high-level semantic signals into temporal backbones asynchronously.
 
 ## Archivist Review
 
-I have approved the two concepts as they clearly define a new research problem (semantic perceptual dissonance) and a distinct architectural response (hierarchical asynchronous fusion) that are both highly reusable in the context of LLM-based time series forecasting. The open question was refined to capture the fundamental limitations of scaling and prompt engineering in this subfield, avoiding the focus on hardware or specific model versions.
+I approved two core conceptual contributions (Semantic Perceptual Dissonance and Hierarchical Asynchronous Fusion) as they define a novel architectural paradigm for LLM-time-series integration. I approved one open question concerning unstructured knowledge integration because it addresses a fundamental limitation in the current reliance on synthetic templates. I rejected the scaling-LLM-backbones question as it represents a routine empirical request rather than a structural research challenge.
 
 ### Approved Concepts
-- Semantic Perceptual Dissonance: Identifies a fundamental performance bottleneck when using LLMs for time-series forecasting due to modality granularity mismatches.
-- Hierarchical Asynchronous Fusion: Provides a structural alternative to pervasive synchronous fusion strategies in multi-modal time-series forecasting.
+- Semantic Perceptual Dissonance: Identifies a critical bottleneck in multimodal LLM-time-series integration where dense interaction hinders performance.
+- Hierarchical Asynchronous Fusion: Provides a novel paradigm to replace standard synchronous cross-modal interaction in time-series forecasting.
 
 ### Approved Open Questions
-- LLM Forecasting Scaling and Prompting Bottlenecks: The scalability and the method of prompt engineering are fundamental bottlenecks for the broader adoption and effectiveness of LLM-empowered forecasting models.
+- Unstructured Knowledge Integration for Forecasting: The transition from synthetic, rule-based prompts to rich, unstructured external knowledge is essential for improving the real-world utility and reasoning capability of LLM-based time series models.
+
+### Rejected Candidates
+- [open_question] Scaling LLM Backbones for Forecasting (`scaling-llm-backbones-forecasting`) - low_impact: This is a generic request for larger experiments rather than a specific technical bottleneck inherent in the proposed methodology.
 
 ## Links
 

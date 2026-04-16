@@ -1,12 +1,13 @@
 ---
-title: "Fast-Slow Covariant Lyapunov Vector Cascade"
-slug: "fast-slow-clv-cascade"
-type: concept
+created_at: '2026-04-15T05:03:03Z'
 generated_stub: true
+modified_at: '2026-04-16T05:07:51Z'
+processed_at: '2026-04-15T05:03:03Z'
+slug: fast-slow-clv-cascade
 source_papers:
-  - "[[arxiv-260412869-precursors-of-extreme-events-and-critical-transitions]]"
-processed_at: "2026-04-15T05:03:03Z"
-created_at: "2026-04-15T05:03:03Z"
+- '[[arxiv-260412869-precursors-of-extreme-events-and-critical-transitions]]'
+title: Fast-Slow Covariant Lyapunov Vector Cascade
+type: concept
 ---
 
 # Fast-Slow Covariant Lyapunov Vector Cascade

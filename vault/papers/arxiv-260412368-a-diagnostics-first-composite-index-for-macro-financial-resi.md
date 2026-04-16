@@ -13,7 +13,7 @@ paper_id: "2604.12368"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
+  - "causal-inference-derived-outcomes"
 architectures:
   []
 datasets:
@@ -23,8 +23,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-15T05:04:11Z"
-created_at: "2026-04-15T05:04:11Z"
+processed_at: "2026-04-16T05:08:21Z"
+created_at: "2026-04-16T05:08:21Z"
 ---
 
 # A Diagnostics-First Composite Index for Macro-Financial Resilience to Socioeconomic Challenges: The Gondauri Index with Benchmarking and Scenario Evidence
@@ -35,27 +35,28 @@ created_at: "2026-04-15T05:04:11Z"
 
 ## Summary
 
-This paper introduces the Gondauri Index (GI), a composite framework for evaluating macro-financial resilience across heterogeneous economies. Unlike conventional additive indices, the GI accounts for non-substitutability between pillars—Inequality, Liquidity/Systemic risk, and Inflation—ensuring that weaknesses in one area cannot be masked by strengths in others. The methodology includes robust percentile normalization, missing-data handling, and a binding-pillar diagnostic tool to pinpoint primary constraints. Empirical results span 2005-2024, providing a scalable and transparent tool for policy sequencing and long-term resilience scenario analysis.
+The Gondauri Index (GI) provides a reproducible, diagnostics-first framework for assessing macro-financial resilience on a unified 0-100 scale. By integrating Inequality, Liquidity, and Inflation pillars, the index ensures that strengths in one dimension do not mask fragility in others, addressing a major limitation of conventional additive dashboards. The paper validates the approach through a 20-year empirical study and provides a forward-looking scenario-based tool to identify binding constraints for policy sequencing.
 
 ## Key Contributions
 
-- Introduces the Gondauri Index (GI), a composite framework that benchmarks macro-financial resilience on a 0-100 scale by treating dimensions as non-substitutable.
-- Provides a 20-year empirical benchmark (2005-2024) and develops a binding-pillar diagnostic mechanism to identify primary constraints on economic resilience.
-- Implements a component-level weight renormalization technique and 5-year rolling diagnostic decomposition to allow for transparent attribution of resilience changes.
+- Developed the Gondauri Index (GI), a diagnostics-first composite framework that enforces non-substitutability of resilience across socioeconomic dimensions.
+- Introduced a binding-pillar diagnostic mechanism that identifies the dominant limiting constraint on macro-financial resilience for future scenarios.
+- Demonstrated dynamic resilience tracking from 2005-2024 using Delta log(GI) contribution decomposition to attribute resilience shifts to pillar-level drivers.
 
 ## Key Concepts
 
-- [[gondauri-index]]: A composite framework for benchmarking macro-financial resilience that treats resilience pillars as non-substitutable to prevent fragility masking.
+- [[gondauri-index]]: A composite macro-financial resilience framework that treats indicators as non-substitutable dimensions on a unified 0-100 scale.
 
 ## Archivist Review
 
-The Gondauri Index is approved as it introduces a novel 'diagnostics-first' composite construction that addresses the non-substitutability of resilient dimensions, which is a transferable concept for monitoring complex systems. Other proposed candidates were rejected because they are internal subcomponents of the index methodology. No datasets or open questions were sufficiently distinct or critical for vault inclusion.
+I have approved the Gondauri Index as a distinct methodology for constructing composite indices under constraints of non-substitutability. Other proposed concepts were rejected as they represent sub-mechanisms or local applications of the primary framework.
 
 ### Approved Concepts
-- Gondauri Index: It introduces a diagnostic-first composite framework that explicitly models non-substitutability between pillars, a key departure from additive index construction in economics.
+- Gondauri Index: The index proposes a novel 'diagnostics-first' methodology that prioritizes non-substitutable multi-dimensional resilience, contrasting with traditional additive indices where one pillar's strength might mask another's failure.
 
 ### Rejected Candidates
-- [concept] Pillar-level Resilience Decomposition (`gondauri-index-pillar-decomposition`) - subcomponent_of_broader_mechanism: This is an application-specific implementation detail of the Gondauri Index rather than a standalone methodology.
+- [concept] Binding-Pillar Diagnostic (`binding-pillar-diagnostic`) - subcomponent_of_broader_mechanism: This is a sub-component of the Gondauri Index rather than a standalone methodology or architectural pattern.
+- [concept] Delta log(GI) Contribution Decomposition (`delta-log-gi-contribution-decomposition`) - paper_local: This is a specific application of standard contribution decomposition for this index, rather than a novel, reusable ML concept.
 
 ## Links
 

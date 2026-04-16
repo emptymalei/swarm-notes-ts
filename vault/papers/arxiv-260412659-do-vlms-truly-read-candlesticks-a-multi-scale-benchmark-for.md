@@ -17,8 +17,11 @@ paper_id: "2604.12659"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
   - "forecasting"
+  - "benchmark"
+  - "multi-scale"
+  - "time-series-forecasting"
+  - "vision-language-models"
 architectures:
   []
 datasets:
@@ -28,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:03:30Z"
-created_at: "2026-04-15T05:03:30Z"
+processed_at: "2026-04-16T05:08:05Z"
+created_at: "2026-04-16T05:08:05Z"
 ---
 
 # Do VLMs Truly "Read" Candlesticks? A Multi-Scale Benchmark for Visual Stock Price Forecasting
@@ -40,28 +43,29 @@ created_at: "2026-04-15T05:03:30Z"
 
 ## Summary
 
-This paper investigates the actual capability of Vision-Language Models (VLMs) to analyze stock price candlestick charts by introducing a dedicated multi-scale benchmark. The authors demonstrate that while VLMs perform reasonably well during clear market trends, they lack robustness in common market scenarios and show significant weaknesses in precise temporal reasoning. By comparing model outputs against an XGBoost baseline, the study reveals that VLM predictive performance is often biased and lacks sensitivity to specific forecast horizons provided in prompts.
+This paper critically evaluates the capability of Vision-Language Models (VLMs) to process multi-scale candlestick charts for stock price forecasting. The authors construct a new multi-scale dataset and evaluation framework to determine whether VLMs genuinely comprehend market visual dynamics or merely rely on persistent trends. The results indicate that while VLMs perform reasonably well under clear trend conditions, they suffer from significant predictive biases and a lack of precise temporal reasoning when forecasting across multiple scales. The study highlights the current limitations of VLMs in effectively integrating long-term trends with short-term inflection signals.
 
 ## Key Contributions
 
-- Introduces a multi-scale candlestick chart dataset designed to test VLM integration of long-term trends and short-term inflection signals.
-- Establishes a standardized VLM evaluation framework using confusion-matrix diagnostics and IC-based metrics compared against XGBoost baselines.
-- Reveals that current representative VLMs struggle with non-trending market scenarios and demonstrate limited sensitivity to explicit temporal forecast prompts.
+- Introduces a multi-scale candlestick chart benchmark for assessing VLM-based stock price forecasting.
+- Evaluates representative VLMs against XGBoost temporal baselines using confusion-matrix-based diagnostics and IC metrics.
+- Demonstrates that current VLMs struggle with non-trending market conditions and exhibit poor sensitivity to explicit temporal forecast horizons.
 
 ## Open Questions & Future Work
 
-- [[vlm-financial-pattern-understanding]]
+- [[vlm-financial-chart-reasoning]]
+- [[vlm-temporal-reasoning-finetuning]]
 
 ## Archivist Review
 
-I have rejected the proposed benchmark concept as it is a specific implementation of an evaluation pipeline rather than a reusable conceptual contribution. Similarly, I rejected the fine-tuning open question as overly generic. I approved one open question concerning the interpretability of VLM visual pattern recognition, which is a significant bottleneck for the field.
+The paper contributes a critique of VLM reasoning on financial charts. I approved two open questions that delineate the gap between current prompt-based VLM performance and the actual technical reasoning required for finance. No specific dataset or concept was deemed sufficiently generalizable to warrant a standalone vault note.
 
 ### Approved Open Questions
-- Evaluating VLM Financial Pattern Understanding: Understanding whether VLMs 'see' these specific technical indicators is crucial for determining if they can function as reliable analytical tools or if their performance is merely a product of statistical correlation.
+- Assessing VLM Financial Chart Reasoning: Validating the fundamental technical reasoning capabilities of VLMs in finance is critical for moving beyond 'black box' performance metrics toward robust, interpretable financial decision-support systems.
+- Improving VLM Temporal Reasoning: It is necessary to determine if the identified performance bottleneck in long-term temporal reasoning is an inherent limitation of VLM architectures or a result of insufficient task-specific domain alignment.
 
 ### Rejected Candidates
-- [concept] Multi-Scale Candlestick Benchmark (`multi-scale-candlestick-benchmark`) - paper_local: The proposed benchmark is a paper-specific dataset and evaluation routine rather than a reusable core mechanism or conceptual framework.
-- [open_question] Impact of Fine-Tuning VLMs (`vlm-fine-tuning-financial-reasoning`) - generic: This is a generic future research direction common to almost all VLM domain-adaptation papers, rather than a specific unresolved theoretical or mechanism-level bottleneck.
+- [dataset] Multi-scale candlestick charts dataset (`multi-scale-candlestick-charts-dataset`) - paper_local: The dataset is introduced without a formal, reusable name and appears to be specific to this paper's evaluation.
 
 ## Links
 

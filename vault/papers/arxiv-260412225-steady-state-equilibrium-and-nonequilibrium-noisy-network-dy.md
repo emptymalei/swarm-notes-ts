@@ -23,8 +23,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:04:42Z"
-created_at: "2026-04-15T05:04:42Z"
+processed_at: "2026-04-16T05:08:44Z"
+created_at: "2026-04-16T05:08:44Z"
 ---
 
 # Steady-State Equilibrium and Nonequilibrium Noisy Network Dynamics
@@ -35,26 +35,27 @@ created_at: "2026-04-15T05:04:42Z"
 
 ## Summary
 
-This paper provides a theoretical analysis of the fluctuating dynamics of noisy networks around their stable steady states. It identifies the conditions leading to non-equilibrium steady state (NESS) dynamics and relates them to physical Brownian motion in overdamped systems. The work derives a generalized fluctuation-dissipation relation and discusses the implications for reconstructing network structures from observed time-series data. The results are supported by theoretical derivations and numerical simulations.
+This paper provides a theoretical framework for analyzing the stochastic dynamics of noisy networks around their stable, noise-free steady states. It distinguishes between equilibrium and non-equilibrium steady states (NESS) by examining the symmetry of network connections and noise covariance matrices. The author derives a general fluctuation-dissipation relation for these systems and demonstrates that standard overdamped Brownian dynamics can be viewed as a specific instance of a NESS in a directed network, with implications for network reconstruction from time-series observations.
 
 ## Key Contributions
 
 - Derived equivalent conditions for equilibrium dynamics in noisy networks based on connection and noise covariance properties.
-- Characterized non-equilibrium steady state (NESS) dynamics through steady-state probability current and drift velocity relative to effective potential.
-- Established a generalized fluctuation-dissipation relation for non-equilibrium noisy network dynamics and linked it to network reconstruction from time-series data.
+- Formalized Non-Equilibrium Steady State (NESS) analysis using probability currents and drift velocities relative to effective potential surfaces.
+- Established a general fluctuation-dissipation relation for non-equilibrium noisy network dynamics and related them to physical overdamped Brownian systems.
 
 ## Open Questions & Future Work
 
-- [[nonlinear-noisy-network-transitions]]
-- [[fdr-correlated-network-noise]]
+- [[nonlinear-and-active-network-dynamics]]
 
 ## Archivist Review
 
-The paper provides a theoretical treatment of noisy networks and their steady-state dynamics. The proposed open questions regarding nonlinear transitions and correlated noise represent fundamental, unresolved bottlenecks in stochastic network theory, which align well with the vault's focus on complex dynamical systems and time-series modeling. No new concepts were approved as the core contributions (e.g., NESS, fluctuation-dissipation) are well-established physical concepts already represented in the broader scientific landscape.
+This paper presents a theoretical framework for linearized noisy network dynamics that bridges statistical mechanics and network theory. I have approved the open question regarding the extension to nonlinear and colored-noise regimes, as it identifies a clear theoretical bottleneck for scaling this approach to more complex, realistic systems. No specific concepts were approved as the primary contribution is a theoretical derivation rather than a distinct algorithmic construct or reusable forecasting representation.
 
 ### Approved Open Questions
-- Nonlinear Noisy Network Transitions: This addresses the limitations of the current linearization and bridges the gap to understanding more complex, real-world network behaviors where nonlinearities are dominant and transitions between states are critical.
-- FDR for Correlated Noise: This extends the scope of stochastic thermodynamics from ideal white-noise models to realistic, active reservoirs where memory effects significantly alter dissipation and flux properties.
+- Nonlinear and Active Network Dynamics: These unresolved areas are central to unifying stochastic network theory with non-equilibrium statistical mechanics, which is necessary for applications in biological and synthetic systems where linearity and white noise are poor assumptions.
+
+### Rejected Candidates
+- [open_question] Nonlinear and Active Network Dynamics (`nonlinear-and-active-network-dynamics`) - other: The candidate was approved as an open question; this rejection record is not needed.
 
 ## Links
 

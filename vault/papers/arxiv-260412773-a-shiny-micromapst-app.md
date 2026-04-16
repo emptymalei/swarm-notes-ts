@@ -12,7 +12,7 @@ url: "https://arxiv.org/abs/2604.12773"
 # Custom fields
 paper_id: "2604.12773"
 paper_source: "arxiv"
-domain: "None"
+domain: "nlp"
 tags:
   []
 architectures:
@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-15T05:03:19Z"
-created_at: "2026-04-15T05:03:19Z"
+processed_at: "2026-04-16T05:07:59Z"
+created_at: "2026-04-16T05:07:59Z"
 ---
 
 # A Shiny micromapST App
@@ -36,13 +36,13 @@ created_at: "2026-04-15T05:03:19Z"
 
 ## Summary
 
-The micromapST R package is a powerful tool for visualizing geographically indexed data via linked micromaps, but it often requires complex data frame preparation. This paper introduces an R Shiny application that provides a graphical user interface to streamline the creation of these visualizations. By abstracting away the technical formatting challenges of the underlying package, the tool enables faster and more intuitive exploration of spatial statistical data.
+This paper introduces a Shiny application designed to provide a graphical user interface for the micromapST R package, facilitating the creation of linked micromaps. By abstracting the complexity of data frame formatting, the app allows users to more intuitively visualize and explore geographically indexed statistical data. The work serves as both a tutorial and an overview of linked micromaps, demonstrating their utility for displaying multifaceted spatial data compared to traditional choropleth approaches.
 
 ## Key Contributions
 
-- Introduces a Shiny graphical user interface for the micromapST R package to simplify the creation of linked micromaps for geographically indexed data.
-- Addresses technical barriers in the original micromapST package related to complex data frame specification and layout formatting.
-- Provides a tutorial-based demonstration using real-world datasets to show how the application enables rapid, interactive visualization of spatial and statistical data.
+- Introduces a Shiny-based graphical user interface to simplify the creation of linked micromaps using the micromapST R package.
+- Provides a tutorial on visualizing geographically indexed data using linked micromaps to overcome limitations of traditional choropleth maps.
+- Demonstrates the app's capability to manage complex data frame formatting and generate diverse statistical displays including scatterplots, boxplots, and time series plots.
 
 ## Links
 
