@@ -20,23 +20,18 @@ paper_id: "2604.13453"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "forecasting"
-  - "traffic-prediction"
-  - "spatiotemporal-modeling"
-  - "attention"
-  - "state-space-models"
+  []
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "temporal-spatial-temporal-architecture"
+  - "fast-architecture"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-16T05:06:57Z"
-created_at: "2026-04-16T05:06:57Z"
+processed_at: "2026-04-17T05:08:12Z"
+created_at: "2026-04-17T05:08:12Z"
 ---
 
 # FAST: A Synergistic Framework of Attention and State-space Models for Spatiotemporal Traffic Prediction
@@ -47,34 +42,34 @@ created_at: "2026-04-16T05:06:57Z"
 
 ## Summary
 
-FAST is a spatiotemporal traffic forecasting framework that addresses the efficiency-expressiveness trade-off by combining temporal attention modules with a Mamba-based spatial module. The model employs a Temporal-Spatial-Temporal architecture that captures global dependencies with linear complexity, outperforming existing Transformer, GNN, and Mamba-based models. Empirical results on three major traffic benchmarks demonstrate that FAST achieves superior accuracy and scalability by integrating multi-source spatiotemporal embeddings and hierarchical skip prediction.
+FAST is a unified spatiotemporal framework designed to balance predictive expressiveness with computational efficiency in large-scale traffic forecasting. By employing a Temporal-Spatial-Temporal architecture, the model leverages temporal attention for complex sequence patterns and Mamba-based selective state-space layers for linear-complexity spatial dependency modeling. The framework further incorporates a multi-source embedding mechanism and hierarchical skip-connection fusion, demonstrating robust performance improvements across major traffic benchmarks compared to traditional Transformer and GNN architectures.
 
 ## Key Contributions
 
-- Introduces FAST, a unified Temporal-Spatial-Temporal framework that leverages both attention and selective state-space models for efficient traffic forecasting.
-- Integrates a Mamba-based spatial module to achieve linear complexity in modeling long-range inter-sensor dependencies, addressing the limitations of quadratic Transformer-based approaches.
-- Achieves state-of-the-art performance on PeMS04, PeMS07, and PeMS08 benchmarks, providing up to 4.3% lower RMSE and 2.8% lower MAE compared to competitive baselines.
+- Introduced FAST, a unified spatiotemporal architecture combining temporal attention modules with linear-complexity Mamba-based spatial modeling.
+- Developed a multi-source spatiotemporal embedding to integrate heterogeneous data including historical flow, temporal context, and node-level metadata.
+- Achieved superior predictive accuracy on PeMS04, PeMS07, and PeMS08 benchmarks, with up to 4.3% lower RMSE and 2.8% lower MAE compared to state-of-the-art Transformer and GNN-based baselines.
 
 ## Open Questions & Future Work
 
-- [[adaptive-spatial-structure-modeling]]
+- [[extending-spatiotemporal-frameworks-for-complex-urban-tasks]]
 
 ## Key Concepts
 
-- [[temporal-spatial-temporal-architecture]]: A sandwich-style architecture that alternates temporal attention and Mamba-based spatial modules to process graph-structured sequence data with linear complexity.
+- [[fast-architecture]]: A hybrid spatiotemporal architecture that alternates between temporal attention and selective state-space-based spatial modules to achieve scalability and expressiveness.
 
 ## Archivist Review
 
-Archivist review kept only candidates judged central to the paper and reusable across future work. Approved 1 concept(s), 1 open question(s), and 0 dataset(s), with 1 rejected candidate note(s).
+I approved the FAST Architecture as a key concept because it represents a distinct and reusable pattern for merging temporal attention with spatial state-space models. I rejected the original 'FAST framework' candidate in favor of 'FAST Architecture' to better define the technical contribution. I also approved the open question regarding the scalability and extensibility of these models to complex urban settings, which is a substantial bottleneck for practical deployment. PeMS datasets were not approved as they are standard benchmarks in the field.
 
 ### Approved Concepts
-- Temporal-Spatial-Temporal Architecture: This architecture formalizes the strategy of sandwiching state-space models between attention-based temporal stages to balance expressivity and complexity in spatiotemporal tasks.
+- FAST Architecture: It provides a reusable architectural template for balancing attention-based temporal modeling with linear-complexity state-space-based spatial modeling in graph-structured time series.
 
 ### Approved Open Questions
-- Adaptive Spatial Structure Modeling: Moving beyond fixed graphs is essential for creating robust, generalizable spatiotemporal models in real-world environments where connectivity patterns evolve over time.
+- Extending Spatiotemporal Forecasting Frameworks: Addressing these challenges is essential for transitioning from specialized traffic forecasting benchmarks to real-world, dynamic urban intelligence systems.
 
 ### Rejected Candidates
-- [open_question] Expanding Spatiotemporal Forecasting Capabilities (`expanding-spatiotemporal-forecasting-capabilities`) - other: The candidate was overly broad and included boilerplate requests for more data/scenarios; I replaced it with a more specific, technically focused question about adaptive spatial modeling.
+- [concept] FAST (Framework of Attention and State-space Models for Traffic) (`fast-framework`) - other: Renamed to 'FAST Architecture' to focus on the modular design rather than the specific framework name, and to adhere to better naming conventions.
 
 ## Links
 

@@ -1,12 +1,13 @@
 ---
-title: "Aggregated DER Installed Capacity Estimation"
-slug: "aggregated-der-installed-capacity-estimation"
-type: concept
+created_at: '2026-04-16T05:05:56Z'
 generated_stub: true
+modified_at: '2026-04-17T05:06:59Z'
+processed_at: '2026-04-16T05:05:56Z'
+slug: aggregated-der-installed-capacity-estimation
 source_papers:
-  - "[[arxiv-260413926-importance-of-aggregated-der-installed-capacity-in-distribut]]"
-processed_at: "2026-04-16T05:05:56Z"
-created_at: "2026-04-16T05:05:56Z"
+- '[[arxiv-260413926-importance-of-aggregated-der-installed-capacity-in-distribut]]'
+title: Aggregated DER Installed Capacity Estimation
+type: concept
 ---
 
 # Aggregated DER Installed Capacity Estimation

@@ -18,10 +18,7 @@ paper_id: "2604.13714"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "forecasting"
-  - "time-series-forecasting"
-  - "energy-management"
-  - "feature-selection"
+  []
 architectures:
   []
 datasets:
@@ -32,8 +29,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-16T05:06:18Z"
-created_at: "2026-04-16T05:06:18Z"
+processed_at: "2026-04-17T05:07:25Z"
+created_at: "2026-04-17T05:07:25Z"
 ---
 
 # An End-to-end Building Load Forecasting Framework with Patch-based Information Fusion Network and Error-weighted Adaptive Loss
@@ -44,35 +41,35 @@ created_at: "2026-04-16T05:06:18Z"
 
 ## Summary
 
-This paper presents an end-to-end building load forecasting framework designed to handle the complexity and volatility of energy demand data. The framework features a two-stage preprocessing pipeline for robust anomaly detection and feature selection, followed by a Patch-based Information Fusion Network (PIF-Net) that effectively extracts temporal features using a gating mechanism. To improve resilience against extreme load conditions, the authors propose an Error-weighted Adaptive Loss (EWAL) function that adjusts penalties according to real-time error distributions. Experimental results confirm the framework's superior performance compared to traditional forecasting baselines.
+This paper introduces an end-to-end building load forecasting framework designed to handle high volatility and complex temporal dependencies. The approach features a robust preprocessing pipeline and a novel Patch-based Information Fusion Network (PIF-Net) that models temporal dynamics using gated, patch-wise GRU units. Furthermore, the framework employs an Error-weighted Adaptive Loss (EWAL) to dynamically manage penalty weights, significantly improving forecasting performance and robustness during extreme load events.
 
 ## Key Contributions
 
-- Introduces PIF-Net, a patch-based architecture that utilizes shared GRUs and a gated fusion mechanism to improve temporal dependency modeling in building load data.
-- Develops Error-weighted Adaptive Loss (EWAL), which dynamically adjusts penalties based on error distribution to improve forecasting robustness under extreme load fluctuations.
-- Implements a two-stage preprocessing pipeline incorporating LOF for anomaly detection and SVM-SHAP for feature selection to reduce redundancy and improve data quality.
+- Proposes a patch-based information fusion network (PIF-Net) that uses shared GRUs and dynamic gating to integrate multi-scale temporal dependencies for building load forecasting.
+- Introduces an Error-weighted Adaptive Loss (EWAL) that dynamically adjusts penalty weights based on prediction error distributions to improve robustness under high-volatility scenarios.
+- Develops a two-stage preprocessing pipeline incorporating LOF for anomaly detection and SVM-SHAP for feature selection, enhancing model interpretability and data quality.
 
 ## Open Questions & Future Work
 
+- [[probabilistic-load-forecasting-uncertainty]]
 - [[multi-source-data-integration-load-forecasting]]
-- [[probabilistic-load-forecasting-uncertainty-quantification]]
 
 ## Key Concepts
 
-- [[patch-based-information-fusion-network]]: A deep learning framework for time series forecasting that processes input data as local patches to improve feature extraction and temporal integration.
-- [[error-weighted-adaptive-loss]]: A loss function for time-series forecasting that combines rational quadratic and logarithmic components to dynamically penalize errors based on their distribution.
+- [[patch-based-information-fusion-network]]: An architecture that processes time-series input as local patches via GRUs and integrates them using a dynamic gating mechanism.
+- [[error-weighted-adaptive-loss]]: A loss function that dynamically adjusts penalty weights based on real-time prediction error distributions using a combination of rational quadratic and logarithmic terms.
 
 ## Archivist Review
 
-The approved concepts represent reusable methodological contributions to time-series forecasting (patch-based gating and robust loss functions). The open questions address core structural limitations in current load forecasting, specifically the challenge of feature integration and the shift toward probabilistic modeling, both of which are standard, important research directions for this domain.
+The paper introduces a patch-based architectural approach and a dynamic loss function, both of which represent reusable strategies in time-series forecasting. The proposed open questions address critical gaps in current load forecasting: the shift from deterministic to probabilistic models and the integration of heterogeneous, multi-source data. I have approved these as they align with the vault's standard for reusable methodologies and high-impact research questions.
 
 ### Approved Concepts
-- Patch-based Information Fusion Network (PIF-Net): PIF-Net introduces a patching mechanism for building load forecasting that leverages shared GRU blocks and dynamic weighting for temporal features.
-- Error-weighted Adaptive Loss (EWAL): EWAL addresses model robustness under extreme load conditions by dynamically adjusting loss penalties.
+- Patch-based Information Fusion Network (PIF-Net): It is the core architectural contribution, combining local patch processing with a dynamic gating mechanism for temporal feature fusion.
+- Error-weighted Adaptive Loss (EWAL): It provides a novel mechanism for improving model robustness in forecasting tasks prone to outliers or volatility.
 
 ### Approved Open Questions
-- Integrating Multi-source Data for Forecasting: Expanding input features is a critical step to moving beyond simple time-series forecasting and capturing the underlying physical and social drivers of energy consumption.
-- Transitioning to Probabilistic Forecasting: Quantifying uncertainty is essential for risk-aware decision-making in demand response and energy management systems.
+- Probabilistic Building Load Forecasting: Probabilistic forecasting provides critical insights into the volatility of building loads, which is essential for effective demand response and reserve market participation.
+- Multi-source Data Integration: Capturing the interplay between human activity and physical building characteristics is necessary to move beyond simple time-series extrapolation and improve prediction accuracy during non-routine operations.
 
 ## Links
 

@@ -14,20 +14,20 @@ paper_id: "2604.13455"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "forecasting"
-  - "physics-informed-ml"
-  - "meteorological-forecasting"
+  - "time-series-forecasting"
+  - "physics-informed-machine-learning"
+  - "renewable-energy-forecasting"
 architectures:
   []
 datasets:
-  - "nasa-power"
+  []
 concept_slugs:
-  - "complexity-paradox-meteorological-forecasting"
+  []
 dataset_slugs:
-  - "nasa-power"
+  []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-16T05:06:51Z"
-created_at: "2026-04-16T05:06:51Z"
+processed_at: "2026-04-17T05:08:05Z"
+created_at: "2026-04-17T05:08:05Z"
 ---
 
 # Outperforming Self-Attention Mechanisms in Solar Irradiance Forecasting via Physics-Guided Neural Networks
@@ -38,31 +38,13 @@ created_at: "2026-04-16T05:06:51Z"
 
 ## Summary
 
-This paper introduces a physics-informed hybrid CNN-BiLSTM architecture for Global Horizontal Irradiance (GHI) forecasting, challenging the reliance on complex Transformer-based models. By integrating domain-specific knowledge—such as solar zenith angles and clear-sky indices—as engineered features, the model achieves superior accuracy in high-noise meteorological environments. The results demonstrate a 'Complexity Paradox,' showing that lightweight, physics-guided models provide more robust and efficient performance than computationally intensive self-attention mechanisms.
+This paper challenges the adoption of computationally heavy transformer models for meteorological tasks by introducing a lightweight, physics-informed CNN-BiLSTM hybrid framework. By explicitly incorporating 15 domain-specific physical features like Clear-Sky indices, the model achieves superior accuracy on NASA POWER irradiance data compared to complex attention-based baselines. The study highlights a 'Complexity Paradox', demonstrating that informed physical constraints effectively outperform raw-data-driven self-attention in high-noise forecasting environments.
 
 ## Key Contributions
 
-- Introduces a lightweight, physics-informed hybrid CNN-BiLSTM architecture that outperforms Transformer-based models in solar irradiance forecasting.
-- Demonstrates that integrating 15 engineered physical features (e.g., Clear-Sky index, Solar Zenith Angle) significantly reduces forecasting error in high-noise environments compared to pure data-driven approaches.
-- Achieves a Root Mean Square Error (RMSE) of 19.53 W/m^2 on NASA POWER data, providing empirical evidence for the 'Complexity Paradox' where physical constraints supersede architectural depth.
-
-## Key Concepts
-
-- [[complexity-paradox-meteorological-forecasting]]: The observation that in high-noise meteorological tasks, lightweight models with explicit physical constraints outperform complex, data-hungry attention-based architectures.
-
-## Archivist Review
-
-I approved the 'Complexity Paradox' concept as it represents a significant, reusable heuristic for evaluating architectural choices in high-noise forecasting tasks. I rejected the CNN-BiLSTM architecture candidate as it is a specific implementation choice rather than a broadly reusable concept. The NASA POWER dataset was approved as a standard benchmark source.
-
-### Approved Concepts
-- Complexity Paradox (Meteorological Forecasting): Captures a recurring empirical observation in time-series forecasting where domain-specific inductive biases outperform generic, computationally expensive deep learning architectures.
-
-### Rejected Candidates
-- [concept] Physics-Informed Hybrid CNN-BiLSTM (`physics-informed-hybrid-cnn-bilstm`) - subcomponent_of_broader_mechanism: This is a specific architectural implementation that does not rise to the level of a foundational concept compared to the overarching 'Complexity Paradox' it demonstrates.
-
-## Datasets
-
-- [[nasa-power]]
+- Introduces a lightweight, physics-informed hybrid CNN-BiLSTM architecture for GHI forecasting that outperforms transformer-based models.
+- Demonstrates that integrating 15 physical domain-knowledge features (e.g., Clear-Sky indices, Solar Zenith Angle) significantly reduces forecasting error compared to pure data-driven approaches.
+- Achieves an RMSE of 19.53 W/m^2 on NASA POWER data, providing empirical evidence for the 'Complexity Paradox' in meteorological forecasting where domain constraints outperform architectural complexity.
 
 ## Links
 

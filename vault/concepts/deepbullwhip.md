@@ -1,12 +1,13 @@
 ---
-title: "Deepbullwhip"
-slug: "deepbullwhip"
-type: concept
+created_at: '2026-04-16T05:06:46Z'
 generated_stub: true
+modified_at: '2026-04-17T05:08:03Z'
+processed_at: '2026-04-16T05:06:46Z'
+slug: deepbullwhip
 source_papers:
-  - "[[arxiv-260413478-deepbullwhip-an-open-source-simulation-and-benchmarking-for]]"
-processed_at: "2026-04-16T05:06:46Z"
-created_at: "2026-04-16T05:06:46Z"
+- '[[arxiv-260413478-deepbullwhip-an-open-source-simulation-and-benchmarking-for]]'
+title: Deepbullwhip
+type: concept
 ---
 
 # Deepbullwhip

@@ -1,12 +1,13 @@
 ---
-title: "Probabilistic Finite L2-Gain Stabilization"
-slug: "probabilistic-finite-l2-gain-stabilization"
-type: concept
+created_at: '2026-04-16T05:06:24Z'
 generated_stub: true
+modified_at: '2026-04-17T05:07:36Z'
+processed_at: '2026-04-16T05:06:24Z'
+slug: probabilistic-finite-l2-gain-stabilization
 source_papers:
-  - "[[arxiv-260413707-data-driven-probabilistic-finite-l2-gain-stabilization-of-st]]"
-processed_at: "2026-04-16T05:06:24Z"
-created_at: "2026-04-16T05:06:24Z"
+- '[[arxiv-260413707-data-driven-probabilistic-finite-l2-gain-stabilization-of-st]]'
+title: Probabilistic Finite L2-Gain Stabilization
+type: concept
 ---
 
 # Probabilistic Finite L2-Gain Stabilization

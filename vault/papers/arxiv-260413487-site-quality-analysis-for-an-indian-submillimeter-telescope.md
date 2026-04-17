@@ -13,9 +13,11 @@ url: "https://arxiv.org/abs/2604.13487"
 # Custom fields
 paper_id: "2604.13487"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "physics"
 tags:
-  - "time-series"
+  - "atmospheric-modeling"
+  - "site-selection"
+  - "submillimeter-astronomy"
 architectures:
   []
 datasets:
@@ -25,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-16T05:06:39Z"
-created_at: "2026-04-16T05:06:39Z"
+processed_at: "2026-04-17T05:07:55Z"
+created_at: "2026-04-17T05:07:55Z"
 ---
 
 # Site Quality Analysis for an Indian Submillimeter Telescope: A Reanalysis-Based Approach
@@ -37,13 +39,13 @@ created_at: "2026-04-16T05:06:39Z"
 
 ## Summary
 
-This paper evaluates the suitability of the Himalayan plateau in Ladakh for submillimeter astronomical observations by analyzing 15 years of ERA5 reanalysis data. By mapping precipitable water vapor (PWV) statistics and employing the 'am' radiative transfer code, the authors identify two candidate regions that significantly outperform current local sites in transparency and low atmospheric noise. The findings provide a quantitative basis for future in situ radiometer campaigns to support the establishment of a science-class submillimeter observatory in the region.
+This study evaluates the Ladakh plateau in India as a potential site for a science-class submillimeter observatory using historical ERA5 climate reanalysis data. The researchers mapped precipitable water vapor (PWV) statistics over a 15-year period and identified two high-potential candidate regions. By modeling atmospheric transmittance and photon noise via radiative transfer simulations, the paper demonstrates that these sites provide superior observing conditions compared to existing infrastructure in the region, supporting the case for further ground-based site validation.
 
 ## Key Contributions
 
-- Identified two high-altitude sites in Ladakh (Site A and Site B) with precipitable water vapor (PWV) ≤ 1 mm for 23% and 19% of the time, respectively.
-- Quantified atmospheric transmittance and photon noise across the 10–1000 GHz range using ERA5 reanalysis and the 'am' radiative transfer model.
-- Demonstrated that the identified Ladakh sites outperform existing local infrastructure at Hanle and Merak for submillimeter astronomy.
+- Analyzed 184 months of ERA5 reanalysis data to map PWV statistics across the Ladakh plateau for submillimeter astronomy suitability.
+- Identified two candidate sites in Ladakh where PWV levels of <= 1 mm are attainable for 19-23% of the time, significantly outperforming existing sites like Hanle and Merak.
+- Computed atmospheric transmittance and photon noise profiles (10-1000 GHz) for promising locations using the 'am' radiative transfer code, demonstrating site competitiveness globally.
 
 ## Links
 

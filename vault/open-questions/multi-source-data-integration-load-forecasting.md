@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-16T05:06:18Z'
+modified_at: '2026-04-17T05:07:25Z'
 source_papers:
 - '[[arxiv-260413714-an-end-to-end-building-load-forecasting-framework-with-patch]]'
-title: Integrating Multi-source Data for Forecasting
+title: Multi-source Data Integration
 ---
 
 **Background:** Building load forecasting is frequently constrained by limited input features, often relying solely on historical load and basic weather indices. Integrating diverse exogenous data streams into forecasting architectures remains an active challenge.

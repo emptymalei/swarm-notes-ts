@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-16T05:05:56Z'
+modified_at: '2026-04-17T05:06:59Z'
 source_papers:
 - '[[arxiv-260413926-importance-of-aggregated-der-installed-capacity-in-distribut]]'
-title: Quantifying Impacts of DER Metadata
+title: DER Metadata Quantification and Integration
 ---
 
 **Background:** Estimating aggregated Distributed Energy Resource (DER) installed capacity at low-voltage aggregation points is essential for distribution network operation and planning, as it provides a scalable way to increase visibility without requiring customer-level monitoring. Current methods for identifying these capacities remain limited by measurement availability, modeling assumptions, and the need for rigorous validation within operational workflows.

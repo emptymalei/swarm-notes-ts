@@ -1,12 +1,13 @@
 ---
-title: "Patch-based Information Fusion Network (PIF-Net)"
-slug: "patch-based-information-fusion-network"
-type: concept
+created_at: '2026-04-16T05:06:18Z'
 generated_stub: true
+modified_at: '2026-04-17T05:07:25Z'
+processed_at: '2026-04-16T05:06:18Z'
+slug: patch-based-information-fusion-network
 source_papers:
-  - "[[arxiv-260413714-an-end-to-end-building-load-forecasting-framework-with-patch]]"
-processed_at: "2026-04-16T05:06:18Z"
-created_at: "2026-04-16T05:06:18Z"
+- '[[arxiv-260413714-an-end-to-end-building-load-forecasting-framework-with-patch]]'
+title: Patch-based Information Fusion Network (PIF-Net)
+type: concept
 ---
 
 # Patch-based Information Fusion Network (PIF-Net)

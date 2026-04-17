@@ -1,12 +1,13 @@
 ---
-title: "Validation-Driven Adaptive Pooling"
-slug: "validation-driven-adaptive-pooling"
-type: concept
+created_at: '2026-04-16T05:06:11Z'
 generated_stub: true
+modified_at: '2026-04-17T05:07:17Z'
+processed_at: '2026-04-16T05:06:11Z'
+slug: validation-driven-adaptive-pooling
 source_papers:
-  - "[[arxiv-260413748-forecasting-multivariate-time-series-under-predictive-hetero]]"
-processed_at: "2026-04-16T05:06:11Z"
-created_at: "2026-04-16T05:06:11Z"
+- '[[arxiv-260413748-forecasting-multivariate-time-series-under-predictive-hetero]]'
+title: Validation-Driven Adaptive Pooling
+type: concept
 ---
 
 # Validation-Driven Adaptive Pooling

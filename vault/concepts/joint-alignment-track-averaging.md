@@ -1,12 +1,13 @@
 ---
-title: "Joint-Alignment Track Averaging"
-slug: "joint-alignment-track-averaging"
-type: concept
+created_at: '2026-04-16T05:06:38Z'
 generated_stub: true
+modified_at: '2026-04-17T05:07:52Z'
+processed_at: '2026-04-16T05:06:38Z'
+slug: joint-alignment-track-averaging
 source_papers:
-  - "[[arxiv-260413604-irregularly-sampled-time-series-interpolation-for-binary-evo]]"
-processed_at: "2026-04-16T05:06:38Z"
-created_at: "2026-04-16T05:06:38Z"
+- '[[arxiv-260413604-irregularly-sampled-time-series-interpolation-for-binary-evo]]'
+title: Joint-Alignment Track Averaging
+type: concept
 ---
 
 # Joint-Alignment Track Averaging

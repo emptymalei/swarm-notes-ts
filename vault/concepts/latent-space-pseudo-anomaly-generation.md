@@ -1,12 +1,13 @@
 ---
-title: "Latent-Space Pseudo-Anomaly Generation"
-slug: "latent-space-pseudo-anomaly-generation"
-type: concept
+created_at: '2026-04-16T05:06:03Z'
 generated_stub: true
+modified_at: '2026-04-17T05:07:07Z'
+processed_at: '2026-04-16T05:06:03Z'
+slug: latent-space-pseudo-anomaly-generation
 source_papers:
-  - "[[arxiv-260413924-aster-latent-pseudo-anomaly-generation-for-unsupervised-time]]"
-processed_at: "2026-04-16T05:06:03Z"
-created_at: "2026-04-16T05:06:03Z"
+- '[[arxiv-260413924-aster-latent-pseudo-anomaly-generation-for-unsupervised-time]]'
+title: Latent-Space Pseudo-Anomaly Generation
+type: concept
 ---
 
 # Latent-Space Pseudo-Anomaly Generation
