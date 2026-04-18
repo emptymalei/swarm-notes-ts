@@ -20,12 +20,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "binary-autoregressive-time-series-framework"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:06:31Z"
-created_at: "2026-04-17T05:06:31Z"
+processed_at: "2026-04-18T04:53:07Z"
+created_at: "2026-04-18T04:53:07Z"
 ---
 
 # Generalized Autoregressive Multivariate Models: From Binary to Poisson
@@ -36,13 +36,27 @@ created_at: "2026-04-17T05:06:31Z"
 
 ## Summary
 
-This paper introduces a GARCH-style autoregressive framework for multivariate binary time series, modeling Bernoulli success probabilities as a function of past outcomes and historical probabilities. The authors prove the existence and uniqueness of stationary solutions for these discrete processes despite inherent discontinuities. Furthermore, the paper establishes that these binary models converge to Poisson autoregressive processes under rare-events scaling, providing a formal micro-foundation for modeling count data. The proposed maximum likelihood estimation approach is validated through an empirical application using S&P 100 data.
+This paper introduces a GARCH-type framework for modeling binary autoregressive time series where Bernoulli success probabilities evolve based on past information. The authors establish the existence and uniqueness of stationary solutions, even under the discontinuities characteristic of binary data. Crucially, they derive a theoretical connection showing that aggregates of these binary processes converge to a Poisson autoregression, providing a formal micro-foundation for count-based models. Empirical effectiveness is demonstrated through maximum likelihood estimation on S&P 100 data.
 
 ## Key Contributions
 
-- Develops a GARCH-inspired framework for multivariate binary autoregressive time series that accounts for nonlinearities and cross-sectional dependencies.
-- Proves the existence and uniqueness of stationary solutions for the proposed binary autoregressive processes using a specialized coupling argument.
-- Establishes a theoretical micro-foundation demonstrating that aggregates of binary processes converge to a Poisson autoregression under rare-events scaling.
+- Introduces a GARCH-type autoregressive framework for binary data that handles nonlinearity, network effects, and cross-sectional dependence.
+- Proves existence and uniqueness of stationary solutions for binary processes using a coupling argument that addresses data discontinuities.
+- Establishes a theoretical link showing that aggregates of these binary processes converge to a Poisson autoregression under rare-events scaling.
+
+## Key Concepts
+
+- [[binary-autoregressive-time-series-framework]]: A GARCH-like framework for binary time series where success probabilities depend on past outcomes and probabilities.
+
+## Archivist Review
+
+I approved the binary autoregressive framework as it provides a clear, reusable methodology for modeling discrete time-series dynamics using GARCH-type influences, which is a significant theoretical contribution. I rejected the S&P 100 dataset as it is a standard, widely used financial index that does not require a dedicated vault note. No open questions were proposed, so I did not add any.
+
+### Approved Concepts
+- Binary Autoregressive Time Series Framework: Establishes a GARCH-type dynamic framework specifically for Bernoulli variables, allowing for nonlinearities and network interactions in discrete time series.
+
+### Rejected Candidates
+- [dataset] S&P 100 (`s-p-100`) - low_impact: This is a standard market index frequently used in literature and does not warrant a standalone research vault note.
 
 ## Links
 

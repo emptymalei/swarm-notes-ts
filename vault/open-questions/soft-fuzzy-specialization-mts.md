@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-17T05:07:17Z'
+modified_at: '2026-04-18T04:53:55Z'
 source_papers:
 - '[[arxiv-260413748-forecasting-multivariate-time-series-under-predictive-hetero]]'
-title: Soft and Fuzzy Specialization
+title: Soft and fuzzy specialization
 ---
 
 **Background:** Forecasting multivariate time series often involves a trade-off between global models that capture shared dynamics and local models that adapt to heterogeneous behaviors. Hard assignment clustering, where each series is restricted to a single model, can be overly restrictive when predictive dynamics overlap between clusters.

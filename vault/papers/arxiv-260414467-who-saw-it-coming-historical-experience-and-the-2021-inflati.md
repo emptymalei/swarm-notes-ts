@@ -13,19 +13,21 @@ paper_id: "2604.14467"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "forecasting"
+  - "causal-inference"
+  - "llm-as-a-judge-for-time-series-explanations"
+  - "historical-data-adjustment"
 architectures:
   []
 datasets:
   []
 concept_slugs:
   - "experiential-priors"
-  - "similarity-weighted-estimation"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:06:12Z"
-created_at: "2026-04-17T05:06:12Z"
+processed_at: "2026-04-18T04:52:47Z"
+created_at: "2026-04-18T04:52:47Z"
 ---
 
 # Who Saw It Coming? Historical Experience and the 2021 Inflation Forecast Failure
@@ -36,13 +38,13 @@ created_at: "2026-04-17T05:06:12Z"
 
 ## Summary
 
-This paper investigates the 2021 U.S. inflation forecast failure, identifying sample bias—specifically the over-reliance on Great Moderation-era data—as the primary cause for the inability of models and agents to anticipate supply-shock regimes. The author shows that integrating historical data from the 1970s via intercept corrections, similarity re-estimation, or kernel-weighted estimators significantly improves forecast performance across multiple price indices. Furthermore, the study links inflation expectation heterogeneity to experience-based learning, validated through both survey analysis of household age cohorts and a controlled experiment with persona-conditioned large language models. The findings suggest that the source and historical relevance of priors are more critical to forecast robustness than model architecture sophistication.
+This paper analyzes the 2021 U.S. inflation forecast failure, attributing it to a reliance on 'Great Moderation' era data that blinded models to supply-shock regimes. The author demonstrates that incorporating historical 1970s data through kernel weighting and similarity re-estimation significantly reduces forecast errors across multiple price indices. Furthermore, the study links these findings to experiential priors, confirming that both human agents and LLMs conditioned on older, experience-rich personas outperform those relying on more recent, low-volatility historical trends.
 
 ## Key Contributions
 
-- Demonstrates that the 2021 inflation forecast failure stemmed from estimation sample bias favoring the Great Moderation rather than functional model misspecification.
-- Introduces three historically informed estimators—intercept correction, 1970s similarity-weighted estimation, and kernel-weighted estimation—that mitigate inflation forecast errors across eight U.S. price indices.
-- Provides empirical evidence that inflation expectations are shaped by experiential priors, where cohort age and historical exposure significantly dictate forecast accuracy and regime-shift recognition.
+- Demonstrates that the 2021 U.S. inflation forecast failure resulted from sample composition bias (dominance of the Great Moderation) rather than functional form misspecification.
+- Proposes three historically informed adjustments—intercept correction, 1970s-based similarity re-estimation, and kernel-weighted estimation—that significantly improve forecast accuracy across nine U.S. price indices.
+- Validates the influence of experiential priors through both household survey analysis and a controlled LLM persona experiment, showing that training data source dominates model sophistication.
 
 ## Open Questions & Future Work
 
@@ -50,19 +52,17 @@ This paper investigates the 2021 U.S. inflation forecast failure, identifying sa
 
 ## Key Concepts
 
-- [[experiential-priors]]: A form of inductive bias where model or agent forecasts are conditioned on the historical temporal experiences present in their training data or lifecycle history.
-- [[similarity-weighted-estimation]]: A forecasting adjustment technique that prioritizes historical data points or segments that share structural similarity with the current target period.
+- [[experiential-priors]]: A framework where forecasting performance is governed by the historical context encoded in training data or agent experience rather than model complexity.
 
 ## Archivist Review
 
-I approved 'Experiential Priors' and 'Similarity-Weighted Estimation' as they provide a theoretical framework and a practical mechanism, respectively, to address non-stationarity in time-series forecasting. 'Systematic Historical Analogy Selection' was approved as a critical open question because it addresses the subjective reliance on manual windowing for historical data, which is a major hurdle in robust forecasting during regime shifts. I maintained strict adherence to the review policy, rejecting generic concepts and ensuring only the most central and reusable ideas were elevated to permanent status.
+The paper provides a compelling analysis of regime-specific forecast failure by distinguishing between model sophistication and historical training composition. I approved 'experiential-priors' as a valuable concept for understanding model behavior in non-stationary regimes and the open question regarding systematic historical analogy selection as a key bottleneck in applied macro-econometric forecasting. No other concepts or datasets were deemed sufficiently novel or central to merit vault entry.
 
 ### Approved Concepts
-- Experiential Priors: Highlights a fundamental driver of forecast performance that transcends model architecture, providing a framework to analyze how training data history impacts regime-shift recognition.
-- Similarity-Weighted Estimation: It provides a concrete, reusable mechanism to address non-stationarity by explicitly prioritizing historical samples that share topological or structural features with the current regime.
+- Experiential Priors: Highlights that the origin of training data/experience is more critical than model architecture in regime-shifting forecasting contexts.
 
 ### Approved Open Questions
-- Systematic Historical Analogy Selection: It addresses the fundamental subjectivity of choosing historical training samples, which is critical for the reliability of forecasting models during transition periods.
+- Systematic Selection of Historical Analogues: The inability to automatically and reliably identify the most relevant historical period for forecasting during unique regime shifts is a primary challenge in macro-econometric modeling. This research highlights this limitation as a critical area for methodological advancement.
 
 ## Links
 

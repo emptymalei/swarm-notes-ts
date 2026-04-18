@@ -17,18 +17,21 @@ paper_id: "2604.13924"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "time-series-anomaly-detection"
+  - "unsupervised-learning"
+  - "transformer"
+  - "llm"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "latent-space-pseudo-anomaly-generation"
+  - "latent-pseudo-anomaly-generation"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:07:07Z"
-created_at: "2026-04-17T05:07:07Z"
+processed_at: "2026-04-18T04:53:47Z"
+created_at: "2026-04-18T04:53:47Z"
 ---
 
 # ASTER: Latent Pseudo-Anomaly Generation for Unsupervised Time-Series Anomaly Detection
@@ -39,13 +42,13 @@ created_at: "2026-04-17T05:07:07Z"
 
 ## Summary
 
-ASTER is an unsupervised time-series anomaly detection framework that synthesizes pseudo-anomalies directly within a latent space, removing the reliance on handcrafted anomaly injection. By leveraging a pre-trained LLM, the model enriches temporal and contextual representations before training a Transformer-based classifier. This approach avoids the limitations of traditional reconstruction and forecasting methods, achieving state-of-the-art detection results on benchmark time-series datasets.
+ASTER is an unsupervised time-series anomaly detection framework that addresses the scarcity of labeled data by generating pseudo-anomalies directly within the latent space. By leveraging a latent-space decoder and pre-trained LLMs, the model enhances temporal and contextual representation learning for more effective anomaly classification. This approach avoids the limitations of traditional reconstruction-based methods and handcrafted anomaly injection, demonstrating state-of-the-art performance across three benchmark datasets.
 
 ## Key Contributions
 
-- Introduces ASTER, a framework that synthesizes pseudo-anomalies in the latent space to eliminate the need for manual anomaly injection or domain-specific heuristics.
-- Integrates pre-trained LLMs to enhance the temporal and contextual representations within the latent space for anomaly classification.
-- Demonstrates state-of-the-art performance in time-series anomaly detection across three benchmark datasets, outperforming reconstruction and forecasting-based baselines.
+- Introduces ASTER, which generates pseudo-anomalies in the latent space, eliminating the reliance on domain-specific handcrafted anomaly injections.
+- Integrates pre-trained LLMs to enrich temporal and contextual representations within the latent space for improved anomaly classification.
+- Achieves state-of-the-art performance on three standard time-series anomaly detection benchmarks, surpassing existing reconstruction and forecasting-based methods.
 
 ## Open Questions & Future Work
 
@@ -53,20 +56,20 @@ ASTER is an unsupervised time-series anomaly detection framework that synthesize
 
 ## Key Concepts
 
-- [[latent-space-pseudo-anomaly-generation]]: A framework that generates synthetic anomalies directly within a latent space to train anomaly classifiers without manual intervention.
+- [[latent-pseudo-anomaly-generation]]: A method for generating tailored pseudo-anomalies directly within a model's latent representation space to train anomaly classifiers.
 
 ## Archivist Review
 
-I approved the concept of Latent Space Pseudo-Anomaly Generation as a distinct, reusable paradigm for anomaly detection. I also approved an open question regarding pseudo-anomaly diversity, as it addresses a fundamental limitation in self-supervised latent-based detection methods. I rejected the open question on LLM tokenization as it is too broad and generic compared to the specific methodological contribution of the paper.
+I have approved the core concept of Latent Pseudo-Anomaly Generation and the specific research question regarding its diversity limitation. The second open question regarding general LLM-time-series translation was rejected for being too generic and broad, failing to address the specific TSAD mechanism.
 
 ### Approved Concepts
-- Latent Space Pseudo-Anomaly Generation: It enables anomaly detection without domain-specific data engineering or manual injection of anomalies, shifting the burden from domain heuristics to model-based latent synthesis.
+- Latent Pseudo-Anomaly Generation: It replaces traditional handcrafted anomaly injection with a generative approach in the latent space to improve TSAD robustness without domain-specific knowledge.
 
 ### Approved Open Questions
-- Enhancing Pseudo-Anomaly Generation Diversity: The limited diversity of generated pseudo-anomalies restricts the model's ability to learn complex decision boundaries, directly impacting performance on datasets with varied or rare anomalies.
+- Enhancing Pseudo-Anomaly Diversity: Diversity in pseudo-anomalies is critical for the robustness of anomaly classifiers; the current observation that generated pseudo-anomalies occupy a limited latent space suggests a bottleneck in model generalization.
 
 ### Rejected Candidates
-- [open_question] LLM-based Time-Series Tokenization Methods (`llm-timeseries-tokenization`) - generic: This is a broad, generic research direction that is being addressed by a vast and rapidly growing literature beyond this paper.
+- [open_question] Optimizing LLM-based Time-Series Representations (`llm-time-series-translation-optimization`) - generic: The question of bridging modality gaps between time-series and LLMs is too broad and generic for a standalone note compared to specific mechanism questions.
 
 ## Links
 

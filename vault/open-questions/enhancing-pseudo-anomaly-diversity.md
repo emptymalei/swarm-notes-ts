@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-17T05:07:07Z'
+modified_at: '2026-04-18T04:53:47Z'
 source_papers:
 - '[[arxiv-260413924-aster-latent-pseudo-anomaly-generation-for-unsupervised-time]]'
-title: Enhancing Pseudo-Anomaly Generation Diversity
+title: Enhancing Pseudo-Anomaly Diversity
 ---
 
 **Background:** Time-series anomaly detection often relies on the generation of pseudo-anomalies in latent space to facilitate adversarial training of classifiers, where the diversity of these samples significantly influences the robustness of the resulting detection boundaries.

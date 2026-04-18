@@ -14,12 +14,11 @@ url: "https://arxiv.org/abs/2604.13926"
 # Custom fields
 paper_id: "2604.13926"
 paper_source: "arxiv"
-domain: "energy-systems"
+domain: "time-series"
 tags:
-  - "distributed-energy-resources"
-  - "distribution-networks"
-  - "observability"
-  - "grid-planning"
+  - "time-series"
+  - "forecasting"
+  - "energy-management"
 architectures:
   []
 datasets:
@@ -29,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:06:59Z"
-created_at: "2026-04-17T05:06:59Z"
+processed_at: "2026-04-18T04:53:40Z"
+created_at: "2026-04-18T04:53:40Z"
 ---
 
 # Importance of Aggregated DER Installed Capacity in Distribution Networks
@@ -41,31 +40,33 @@ created_at: "2026-04-17T05:06:59Z"
 
 ## Summary
 
-This paper addresses the observability gap in low-voltage distribution networks caused by the rapid, often opaque, integration of Distributed Energy Resources (DERs). The authors propose using aggregated DER installed capacity, estimated directly from substation and feeder measurements, as a scalable proxy for customer-level monitoring. By validating this approach against operational and planning use cases, the study shows that high-level capacity estimates significantly improve forecasting accuracy, congestion management, and hosting capacity assessments. This framework offers a pragmatic solution for DSOs to manage grid transition without requiring access to individual customer data.
+This paper addresses the observability gap in low-voltage distribution networks caused by the high penetration of Distributed Energy Resources (DERs) like EVs and PV systems. The authors propose an estimation framework for aggregated DER installed capacity at LV aggregation points, leveraging substation and feeder measurements to bypass the need for granular customer data. This approach provides a scalable, privacy-preserving method to support key DSO functions, such as congestion management, hosting capacity assessment, and DER-aware load forecasting.
 
 ## Key Contributions
 
-- Formulates the problem of estimating aggregated DER installed capacity at the low-voltage level using only substation and feeder measurements.
-- Demonstrates how aggregated capacity estimates improve critical DSO tasks including DER-aware forecasting, congestion management, and flexibility quantification.
-- Provides a scalable alternative to customer-level monitoring that mitigates privacy and data access barriers for distribution system operators.
+- Formalizes the estimation of aggregated Distributed Energy Resource (DER) capacity at low-voltage substations using available feeder measurements rather than customer-level data.
+- Demonstrates that aggregated capacity estimates improve critical operational tasks including DER-aware load forecasting, congestion management, and hosting capacity assessment.
+- Proposes a scalable observability framework that circumvents common barriers like incomplete topology records and restricted customer data access.
 
 ## Open Questions & Future Work
 
-- [[der-metadata-quantification-and-integration]]
+- [[der-capacity-estimation-methods]]
+- [[quantifying-der-metadata-impact]]
 
 ## Key Concepts
 
-- [[aggregated-der-installed-capacity-estimation]]: A method to estimate distributed energy resource capacity at low-voltage aggregation points using substation and feeder measurements.
+- [[aggregated-der-installed-capacity-estimation]]: A method for estimating the total installed capacity of Distributed Energy Resources at the low-voltage aggregation level using only substation and feeder measurements.
 
 ## Archivist Review
 
-I approved the concept of aggregated DER capacity estimation as it represents a core structural shift in how grid operators approach observability. I also approved a refined open question regarding the systematic integration of such metadata into planning workflows. Other candidates were identified as duplicates or already existed in the vault under slightly different nomenclature, which I have unified.
+I have approved the core concept of aggregated DER capacity estimation as it addresses a fundamental observability gap in distribution networks. The open questions have been refined to focus on the technical challenges of estimation accuracy and the empirical quantification of utility for grid operators, as these are critical research directions. No datasets were approved as none were provided.
 
 ### Approved Concepts
-- Aggregated DER Installed Capacity Estimation: It addresses the critical challenge of DER observability in distribution networks without violating privacy or requiring granular data access.
+- Aggregated DER Installed Capacity Estimation: Provides a scalable, privacy-preserving alternative to customer-level monitoring for DER observability, which is a major bottleneck in distribution grid management.
 
 ### Approved Open Questions
-- DER Metadata Quantification and Integration: Improved estimation accuracy is critical for moving beyond simplistic planning assumptions, directly impacting the economic and technical efficiency of grid investments and congestion management.
+- Improving DER capacity estimation methods: Accurate estimation of DER metadata is the foundational step for all downstream operational and planning applications; insufficient estimation accuracy directly limits the effectiveness of forecasting, congestion management, and hosting capacity assessments.
+- Quantifying DER metadata utility: Quantifying the impact of this metadata is necessary for DSOs to justify the investment in, and maintenance of, the required data processing pipelines and estimation infrastructures.
 
 ## Links
 

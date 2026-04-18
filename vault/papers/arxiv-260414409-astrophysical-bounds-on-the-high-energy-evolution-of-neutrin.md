@@ -13,20 +13,20 @@ url: "https://arxiv.org/abs/2604.14409"
 # Custom fields
 paper_id: "2604.14409"
 paper_source: "arxiv"
-domain: "physics-and-astrophysics"
+domain: "nlp"
 tags:
   []
 architectures:
   []
 datasets:
-  []
+  - "IceCube"
 concept_slugs:
   []
 dataset_slugs:
-  []
+  - "icecube"
 skill: "GeneralMLSkill"
-processed_at: "2026-04-17T05:06:30Z"
-created_at: "2026-04-17T05:06:30Z"
+processed_at: "2026-04-18T04:53:03Z"
+created_at: "2026-04-18T04:53:03Z"
 ---
 
 # Astrophysical bounds on the high-energy evolution of neutrino mixing
@@ -37,27 +37,28 @@ created_at: "2026-04-17T05:06:30Z"
 
 ## Summary
 
-This paper explores the high-energy evolution of neutrino mixing parameters, which may be affected by renormalization-group effects beyond sub-TeV scales. By analyzing the flavor composition of astrophysical neutrinos from TeV to EeV energies, the authors establish constraints on this evolution within a dimension-6 SMEFT framework. The study rigorously incorporates astrophysical uncertainties and demonstrates that, while current IceCube sensitivity is insufficient, future multi-detector observations will enable precise tests of these high-energy mixing phenomena.
+This paper investigates the energy-dependent evolution of neutrino mixing parameters at high energy scales, which are typically inaccessible to conventional sub-TeV oscillation experiments. By analyzing the flavor composition of high-energy and ultra-high-energy astrophysical neutrinos observed by experiments like IceCube, the authors derive new constraints on mixing evolution using Standard Model Effective Field Theory. They highlight the challenge posed by astrophysical uncertainties and demonstrate that future multi-detector synergy will be essential to detect these high-energy renormalization-group effects.
 
 ## Key Contributions
 
-- Provides the first constraints on the renormalization-group evolution of neutrino mixing parameters using high-energy astrophysical neutrino flavor compositions.
-- Formulates a SMEFT-based framework to analyze how neutrino mixing parameters evolve at energy scales unreachable by terrestrial accelerators (TeV to EeV).
-- Forecasts that future multi-detector neutrino observatories will offer sufficient sensitivity to place stringent bounds on high-energy neutrino mixing evolution that current IceCube data cannot yet resolve.
+- Derives the first astrophysical bounds on the high-energy evolution (renormalization-group running) of neutrino mixing parameters.
+- Formulates a constraints framework for neutrino mixing using flavor composition from TeV–EeV astrophysical neutrinos, incorporating dimension-6 Standard Model Effective Field Theory.
+- Quantifies the impact of astrophysical uncertainties on flavor ratio measurements, establishing realistic sensitivity limits for future multi-detector neutrino observatories.
 
 ## Open Questions & Future Work
 
-- [[astrophysical-neutrino-source-uncertainty-bottleneck]]
+- [[breaking-source-flavor-degeneracy-for-rg-running]]
 
 ## Archivist Review
 
-I have approved a single open question that encapsulates the primary methodological hurdle identified in the paper: the challenge of separating astrophysical source-related uncertainties from fundamental particle physics constraints. This is a recurring issue in high-energy astrophysics that deserves a standalone entry for tracking. I rejected the proposed concept as it is a specific physics application rather than a general-purpose ML/data science concept.
+The paper addresses specialized physics constraints that do not generalize to the broader ML concepts currently maintained in the vault. I have approved 'IceCube' as a critical dataset for high-energy astrophysics research and the open question regarding source flavor degeneracy, as it represents a fundamental methodological hurdle in using astrophysical observations for precision physics. Other candidates were rejected for being overly domain-specific or lacking the necessary abstraction for general machine learning utility.
 
 ### Approved Open Questions
-- Astrophysical Neutrino Source Uncertainty: This bottleneck is fundamental to the viability of using neutrino astronomy as a precision tool for probing new physics at high energy scales.
+- Breaking Source Flavor Degeneracy: The unknown source composition represents the primary theoretical bottleneck in translating high-energy neutrino flavor measurements into constraints on fundamental physics. Breaking this degeneracy is essential to reaching the required precision to detect potential RG running.
 
-### Rejected Candidates
-- [open_question] High-Energy Evolution of Neutrino Mixing (`high-energy-neutrino-mixing-rg-running-constraints`) - other: The candidate title and description were refined to focus on the bottleneck (source uncertainty) rather than just the phenomenon being studied.
+## Datasets
+
+- [[icecube]]
 
 ## Links
 

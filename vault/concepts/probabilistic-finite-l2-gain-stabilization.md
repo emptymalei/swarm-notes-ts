@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-16T05:06:24Z'
 generated_stub: true
-modified_at: '2026-04-17T05:07:36Z'
+modified_at: '2026-04-18T04:54:11Z'
 processed_at: '2026-04-16T05:06:24Z'
 slug: probabilistic-finite-l2-gain-stabilization
 source_papers:

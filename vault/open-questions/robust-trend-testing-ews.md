@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-17T05:04:47Z'
+modified_at: '2026-04-18T04:51:24Z'
 source_papers:
 - '[[arxiv-260415230-on-the-robustness-of-mann-kendall-tests-used-to-forecast-cri]]'
-title: Robust trend testing for EWS
+title: Robustness of trend testing for early warning signals
 ---
 
 **Background:** The standard method for forecasting critical transitions involves estimating indicators like variance and autocorrelation over overlapping rolling windows and testing for trends using the Mann-Kendall statistic. Recent findings indicate that these tests rely on Gaussian assumptions that do not hold for the autocorrelated time series produced by this rolling window methodology.

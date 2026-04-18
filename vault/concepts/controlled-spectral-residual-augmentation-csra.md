@@ -1,12 +1,13 @@
 ---
-title: "Controlled Spectral Residual Augmentation (CSRA)"
-slug: "controlled-spectral-residual-augmentation-csra"
-type: concept
+created_at: '2026-04-17T05:05:48Z'
 generated_stub: true
+modified_at: '2026-04-18T04:52:24Z'
+processed_at: '2026-04-17T05:05:48Z'
+slug: controlled-spectral-residual-augmentation-csra
 source_papers:
-  - "[[arxiv-260414532-csra-controlled-spectral-residual-augmentation-for-robust-se]]"
-processed_at: "2026-04-17T05:05:48Z"
-created_at: "2026-04-17T05:05:48Z"
+- '[[arxiv-260414532-csra-controlled-spectral-residual-augmentation-for-robust-se]]'
+title: Controlled Spectral Residual Augmentation (CSRA)
+type: concept
 ---
 
 # Controlled Spectral Residual Augmentation (CSRA)

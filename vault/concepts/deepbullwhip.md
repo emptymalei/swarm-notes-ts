@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-16T05:06:46Z'
 generated_stub: true
-modified_at: '2026-04-17T05:08:03Z'
+modified_at: '2026-04-18T04:54:39Z'
 processed_at: '2026-04-16T05:06:46Z'
 slug: deepbullwhip
 source_papers:

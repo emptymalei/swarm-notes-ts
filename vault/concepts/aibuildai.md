@@ -1,12 +1,13 @@
 ---
-title: "AIBuildAI"
-slug: "aibuildai"
-type: concept
+created_at: '2026-04-17T05:06:21Z'
 generated_stub: true
+modified_at: '2026-04-18T04:52:55Z'
+processed_at: '2026-04-17T05:06:21Z'
+slug: aibuildai
 source_papers:
-  - "[[arxiv-260414455-aibuildai-an-ai-agent-for-automatically-building-ai-models]]"
-processed_at: "2026-04-17T05:06:21Z"
-created_at: "2026-04-17T05:06:21Z"
+- '[[arxiv-260414455-aibuildai-an-ai-agent-for-automatically-building-ai-models]]'
+title: AIBuildAI
+type: concept
 ---
 
 # AIBuildAI

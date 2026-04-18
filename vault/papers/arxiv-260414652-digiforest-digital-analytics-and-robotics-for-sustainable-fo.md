@@ -16,7 +16,6 @@ author:
   - literal: "Meher V. R. Malladi"
   - literal: "Fan Yang"
   - literal: "Jonas Frey"
-  - literal: "Jonas Frey"
   - literal: "Cesar Cadena"
   - literal: "Marco Hutter"
   - literal: "Janine Schweier"
@@ -32,7 +31,7 @@ url: "https://arxiv.org/abs/2604.14652"
 # Custom fields
 paper_id: "2604.14652"
 paper_source: "arxiv"
-domain: "robotics"
+domain: "nlp"
 tags:
   []
 architectures:
@@ -40,46 +39,50 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "digiforest"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:05:33Z"
-created_at: "2026-04-17T05:05:33Z"
+processed_at: "2026-04-18T04:52:09Z"
+created_at: "2026-04-18T04:52:09Z"
 ---
 
 # DigiForest: Digital Analytics and Robotics for Sustainable Forestry
 
-**Authors**: Marco Camurri, Enrico Tomelleri, Matías Mattamala, Sebastián Barbas Laina, Martin Jacquet, Jens Behley, Sunni Kanta Prasad Kushwaha, Fang Nan, Nived Chebrolu, Leonard Freißmuth, Marvin Chayton Harms, Meher V. R. Malladi, Fan Yang, Jonas Frey, Jonas Frey, Cesar Cadena, Marco Hutter, Janine Schweier, Kostas Alexis, Cyrill Stachniss, Maurice Fallon, Stefan Leutenegger
+**Authors**: Marco Camurri, Enrico Tomelleri, Matías Mattamala, Sebastián Barbas Laina, Martin Jacquet, Jens Behley, Sunni Kanta Prasad Kushwaha, Fang Nan, Nived Chebrolu, Leonard Freißmuth, Marvin Chayton Harms, Meher V. R. Malladi, Fan Yang, Jonas Frey, Cesar Cadena, Marco Hutter, Janine Schweier, Kostas Alexis, Cyrill Stachniss, Maurice Fallon, Stefan Leutenegger
 **Date**: 2026-04-16
 **Paper ID**: [arxiv:2604.14652](https://arxiv.org/abs/2604.14652)
 
 ## Summary
 
-DigiForest is a comprehensive approach to precision forestry that combines autonomous heterogeneous robotics with digital analytics to improve forest management. The framework utilizes aerial, legged, and marsupial robots for high-resolution data collection, followed by automated trait extraction and growth forecasting. Validated through field deployments in Finland, the UK, and Switzerland, the system supports sustainable forest management through improved inventorying and low-impact autonomous logging.
+DigiForest is a comprehensive approach to precision forestry that integrates autonomous heterogeneous robots, automated forest inventory generation, and a Decision Support System for growth forecasting. By combining aerial and legged robotic platforms for tree-level data collection with purpose-built autonomous harvesters, the framework enables sustainable, low-impact forest management. The approach was validated through extensive real-world trials in Finland, the UK, and Switzerland, demonstrating its efficacy in supporting climate neutrality and biodiversity goals.
 
 ## Key Contributions
 
-- Introduces DigiForest, a large-scale precision forestry framework integrating autonomous robotics with digital forest analytics.
-- Deploys heterogeneous mobile robotic systems (aerial, legged, marsupial) for precise, tree-level data acquisition in forest environments.
-- Implements a multi-component pipeline including automated tree trait extraction, forest growth forecasting via a decision support system, and low-impact autonomous harvesting.
+- Proposes DigiForest, an integrated framework for precision forestry combining aerial and legged robotic data collection with automated tree trait extraction.
+- Introduces a Decision Support System (DSS) designed for forecasting forest growth and informing sustainable harvesting strategies.
+- Demonstrates real-world utility of heterogeneous autonomous robots for low-impact selective logging across diverse European forest sites.
 
 ## Open Questions & Future Work
 
-- [[collaborative-marsupial-exploration-constraints]]
-- [[real-time-robotic-panoptic-segmentation-challenges]]
+- [[multi-robot-forestry-coordination]]
+
+## Key Concepts
+
+- [[digiforest]]: A large-scale precision forestry approach integrating autonomous robotics, digital data extraction, and decision support systems for sustainable forest management.
 
 ## Archivist Review
 
-The paper presents a holistic framework for precision forestry. While the framework itself is application-specific, the identified open questions regarding collaborative robotic exploration and onboard real-time segmentation capture fundamental challenges in robotics and autonomous systems that deserve independent tracking. No specific new concept was approved as the components are largely industry/application-specific orchestrations of existing robotics paradigms.
+I approved the DigiForest framework as a notable integrated system architecture. I also approved the open question regarding multi-robot coordination as it specifically addresses the marsupial robot paradigm in unstructured environments. I rejected the real-time panoptic segmentation question because it is a broad vision research objective rather than a specific open problem tied to the forestry application domain.
+
+### Approved Concepts
+- DigiForest: Central framework integrating robotics, digital inventory, DSS, and selective logging for sustainable forestry management.
 
 ### Approved Open Questions
-- Collaborative Marsupial Exploration Constraints: Effective cooperation between heterogeneous robots is critical for large-scale data collection in natural environments; current solutions for real-time collaborative mapping in such settings remain underdeveloped.
-- Real-time Robotic Panoptic Segmentation Challenges: Real-time onboard semantic awareness is essential for advanced robotic behaviors such as selective navigation and precise environmental interaction, which cannot rely on post-mission data processing.
+- Multi-Robot Coordination in Forestry: Effective marsupial coordination is critical for balancing the high-mobility, short-endurance capabilities of aerial drones with the high-endurance, ground-restricted movement of quadrupedal robots in large-scale forestry operations.
 
 ### Rejected Candidates
-- [open_question] Collaborative Marsupial Forestry Exploration (`collaborative-marsupial-forestry-exploration`) - other: Renamed to reflect a more general challenge in robotic exploration beyond just forestry.
-- [open_question] Real-time Robotic Panoptic Segmentation (`real-time-robotic-panoptic-segmentation`) - other: Renamed to highlight the challenge rather than the process.
+- [open_question] Real-Time Panoptic Segmentation (`real-time-panoptic-segmentation`) - generic: This is a generic computer vision research goal rather than a specific forestry-centric bottleneck.
 
 ## Links
 

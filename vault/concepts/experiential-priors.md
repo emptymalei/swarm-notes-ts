@@ -1,12 +1,13 @@
 ---
-title: "Experiential Priors"
-slug: "experiential-priors"
-type: concept
+created_at: '2026-04-17T05:06:12Z'
 generated_stub: true
+modified_at: '2026-04-18T04:52:47Z'
+processed_at: '2026-04-17T05:06:12Z'
+slug: experiential-priors
 source_papers:
-  - "[[arxiv-260414467-who-saw-it-coming-historical-experience-and-the-2021-inflati]]"
-processed_at: "2026-04-17T05:06:12Z"
-created_at: "2026-04-17T05:06:12Z"
+- '[[arxiv-260414467-who-saw-it-coming-historical-experience-and-the-2021-inflati]]'
+title: Experiential Priors
+type: concept
 ---
 
 # Experiential Priors

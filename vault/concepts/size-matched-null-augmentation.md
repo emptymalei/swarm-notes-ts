@@ -1,12 +1,13 @@
 ---
-title: "Size-matched Null Augmentation"
-slug: "size-matched-null-augmentation"
-type: concept
+created_at: '2026-04-17T05:06:03Z'
 generated_stub: true
+modified_at: '2026-04-18T04:52:39Z'
+processed_at: '2026-04-17T05:06:03Z'
+slug: size-matched-null-augmentation
 source_papers:
-  - "[[arxiv-260414498-improving-machine-learning-performance-with-synthetic-augmen]]"
-processed_at: "2026-04-17T05:06:03Z"
-created_at: "2026-04-17T05:06:03Z"
+- '[[arxiv-260414498-improving-machine-learning-performance-with-synthetic-augmen]]'
+title: Size-matched Null Augmentation
+type: concept
 ---
 
 # Size-matched Null Augmentation

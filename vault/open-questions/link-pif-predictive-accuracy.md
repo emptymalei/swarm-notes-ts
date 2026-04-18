@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-17T05:06:47Z'
+modified_at: '2026-04-18T04:53:26Z'
 source_papers:
 - '[[arxiv-260414322-doubly-outlier-robust-online-infinite-hidden-markov-model]]'
-title: Connecting PIF to predictive accuracy
+title: PIF and Predictive Accuracy Link
 ---
 
 **Background:** While bounded posterior influence functions (PIF) ensure posterior stability against outlier contamination, the precise mathematical link between the magnitude of PIF and the resulting predictive accuracy is not yet fully characterized in online state-space models.

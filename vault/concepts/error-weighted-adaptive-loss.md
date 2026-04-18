@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-16T05:06:18Z'
 generated_stub: true
-modified_at: '2026-04-17T05:07:25Z'
+modified_at: '2026-04-18T04:54:03Z'
 processed_at: '2026-04-16T05:06:18Z'
 slug: error-weighted-adaptive-loss
 source_papers:

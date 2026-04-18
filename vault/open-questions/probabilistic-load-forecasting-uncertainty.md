@@ -1,5 +1,6 @@
 ---
 created_at: '2026-04-17T05:07:25Z'
+modified_at: '2026-04-18T04:54:03Z'
 source_papers:
 - '[[arxiv-260413714-an-end-to-end-building-load-forecasting-framework-with-patch]]'
 title: Probabilistic Building Load Forecasting

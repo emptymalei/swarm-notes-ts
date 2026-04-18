@@ -12,7 +12,7 @@ url: "https://arxiv.org/abs/2604.14372"
 # Custom fields
 paper_id: "2604.14372"
 paper_source: "arxiv"
-domain: "energy-systems"
+domain: "time-series"
 tags:
   []
 architectures:
@@ -20,12 +20,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "optimization-sensitivity-composite-score-oscs"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:06:37Z"
-created_at: "2026-04-17T05:06:37Z"
+processed_at: "2026-04-18T04:53:14Z"
+created_at: "2026-04-18T04:53:14Z"
 ---
 
 # AC-OPF Feasibility Analysis and Sensitivity-Guided Capacitor Placement in a High-PV Islanded Microgrid
@@ -36,28 +36,31 @@ created_at: "2026-04-17T05:06:37Z"
 
 ## Summary
 
-This paper evaluates AC Optimal Power Flow strategies in a high-PV islanded microgrid using a digital twin to assess economic and reliability trade-offs over a 47-hour horizon. The authors propose a sensitivity-guided approach for capacitor placement, utilizing composite optimization sensitivity metrics to identify optimal grid upgrade locations. By balancing infrastructure costs against avoided load-shedding penalties, the framework provides a decision-support tool for grid reliability improvements in distributed energy environments.
+This paper presents a comparative AC-OPF analysis for a high-PV islanded microgrid using a digital twin, evaluating economic and reliability-driven dispatch strategies over a 47-hour time horizon. The authors introduce a sensitivity-guided approach that uses optimization-derived metrics to rank candidate buses for shunt capacitor upgrades. By balancing infrastructure costs against the value-of-lost-load, the method provides a rigorous framework for reactive power planning and load shedding mitigation. Results confirm that the proposed placement strategy restores service continuity while maintaining economic viability in solar-heavy microgrid environments.
 
 ## Key Contributions
 
-- Conducts a comparative AC-OPF analysis on a city-scale islanded microgrid with high PV penetration across four distinct objective functions.
-- Introduces a sensitivity-guided capacitor placement methodology using composite OSQ and OSV scores derived from multi-objective OPF optimization.
-- Develops a post-processing planning framework that balances shunt capacitor upgrade costs against the economic value of avoided load shedding.
+- Introduces a sensitivity-guided methodology combining reactive power (OSQ) and voltage (OSV) sensitivities to rank optimal locations for shunt capacitor placement.
+- Develops a post-processing planning optimization that quantifies trade-offs between capacitor installation costs and avoided value-of-lost-load.
+- Demonstrates that the proposed framework achieves 100% load service in a high-PV islanded microgrid, effectively balancing reactive power management with economic dispatch.
 
 ## Open Questions & Future Work
 
-- [[integrating-battery-storage-in-microgrid-planning]]
+- [[battery-storage-reactive-support-microgrids]]
+
+## Key Concepts
+
+- [[optimization-sensitivity-composite-score-oscs]]: A methodology for infrastructure ranking that aggregates multiple optimization-derived sensitivity metrics (e.g., reactive power and voltage sensitivities) into a unified placement score.
 
 ## Archivist Review
 
-The paper proposes a power-system specific methodology for grid infrastructure investment. While valuable for grid planning, the sensitivity-guided placement method and its associated metrics do not represent generalizable ML forecasting concepts. The open question regarding battery storage integration was approved as it reflects a foundational challenge in balancing flexible assets with fixed infrastructure in autonomous energy systems.
+I have approved the composite sensitivity metric as it represents a reusable approach to infrastructure planning in constrained networks, and the open question regarding BESS integration as it captures a critical bottleneck for future power systems research. Other candidates were not submitted, so the review focused on these core contributions.
+
+### Approved Concepts
+- Optimization Sensitivity Composite Score (OSCS): Central to the paper's novel methodology for reactive power planning in power systems.
 
 ### Approved Open Questions
-- Integrating Battery Storage in Microgrid Planning: Battery storage is a critical, increasingly common asset in microgrids that can provide both active and reactive power support; integrating it is essential for realistic, modern microgrid planning and economic trade-off analysis.
-
-### Rejected Candidates
-- [concept] Sensitivity-Guided Capacitor Placement (`sensitivity-guided-capacitor-placement`) - not_reusable: The methodology is specific to AC-OPF microgrid infrastructure planning and is not sufficiently generalizable to broader ML or time-series forecasting paradigms.
-- [concept] Composite Optimization Sensitivity Score (`composite-optimization-sensitivity-score`) - subcomponent_of_broader_mechanism: This is a local scoring mechanism for a specific power flow optimization problem rather than a reusable ML concept.
+- Battery storage for reactive support: Expanding reactive support infrastructure beyond passive capacitors to include active storage systems is essential for improving the hosting capacity and operational flexibility of islanded microgrids.
 
 ## Links
 

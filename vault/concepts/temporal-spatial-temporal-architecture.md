@@ -1,12 +1,13 @@
 ---
-title: "Temporal-Spatial-Temporal Architecture"
-slug: "temporal-spatial-temporal-architecture"
-type: concept
+created_at: '2026-04-16T05:06:57Z'
 generated_stub: true
+modified_at: '2026-04-18T04:54:50Z'
+processed_at: '2026-04-16T05:06:57Z'
+slug: temporal-spatial-temporal-architecture
 source_papers:
-  - "[[arxiv-260413453-fast-a-synergistic-framework-of-attention-and-state-space-mo]]"
-processed_at: "2026-04-16T05:06:57Z"
-created_at: "2026-04-16T05:06:57Z"
+- '[[arxiv-260413453-fast-a-synergistic-framework-of-attention-and-state-space-mo]]'
+title: Temporal-Spatial-Temporal Architecture
+type: concept
 ---
 
 # Temporal-Spatial-Temporal Architecture

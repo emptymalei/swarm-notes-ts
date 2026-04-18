@@ -15,7 +15,7 @@ paper_id: "2604.14504"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "forecasting"
 architectures:
   []
 datasets:
@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-17T05:05:56Z"
-created_at: "2026-04-17T05:05:56Z"
+processed_at: "2026-04-18T04:52:31Z"
+created_at: "2026-04-18T04:52:31Z"
 ---
 
 # Forecasting neutrino mass constraints from the Nancy Grace Roman Space Telescope
@@ -37,24 +37,27 @@ created_at: "2026-04-17T05:05:56Z"
 
 ## Summary
 
-This paper provides cosmological parameter forecasts for the Nancy Grace Roman Space Telescope using full-shape galaxy power spectrum analysis. By utilizing simulated lightcone mock catalogs of Hα emission-line galaxies, the authors evaluate the telescope's ability to constrain neutrino mass, $H_0$, $Ω_m$, and $σ_8$. The study compares a model-dependent Effective Field Theory (EFT) of LSS approach against a model-independent phenomenological framework, demonstrating that both can yield precise and robust cosmological inferences.
+This paper provides precise forecasts for the Nancy Grace Roman Space Telescope's ability to constrain fundamental cosmological parameters, specifically the absolute neutrino mass scale. Using simulated lightcone mock catalogs of Hα emission-line galaxies, the study employs both model-dependent Effective Field Theory (EFT) of Large-Scale Structure and model-independent phenomenological frameworks. The results indicate that the Roman survey will provide competitive constraints on $H_0$, $\Omega_m$, and $\sigma_8$, establishing its significance for future Stage IV galaxy survey measurements.
 
 ## Key Contributions
 
-- Provides realistic forecasts for neutrino mass constraints ($m_ν < 0.121$ eV at 68% C.L.) from the upcoming Nancy Grace Roman Space Telescope using galaxy power spectrum analysis.
-- Compares model-dependent EFT of LSS and model-independent phenomenological approaches to confirm robustness in cosmological parameter inference.
-- Demonstrates that the Roman High Latitude Wide Area Spectroscopic Survey can achieve precision on $H_0$ ($1.3\%$), $Ω_m$ ($4.3\%$), and $σ_8$ ($2.9\%$) consistent with Stage IV survey goals.
+- Provides realistic cosmological parameter forecasts for the Roman Space Telescope High Latitude Wide Area Spectroscopic Survey using full-shape galaxy power spectrum analysis.
+- Demonstrates that the Roman survey can constrain the neutrino mass scale to m_ν < 0.276 eV (95% C.L.) when combined with Planck priors under a ΛCDM model.
+- Validates a model-independent phenomenological framework that recovers unbiased cosmological measurements, yielding a neutrino mass constraint of m_ν < 0.63 eV (95% C.L.).
 
 ## Open Questions & Future Work
 
-- [[velocity-coupling-massive-neutrinos]]
+- [[velocity-ansatz-neutrino-lss-bottleneck]]
 
 ## Archivist Review
 
-The paper performs a specific forecasting exercise for the Roman Space Telescope, which is valuable for cosmology but does not introduce sufficiently novel or reusable forecasting mechanisms to warrant new concepts or datasets. One open question regarding the physical assumptions of tracer velocity coupling in massive neutrino cosmologies is approved as a fundamental limitation of current LSS modeling approaches.
+The paper presents high-level forecasting for astrophysical cosmological parameters using standard (though sophisticated) techniques in the field. I approved the primary research bottleneck concerning the velocity field ansatz in LSS as it represents a fundamental open theoretical problem for high-precision galaxy surveys, while rejecting other candidates to maintain strict vault quality standards.
 
 ### Approved Open Questions
-- Velocity coupling in massive neutrinos: The assumption of galaxy-matter velocity coupling directly affects the interpretation of Redshift Space Distortions (RSD) and the resulting cosmological parameter constraints. As surveys move toward sub-percent precision, the potential bias introduced by this assumption needs to be rigorously quantified.
+- Velocity Ansatz Neutrino LSS Bottleneck: This is a critical theoretical bottleneck for future stage IV galaxy surveys, as errors in modeling the velocity field directly propagate into systematic biases in cosmological parameter inference, including neutrino mass measurements. Validating this assumption is essential for maintaining the sub-percent precision expected from the Roman Space Telescope and similar experiments.
+
+### Rejected Candidates
+- [open_question] Galaxy Velocity Modeling Bias (`velocity-ansatz-neutrino-lss`) - other: Renamed to include 'bottleneck' for consistency with vault naming conventions.
 
 ## Links
 

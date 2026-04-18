@@ -1,12 +1,13 @@
 ---
-title: "Leakage-Free Fallback Mechanism"
-slug: "leakage-free-fallback-mechanism"
-type: concept
+created_at: '2026-04-17T05:07:17Z'
 generated_stub: true
+modified_at: '2026-04-18T04:53:55Z'
+processed_at: '2026-04-17T05:07:17Z'
+slug: leakage-free-fallback-mechanism
 source_papers:
-  - "[[arxiv-260413748-forecasting-multivariate-time-series-under-predictive-hetero]]"
-processed_at: "2026-04-17T05:07:17Z"
-created_at: "2026-04-17T05:07:17Z"
+- '[[arxiv-260413748-forecasting-multivariate-time-series-under-predictive-hetero]]'
+title: Leakage-Free Fallback Mechanism
+type: concept
 ---
 
 # Leakage-Free Fallback Mechanism
