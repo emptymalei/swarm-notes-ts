@@ -109,7 +109,7 @@ url: "https://arxiv.org/abs/2604.15035"
 # Custom fields
 paper_id: "2604.15035"
 paper_source: "arxiv"
-domain: "computer-vision"
+domain: "time-series"
 tags:
   []
 architectures:
@@ -121,8 +121,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-18T04:51:47Z"
-created_at: "2026-04-18T04:51:47Z"
+processed_at: "2026-04-19T05:05:37Z"
+created_at: "2026-04-19T05:05:37Z"
 ---
 
 # The multi-planet system TOI-5624: four transiting sub-Neptunes with an outer companion revealed by transit-timing variations
@@ -133,13 +133,13 @@ created_at: "2026-04-18T04:51:47Z"
 
 ## Summary
 
-This paper presents the discovery and detailed dynamical characterisation of the multi-planet system TOI-5624, which hosts four transiting sub-Neptunes and an outer non-transiting companion. By analysing TESS and CHEOPS photometric data alongside HARPS-N and SOPHIE radial velocity time series, the authors integrated N-body equations of motion within an MCMC framework to constrain planetary masses and radii. The study reveals significant transit-timing variations (TTVs) in the outermost planet, attributed to the gravitational influence of the fifth, non-transiting companion. The resulting precision in radius measurements is exceptional, comparable only to the well-studied TRAPPIST-1 system.
+This paper details the characterization of the TOI-5624 multi-planet system, identified through TESS and CHEOPS photometric observations. The authors combine transit-timing variations (TTVs) and radial velocity (RV) measurements with N-body dynamical modeling to constrain the masses and radii of four transiting sub-Neptunes and one non-transiting planet. The analysis highlights a rare level of precision in planetary parameter determination, comparable only to the TRAPPIST-1 system.
 
 ## Key Contributions
 
-- Discovered and characterised a multi-planet system around TOI-5624 containing four transiting sub-Neptunes and one non-transiting outer companion.
-- Determined planetary radii with precision better than 1.7%, reaching a level of precision comparable to the TRAPPIST-1 system.
-- Identified a non-transiting companion via transit-timing variations (TTVs) and radial velocity (RV) analysis using an integrated N-body and MCMC framework.
+- Discovery of a multi-planet system TOI-5624 hosting four transiting sub-Neptunes and one non-transiting outer companion.
+- Measured planetary radii with sub-1.7% precision and established masses for at least three planets using integrated N-body dynamical modeling.
+- Demonstrated that transit-timing variations (TTVs) in TOI-5624 e are driven by an outer planet (TOI-5624 f) near a 2:1 resonance, validated by joint fitting of photometric TTVs and radial velocity (RV) data.
 
 ## Open Questions & Future Work
 
@@ -147,13 +147,13 @@ This paper presents the discovery and detailed dynamical characterisation of the
 
 ## Archivist Review
 
-The paper provides a domain-specific astronomical characterization using standard methods and does not introduce reusable ML concepts, architectures, or datasets. One open question regarding the resolution of degeneracies in TTV-based planetary mass estimation was approved as it touches on a generalizable problem in temporal dynamical modeling.
+The paper provides a significant astronomical discovery of a planetary system but does not introduce novel machine learning methods or architectures. The astronomical problem of resolving mass/eccentricity degeneracies via TTVs is framed as an open question, but the original candidate was too specific to the TOI-5624 system; it has been generalized for the vault to reflect the underlying challenge of dynamical mass estimation.
 
 ### Approved Open Questions
-- TTV dynamical mass degeneracies: This is a fundamental bottleneck for dynamical mass characterization in planetary systems where TTV analysis is the primary observational tool.
+- TTV dynamical mass degeneracy resolution: Refining the dynamical mass measurements of this multi-planet system is crucial for understanding its long-term architectural stability and for benchmarking planetary formation models.
 
 ### Rejected Candidates
-- [open_question] Long-term TTV monitoring needs (`ttv-dynamical-mass-degeneracy`) - duplicate_existing: The concept is renamed for better clarity and to avoid duplication with other potential TTV-related issues.
+- [open_question] Confirming TOI-5624 system dynamics (`toi-5624-dynamical-confirmation`) - paper_local: This is a domain-specific astronomical problem statement rather than a generalized research question for the ML/time-series community.
 
 ## Links
 

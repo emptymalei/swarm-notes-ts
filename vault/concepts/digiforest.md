@@ -1,12 +1,13 @@
 ---
-title: "DigiForest"
-slug: "digiforest"
-type: concept
+created_at: '2026-04-18T04:52:09Z'
 generated_stub: true
+modified_at: '2026-04-19T05:05:59Z'
+processed_at: '2026-04-18T04:52:09Z'
+slug: digiforest
 source_papers:
-  - "[[arxiv-260414652-digiforest-digital-analytics-and-robotics-for-sustainable-fo]]"
-processed_at: "2026-04-18T04:52:09Z"
-created_at: "2026-04-18T04:52:09Z"
+- '[[arxiv-260414652-digiforest-digital-analytics-and-robotics-for-sustainable-fo]]'
+title: DigiForest
+type: concept
 ---
 
 # DigiForest

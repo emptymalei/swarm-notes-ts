@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-18T04:52:24Z'
+modified_at: '2026-04-19T05:06:14Z'
 source_papers:
 - '[[arxiv-260414532-csra-controlled-spectral-residual-augmentation-for-robust-se]]'
-title: Irregular time-series augmentation robustness
+title: Augmentation for Irregular Data
 ---
 
 **Background:** Clinical data often lacks consistent observation intervals, whereas many forecasting architectures assume regular sampling or predefined imputation grids. Integrating augmentation methods with natively asynchronous data remains a persistent hurdle in clinical AI.

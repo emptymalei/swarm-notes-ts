@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-17T05:05:40Z'
 generated_stub: true
-modified_at: '2026-04-18T04:52:16Z'
+modified_at: '2026-04-19T05:06:06Z'
 processed_at: '2026-04-17T05:05:40Z'
 slug: acoustic-camouflage
 source_papers:

@@ -31,7 +31,7 @@ url: "https://arxiv.org/abs/2604.14652"
 # Custom fields
 paper_id: "2604.14652"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "robotics"
 tags:
   []
 architectures:
@@ -43,8 +43,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-18T04:52:09Z"
-created_at: "2026-04-18T04:52:09Z"
+processed_at: "2026-04-19T05:05:59Z"
+created_at: "2026-04-19T05:05:59Z"
 ---
 
 # DigiForest: Digital Analytics and Robotics for Sustainable Forestry
@@ -55,34 +55,36 @@ created_at: "2026-04-18T04:52:09Z"
 
 ## Summary
 
-DigiForest is a comprehensive approach to precision forestry that integrates autonomous heterogeneous robots, automated forest inventory generation, and a Decision Support System for growth forecasting. By combining aerial and legged robotic platforms for tree-level data collection with purpose-built autonomous harvesters, the framework enables sustainable, low-impact forest management. The approach was validated through extensive real-world trials in Finland, the UK, and Switzerland, demonstrating its efficacy in supporting climate neutrality and biodiversity goals.
+DigiForest is a comprehensive framework for sustainable forestry that combines autonomous robotics with digital analytics for precise forest management. The system utilizes a fleet of aerial, legged, and marsupial robots to collect granular tree-level data, which is processed to generate automated forest inventories. Additionally, it incorporates a Decision Support System for growth forecasting and autonomous harvesters designed for low-impact logging, validated across diverse European forest environments.
 
 ## Key Contributions
 
-- Proposes DigiForest, an integrated framework for precision forestry combining aerial and legged robotic data collection with automated tree trait extraction.
-- Introduces a Decision Support System (DSS) designed for forecasting forest growth and informing sustainable harvesting strategies.
-- Demonstrates real-world utility of heterogeneous autonomous robots for low-impact selective logging across diverse European forest sites.
+- Introduces DigiForest, a large-scale precision forestry framework integrating autonomous robotics and digital analytics.
+- Develops a heterogeneous robotic system (aerial, legged, marsupial) for high-fidelity tree-level data collection.
+- Provides a forest inventory automation pipeline that extracts tree traits for growth forecasting and sustainable decision support.
 
 ## Open Questions & Future Work
 
-- [[multi-robot-forestry-coordination]]
+- [[collaborative-marsupial-forestry-exploration]]
+- [[online-panoptic-segmentation-robotics]]
 
 ## Key Concepts
 
-- [[digiforest]]: A large-scale precision forestry approach integrating autonomous robotics, digital data extraction, and decision support systems for sustainable forest management.
+- [[digiforest]]: A comprehensive precision forestry framework integrating heterogeneous autonomous robotics, automated tree trait extraction, and decision support systems.
 
 ## Archivist Review
 
-I approved the DigiForest framework as a notable integrated system architecture. I also approved the open question regarding multi-robot coordination as it specifically addresses the marsupial robot paradigm in unstructured environments. I rejected the real-time panoptic segmentation question because it is a broad vision research objective rather than a specific open problem tied to the forestry application domain.
+I approved the DigiForest framework as a novel, integrated approach to precision forestry. I also approved two research questions focused on the technical bottlenecks of marsupial robotic coordination and real-time panoptic segmentation for mobile platforms, as these are significant, unresolved challenges in robotics and environmental sensing. I rejected the mentioned dataset because it is described as a collection of field validation locations rather than a unified, canonical benchmark dataset suitable for vault archival.
 
 ### Approved Concepts
-- DigiForest: Central framework integrating robotics, digital inventory, DSS, and selective logging for sustainable forestry management.
+- DigiForest: It is the core framework introduced in the paper, defining a multi-modal robotic and digital ecosystem for precision forestry.
 
 ### Approved Open Questions
-- Multi-Robot Coordination in Forestry: Effective marsupial coordination is critical for balancing the high-mobility, short-endurance capabilities of aerial drones with the high-endurance, ground-restricted movement of quadrupedal robots in large-scale forestry operations.
+- Collaborative Marsupial Forestry Exploration: Marsupial systems are critical for overcoming the limited endurance of drones and the limited traversability of legged robots in dense forestry; establishing robust collaborative frameworks is essential for scaling these deployments.
+- Online Panoptic Segmentation for Robotics: Onboard semantic and instance-aware mapping is necessary for robots to perform intelligent, site-specific decision-making in real-time, such as identifying specific tree species or health conditions during navigation.
 
 ### Rejected Candidates
-- [open_question] Real-Time Panoptic Segmentation (`real-time-panoptic-segmentation`) - generic: This is a generic computer vision research goal rather than a specific forestry-centric bottleneck.
+- [dataset] DigiForest-Finland-UK-Switzerland-dataset (`DigiForest-Finland-UK-Switzerland-dataset`) - low_impact: This is a loosely defined collection of field data rather than a standardized, named benchmark dataset intended for broad reuse.
 
 ## Links
 

@@ -1,9 +1,9 @@
 ---
 created_at: '2026-04-17T05:05:40Z'
-modified_at: '2026-04-18T04:52:16Z'
+modified_at: '2026-04-19T05:06:06Z'
 source_papers:
 - '[[arxiv-260414619-the-acoustic-camouflage-phenomenon-re-evaluating-speech-feat]]'
-title: Acoustic feature resilience in teleconferencing
+title: Acoustic feature resilience in teleconference codecs
 ---
 
 **Background:** Modern teleconference platforms employ lossy compression and noise-canceling algorithms that may fundamentally alter or remove subtle paralinguistic features in audio signals.

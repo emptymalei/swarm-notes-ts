@@ -5,7 +5,7 @@ author:
   - literal: "Honglin Guo"
   - literal: "Rihao Chang"
   - literal: "He Jiao"
-  - literal: "Weizhi Nie,"
+  - literal: "Weizhi Nie"
   - literal: "Zhongheng Zhang"
   - literal: "Yuehao Shen"
 issued:
@@ -16,11 +16,12 @@ url: "https://arxiv.org/abs/2604.14532"
 # Custom fields
 paper_id: "2604.14532"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  - "time-series-forecasting"
-  - "health-care-ai"
+  - "sepsis-prediction"
   - "data-augmentation"
+  - "icu-forecasting"
+  - "spectral-analysis"
 architectures:
   []
 datasets:
@@ -30,47 +31,48 @@ concept_slugs:
 dataset_slugs:
   - "mimic-iv"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-18T04:52:24Z"
-created_at: "2026-04-18T04:52:24Z"
+processed_at: "2026-04-19T05:06:14Z"
+created_at: "2026-04-19T05:06:14Z"
 ---
 
 # CSRA: Controlled Spectral Residual Augmentation for Robust Sepsis Prediction
 
-**Authors**: Honglin Guo, Rihao Chang, He Jiao, Weizhi Nie,, Zhongheng Zhang, Yuehao Shen
+**Authors**: Honglin Guo, Rihao Chang, He Jiao, Weizhi Nie, Zhongheng Zhang, Yuehao Shen
 **Date**: 2026-04-16
 **Paper ID**: [arxiv:2604.14532](https://arxiv.org/abs/2604.14532)
 
 ## Summary
 
-This paper addresses the difficulty of short-window sepsis prediction in ICU environments caused by limited historical context and sparse future labels. The authors propose Controlled Spectral Residual Augmentation (CSRA), a framework that performs input-adaptive spectral perturbations to generate structured, clinically plausible trajectory variations. By integrating spectral augmentation with anchor consistency and controller regularization, the approach significantly improves predictive performance and robustness across various clinical constraints and datasets.
+The paper introduces Controlled Spectral Residual Augmentation (CSRA), a framework designed to enhance sepsis prediction in ICU time series by generating clinically plausible trajectory variations. CSRA extracts system-level and global representations before applying input-adaptive residual perturbations in the spectral domain, regulated by anchor consistency and controller objectives. The framework demonstrates improved predictive performance and robustness across varied observation windows and prediction horizons on both the MIMIC-IV and ZiGongICUinfection datasets.
 
 ## Key Contributions
 
-- Introduces CSRA, a framework that generates clinically plausible trajectory variations by applying input-adaptive residual perturbations in the spectral domain.
-- Achieves significant performance improvements in sepsis prediction, reducing MSE by 10.2% and MAE by 3.7% on the MIMIC-IV dataset.
-- Demonstrates superior robustness under challenging conditions, including short observation windows, long prediction horizons, limited training data, and across external clinical datasets.
+- Proposes CSRA, an input-adaptive spectral-domain data augmentation framework that improves sepsis prediction robustness.
+- CSRA reduces regression error by 10.2% in MSE and 3.7% in MAE compared to non-augmentation baselines on MIMIC-IV.
+- Demonstrates consistent robustness across varied observation windows, prediction horizons, training data scales, and external validation on the ZiGongICUinfection dataset.
 
 ## Open Questions & Future Work
 
 - [[irregular-time-series-augmentation-robustness]]
+- [[adaptive-system-aware-augmentation]]
 
 ## Key Concepts
 
-- [[controlled-spectral-residual-augmentation-csra]]: A spectral-domain data augmentation framework for time series that uses input-adaptive residual perturbation constrained by anchor consistency and controller regularization.
+- [[controlled-spectral-residual-augmentation-csra]]: An input-adaptive, spectral-domain data augmentation framework for ICU time series that uses anchor consistency and controller regularization to ensure clinical plausibility.
 
 ## Archivist Review
 
-I have approved the core methodological contribution, CSRA, as it introduces a distinct, reusable spectral augmentation design pattern for time series. I have also added an open question regarding irregular sampling robustness, as this is a fundamental bottleneck for clinical time-series forecasting. Secondary datasets and generic dependency modeling questions were rejected to maintain the high selectivity of the vault.
+I approved the CSRA framework and two open questions regarding the scalability of augmentation to irregular data and adaptive system-level dependencies. The ZiGongICUinfection dataset was rejected as it appears to be a study-specific, niche dataset without sufficient evidence of broader impact or utility for the existing vault. Standardized academic naming and formatting were applied to all accepted entries.
 
 ### Approved Concepts
-- Controlled Spectral Residual Augmentation (CSRA): It provides a novel mechanism for input-adaptive spectral perturbation constrained by auxiliary regularization, which is generally applicable to time-series tasks where data augmentation is needed but must remain physically or clinically plausible.
+- Controlled Spectral Residual Augmentation (CSRA): Provides a novel, input-adaptive, spectral-domain data augmentation technique for ICU time series that ensures clinical plausibility through regularization.
 
 ### Approved Open Questions
-- Irregular time-series augmentation robustness: Standardizing the robustness of clinical models requires moving beyond regularized grid assumptions toward handling the inherent sparsity and irregular cadence of ICU monitoring.
+- Augmentation for Irregular Data: Medical data is inherently irregular; without addressing this, models may not generalize to real-world deployment where monitoring frequencies vary significantly.
+- Adaptive System-Aware Augmentation: Capturing dynamic physiological dependencies is essential for generating robust samples that correctly reflect the evolving interactions between clinical systems.
 
 ### Rejected Candidates
-- [open_question] Adaptive System Dependency Modeling (`adaptive-system-dependency-modeling`) - generic: The proposed question is quite generic regarding variable dependency modeling and lacks a strong, specific link to the novel spectral augmentation core of the paper.
-- [dataset] ZiGongICUinfection (`zigongicuinfection`) - low_impact: This is a secondary, likely proprietary or specialized small-scale dataset compared to the primary evaluation on MIMIC-IV.
+- [dataset] ZiGongICUinfection (`zigongicuinfection`) - low_impact: Insufficient information provided regarding the dataset's scale and general usage outside this specific study to warrant a permanent vault entry compared to established benchmarks.
 
 ## Datasets
 

@@ -14,7 +14,9 @@ paper_id: "2604.15174"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "time-series-classification"
+  - "state-space-models"
+  - "benchmarking"
 architectures:
   []
 datasets:
@@ -24,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   - "uea-dataset"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-18T04:51:32Z"
-created_at: "2026-04-18T04:51:32Z"
+processed_at: "2026-04-19T05:05:25Z"
+created_at: "2026-04-19T05:05:25Z"
 ---
 
 # MambaSL: Exploring Single-Layer Mamba for Time Series Classification
@@ -36,31 +38,31 @@ created_at: "2026-04-18T04:51:32Z"
 
 ## Summary
 
-MambaSL explores the potential of single-layer State Space Models (SSMs) for time series classification (TSC) by redesigning the selective SSM and projection layers. The authors identify TSC-specific limitations in existing research and introduce a unified evaluation protocol across all 30 UEA datasets. Their results demonstrate that MambaSL achieves state-of-the-art performance compared to 20 strong baselines, providing a more efficient and reproducible backbone for future TSC tasks.
+This paper introduces MambaSL, a single-layer Mamba architecture designed to optimize state space model performance for time series classification (TSC). By identifying and implementing TSC-specific refinements to the selective SSM and projection components, the authors show that a minimal architecture can outperform existing complex models. Furthermore, the work addresses systemic issues in current TSC research by establishing a unified evaluation protocol across all 30 UEA datasets for 20 baseline models, providing a foundation for future reproducible research.
 
 ## Key Contributions
 
-- Introduces MambaSL, a single-layer SSM-based framework specifically optimized for time series classification.
-- Redesigns selective SSM and projection layers based on four hypotheses tailored to time series data characteristics.
-- Establishes a unified, reproducible benchmarking protocol across all 30 UEA datasets for 20 baseline models, setting a new standard for TSC evaluation.
+- Introduces MambaSL, a single-layer state space model architecture tailored for time series classification through targeted redesign of SSM and projection layers.
+- Provides a comprehensive, unified re-evaluation of 20 baseline models across all 30 UEA datasets to address existing reproducibility and coverage gaps in the field.
+- Demonstrates state-of-the-art performance on the full UEA benchmark, showing that simplified Mamba architectures can serve as robust backbones for TSC.
 
 ## Open Questions & Future Work
 
-- [[ssm-time-variance-optimization]]
+- [[mamba-tsc-backbone-optimization]]
 
 ## Key Concepts
 
-- [[mambasl]]: A single-layer Mamba-based framework that optimizes selective SSM and projection layers specifically for time series classification.
+- [[mambasl]]: A single-layer Mamba architecture optimized for time series classification through targeted redesign of selective SSM and projection layers.
 
 ## Archivist Review
 
-The paper offers a compelling case for minimalist architectural design in SSMs for time series classification. I approved the MambaSL concept and the UEA dataset as they constitute the core framework and evaluation standard presented. The open question regarding SSM time variance was approved as it reflects a fundamental, unresolved architectural trade-off identified by the authors.
+I approved MambaSL as a concept because it represents a clear, reusable methodology for adapting SSMs to specific sequence classification constraints. I also included the UEA archive as a standard benchmark dataset, noting that the paper's contribution to consistent evaluation across this set is its secondary impact. The open question was approved for tracking the fundamental research gap between general sequence modeling and task-specific TSC backbones.
 
 ### Approved Concepts
-- MambaSL: It challenges the assumption that deep stacking is necessary for state-space performance, demonstrating that a carefully redesigned single layer can outperform complex baselines in TSC.
+- MambaSL: It establishes a design methodology for reducing the complexity of state space models while maintaining performance for time series classification, highlighting the potential of lightweight architectures as sequence backbones.
 
 ### Approved Open Questions
-- Optimizing SSM Time Variance: As SSMs gain traction in time series, determining when to enforce stationarity (TI) versus when to allow adaptability (TV) is fundamental to reducing architectural search spaces and improving transferability.
+- Optimizing Mamba for TSC: Understanding these architectural trade-offs is crucial for establishing whether SSMs can become a robust, standard, and efficient choice for TSC backbones across diverse applications.
 
 ## Datasets
 

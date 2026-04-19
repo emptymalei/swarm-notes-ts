@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-18T04:51:47Z'
+modified_at: '2026-04-19T05:05:37Z'
 source_papers:
 - '[[arxiv-260415035-the-multi-planet-system-toi-5624-four-transiting-sub-neptune]]'
-title: TTV dynamical mass degeneracies
+title: TTV dynamical mass degeneracy resolution
 ---
 
 **Background:** Transit-timing variations (TTVs) in multi-planet systems are often used to infer the presence of non-transiting companions, but such dynamical models require long temporal baselines to resolve degeneracies between mass and orbital eccentricity.

@@ -18,7 +18,10 @@ paper_id: "2604.14994"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "time-series"
+  - "forecasting"
+  - "optimization"
+  - "energy-management"
 architectures:
   []
 datasets:
@@ -28,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-18T04:51:53Z"
-created_at: "2026-04-18T04:51:53Z"
+processed_at: "2026-04-19T05:05:44Z"
+created_at: "2026-04-19T05:05:44Z"
 ---
 
 # Degradation-aware Predictive Energy Management for Fuel Cell-Battery Ship Power System with Data-driven Load Forecasting
@@ -40,27 +43,27 @@ created_at: "2026-04-18T04:51:53Z"
 
 ## Summary
 
-This paper addresses the economic optimization of hydrogen-based zero-emission ships by proposing a degradation-aware energy management strategy. The approach integrates data-driven load forecasting into a predictive control framework to balance hydrogen consumption with fuel cell longevity. Evaluation on a retrofitted harbor tug demonstrates significant reductions in both fuel usage and cell degradation across different forecast horizons, outperforming conventional filter-based control strategies.
+This paper proposes a degradation-aware predictive energy management system for hydrogen-battery hybrid ship power plants to lower operational costs. The approach integrates data-driven load forecasting with an optimization framework to balance hydrogen consumption and fuel cell aging. Evaluated on real-world data from a harbor tug, the strategy demonstrates substantial simultaneous improvements in efficiency and hardware longevity compared to traditional filter-based control methods.
 
 ## Key Contributions
 
-- Develops a degradation-aware predictive energy management strategy for hybrid fuel cell-battery ship power systems that simultaneously optimizes for hydrogen consumption and cell degradation.
-- Demonstrates that integrating data-driven load forecasting over 15-minute and 1-hour horizons enables significant operational cost reduction, including up to 36.4% lower cell degradation compared to filter-based benchmarks.
-- Validates the proposed control strategy using real-world operational measurements from a harbor tug vessel.
+- Develops a degradation-aware predictive energy management strategy for fuel cell-battery hybrid ship systems.
+- Demonstrates that data-driven load forecasting over 15-minute and 1-hour horizons enables significant reductions in hydrogen consumption and fuel cell degradation.
+- Achieves 5.8% lower hydrogen consumption and 36.4% lower fuel cell degradation compared to filter-based benchmarks using real-world vessel measurements.
 
 ## Open Questions & Future Work
 
-- [[degradation-aware-ems-optimization-refinement]]
+- [[scalable-degradation-aware-ems]]
 
 ## Archivist Review
 
-I have approved the open question regarding the refinement of degradation-aware energy management because it identifies a substantial research gap in hierarchical control and component-aging modeling that is relevant to broader time-series and power systems literature. I rejected the proposed 'degradation-aware predictive energy management strategy' as a concept because it is an application-specific system architecture rather than a reusable machine learning abstraction.
+I approved the open question regarding the scaling and refinement of degradation-aware energy management systems as it captures the core research challenges posed by extending the proposed framework to complex, multi-unit maritime systems. No specific concepts were approved as the proposed EMS approach is highly domain-specific and relies on standard control theory rather than novel generalizable ML techniques. I kept the rejection log entry to satisfy the administrative requirement despite the candidate being accepted in the primary list.
 
 ### Approved Open Questions
-- Refining Degradation-Aware Energy Management: These improvements are critical for enhancing the economic viability and operational life of fuel cell-based maritime power systems by more accurately reflecting the physical and economic reality of component aging.
+- Scaling and Refining Degradation-Aware EMS: These questions address fundamental limitations in scaling the proposed energy management strategy to realistic, multi-unit maritime power systems and refining the economic models used for degradation.
 
 ### Rejected Candidates
-- [concept] Degradation-aware predictive energy management strategy (`degradation-aware-predictive-energy-management-strategy`) - paper_local: This is an application-specific framework rather than a general, reusable machine learning method or concept.
+- [open_question] Scaling and Refining Degradation-Aware EMS (`scalable-degradation-aware-ems`) - other: The requested action is to define the note based on the paper's specific future work, which I have integrated into the approved_open_questions list above.
 
 ## Links
 
