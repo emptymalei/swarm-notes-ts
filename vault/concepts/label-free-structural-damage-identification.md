@@ -1,12 +1,13 @@
 ---
-title: "Label-Free Structural Damage Identification"
-slug: "label-free-structural-damage-identification"
-type: concept
+created_at: '2026-04-22T05:03:04Z'
 generated_stub: true
+modified_at: '2026-04-23T05:09:05Z'
+processed_at: '2026-04-22T05:03:04Z'
+slug: label-free-structural-damage-identification
 source_papers:
-  - "[[arxiv-260419658-disentangling-damage-from-operational-variability-a-label-fr]]"
-processed_at: "2026-04-22T05:03:04Z"
-created_at: "2026-04-22T05:03:04Z"
+- '[[arxiv-260419658-disentangling-damage-from-operational-variability-a-label-fr]]'
+title: Label-Free Structural Damage Identification
+type: concept
 ---
 
 # Label-Free Structural Damage Identification

@@ -26,14 +26,10 @@ url: "https://arxiv.org/abs/2604.19746"
 # Custom fields
 paper_id: "2604.19746"
 paper_source: "arxiv"
-domain: "astrophysics"
+domain: "time-series"
 tags:
-  - "astrophysics"
-  - "cosmology"
-  - "supernovae"
-  - "calibration"
-  - "systematics-analysis"
-  - "dark-energy"
+  - "probabilistic-forecasting"
+  - "time-series"
 architectures:
   []
 datasets:
@@ -43,8 +39,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-22T05:02:37Z"
-created_at: "2026-04-22T05:02:37Z"
+processed_at: "2026-04-23T05:08:42Z"
+created_at: "2026-04-23T05:08:42Z"
 ---
 
 # Calibration-Induced Systematics in SALT3 Training and Their Impact on Dark Energy Constraints from Stage IV Supernova Surveys
@@ -55,27 +51,27 @@ created_at: "2026-04-22T05:02:37Z"
 
 ## Summary
 
-This study investigates the impact of photometric calibration systematics on Type Ia supernova cosmology using simulated data from the Vera Rubin Observatory (LSST) and the Roman Space Telescope. By perturbing zero-points and filter wavelengths, the authors demonstrate that calibration errors in light-curve fitting are the dominant source of systematic uncertainty, leading to a ~50% degradation in the dark energy Figure of Merit. These biases are found to be degenerate with cosmological parameters, presenting a significant challenge for future precision supernova surveys.
+This paper investigates how photometric calibration errors—specifically zero-point shifts and filter wavelength variations—impact Type Ia supernova cosmology for future high-precision surveys like Rubin-LSST and Roman. By simulating these systematics and propagating them through both model training and light-curve fitting, the authors show that fitting-stage uncertainties are the primary bottleneck for dark energy constraints. The findings suggest that these systematic effects are largely degenerate with cosmological parameters, necessitating more rigorous calibration strategies to meet Stage IV requirements.
 
 ## Key Contributions
 
-- Quantifies the impact of photometric calibration uncertainties (zero-points and filter wavelengths) on the dark energy Figure of Merit (FoM) for Rubin-LSST and Roman HLTDS.
-- Demonstrates that calibration-induced systematics during light-curve fitting significantly outweigh those incurred during model training, reducing the FoM by ~50%.
-- Shows that calibration-induced biases in light-curve fitting are redshift-dependent and degenerate with cosmological parameters, limiting the efficacy of self-calibration techniques.
+- Quantifies the systematic impact of photometric calibration uncertainties on SN Ia cosmology for upcoming Rubin-LSST and Roman HLTDS surveys.
+- Demonstrates that calibration uncertainties during light-curve fitting significantly outweigh those from model training, reducing the dark energy figure of merit by ~50%.
+- Reveals that calibration-induced systematics evolve smoothly with redshift and exhibit strong degeneracy with cosmology, challenging conventional mitigation strategies.
 
 ## Open Questions & Future Work
 
-- [[saltshaker-training-artifact-mitigation]]
+- [[calibration-systematics-fitting-vs-training-discrepancies]]
 
 ## Archivist Review
 
-This paper provides a domain-specific analysis of calibration-induced systematic errors in supernova cosmology, which falls outside the primary scope of generic time-series forecasting. I have approved one open question concerning the mitigation of model-training artifacts, which represents a substantial, identified research bottleneck for high-precision astrophysical modeling. No concepts were approved as the primary findings are highly specific to the astrophysical calibration domain rather than general-purpose time-series mechanisms.
+I have rejected the SALT3-specific training artifact question as it is a narrow implementation issue. I have approved a rephrased version of the fitting vs. training systematic discrepancy as an open question, as this is a fundamental problem in understanding how observation-level errors propagate through different stages of complex scientific pipelines. I chose not to approve any concepts as no novel, reusable forecasting methodology was presented beyond standard systematic error propagation analysis.
 
 ### Approved Open Questions
-- SALTshaker training artifact mitigation: Establishing optimal training datasets is critical for the accuracy of next-generation SN Ia cosmological analyses, as these models are fundamental for standardizing supernovae across wide redshift ranges.
+- Supernova calibration systematic discrepancies: Understanding these calibration-induced systematics is vital for next-generation dark energy experiments that require sub-percent level control of systematic uncertainties.
 
 ### Rejected Candidates
-- [open_question] SALT3 training with prism spectra (`salt3-training-artifacts-prism-spectra`) - other: Renamed to be more descriptive of the mitigation goal rather than the specific observation.
+- [open_question] SALT3 prism-only training artifacts (`salt3-prism-only-training-artifacts`) - paper_local: This is a specific, narrow implementation artifact related to the SALTShaker training tool rather than a foundational research question.
 
 ## Links
 

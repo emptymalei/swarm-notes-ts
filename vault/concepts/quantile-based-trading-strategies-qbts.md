@@ -1,12 +1,13 @@
 ---
-title: "Quantile-based Trading Strategies (QBTS)"
-slug: "quantile-based-trading-strategies-qbts"
-type: concept
+created_at: '2026-04-22T05:03:26Z'
 generated_stub: true
+modified_at: '2026-04-23T05:09:32Z'
+processed_at: '2026-04-22T05:03:26Z'
+slug: quantile-based-trading-strategies-qbts
 source_papers:
-  - "[[arxiv-260419580-probabilistic-forecasting-for-day-ahead-electricity-prices-b]]"
-processed_at: "2026-04-22T05:03:26Z"
-created_at: "2026-04-22T05:03:26Z"
+- '[[arxiv-260419580-probabilistic-forecasting-for-day-ahead-electricity-prices-b]]'
+title: Quantile-based Trading Strategies (QBTS)
+type: concept
 ---
 
 # Quantile-based Trading Strategies (QBTS)

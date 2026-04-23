@@ -1,12 +1,13 @@
 ---
-title: "Stochastic Attention"
-slug: "stochastic-attention"
-type: concept
+created_at: '2026-04-22T05:03:31Z'
 generated_stub: true
+modified_at: '2026-04-23T05:09:39Z'
+processed_at: '2026-04-22T05:03:31Z'
+slug: stochastic-attention
 source_papers:
-  - "[[arxiv-260419530-calibrating-scientific-foundation-models-with-inference-time]]"
-processed_at: "2026-04-22T05:03:31Z"
-created_at: "2026-04-22T05:03:31Z"
+- '[[arxiv-260419530-calibrating-scientific-foundation-models-with-inference-time]]'
+title: Stochastic Attention
+type: concept
 ---
 
 # Stochastic Attention

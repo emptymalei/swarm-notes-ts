@@ -13,24 +13,20 @@ url: "https://arxiv.org/abs/2604.19705"
 # Custom fields
 paper_id: "2604.19705"
 paper_source: "arxiv"
-domain: "systems-ml"
+domain: "nlp"
 tags:
-  - "kubernetes-autoscaling"
-  - "predictive-forecasting"
-  - "node-js-performance"
-  - "system-reliability"
-  - "time-series-forecasting"
+  - "adaptive-input-training"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "scaler-invariant-metric-modeling"
+  - "aggregate-invariant-scaling-signal"
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-22T05:02:55Z"
-created_at: "2026-04-22T05:02:55Z"
+processed_at: "2026-04-23T05:08:55Z"
+created_at: "2026-04-23T05:08:55Z"
 ---
 
 # Predictive Autoscaling for Node.js on Kubernetes: Lower Latency, Right-Sized Capacity
@@ -41,32 +37,28 @@ created_at: "2026-04-22T05:02:55Z"
 
 ## Summary
 
-This paper addresses the latency issues in Node.js applications on Kubernetes caused by reactive autoscalers that rely on CPU utilization and delayed reaction loops. The authors propose a predictive scaling algorithm that eliminates the feedback loop between scaling actions and metrics by utilizing cluster-wide invariant aggregates. The methodology includes a specialized metric model and a five-stage processing pipeline to transform raw telemetry into proactive scaling signals. Extensive benchmarking shows superior latency performance compared to default HPA and event-loop-aware KEDA solutions.
+This paper addresses the structural limitations of reactive Kubernetes autoscalers for Node.js workloads, which fail to account for event loop saturation and startup latency. The authors propose a predictive scaling algorithm that utilizes a cluster-wide aggregate metric to eliminate the feedback loop caused by instance churn. Through a five-stage processing pipeline, the system transforms noisy, partial metrics into a stable signal for proactive capacity provisioning, significantly outperforming HPA and KEDA in latency-critical scenarios.
 
 ## Key Contributions
 
-- Introduces a predictive scaling algorithm that forecasts load to proactively adjust capacity before latency SLO violations occur.
-- Identifies and solves the metric corruption feedback loop in Kubernetes autoscalers by operating on cluster-wide, scaling-invariant aggregates.
-- Develops a five-stage processing pipeline for converting irregular, partial metric streams into a stable, high-fidelity signal for short-term extrapolation.
-- Achieves significantly lower median latency (26ms) compared to KEDA (154ms) and HPA (522ms) during steady traffic ramps.
-
-## Open Questions & Future Work
-
-- [[scaling-invariant-metric-feedback-loop-mitigation]]
+- Proposes a predictive autoscaling algorithm that forecasts system load to account for pod startup latency, preventing SLO degradation.
+- Introduces the use of cluster-wide aggregate metrics to eliminate feedback loops where scaling actions corrupt input data for the scaling controller.
+- Demonstrates significant performance gains over standard HPA and KEDA, reducing median latency from 522ms/154ms to 26ms under steady traffic ramp conditions.
 
 ## Key Concepts
 
-- [[scaler-invariant-metric-modeling]]: A design pattern for autoscaling that operates on cluster-wide aggregate metrics which remain invariant during scaling actions, thereby preventing the metric-feedback contamination loop.
+- [[aggregate-invariant-scaling-signal]]: A technique for generating stable forecasting signals for autoscalers by using cluster-wide aggregates that remain invariant when the number of replicas changes.
 
 ## Archivist Review
 
-I have approved the concept of 'Scaler-Invariant Metric Modeling' as it captures the core innovation in solving the feedback loop in distributed systems. Correspondingly, I have added an open question focused on the general challenge of 'Mitigating Autoscaling Feedback Loops'. Other candidates were rejected for being too paper-specific or for representing standard software engineering practices rather than high-level machine learning or architectural innovations.
+I approved 'Aggregate Invariant Scaling Signal' as it provides a clear, reusable methodological solution to the feedback loop problem inherent in reactive autoscaling. I rejected 'Predictive Autoscaling Algorithm' as it is a generic task description, and 'Metric Model' as it is a localized, under-defined architectural component. No datasets or open questions met the stringent threshold for archival.
 
 ### Approved Concepts
-- Scaler-Invariant Metric Modeling: It identifies and solves the fundamental feedback loop problem where reactive autoscalers contaminate their own input telemetry by changing the system state, a critical challenge in distributed systems.
+- Aggregate Invariant Scaling Signal: This addresses the fundamental problem of autoscaler feedback loops where adding instances corrupts per-instance metrics, enabling proactive rather than reactive scaling.
 
-### Approved Open Questions
-- Mitigating Autoscaling Feedback Loops: This is a critical architectural bottleneck for scaling any distributed system effectively without over-provisioning or oscillating under reactive control loops.
+### Rejected Candidates
+- [concept] Predictive Autoscaling Algorithm (`predictive-autoscaling-algorithm`) - generic: This is a generic description of the system task rather than a specific, reusable methodological contribution.
+- [concept] Metric Model (`metric-model`) - paper_local: This is an overly generic name for a set of functions and lacks sufficient detail to serve as a distinct, reusable concept in the vault.
 
 ## Links
 

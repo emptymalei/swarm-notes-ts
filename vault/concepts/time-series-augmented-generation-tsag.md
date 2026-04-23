@@ -1,12 +1,13 @@
 ---
-title: "Time Series Augmented Generation (TSAG)"
-slug: "time-series-augmented-generation-tsag"
-type: concept
+created_at: '2026-04-22T05:03:11Z'
 generated_stub: true
+modified_at: '2026-04-23T05:09:14Z'
+processed_at: '2026-04-22T05:03:11Z'
+slug: time-series-augmented-generation-tsag
 source_papers:
-  - "[[arxiv-260419633-time-series-augmented-generation-for-financial-applications]]"
-processed_at: "2026-04-22T05:03:11Z"
-created_at: "2026-04-22T05:03:11Z"
+- '[[arxiv-260419633-time-series-augmented-generation-for-financial-applications]]'
+title: Time Series Augmented Generation (TSAG)
+type: concept
 ---
 
 # Time Series Augmented Generation (TSAG)

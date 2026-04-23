@@ -1,12 +1,13 @@
 ---
-title: "Sensitivity-Guided Observation Selection"
-slug: "sensitivity-guided-observation-selection"
-type: concept
+created_at: '2026-04-22T05:03:38Z'
 generated_stub: true
+modified_at: '2026-04-23T05:09:46Z'
+processed_at: '2026-04-22T05:03:38Z'
+slug: sensitivity-guided-observation-selection
 source_papers:
-  - "[[arxiv-260419500-connecting-the-forward-problem-to-the-inverse-problem-in-unc]]"
-processed_at: "2026-04-22T05:03:38Z"
-created_at: "2026-04-22T05:03:38Z"
+- '[[arxiv-260419500-connecting-the-forward-problem-to-the-inverse-problem-in-unc]]'
+title: Sensitivity-Guided Observation Selection
+type: concept
 ---
 
 # Sensitivity-Guided Observation Selection

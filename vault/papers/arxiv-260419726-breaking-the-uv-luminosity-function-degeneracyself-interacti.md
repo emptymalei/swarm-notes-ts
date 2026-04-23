@@ -12,12 +12,9 @@ url: "https://arxiv.org/abs/2604.19726"
 # Custom fields
 paper_id: "2604.19726"
 paper_source: "arxiv"
-domain: "astrophysics-cosmology"
+domain: "physics"
 tags:
-  - "dark-matter"
-  - "reionization"
-  - "cosmology"
-  - "astrophysics"
+  []
 architectures:
   []
 datasets:
@@ -27,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-22T05:02:47Z"
-created_at: "2026-04-22T05:02:47Z"
+processed_at: "2026-04-23T05:08:50Z"
+created_at: "2026-04-23T05:08:50Z"
 ---
 
 # Breaking the UV Luminosity Function Degeneracy:Self-Interacting Dark Matter Constraints from Reionization Topology
@@ -39,29 +36,26 @@ created_at: "2026-04-22T05:02:47Z"
 
 ## Summary
 
-This paper addresses the fundamental degeneracy between self-interacting dark matter (SIDM) microphysics and galaxy formation astrophysics in high-redshift observations. The authors demonstrate that UV luminosity functions (UVLF) cannot independently constrain SIDM because astrophysical parameters can mask the effects of core formation. By contrast, 21 cm reionization topology provides a unique, nuisance-immune signature—based on the duty cycle of ionizing photon escape—that allows for clear separation of dark matter effects from star formation efficiency. The research indicates that integrating JWST UVLF data with future SKA1-Low observations provides a robust framework to constrain SIDM cross-sections.
+This paper investigates the degeneracy between dark matter microphysics and galaxy formation astrophysics in high-redshift observations. The authors demonstrate that UV luminosity functions cannot uniquely constrain self-interacting dark matter (SIDM) due to compensating adjustments in star formation parameters. They propose using 21 cm reionization topology as an independent, nuisance-immune probe of SIDM-enhanced photon escape, successfully breaking the degeneracy and providing improved constraints on SIDM cross-sections.
 
 ## Key Contributions
 
-- Demonstrates that UV luminosity function (UVLF) measurements are insufficient to constrain SIDM due to degeneracies with galaxy formation parameters.
-- Identifies 21 cm reionization topology as an effective probe that breaks the degeneracy between SIDM microphysics and star formation astrophysics.
-- Forecasts that combining JWST UVLF data with SKA1-Low 21 cm observations can constrain or detect constant-cross-section SIDM with σ/m ≥ 1–2 cm²/g.
+- Demonstrates that the UV luminosity function (UVLF) suffers from a fundamental degeneracy between SIDM microphysics and star formation astrophysics, rendering it insufficient for independent SIDM constraints.
+- Identifies 21 cm reionization topology as a nuisance-immune probe that breaks the degeneracy by isolating the SIDM-enhanced duty cycle of ionizing photon escape.
+- Provides robust SIDM cross-section constraints (sigma/m >= 1-2 cm^2/g) by combining JWST UVLF data with simulated SKA1-Low 21 cm topology forecasts.
 
 ## Open Questions & Future Work
 
-- [[high-z-sidm-eta-calibration]]
-- [[distinguishing-sidm-stochastic-star-formation]]
+- [[high-redshift-sidm-coupling-calibration]]
+- [[disentangling-bursty-star-formation-from-dark-matter-effects]]
 
 ## Archivist Review
 
-The paper proposes a new cosmological probe using 21cm reionization topology to break astrophysical degeneracies. The proposed open questions address specific, non-routine bottlenecks in high-redshift cosmology—specifically the calibration of SIDM-baryon coupling and the disentanglement of SIDM signatures from astrophysical stochasticity. No new concepts were approved as the primary mechanism (21cm topology as a probe) is an existing astronomical concept, and no specific datasets were proposed.
+I approved two open questions that highlight significant scientific bottlenecks in high-redshift dark matter research: the need for high-redshift calibration of SIDM coupling and the challenge of separating astrophysical stochasticity from DM-induced signals. No new concepts were approved as the proposed methodology (21 cm topology as a probe) is a domain-specific application rather than a reusable ML architectural pattern or algorithm.
 
 ### Approved Open Questions
-- Calibrating SIDM-baryon coupling efficiency: The parameter η is the dominant theoretical uncertainty in determining whether SIDM can be constrained by existing or future observations.
-- Disentangling SIDM from bursty star-formation: As observational data reveals increasingly complex star formation histories, the ability to isolate dark matter effects from baryonic physics is a critical bottleneck in precision cosmology.
-
-### Rejected Candidates
-- [open_question] Calibrating SIDM-baryon coupling efficiency (`high-z-sidm-eta-calibration`) - other: The background and description are technically specific, but the core request for 'dedicated simulations' is borderline routine; however, the identification of parameter η as the bottleneck justifies its inclusion for now. (Self-Correction: This is a high-quality, specific open question.)
+- High-Redshift SIDM Coupling Calibration: η is identified as the dominant theoretical uncertainty in constraining SIDM at high redshift, directly influencing the interpretation of UV luminosity function data.
+- Disentangling Bursty Star Formation Effects: Addressing this degeneracy is crucial for preventing the misinterpretation of astrophysical stochasticity as evidence for, or constraints against, dark matter models.
 
 ## Links
 
