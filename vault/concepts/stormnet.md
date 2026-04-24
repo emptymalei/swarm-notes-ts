@@ -1,12 +1,14 @@
 ---
-title: "StormNet"
-slug: "stormnet"
-type: concept
+created_at: '2026-04-23T05:05:53Z'
 generated_stub: true
+modified_at: '2026-04-24T05:09:42Z'
+processed_at: '2026-04-23T05:05:53Z'
+slug: stormnet
 source_papers:
-  - "[[arxiv-260420688-storm-surge-modeling-bias-correction-graph-neural-networks-g]]"
-processed_at: "2026-04-23T05:05:53Z"
-created_at: "2026-04-23T05:05:53Z"
+- '[[arxiv-260420688-storm-surge-modeling-bias-correction-graph-neural-networks-g]]'
+- '[[arxiv-260420688-stormnet-improving-storm-surge-predictions-with-a-gnn-based]]'
+title: StormNet
+type: concept
 ---
 
 # StormNet
@@ -27,3 +29,4 @@ It provides a specific framework for integrating GCN, GAT, and LSTM architecture
 ## Related Papers
 
 - [[arxiv-260420688-storm-surge-modeling-bias-correction-graph-neural-networks-g]]
+- [[arxiv-260420688-stormnet-improving-storm-surge-predictions-with-a-gnn-based]]

@@ -35,8 +35,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-23T05:06:12Z"
-created_at: "2026-04-23T05:06:12Z"
+processed_at: "2026-04-24T05:10:01Z"
+created_at: "2026-04-24T05:10:01Z"
 ---
 
 # OpenWaveLogger v2026 (OWL-v2026): an open source, low cost, easy to build, high performance logger for wave data measurements
@@ -47,13 +47,13 @@ created_at: "2026-04-23T05:06:12Z"
 
 ## Summary
 
-This paper presents the OpenWaveLogger v2026 (OWL-v2026), an open-source and low-cost hardware solution designed for high-frequency, in-situ wave data acquisition. Unlike telemetry-limited buoys, the OWL-v2026 enables long-term, high-fidelity logging of six-axis IMU and GNSS data, facilitating detailed research into wave physics. The device utilizes accessible off-the-shelf components, supports low-jitter sampling at up to 416Hz, and ensures high temporal precision through PPS GNSS synchronization. Validated in long-term deployments, it provides a scalable, affordable framework to expand the global availability of high-frequency wave time series.
+The OpenWaveLogger v2026 (OWL-v2026) is an open-source, low-cost data logger designed to address the scarcity of affordable systems for high-frequency in-situ ocean wave measurements. Constructed from off-the-shelf components, the system enables high-frequency six-axis IMU logging and synchronized GNSS tracking with sub-10ms UTC timestamp accuracy. This hardware platform offers a scalable alternative to expensive commercial systems, facilitating the collection of high-resolution wave physics data necessary for improving ocean wave models.
 
 ## Key Contributions
 
-- Introduces OWL-v2026, a $220 open-source, easy-to-assemble data logger for high-frequency wave measurements.
-- Achieves low-jitter IMU logging at up to 416Hz with absolute UTC timestamp accuracy better than 10ms via GNSS PPS synchronization.
-- Demonstrates 20-day autonomy on D-cell batteries with continuous 208Hz logging, significantly lowering the barrier for high-fidelity oceanographic data collection.
+- Introduces OWL-v2026, an open-source, low-cost (~220 USD) hardware platform for high-frequency in-situ wave time series collection.
+- Enables high-frequency IMU logging (208/416Hz) and GNSS tracking (10Hz) with PPS synchronization for precise sub-10ms UTC timestamping.
+- Demonstrates over 10 days of continuous, stable operation with approximately 20 days of power autonomy on standard D-cell batteries.
 
 ## Open Questions & Future Work
 
@@ -61,20 +61,17 @@ This paper presents the OpenWaveLogger v2026 (OWL-v2026), an open-source and low
 
 ## Key Concepts
 
-- [[openwavelogger-v2026]]: A low-cost, open-source data logger for high-frequency six-axis IMU and GNSS-based wave measurements with PPS synchronization.
+- [[openwavelogger-v2026]]: An open-source, low-cost (approx. 220 USD) data logger capable of high-frequency (up to 416Hz) inertial and GNSS wave measurement logging.
 
 ## Archivist Review
 
-The paper provides a significant technical contribution to open-source instrumentation for high-frequency time series collection. I approved the logger as a foundational platform and the open question regarding write-latency as it represents a persistent hardware-software bottleneck for edge sensing applications. Other candidates were rejected to maintain the required scarcity.
+I approved the OpenWaveLogger v2026 as a landmark piece of open-source hardware for the community and included the SD card latency bottleneck as a significant research problem for high-frequency autonomous sensors. Other candidates were not submitted. I followed the constraint to be scarce in approval.
 
 ### Approved Concepts
-- OpenWaveLogger v2026 (OWL-v2026): The device provides a standardized, affordable, and open-source platform for high-frequency in-situ wave data acquisition, enabling community-scale oceanographic time series collection.
+- OpenWaveLogger v2026: This device serves as a foundational open-source hardware solution for high-frequency ocean wave data collection, filling a critical gap left by telemetry-constrained systems.
 
 ### Approved Open Questions
-- SD Card Write Latency: This identifies a fundamental technical bottleneck for scientific sensor logging at higher sampling frequencies in edge/embedded environments.
-
-### Rejected Candidates
-- [concept] OpenWaveLogger v2026 (OWL-v2026) (`openwavelogger-v2026-concept`) - duplicate_existing: The candidate is approved under a cleaner slug.
+- Optimizing high-frequency data storage: This bottleneck is a primary failure point for scaling high-frequency, long-term, autonomous field deployments.
 
 ## Links
 

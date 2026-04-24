@@ -16,18 +16,20 @@ paper_id: "2604.20443"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  []
+  - "llm-reasoning-limits"
+  - "dialogue-systems"
+  - "theory-of-mind"
 architectures:
   []
 datasets:
-  - "dialtom"
+  - "DialToM"
 concept_slugs:
   - "prospective-diagnostic-forecasting"
 dataset_slugs:
   - "dialtom"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-23T05:06:45Z"
-created_at: "2026-04-23T05:06:45Z"
+processed_at: "2026-04-24T05:10:39Z"
+created_at: "2026-04-24T05:10:39Z"
 ---
 
 # DialToM: A Theory of Mind Benchmark for Forecasting State-Driven Dialogue Trajectories
@@ -38,13 +40,13 @@ created_at: "2026-04-23T05:06:45Z"
 
 ## Summary
 
-This paper presents DialToM, a new benchmark designed to evaluate Theory of Mind (ToM) in LLMs by testing their ability to perform Prospective Diagnostic Forecasting on human dialogue. Unlike traditional benchmarks focusing on literal mental state prediction, DialToM requires models to forecast state-consistent social trajectories based on inferred mental profiles. The results highlight a critical reasoning gap, showing that most LLMs cannot effectively translate their understanding of mental states into functional social predictions. The study provides evidence that current models often rely on spurious correlations rather than robust ToM-based reasoning.
+This paper investigates whether Theory of Mind (ToM) in LLMs reflects genuine reasoning or spurious correlations by introducing DialToM, a human-verified benchmark for dialogue. The authors distinguish between Literal ToM (mental state prediction) and Functional ToM (using states to forecast future dialogue). Their evaluation reveals that while models are competent at predicting states, they largely fail at Prospective Diagnostic Forecasting, exposing a critical disconnect between state identification and social reasoning.
 
 ## Key Contributions
 
-- Introduces DialToM, a human-verified benchmark for assessing Theory of Mind in LLMs via multiple-choice dialogue trajectory forecasting.
-- Identifies a reasoning asymmetry where LLMs demonstrate proficiency in mental state prediction but fail at utilizing that information for social trajectory forecasting.
-- Demonstrates that Gemini 3 Pro is uniquely capable of leveraging mental state profiles for consistent dialogue trajectory forecasting compared to other evaluated LLMs.
+- Introduces DialToM, a human-verified benchmark for assessing both Literal and Functional Theory of Mind (ToM) in LLMs.
+- Demonstrates a reasoning asymmetry where LLMs excel at predicting static mental states but fail to utilize them for accurate prospective social trajectory forecasting.
+- Highlights a lack of semantic alignment between human-generated inferences and LLM-derived mental-state justifications.
 
 ## Open Questions & Future Work
 
@@ -52,17 +54,17 @@ This paper presents DialToM, a new benchmark designed to evaluate Theory of Mind
 
 ## Key Concepts
 
-- [[prospective-diagnostic-forecasting]]: A task formulation for assessing whether a model can predict state-consistent future dialogue trajectories based on inferred mental-state profiles.
+- [[prospective-diagnostic-forecasting]]: A framework for evaluating a model's ability to forecast state-consistent dialogue trajectories based on inferred mental-state profiles.
 
 ## Archivist Review
 
-Approved the diagnostic forecasting framework and the specific reasoning asymmetry it uncovers as foundational contributions to social AI evaluation. The DialToM dataset is approved as a necessary artifact for this evaluation, though I restricted the approval to these items to maintain the requested scarcity. Rejected no candidates as the initial list was already highly focused.
+The paper introduces a critical distinction between mental state recognition (Literal ToM) and the functional application of these states (Functional ToM). The 'Prospective Diagnostic Forecasting' concept is a high-quality methodological contribution for evaluating social AI. The 'DialToM' dataset is approved as a necessary artifact for benchmarking this capability. The open question regarding the 'Functional Theory of Mind Asymmetry' identifies a fundamental, unresolved bottleneck in LLM reasoning that transcends the immediate scope of the paper.
 
 ### Approved Concepts
-- Prospective Diagnostic Forecasting: It shifts the evaluation of Theory of Mind from static state classification to active forecasting of trajectory consistency.
+- Prospective Diagnostic Forecasting: It provides a structured mechanism to evaluate the functional utility of mental states in dialogue by linking them to predicted future trajectories.
 
 ### Approved Open Questions
-- Functional ToM Reasoning Asymmetry: This is a fundamental open problem in social AI. If models cannot translate mental state understanding into functional action, their social reasoning remains shallow and non-generalizable to real-world interactions where forward-looking planning is required.
+- Functional Theory of Mind Asymmetry: Understanding whether LLMs truly possess functional ToM or are merely using surface-level correlations is critical for the development of safe and effective social AI agents. If models cannot reliably forecast state-consistent behavior, their use in high-stakes human interaction, such as mental health support or persuasion, presents significant risks of misalignment.
 
 ## Datasets
 

@@ -18,18 +18,18 @@ paper_id: "2604.20421"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
+  []
 architectures:
   []
 datasets:
-  - "Polymarket-Lifecycle-Dataset"
+  - "polymarket-lifecycle-dataset-suite"
 concept_slugs:
   - "prediction-market-lifecycle-dataset-suite"
 dataset_slugs:
-  - "polymarket-lifecycle-dataset"
+  - "polymarket-lifecycle-dataset-suite"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-23T05:06:54Z"
-created_at: "2026-04-23T05:06:54Z"
+processed_at: "2026-04-24T05:10:48Z"
+created_at: "2026-04-24T05:10:48Z"
 ---
 
 # Unlocking the Forecasting Economy: A Suite of Datasets for the Full Lifecycle of Prediction Market: [Experiments & Analysis]
@@ -40,35 +40,35 @@ created_at: "2026-04-23T05:06:54Z"
 
 ## Summary
 
-This paper addresses the data fragmentation challenge in decentralized prediction markets by introducing a comprehensive dataset suite built on Polymarket. The authors construct a unified relational system that integrates disparate on-chain and off-chain data sources—including market metadata, high-frequency trading records, and oracle events—across a five-year period. By implementing rigorous identifier resolution and consistency mechanisms, the work enables reproducible research into the full lifecycle of prediction market activity. The utility of this dataset is demonstrated through predictive calibration studies and macroeconomic expectation reconstruction.
+This paper addresses the lack of integrated data for decentralized prediction markets by introducing a comprehensive dataset suite spanning market creation through settlement. The authors build a unified relational system to bridge fragmented off-chain and on-chain data, ensuring reproducibility and continuous updates for massive datasets. The contribution includes a rigorous data collection pipeline and demonstrations of its utility in complex downstream forecasting tasks.
 
 ## Key Contributions
 
-- Developed the first unified, continuously updated relational dataset for decentralized prediction markets, covering market creation, trading, and oracle settlement.
-- Engineered a scalable cross-source integration pipeline capable of handling large-scale on-chain recovery and incremental updates.
-- Validated the dataset's utility through comprehensive descriptive analysis and application to NBA outcome calibration and CPI expectation reconstruction.
+- Introduces the first continuously updated, full-lifecycle dataset for decentralized prediction markets, comprising over 770k market records and 943M fill records from Polymarket.
+- Develops a unified relational data system that integrates heterogeneous cross-source data (metadata, trading records, oracle events) through novel identifier resolution and on-chain recovery.
+- Validates the dataset utility via descriptive market analysis and downstream forecasting tasks, including NBA outcome calibration and CPI expectation reconstruction.
 
 ## Open Questions & Future Work
 
-- [[continuous-cpi-forecast-reconstruction]]
+- [[cross-platform-forecasting-integration-protocol-standardization]]
 
 ## Key Concepts
 
-- [[prediction-market-lifecycle-dataset-suite]]: A unified, multi-layer longitudinal dataset covering the entire lifecycle of decentralized prediction markets from creation to settlement.
+- [[prediction-market-lifecycle-dataset-suite]]: A unified, large-scale, and multi-layered dataset suite for the entire lifecycle of decentralized prediction markets.
 
 ## Archivist Review
 
-I approved the dataset suite and the dataset as they represent a significant, non-trivial contribution to the collection of decentralized market data. I also approved the open question regarding continuous forecast reconstruction, as it addresses the fundamental challenge of mapping discrete probability distributions to continuous numerical predictions in financial markets. Other candidates were not deemed necessary for the permanent vault.
+The paper provides a foundational dataset for decentralized prediction markets, which is a valuable resource for time-series forecasting and collective intelligence research. I have approved the dataset and the core concept of a lifecycle-aware market dataset. The open question was reframed to emphasize the need for protocol standardization rather than just generic data integration.
 
 ### Approved Concepts
-- Prediction Market Lifecycle Dataset Suite: It provides a standardized, unified relational data structure for the fragmented, multi-layer life cycle of decentralized prediction markets, enabling large-scale analysis.
+- prediction-market-lifecycle-dataset-suite: This is the first comprehensive, continuously updated, and multi-layered dataset for decentralized prediction markets, which are critical for collective belief forecasting.
 
 ### Approved Open Questions
-- Continuous CPI Forecast Reconstruction: This is technically critical because the choice of distribution (e.g., Gaussian) directly influences the resulting point forecast, potentially introducing bias if the actual market-implied belief is skewed, multi-modal, or has fat tails, which is common in macroeconomic expectations.
+- Cross-Platform Forecasting Integration: Generalizing across platforms is essential to decouple platform-specific artifacts from underlying forecasting signals and to evaluate market efficiency at scale.
 
 ## Datasets
 
-- [[polymarket-lifecycle-dataset]]
+- [[polymarket-lifecycle-dataset-suite]]
 
 ## Links
 

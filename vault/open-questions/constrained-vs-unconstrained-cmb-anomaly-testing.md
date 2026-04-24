@@ -1,5 +1,6 @@
 ---
 created_at: '2026-04-23T05:05:42Z'
+modified_at: '2026-04-24T05:09:34Z'
 source_papers:
 - '[[arxiv-260420699-forecasts-of-cmb-e-mode-anomalies-for-alicpt-1]]'
 title: Constrained vs. Unconstrained CMB Anomaly Testing

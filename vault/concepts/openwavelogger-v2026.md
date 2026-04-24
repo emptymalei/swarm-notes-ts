@@ -1,12 +1,13 @@
 ---
-title: "OpenWaveLogger v2026 (OWL-v2026)"
-slug: "openwavelogger-v2026"
-type: concept
+created_at: '2026-04-23T05:06:12Z'
 generated_stub: true
+modified_at: '2026-04-24T05:10:01Z'
+processed_at: '2026-04-23T05:06:12Z'
+slug: openwavelogger-v2026
 source_papers:
-  - "[[arxiv-260420502-openwavelogger-v2026-owl-v2026-an-open-source-low-cost-easy]]"
-processed_at: "2026-04-23T05:06:12Z"
-created_at: "2026-04-23T05:06:12Z"
+- '[[arxiv-260420502-openwavelogger-v2026-owl-v2026-an-open-source-low-cost-easy]]'
+title: OpenWaveLogger v2026 (OWL-v2026)
+type: concept
 ---
 
 # OpenWaveLogger v2026 (OWL-v2026)

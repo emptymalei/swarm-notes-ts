@@ -1,12 +1,13 @@
 ---
-title: "Differential Algebraic Co-state Fusion"
-slug: "differential-algebraic-co-state-fusion"
-type: concept
+created_at: '2026-04-23T05:06:21Z'
 generated_stub: true
+modified_at: '2026-04-24T05:10:18Z'
+processed_at: '2026-04-23T05:06:21Z'
+slug: differential-algebraic-co-state-fusion
 source_papers:
-  - "[[arxiv-260420485-co-state-based-data-fusion-and-risk-aware-filtering-for-spac]]"
-processed_at: "2026-04-23T05:06:21Z"
-created_at: "2026-04-23T05:06:21Z"
+- '[[arxiv-260420485-co-state-based-data-fusion-and-risk-aware-filtering-for-spac]]'
+title: Differential Algebraic Co-state Fusion
+type: concept
 ---
 
 # Differential Algebraic Co-state Fusion

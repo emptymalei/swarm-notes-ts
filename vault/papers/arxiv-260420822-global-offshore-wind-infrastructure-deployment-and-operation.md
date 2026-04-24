@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   - "sentinel-1-offshore-wind-corpus"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-23T05:05:22Z"
-created_at: "2026-04-23T05:05:22Z"
+processed_at: "2026-04-24T05:09:19Z"
+created_at: "2026-04-24T05:09:19Z"
 ---
 
 # Global Offshore Wind Infrastructure: Deployment and Operational Dynamics from Dense Sentinel-1 Time Series
@@ -37,29 +37,27 @@ created_at: "2026-04-23T05:05:22Z"
 
 ## Summary
 
-This paper presents a large-scale Sentinel-1 synthetic aperture radar (SAR) time series corpus designed to monitor the construction and operational phases of offshore wind infrastructure globally. By analyzing over 15,000 infrastructure locations with dense temporal coverage from 2016 to 2025, the authors address the scarcity of high-resolution, semantically fine-grained data in current monitoring efforts. The work includes an expert-annotated benchmark dataset and baseline classifiers, providing a robust foundation for future research in time series classification for renewable energy infrastructure.
+This paper introduces a comprehensive global corpus of Sentinel-1 synthetic aperture radar (SAR) time series designed to monitor the construction and operational lifecycles of offshore wind infrastructure. Covering the period from 2016 to 2025, the dataset includes over 14 million individual acquisition events across 15,606 infrastructure locations. The authors provide both raw, analysis-ready SAR backscatter profiles and a curated expert-annotated benchmark to facilitate the development and validation of temporal classification methods for maritime energy infrastructure.
 
 ## Key Contributions
 
-- Introduction of a global Sentinel-1 SAR time series corpus tracking offshore wind infrastructure deployment and operations from 2016 to 2025.
-- Release of an expert-annotated benchmark dataset comprising 553 time series and over 328,000 event labels for classification tasks.
-- Demonstration of high temporal coherence using a baseline classifier achieving 0.84 macro F1 score and 0.785 AUC on the developed dataset.
+- Introduces a global SAR time series corpus of offshore wind infrastructure comprising over 15.6k time series and 14.8M acquisition events spanning 2016-2025.
+- Provides a high-quality expert-annotated benchmark dataset of 553 time series and 328k semantic event labels for evaluating construction and operational dynamics monitoring.
+- Demonstrates effective baseline classification performance with a macro F1 score of 0.84 and AUC of 0.785 using a rule-based SAR backscatter profile classifier.
 
 ## Open Questions & Future Work
 
-- [[early-detection-offshore-infrastructure]]
-- [[learned-temporal-classification]]
+- [[early-stage-offshore-infrastructure-detection-bottleneck]]
 
 ## Archivist Review
 
-I approved the dataset (renamed for consistency) and the two open questions, as they delineate clear research boundaries for the field of SAR-based infrastructure monitoring. I rejected the concept candidates as none were proposed by the user, and no sub-modules in the paper were deemed sufficiently novel or reusable for standalone conceptual status.
+I approved the main Sentinel-1 dataset as a critical, reusable asset for temporal maritime analysis. The open question was reformulated to better align with vault standards for research bottlenecks, specifically focusing on the intersection of spatial search and temporal anomaly detection in high-noise environments. I rejected no concepts as none met the strict criteria for universal reusability beyond the specific domain application.
 
 ### Approved Open Questions
-- Early-stage offshore infrastructure detection: Spatial detection serves as the fundamental prerequisite for time series analysis; without efficient early-stage detection, the ability to monitor the full lifecycle of offshore wind energy infrastructure in near-real-time is limited.
-- Learned temporal infrastructure classification: Developing learned temporal models is essential for overcoming the limitations of heuristic, manual-threshold-based approaches, potentially leading to more accurate, automated, and globally scalable infrastructure monitoring.
+- Early-stage offshore infrastructure detection: This is a substantial bottleneck for near-real-time monitoring of maritime industrial activity, as current reliance on post-hoc location validation prevents early-stage impact assessment and comprehensive deployment lifecycle tracking.
 
 ### Rejected Candidates
-- [dataset] Sentinel-1 time series data corpus (`sentinel-1-time-series-data-corpus`) - other: Renamed for clarity and uniqueness in the vault.
+- [open_question] Early-onset offshore construction detection (`early-construction-detection-bottleneck-in-offshore-wind`) - duplicate_existing: Duplicate of the approved reformulated open question with a more concise and descriptive slug.
 
 ## Datasets
 

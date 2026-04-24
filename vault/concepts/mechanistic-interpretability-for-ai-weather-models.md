@@ -1,12 +1,13 @@
 ---
-title: "Mechanistic Interpretability for AI Weather Models"
-slug: "mechanistic-interpretability-for-ai-weather-models"
-type: concept
+created_at: '2026-04-23T05:06:36Z'
 generated_stub: true
+modified_at: '2026-04-24T05:10:32Z'
+processed_at: '2026-04-23T05:06:36Z'
+slug: mechanistic-interpretability-for-ai-weather-models
 source_papers:
-  - "[[arxiv-260420467-mechanistic-interpretability-tool-for-ai-weather-models]]"
-processed_at: "2026-04-23T05:06:36Z"
-created_at: "2026-04-23T05:06:36Z"
+- '[[arxiv-260420467-mechanistic-interpretability-tool-for-ai-weather-models]]'
+title: Mechanistic Interpretability for AI Weather Models
+type: concept
 ---
 
 # Mechanistic Interpretability for AI Weather Models

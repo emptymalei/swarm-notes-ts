@@ -14,21 +14,19 @@ paper_id: "2604.20485"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "anomaly-detection"
-  - "probabilistic-forecasting"
-  - "time-series"
-  - "navigation"
+  []
 architectures:
   []
 datasets:
   []
 concept_slugs:
   - "differential-algebraic-co-state-fusion"
+  - "intrinsic-probabilistic-risk-forecasting"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-23T05:06:21Z"
-created_at: "2026-04-23T05:06:21Z"
+processed_at: "2026-04-24T05:10:18Z"
+created_at: "2026-04-24T05:10:18Z"
 ---
 
 # Co-State Based Data Fusion and Risk Aware Filtering for Spacecraft Navigation and Hazard Prediction
@@ -39,36 +37,35 @@ created_at: "2026-04-23T05:06:21Z"
 
 ## Summary
 
-This paper introduces a co-state-based fusion framework for spacecraft navigation and hazard prediction that treats co-states as instantaneous Lagrange multipliers to enforce measurement compatibility. By analyzing the trajectory of these co-states alongside innovation signals, the authors construct a continuous-time Markov generator to model regime transitions and perform probabilistic risk assessment. This approach provides an online, anomaly-detection pipeline that identifies navigation inconsistencies prior to catastrophic divergence, as demonstrated on real-world lunar descent telemetry. The method notably outperforms standard Extended Kalman Filters by identifying subtle geometric inconsistencies without requiring external fault labels or heuristic tuning.
+The paper presents a co-state-based data fusion framework that unifies geometric projection and stochastic inference for spacecraft navigation and risk forecasting. By utilizing differential algebraic co-states as Lagrange multipliers, the method identifies geometric inconsistencies as an early-warning signal for potential failures. Furthermore, the framework learns continuous-time Markov generators to assess probabilistic risk through behavioral regime transitions, bypassing the need for manual fault modeling or labeled failure datasets. Empirical results on lunar descent telemetry demonstrate that this approach anticipates failures significantly earlier than standard EKF residual analysis.
 
 ## Key Contributions
 
-- Introduces a co-state-based data fusion framework that utilizes instantaneous Lagrange multipliers to detect geometric inconsistencies in navigation systems.
-- Develops a continuous-time Markov generator from co-state and innovation trajectories to facilitate probabilistic risk forecasting and mean first-passage time (MFPT) estimation.
-- Demonstrates that the co-state framework enables earlier fault detection in lunar powered-descent telemetry compared to traditional Extended Kalman Filter (EKF) baselines without needing pre-labeled failure data.
+- Introduces a differential algebraic co-state framework that enables early detection of internal model inconsistencies in spacecraft telemetry without needing labeled failure data.
+- Develops a risk forecasting pipeline that learns continuous-time Markov generators to predict regime-switching hazards via mean first-passage time analysis.
+- Demonstrates superior early-warning capability on real lunar powered-descent telemetry compared to traditional Extended Kalman Filter (EKF) divergence metrics.
 
 ## Open Questions & Future Work
 
-- [[automated-parameter-tuning-for-co-state-fusion]]
-- [[closed-loop-risk-aware-guidance-control]]
+- [[beyond-small-noise-costate-projection]]
+- [[closed-loop-risk-aware-control-formalization]]
 
 ## Key Concepts
 
-- [[differential-algebraic-co-state-fusion]]: A fusion framework that uses instantaneous Lagrange multipliers as differential algebraic co-states to enforce measurement consistency and identify system-level anomalies.
+- [[differential-algebraic-co-state-fusion]]: A framework that utilizes instantaneous Lagrange multipliers to enforce measurement dynamics compatibility and signal geometric inconsistency in real-time systems.
+- [[intrinsic-probabilistic-risk-forecasting]]: A method for predicting risk by learning a continuous-time Markov generator from co-state and innovation trajectories.
 
 ## Archivist Review
 
-I approved the core co-state fusion mechanism as a reusable concept for physical state-space consistency, along with two open questions targeting the critical transition from diagnostic assessment to autonomous, parameter-agnostic control. I rejected the generic version of the fusion concept to avoid redundancy. Standard rigor was applied by focusing on methodology over local implementation details.
+The paper introduces a mathematically grounded approach to sensor fusion and risk assessment that replaces heuristic thresholding with geometric consistency analysis and regime-switching dynamics. I have approved the two central concepts—co-state fusion and the associated probabilistic risk forecasting—as they provide a reusable framework for state estimation beyond specific spacecraft applications. The open questions were approved as they address fundamental limitations in nonlinear dynamics and closed-loop control stability, which are critical for future applications of this framework.
 
 ### Approved Concepts
-- Differential Algebraic Co-state Fusion: This approach provides a physically grounded way to enforce dynamical consistency in navigation without heuristic fault models or labels, which is a reusable pattern for complex state-space modeling.
+- Differential Algebraic Co-state Fusion: Provides a novel physical interpretation of geometric inconsistency for online state estimation and anomaly detection without labeled data.
+- Intrinsic Probabilistic Risk Forecasting: Enables risk prediction based on learned behavioral regime transitions rather than fixed fault models.
 
 ### Approved Open Questions
-- Automated Parameter Tuning: Reducing manual calibration is critical for deploying adaptive anomaly detection in complex, long-duration autonomous systems.
-- Closed-Loop Risk-Aware Control: Proactive risk mitigation is a necessary step to transition from diagnostic monitoring to fully autonomous operation in uncertain environments.
-
-### Rejected Candidates
-- [concept] Co-State Based Data Fusion (`co-state-based-data-fusion`) - duplicate_existing: This is synonymous with the more specific 'differential-algebraic-co-state-fusion' concept.
+- Robustness to Higher-Order Nonlinearity: Extending the validity of the geometric projection beyond the small-noise approximation is crucial for ensuring the robustness and reliability of the co-state based consistency monitoring in highly nonlinear or extreme-dynamics environments.
+- Formalizing Risk-Aware Control Integration: Formalizing the control loop integration is necessary to transition from purely diagnostic monitoring to active, risk-aware autonomous systems that can proactively mitigate failures.
 
 ## Links
 

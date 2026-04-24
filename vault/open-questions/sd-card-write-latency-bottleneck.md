@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-23T05:06:12Z'
+modified_at: '2026-04-24T05:10:01Z'
 source_papers:
 - '[[arxiv-260420502-openwavelogger-v2026-owl-v2026-an-open-source-low-cost-easy]]'
-title: SD Card Write Latency
+title: Optimizing high-frequency data storage
 ---
 
 **Background:** High-frequency sensor logging on resource-constrained microcontrollers is often limited by the write-latency behavior of standard SD cards, which are optimized for large, sequential data rather than frequent, small, real-time writes.

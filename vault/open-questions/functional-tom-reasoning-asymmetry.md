@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-23T05:06:45Z'
+modified_at: '2026-04-24T05:10:39Z'
 source_papers:
 - '[[arxiv-260420443-dialtom-a-theory-of-mind-benchmark-for-forecasting-state-dri]]'
-title: Functional ToM Reasoning Asymmetry
+title: Functional Theory of Mind Asymmetry
 ---
 
 **Background:** Theory of Mind (ToM) encompasses both the retrospective inference of mental states and the prospective utilization of those states for functional action planning. While recent advancements demonstrate that large language models (LLMs) can achieve high accuracy in retrospective state inference, their ability to apply these mental states to successfully forecast social trajectories in complex, naturalistic dialogues remains inconsistent.

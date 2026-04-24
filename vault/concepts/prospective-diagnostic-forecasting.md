@@ -1,12 +1,13 @@
 ---
-title: "Prospective Diagnostic Forecasting"
-slug: "prospective-diagnostic-forecasting"
-type: concept
+created_at: '2026-04-23T05:06:45Z'
 generated_stub: true
+modified_at: '2026-04-24T05:10:39Z'
+processed_at: '2026-04-23T05:06:45Z'
+slug: prospective-diagnostic-forecasting
 source_papers:
-  - "[[arxiv-260420443-dialtom-a-theory-of-mind-benchmark-for-forecasting-state-dri]]"
-processed_at: "2026-04-23T05:06:45Z"
-created_at: "2026-04-23T05:06:45Z"
+- '[[arxiv-260420443-dialtom-a-theory-of-mind-benchmark-for-forecasting-state-dri]]'
+title: Prospective Diagnostic Forecasting
+type: concept
 ---
 
 # Prospective Diagnostic Forecasting

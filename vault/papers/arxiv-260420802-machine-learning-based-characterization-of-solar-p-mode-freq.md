@@ -15,9 +15,7 @@ paper_id: "2604.20802"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "forecasting"
-  - "physics-informed-modeling"
+  []
 architectures:
   []
 datasets:
@@ -27,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-23T05:05:32Z"
-created_at: "2026-04-23T05:05:32Z"
+processed_at: "2026-04-24T05:09:26Z"
+created_at: "2026-04-24T05:09:26Z"
 ---
 
 # Machine Learning-Based Characterization of Solar p-Mode Frequency Shifts during Solar Cycle 25
@@ -39,26 +37,27 @@ created_at: "2026-04-23T05:05:32Z"
 
 ## Summary
 
-This paper investigates the use of machine learning and time-series analysis to characterize solar p-mode frequency shifts, which exhibit an 11-year cyclic behavior correlated with other solar activity proxies. By modeling these shifts, the authors aim to improve the link between solar interior dynamics and external geospace responses. The study serves as a framework for using internal acoustic oscillations as an early indicator for predicting solar activity phases and enhancing space weather forecasting capabilities.
+This paper explores the relationship between solar p-mode frequency shifts and solar cycle 25 activity, employing time-series analysis and machine learning to forecast long-term frequency variations. By identifying p-modes as sensitive tracers of solar interior dynamics, the authors provide a framework to link internal activity with external heliospheric and geomagnetic responses. The findings suggest that these frequency shifts serve as an effective, independent indicator for monitoring solar cycle progression, thereby aiding in space weather forecasting efforts.
 
 ## Key Contributions
 
-- Applies machine learning and standard time-series analysis to characterize solar p-mode frequency shifts for the remainder of Solar Cycle 25.
-- Investigates p-mode frequency shifts as an independent indicator for tracking solar activity phases.
-- Connects solar interior acoustic oscillation properties to space weather forecasting and solar activity proxies.
+- Characterizes solar p-mode frequency shifts for the remainder of solar cycle 25 using both standard time-series analysis and machine learning methods.
+- Establishes a quantitative methodology for utilizing solar acoustic oscillations as a prospective proxy for tracking internal solar activity and its potential impacts on geospace.
+- Demonstrates the utility of p-mode frequency shifts as an independent, early-warning indicator for the ascending and descending phases of solar activity cycles.
 
 ## Open Questions & Future Work
 
-- [[physical-drivers-of-solar-p-mode-frequency-shifts]]
-- [[improving-ml-forecasting-for-solar-activity-proxies]]
+- [[improving-ml-helioseismic-forecasting]]
 
 ## Archivist Review
 
-The paper provides a domain-specific application of time-series forecasting to helioseismology. I have approved the two open questions as they address substantial, foundational gaps in understanding solar cycle dynamics and the integration of multi-scale phenomena in ML-based space weather forecasting. No novel or broadly reusable ML concepts were identified that meet the vault's high bar for standalone archival; the methods used are standard time-series techniques.
+I have approved the open question regarding ML helioseismic forecasting, as it addresses a significant domain-specific bottleneck in solar activity prediction that is distinct from standard time-series tasks. No new concepts were approved because the methodologies used (standard time-series analysis and machine learning) were not presented as novel, reusable algorithmic contributions. No datasets were approved as they were not explicitly named or described with enough detail to justify inclusion as a reusable resource.
 
 ### Approved Open Questions
-- Physical drivers of p-mode frequency shifts: Understanding the physical origin of frequency shifts is essential for utilizing helioseismic data to accurately constrain solar dynamo models and bridge the gap between interior dynamics and exterior space weather phenomena.
-- Improving ML for solar activity forecasting: Refining machine learning models for solar activity is critical for developing early and reliable indicators of space weather, which are currently hampered by data scarcity and limitations in capturing complex, multi-period solar variations.
+- Improving ML Helioseismic Forecasting: Current machine-learning models for solar dynamics often lack the capacity to capture transient, non-linear variations, and the limited availability of high-fidelity, long-duration frequency data remains a bottleneck for achieving reliable long-term cycle forecasting.
+
+### Rejected Candidates
+- [open_question] Improving ML for Helioseismic Forecasting (`improving-ml-helioseismic-forecasting`) - other: The provided candidate was rewritten to be more concise and adhere to the background/description requirements while maintaining the core research issue.
 
 ## Links
 

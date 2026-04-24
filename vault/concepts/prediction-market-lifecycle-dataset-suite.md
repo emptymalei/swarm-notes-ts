@@ -1,12 +1,13 @@
 ---
-title: "Prediction Market Lifecycle Dataset Suite"
-slug: "prediction-market-lifecycle-dataset-suite"
-type: concept
+created_at: '2026-04-23T05:06:54Z'
 generated_stub: true
+modified_at: '2026-04-24T05:10:48Z'
+processed_at: '2026-04-23T05:06:54Z'
+slug: prediction-market-lifecycle-dataset-suite
 source_papers:
-  - "[[arxiv-260420421-unlocking-the-forecasting-economy-a-suite-of-datasets-for-th]]"
-processed_at: "2026-04-23T05:06:54Z"
-created_at: "2026-04-23T05:06:54Z"
+- '[[arxiv-260420421-unlocking-the-forecasting-economy-a-suite-of-datasets-for-th]]'
+title: Prediction Market Lifecycle Dataset Suite
+type: concept
 ---
 
 # Prediction Market Lifecycle Dataset Suite

@@ -1,12 +1,13 @@
 ---
-title: "Self-weighted loss refinement"
-slug: "self-weighted-loss-refinement"
-type: concept
+created_at: '2026-04-23T05:06:03Z'
 generated_stub: true
+modified_at: '2026-04-24T05:09:49Z'
+processed_at: '2026-04-23T05:06:03Z'
+slug: self-weighted-loss-refinement
 source_papers:
-  - "[[arxiv-260420673-short-time-wavelet-inspired-mouse-submovement-detection]]"
-processed_at: "2026-04-23T05:06:03Z"
-created_at: "2026-04-23T05:06:03Z"
+- '[[arxiv-260420673-short-time-wavelet-inspired-mouse-submovement-detection]]'
+title: Self-weighted loss refinement
+type: concept
 ---
 
 # Self-weighted loss refinement
