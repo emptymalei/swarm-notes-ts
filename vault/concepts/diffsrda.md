@@ -1,12 +1,13 @@
 ---
-title: "DiffSRDA"
-slug: "diffsrda"
-type: concept
+created_at: '2026-04-24T05:08:29Z'
 generated_stub: true
+modified_at: '2026-04-25T04:55:03Z'
+processed_at: '2026-04-24T05:08:29Z'
+slug: diffsrda
 source_papers:
-  - "[[arxiv-260421180-uncertainty-aware-spatiotemporal-super-resolution-data-assim]]"
-processed_at: "2026-04-24T05:08:29Z"
-created_at: "2026-04-24T05:08:29Z"
+- '[[arxiv-260421180-uncertainty-aware-spatiotemporal-super-resolution-data-assim]]'
+title: DiffSRDA
+type: concept
 ---
 
 # DiffSRDA

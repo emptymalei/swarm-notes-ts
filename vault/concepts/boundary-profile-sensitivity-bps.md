@@ -1,12 +1,13 @@
 ---
-title: "Boundary-Profile Sensitivity (BPS)"
-slug: "boundary-profile-sensitivity-bps"
-type: concept
+created_at: '2026-04-24T05:07:04Z'
 generated_stub: true
+modified_at: '2026-04-25T04:53:54Z'
+processed_at: '2026-04-24T05:07:04Z'
+slug: boundary-profile-sensitivity-bps
 source_papers:
-  - "[[arxiv-260421930-temporal-taskification-in-streaming-continual-learning-a-sou]]"
-processed_at: "2026-04-24T05:07:04Z"
-created_at: "2026-04-24T05:07:04Z"
+- '[[arxiv-260421930-temporal-taskification-in-streaming-continual-learning-a-sou]]'
+title: Boundary-Profile Sensitivity (BPS)
+type: concept
 ---
 
 # Boundary-Profile Sensitivity (BPS)

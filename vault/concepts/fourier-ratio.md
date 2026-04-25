@@ -1,12 +1,13 @@
 ---
-title: "Fourier Ratio"
-slug: "fourier-ratio"
-type: concept
+created_at: '2026-04-24T05:08:06Z'
 generated_stub: true
+modified_at: '2026-04-25T04:54:45Z'
+processed_at: '2026-04-24T05:08:06Z'
+slug: fourier-ratio
 source_papers:
-  - "[[arxiv-260421292-large-values-in-time-series-and-additive-combinatorics]]"
-processed_at: "2026-04-24T05:08:06Z"
-created_at: "2026-04-24T05:08:06Z"
+- '[[arxiv-260421292-large-values-in-time-series-and-additive-combinatorics]]'
+title: Fourier Ratio
+type: concept
 ---
 
 # Fourier Ratio

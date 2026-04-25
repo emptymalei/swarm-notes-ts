@@ -1,12 +1,13 @@
 ---
-title: "Controlled Continuous-Time State-Space Model (CCSS-RS)"
-slug: "ccss-rs"
-type: concept
+created_at: '2026-04-24T05:10:10Z'
 generated_stub: true
+modified_at: '2026-04-25T04:56:25Z'
+processed_at: '2026-04-24T05:10:10Z'
+slug: ccss-rs
 source_papers:
-  - "[[arxiv-260420935-data-driven-open-loop-simulation-for-digital-twin-operator-d]]"
-processed_at: "2026-04-24T05:10:10Z"
-created_at: "2026-04-24T05:10:10Z"
+- '[[arxiv-260420935-data-driven-open-loop-simulation-for-digital-twin-operator-d]]'
+title: Controlled Continuous-Time State-Space Model (CCSS-RS)
+type: concept
 ---
 
 # Controlled Continuous-Time State-Space Model (CCSS-RS)

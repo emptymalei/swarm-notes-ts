@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-23T05:06:54Z'
 generated_stub: true
-modified_at: '2026-04-24T05:10:48Z'
+modified_at: '2026-04-25T04:57:01Z'
 processed_at: '2026-04-23T05:06:54Z'
 slug: prediction-market-lifecycle-dataset-suite
 source_papers:

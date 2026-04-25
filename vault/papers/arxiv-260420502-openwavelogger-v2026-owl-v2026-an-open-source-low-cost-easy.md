@@ -35,8 +35,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:10:01Z"
-created_at: "2026-04-24T05:10:01Z"
+processed_at: "2026-04-25T04:56:17Z"
+created_at: "2026-04-25T04:56:17Z"
 ---
 
 # OpenWaveLogger v2026 (OWL-v2026): an open source, low cost, easy to build, high performance logger for wave data measurements
@@ -47,13 +47,13 @@ created_at: "2026-04-24T05:10:01Z"
 
 ## Summary
 
-The OpenWaveLogger v2026 (OWL-v2026) is an open-source, low-cost data logger designed to address the scarcity of affordable systems for high-frequency in-situ ocean wave measurements. Constructed from off-the-shelf components, the system enables high-frequency six-axis IMU logging and synchronized GNSS tracking with sub-10ms UTC timestamp accuracy. This hardware platform offers a scalable alternative to expensive commercial systems, facilitating the collection of high-resolution wave physics data necessary for improving ocean wave models.
+The OpenWaveLogger v2026 (OWL-v2026) is an open-source, low-cost hardware solution designed to capture high-frequency in-situ wave data that telemetry-limited buoys often miss. By leveraging off-the-shelf components and custom firmware, the logger achieves high-frequency, low-jitter six-axis IMU sampling and precise GNSS timestamping for under 220 USD. The system provides a scalable, community-accessible platform for collecting the full wave time series required for advanced ocean wave physics research.
 
 ## Key Contributions
 
-- Introduces OWL-v2026, an open-source, low-cost (~220 USD) hardware platform for high-frequency in-situ wave time series collection.
-- Enables high-frequency IMU logging (208/416Hz) and GNSS tracking (10Hz) with PPS synchronization for precise sub-10ms UTC timestamping.
-- Demonstrates over 10 days of continuous, stable operation with approximately 20 days of power autonomy on standard D-cell batteries.
+- Introduces OWL-v2026, an open-source, 220 USD high-performance data logger for high-frequency in-situ wave measurements.
+- Enables high-frequency IMU logging at up to 416Hz with GNSS-based PPS synchronization for absolute UTC timestamping accurate to <10ms.
+- Demonstrates over 10 days of continuous operation with low power consumption of 80mA, supporting 20+ days of autonomy on three D-cell batteries.
 
 ## Open Questions & Future Work
 
@@ -61,17 +61,17 @@ The OpenWaveLogger v2026 (OWL-v2026) is an open-source, low-cost data logger des
 
 ## Key Concepts
 
-- [[openwavelogger-v2026]]: An open-source, low-cost (approx. 220 USD) data logger capable of high-frequency (up to 416Hz) inertial and GNSS wave measurement logging.
+- [[openwavelogger-v2026]]: An open-source, low-cost data logger for high-frequency ocean wave measurements using off-the-shelf components.
 
 ## Archivist Review
 
-I approved the OpenWaveLogger v2026 as a landmark piece of open-source hardware for the community and included the SD card latency bottleneck as a significant research problem for high-frequency autonomous sensors. Other candidates were not submitted. I followed the constraint to be scarce in approval.
+The paper presents a significant hardware contribution to time-series collection in oceanography. I approved the concept for the logger itself as it serves as a reusable template for future sensing, and the open question regarding storage latency as it highlights a fundamental limitation of current embedded data logging architectures. No other candidates were proposed.
 
 ### Approved Concepts
-- OpenWaveLogger v2026: This device serves as a foundational open-source hardware solution for high-frequency ocean wave data collection, filling a critical gap left by telemetry-constrained systems.
+- OpenWaveLogger v2026: This device provides a low-cost, open-source hardware solution for high-frequency in-situ ocean wave measurements, filling a gap left by telemetry-only systems.
 
 ### Approved Open Questions
-- Optimizing high-frequency data storage: This bottleneck is a primary failure point for scaling high-frequency, long-term, autonomous field deployments.
+- High-frequency SD logging constraints: Data storage bottleneck limits the maximum sampling frequency and reliability of low-cost, open-source embedded loggers.
 
 ## Links
 

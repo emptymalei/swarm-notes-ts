@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-23T05:06:03Z'
 generated_stub: true
-modified_at: '2026-04-24T05:09:49Z'
+modified_at: '2026-04-25T04:56:08Z'
 processed_at: '2026-04-23T05:06:03Z'
 slug: self-weighted-loss-refinement
 source_papers:

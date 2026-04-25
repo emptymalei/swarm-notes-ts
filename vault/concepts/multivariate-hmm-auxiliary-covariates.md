@@ -1,12 +1,13 @@
 ---
-title: "Multivariate Hidden Markov Model with Auxiliary Covariates"
-slug: "multivariate-hmm-auxiliary-covariates"
-type: concept
+created_at: '2026-04-24T05:07:17Z'
 generated_stub: true
+modified_at: '2026-04-25T04:54:04Z'
+processed_at: '2026-04-24T05:07:17Z'
+slug: multivariate-hmm-auxiliary-covariates
 source_papers:
-  - "[[arxiv-260421734-modeling-dependency-between-operational-risk-losses-and-macr]]"
-processed_at: "2026-04-24T05:07:17Z"
-created_at: "2026-04-24T05:07:17Z"
+- '[[arxiv-260421734-modeling-dependency-between-operational-risk-losses-and-macr]]'
+title: Multivariate Hidden Markov Model with Auxiliary Covariates
+type: concept
 ---
 
 # Multivariate Hidden Markov Model with Auxiliary Covariates

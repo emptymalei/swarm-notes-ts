@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-24T05:10:32Z"
-created_at: "2026-04-24T05:10:32Z"
+processed_at: "2026-04-25T04:56:44Z"
+created_at: "2026-04-25T04:56:44Z"
 ---
 
 # Mechanistic Interpretability Tool for AI Weather Models
@@ -37,31 +37,31 @@ created_at: "2026-04-24T05:10:32Z"
 
 ## Summary
 
-The paper introduces a new mechanistic interpretability toolkit designed to demystify black-box AI weather models by analyzing their internal latent representations. By employing techniques such as cosine similarity and PCA, the tool allows researchers to map latent channels to interpretable meteorological features. The authors demonstrate the effectiveness of this approach by identifying meaningful feature associations within the GraphCast model for synoptic-scale waves and humidity.
+This paper presents a new open-source framework to facilitate mechanistic interpretability in AI-based weather prediction models, which are often treated as black boxes. By applying techniques such as Principal Component Analysis (PCA) and cosine similarity to latent representations, the tool enables researchers to map internal model states to known meteorological phenomena. The authors demonstrate the utility of this approach by identifying latent feature directions within the GraphCast model that correlate with specific atmospheric variables and synoptic-scale patterns.
 
 ## Key Contributions
 
-- Developed an open-source, adaptable mechanistic interpretability tool designed to analyze internal latent representations of AI weather models.
-- Demonstrated the tool's utility in isolating latent directions linked to specific meteorological features, such as mid-latitude synoptic-scale waves and specific humidity.
-- Applied the proposed methodology to the GraphCast model, providing a proof-of-concept for interpreting graph-based weather prediction architectures.
+- Introduces an open-source mechanistic interpretability tool designed for analyzing internal latent representations in AI weather forecasting models.
+- Demonstrates the tool's efficacy by identifying latent space directions corresponding to meteorological features like mid-latitude synoptic-scale waves and specific humidity.
+- Provides a framework for diagnosing black-box AI weather models using established ML interpretability techniques such as PCA and cosine similarity.
 
 ## Open Questions & Future Work
 
-- [[quantifying-mechanistic-interpretability-weather-models]]
+- [[mechanistic-circuits-weather-models]]
 
 ## Key Concepts
 
-- [[mechanistic-interpretability-for-ai-weather-models]]: A toolkit for analyzing internal latent representations of AI weather models to identify directions associated with physical meteorological features.
+- [[mechanistic-interpretability-for-ai-weather-models]]: A framework and toolkit for analyzing internal latent states of weather emulation models to map model activations to physical atmospheric features.
 
 ## Archivist Review
 
-The submitted concepts and questions were evaluated based on their novelty and long-term research utility. The toolkit for mechanistic interpretability in weather models is approved as a necessary infrastructure development for an emerging domain, and the associated open question addresses a critical transition from qualitative exploration to quantitative verification in scientific AI.
+The paper introduces a specialized toolkit for applying mechanistic interpretability to weather emulation, which is a significant and reusable contribution for the field of AI-assisted scientific discovery. I approved the framework as a concept and the problem of functional circuit identification as an open question, as these address the fundamental transparency bottleneck in high-stakes climate modeling. Other potential candidates were deemed too generic (e.g., PCA/cosine similarity) or were simply descriptive of the tool's implementation rather than foundational concepts.
 
 ### Approved Concepts
-- Mechanistic Interpretability for AI Weather Models: Provides a specialized framework for opening the 'black box' of AI weather forecasting models, a critical hurdle for their adoption in meteorology.
+- Mechanistic Interpretability for AI Weather Models: As AI models replace traditional NWP, specialized interpretability tools are becoming critical for scientific validation. This framework provides a standard approach for mapping latent representations to physical meteorological phenomena.
 
 ### Approved Open Questions
-- Quantifying Mechanistic Interpretability Pathways: Without a quantitative methodology, interpretability tools for weather models remain limited to post-hoc, exploratory hypotheses that lack predictive validity and scientific reproducibility. Establishing clear circuits is essential for building trust in AI forecasts for operational weather prediction.
+- Mechanistic Circuits in AI Weather Models: Without identifying functional circuits, individual feature identification remains largely anecdotal; validating these pathways is necessary to bridge the gap between ML activations and physical causality.
 
 ## Links
 

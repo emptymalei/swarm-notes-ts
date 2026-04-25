@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-23T05:06:12Z'
 generated_stub: true
-modified_at: '2026-04-24T05:10:01Z'
+modified_at: '2026-04-25T04:56:17Z'
 processed_at: '2026-04-23T05:06:12Z'
 slug: openwavelogger-v2026
 source_papers:

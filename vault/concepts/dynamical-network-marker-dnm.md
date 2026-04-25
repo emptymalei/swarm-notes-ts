@@ -1,12 +1,13 @@
 ---
-title: "Dynamical Network Marker (DNM)"
-slug: "dynamical-network-marker-dnm"
-type: concept
+created_at: '2026-04-24T05:07:57Z'
 generated_stub: true
+modified_at: '2026-04-25T04:54:39Z'
+processed_at: '2026-04-24T05:07:57Z'
+slug: dynamical-network-marker-dnm
 source_papers:
-  - "[[arxiv-260421297-identifying-dynamical-network-markers-of-financial-market-in]]"
-processed_at: "2026-04-24T05:07:57Z"
-created_at: "2026-04-24T05:07:57Z"
+- '[[arxiv-260421297-identifying-dynamical-network-markers-of-financial-market-in]]'
+title: Dynamical Network Marker (DNM)
+type: concept
 ---
 
 # Dynamical Network Marker (DNM)

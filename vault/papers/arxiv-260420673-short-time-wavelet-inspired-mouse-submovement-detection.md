@@ -14,8 +14,7 @@ paper_id: "2604.20673"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "segmentation"
+  []
 architectures:
   []
 datasets:
@@ -25,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:09:49Z"
-created_at: "2026-04-24T05:09:49Z"
+processed_at: "2026-04-25T04:56:08Z"
+created_at: "2026-04-25T04:56:08Z"
 ---
 
 # Short-time, Wavelet-inspired Mouse Submovement Detection
@@ -37,13 +36,13 @@ created_at: "2026-04-24T05:09:49Z"
 
 ## Summary
 
-This paper addresses the challenge of segmenting overlapping motor submovements in 1D speed time series, typically associated with motor planning and execution. The authors present a wavelet-inspired detection framework that utilizes a self-weighted loss refinement step to mitigate fitting errors common in standard wavelet transforms. Results from synthetic egocentric aiming trials show that the proposed method outperforms traditional dual-threshold and persistence-based segmentation techniques in accurately identifying ballistic submovement components.
+This paper presents a wavelet-inspired approach to detect and parameterize ballistic submovements from 1D speed time series, addressing the challenge of overlapping motion components. The method incorporates a self-weighted loss refinement step to improve the quality of fit in regions where standard wavelet transforms typically struggle. Empirical validation on 6,400 synthetic trials of egocentric camera movement shows that the proposed approach offers improved accuracy over traditional dual-threshold and persistence-based segmentation methods.
 
 ## Key Contributions
 
-- Introduces a wavelet-inspired approach for segmenting and parameterizing ballistic mouse submovements from 1D speed signals.
-- Develops a self-weighted loss refinement technique to address performance degradation in noisy or overlapping motor submovements.
-- Evaluates the method against dual-threshold and persistence-based 1D segmentation on 6,400 synthetic egocentric aiming trials, demonstrating improved detection accuracy.
+- Introduced a wavelet-inspired methodology for the precise extraction and parameterization of overlapping ballistic submovements in 1D velocity time series.
+- Proposed a self-weighted loss refinement step that enhances signal fitting in regions traditionally difficult for standard wavelet transforms.
+- Demonstrated efficacy on ~6,400 synthetic first-person shooter aim trials, outperforming existing dual-threshold and persistence-based 1D segmentation techniques.
 
 ## Open Questions & Future Work
 
@@ -51,17 +50,17 @@ This paper addresses the challenge of segmenting overlapping motor submovements 
 
 ## Key Concepts
 
-- [[self-weighted-loss-refinement]]: An optimization technique that iteratively identifies and refines motion segments with poor fit quality to improve submovement extraction.
+- [[self-weighted-loss-refinement]]: A post-processing refinement step that improves fit quality by adaptively weighting loss based on the local performance of the signal decomposition.
 
 ## Archivist Review
 
-I approved the self-weighted loss refinement concept as it provides a reusable iterative optimization approach for improving signal fit, and the proposed open question regarding confidence metrics for submovement decomposition, as it addresses a fundamental challenge in time-series segmentation and decomposition. No datasets were approved as none were presented as distinct, reusable contributions.
+The paper introduces a wavelet-inspired method for submovement decomposition and a specific refinement strategy. I approved 'self-weighted loss refinement' as it is a reusable signal-processing improvement, and 'confidence-metrics-submovement-decomposition' as it addresses a fundamental limitation in the robustness and evaluation of motor control time-series modeling. No datasets were approved as the described synthetic trials were based on a private dataset of 13 users, failing the criterion for critical, reusable community resources.
 
 ### Approved Concepts
-- self-weighted-loss-refinement: Central mechanism for improving the performance of the wavelet-based detection by iteratively refining low-confidence regions.
+- Self-weighted loss refinement: Provides a mechanism to iteratively improve submovement detection accuracy by addressing poor fitting regions within a wavelet-inspired framework.
 
 ### Approved Open Questions
-- Confidence Metrics for Submovement Decomposition: This would address a known limitation in current decomposition algorithms where poor parameter estimation in early iterations propagates errors, allowing for more reliable interpretation of submovement patterns in human motor tasks.
+- Confidence metrics submovement decomposition: The lack of standardized, robust confidence metrics for submovement decomposition hinders the objective comparison of motor control strategies across populations, especially when motions exhibit high degrees of temporal overlap.
 
 ## Links
 

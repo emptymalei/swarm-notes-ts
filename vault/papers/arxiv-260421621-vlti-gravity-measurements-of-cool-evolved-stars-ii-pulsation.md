@@ -22,9 +22,9 @@ url: "https://arxiv.org/abs/2604.21621"
 # Custom fields
 paper_id: "2604.21621"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "astrophysics"
 tags:
-  - "time-series"
+  []
 architectures:
   []
 datasets:
@@ -34,8 +34,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:07:35Z"
-created_at: "2026-04-24T05:07:35Z"
+processed_at: "2026-04-25T04:54:17Z"
+created_at: "2026-04-25T04:54:17Z"
 ---
 
 # VLTI-GRAVITY measurements of cool evolved stars: II. Pulsation properties and mass-loss process of the Mira star R Car and the red supergiant VX Sgr
@@ -46,27 +46,27 @@ created_at: "2026-04-24T05:07:35Z"
 
 ## Summary
 
-This study presents a long-term (7-year) time-series analysis of two evolved stars, R Car (Mira) and VX Sgr (RSG), using VLTI-GRAVITY interferometry to investigate mass-loss dynamics. By mapping photospheric and atomic layer radii against light curves, the researchers established that R Car maintains steady mass loss via stable fundamental mode pulsations. In contrast, they observed that mass loss in the RSG VX Sgr is episodic, characterized by shock-driven extreme expansion events associated with pulsation mode transitions. These findings offer critical observational evidence linking pulsation behavior to mass-loss processes in late-stage stellar evolution.
+This study utilizes a 7-year VLTI-GRAVITY time-series dataset to examine the pulsation and mass-loss processes of the AGB star R Car and the red supergiant VX Sgr. By tracking angular diameters and atmospheric layer expansion, the authors demonstrate that Mira stars exhibit steady mass loss tied to stable fundamental mode pulsations. Conversely, red supergiants like VX Sgr undergo extreme mass-loss events linked to shock propagation and transitions between different pulsation modes, providing a observational foundation for understanding stellar evolution and dust formation.
 
 ## Key Contributions
 
-- Analyzed the largest VLTI-GRAVITY time-series dataset of evolved stars (54 snapshots over 7 years), characterizing R Car (Mira) and VX Sgr (RSG).
-- Quantified the radius-light curve phase shifts and atmospheric layer extensions, confirming fundamental mode (FM) pulsations drive steady mass-loss in Miras.
-- Identified that mass-loss in RSGs like VX Sgr is driven by extreme, shock-induced events coupled with shifts in pulsation mode, providing a mechanism for episodic mass loss.
+- Analyzed a 7-year VLTI-GRAVITY time-series dataset of the Mira star R Car and the red supergiant VX Sgr to characterize pulsation properties and mass-loss mechanisms.
+- Identified that R Car's steady mass loss is linked to stable fundamental mode pulsations, while VX Sgr's mass loss is driven by intermittent extreme events and pulsation mode switching.
+- Observed extreme mass-loss in VX Sgr during 2020-2021, validated as shock-driven through detection of Balmer and Brackett $\gamma$ emission lines.
 
 ## Open Questions & Future Work
 
-- [[rsg-atmospheric-modeling-bottlenecks]]
+- [[rsg-agb-molecular-modeling-bottleneck]]
 
 ## Archivist Review
 
-The paper describes an astrophysical study using specialized interferometric data. While the observations and findings are significant for stellar physics, they do not introduce reusable machine learning concepts or benchmarks. The open question regarding RSG atmospheric modeling was approved as it represents a clear, long-standing scientific bottleneck in characterizing dynamical stellar systems that relies on improving simulation-based inference.
+The paper focuses on astrophysical phenomena in evolved stars rather than novel machine learning methodologies. As such, I have rejected the dataset as being specific to niche observational science rather than a broad ML benchmark. The open question regarding radiation-hydrodynamics modeling is approved as it addresses a fundamental limitation in physical simulation and interpretation of stellar time-series data.
 
 ### Approved Open Questions
-- RSG Atmospheric Modeling Bottlenecks: This is a fundamental bottleneck in stellar astrophysics; bridging the gap between 3D model predictions and high-resolution interferometric data is essential to understanding the physics of RSG mass-loss, which is critical for stellar evolution models.
+- Molecular Modeling in Evolved Stars: The discrepancy between synthetic and observed molecular layer extensions suggests that current astrophysical models lack critical physical components necessary for accurately characterizing the initiation of stellar mass loss.
 
 ### Rejected Candidates
-- [dataset] VLTI-GRAVITY Time-Series Dataset (`vlti-gravity-time-series-dataset`) - low_impact: This is an application-specific observational dataset, not a standardized benchmark or a widely accessible resource intended for general machine learning methodological comparison.
+- [dataset] VLTI-GRAVITY time-series dataset (`vlti-gravity-stellar-time-series-dataset`) - low_impact: This is a specific observational dataset not intended for general machine learning benchmarking.
 
 ## Links
 

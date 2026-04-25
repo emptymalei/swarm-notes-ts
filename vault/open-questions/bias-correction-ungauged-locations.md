@@ -1,10 +1,10 @@
 ---
 created_at: '2026-04-23T05:05:53Z'
-modified_at: '2026-04-24T05:09:42Z'
+modified_at: '2026-04-25T04:56:03Z'
 source_papers:
 - '[[arxiv-260420688-storm-surge-modeling-bias-correction-graph-neural-networks-g]]'
 - '[[arxiv-260420688-stormnet-improving-storm-surge-predictions-with-a-gnn-based]]'
-title: Bias-correction ungauged locations
+title: Bias Correction at Ungauged Locations
 ---
 
 **Background:** Bias correction models for environmental forecasting often require historical observational data at the target locations to effectively refine numerical model outputs.

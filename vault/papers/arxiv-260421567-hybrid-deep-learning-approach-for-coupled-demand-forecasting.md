@@ -16,20 +16,22 @@ url: "https://arxiv.org/abs/2604.21567"
 # Custom fields
 paper_id: "2604.21567"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  []
+  - "forecasting"
+  - "optimization"
+  - "supply-chain"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  []
+  - "haf-ds"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:07:48Z"
-created_at: "2026-04-24T05:07:48Z"
+processed_at: "2026-04-25T04:54:32Z"
+created_at: "2026-04-25T04:54:32Z"
 ---
 
 # Hybrid Deep Learning Approach for Coupled Demand Forecasting and Supply Chain Optimization
@@ -40,27 +42,31 @@ created_at: "2026-04-24T05:07:48Z"
 
 ## Summary
 
-This paper presents HAF-DS, a hybrid AI framework that integrates LSTM-based demand forecasting with MILP optimization for enhanced supply chain resilience. By embedding temporal demand features into a prescriptive optimization layer, the model simultaneously minimizes forecasting error and operational costs. Experimental results on textile and PPE supply chain datasets indicate that this coupled approach significantly outperforms isolated statistical and deep learning forecasting methods.
+This paper addresses the decoupling of demand forecasting and supply chain optimization by introducing a hybrid framework (HAF-DS). HAF-DS utilizes an LSTM architecture for temporal demand modeling and a MILP layer for cost-efficient replenishment and allocation. By jointly training and optimizing these components, the model achieves superior predictive accuracy and significant operational improvements in textile and PPE supply chain management.
 
 ## Key Contributions
 
-- Introduces HAF-DS, a hybrid architecture coupling LSTM-based demand forecasting with MILP-based supply chain optimization.
-- Achieves a 14.7% reduction in MAE and 12.4% reduction in RMSE compared to baseline methods on textile and PPE supply chain data.
-- Demonstrates substantial operational improvements, including a 27.5% reduction in stockouts and a 5.4% decrease in inventory costs.
+- Proposed HAF-DS, a coupled framework integrating LSTM demand forecasting with MILP-based prescriptive optimization.
+- Achieved a 14.7% reduction in MAE, 12.4% reduction in RMSE, and 14.2% reduction in MAPE compared to existing baselines on textile and PPE supply chain datasets.
+- Demonstrated operational improvements, specifically a 5.4% decrease in inventory costs and a 27.5% reduction in stockouts, highlighting the efficacy of jointly optimizing forecasts and supply chain decisions.
 
 ## Open Questions & Future Work
 
-- [[robustness-to-extreme-demand-shocks]]
+- [[robust-forecasting-for-anomalous-demand]]
+
+## Key Concepts
+
+- [[haf-ds]]: A coupled framework integrating LSTM-based temporal demand forecasting with MILP-based inventory optimization for supply chain resilience.
 
 ## Archivist Review
 
-The paper describes a specific application of a well-known hybrid predictive-prescriptive framework (LSTM coupled with MILP). The framework itself is too application-specific to qualify as a novel, reusable concept, but the identified failure mode regarding demand shocks is a sufficiently significant and well-documented bottleneck in predictive-prescriptive supply chain modeling.
+The HAF-DS framework is approved for its representative approach of coupling neural forecasting with classical MILP optimization, a pattern that is technically significant for supply chain management. The open question regarding robust forecasting under demand shocks addresses a critical, non-trivial limitation in current time-series modeling for industrial settings. No datasets were approved as they were described as general domain datasets rather than specific named benchmarks.
+
+### Approved Concepts
+- Hybrid AI Framework for Demand-Supply Forecasting and Optimization (HAF-DS): It introduces an architecture that bridges deep learning-based forecasting with mathematical optimization for supply chain management.
 
 ### Approved Open Questions
-- Robustness to extreme demand shocks: Failure cases during demand shocks are critical bottlenecks for the deployment of predictive-prescriptive systems in real-world supply chains where resilience against tail-end risks is essential.
-
-### Rejected Candidates
-- [concept] HAF-DS (`haf-ds`) - paper_local: This is a specific framework instantiation of a common hybrid predictive-prescriptive architectural pattern rather than a reusable core concept.
+- Robust Forecasting for Anomalies: This is a significant bottleneck for real-world supply chain reliability where unexpected disruptions are common.
 
 ## Links
 

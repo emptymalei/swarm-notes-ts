@@ -1,6 +1,6 @@
 ---
 # CSL-compatible fields
-title: "Forecasts of CMB $E$-mode anomalies for AliCPT-1"
+title: "Forecasts of CMB E-mode anomalies for AliCPT-1"
 author:
   - literal: "Jiazheng Dou"
   - literal: "Wen Zhao"
@@ -12,23 +12,25 @@ url: "https://arxiv.org/abs/2604.20699"
 # Custom fields
 paper_id: "2604.20699"
 paper_source: "arxiv"
-domain: "astrophysics"
+domain: "cosmology"
 tags:
   []
 architectures:
   []
 datasets:
-  []
+  - "alicpt"
+  - "simons-observatory-lat"
 concept_slugs:
   []
 dataset_slugs:
-  []
+  - "alicpt"
+  - "simons-observatory-lat"
 skill: "GeneralMLSkill"
-processed_at: "2026-04-24T05:09:34Z"
-created_at: "2026-04-24T05:09:34Z"
+processed_at: "2026-04-25T04:55:57Z"
+created_at: "2026-04-25T04:55:57Z"
 ---
 
-# Forecasts of CMB $E$-mode anomalies for AliCPT-1
+# Forecasts of CMB E-mode anomalies for AliCPT-1
 
 **Authors**: Jiazheng Dou, Wen Zhao
 **Date**: 2026-04-22
@@ -36,26 +38,34 @@ created_at: "2026-04-24T05:09:34Z"
 
 ## Summary
 
-This paper evaluates the performance of the Ali CMB Polarization Telescope (AliCPT) in detecting large-scale cosmic microwave background (CMB) E-mode anomalies, which provide an independent cross-check to existing temperature-based findings. Using 1000 simulated datasets processed via the NILC method, the authors analyze four distinct anomaly estimators: dipole modulation, large-angle correlation deficits, quadrupole-octopole alignment, and point-parity asymmetry. The results indicate that while AliCPT alone suffers from sky-coverage limitations, integrating it with the Simons Observatory (SO) restores performance toward near-cosmic-variance benchmarks. This joint approach significantly enhances the detectability of injected modulation signals, suggesting a robust framework for future anomaly investigations in polarized CMB data.
+This paper investigates the feasibility of detecting large-scale statistical anomalies in the CMB E-mode polarization using the upcoming AliCPT-1 telescope. By analyzing 1000 simulations, the authors assess the instrument's capability to recover signals like dipole modulation, lack of large-angle correlations, quadrupole-octopole alignment, and point-parity asymmetry. The results indicate that while AliCPT-1 alone faces limitations due to sky coverage, joining forces with the Simons Observatory (SO) provides a robust platform capable of reaching near-cosmic-variance sensitivity for these cosmological tests.
 
 ## Key Contributions
 
-- Forecasts AliCPT's ability to detect large-scale CMB E-mode anomalies using 1000 NILC-processed simulations.
-- Validates that the combined AliCPT and Simons Observatory (SO) dataset can detect dipole modulation with amplitude Ad=0.07 at a 99% confidence level.
-- Demonstrates that combining AliCPT with SO mitigates systematic biases and uncertainty inflation associated with AliCPT's limited sky coverage for quadrupole-octopole alignment and point-parity asymmetry statistics.
+- Evaluated the sensitivity of AliCPT-1 to large-scale CMB E-mode anomalies using 1000 NILC-processed simulations.
+- Demonstrated that a combined AliCPT+SO dataset can detect dipole modulation at a 99% confidence level for an input amplitude of Ad = 0.07.
+- Identified that AliCPT's limited sky coverage induces systematic biases in quadrupole-octopole alignment and point-parity asymmetry, which are mitigated by integration with SO observations.
 
 ## Open Questions & Future Work
 
 - [[constrained-vs-unconstrained-cmb-anomaly-testing]]
-- [[residual-foreground-impact-on-cmb-anomalies]]
+- [[complex-foreground-residual-bias]]
 
 ## Archivist Review
 
-The paper provides a standard forecasting analysis for a specific telescope (AliCPT). The proposed concepts were rejected as they represent standard astrophysical methods for CMB analysis rather than generalizable ML concepts. The two open questions are approved as they address fundamental methodological bottlenecks in testing CMB anomalies that apply to future experiments beyond the one discussed here.
+The paper provides a forecast for CMB anomaly detection. I have approved two datasets that are central to the study's claims regarding future experimental sensitivity. The two open questions were also approved as they articulate significant methodological hurdles in cosmological anomaly testing, with one renamed slightly to match existing vault nomenclature. No new concepts were approved as the methods described (e.g., NILC, anomaly estimators) are standard in the field.
 
 ### Approved Open Questions
-- Constrained vs. Unconstrained CMB Anomaly Testing: This is critical for distinguishing whether CMB anomalies represent genuine beyond-standard-model physics or are simply statistical outliers within the ΛCDM model; the choice of simulation ensemble fundamentally alters the statistical interpretation of future data.
-- Foreground Residuals in Large-Scale Anomalies: Large-scale anomalies reside at the lowest multipoles where both cosmic variance and residual foregrounds are most significant; failing to model these residuals can lead to false claims of anomaly detection.
+- Constrained vs Unconstrained CMB Anomaly Testing: Determining the appropriate ensemble for comparison is essential to distinguish between a rare statistical fluctuation within the ΛCDM model and genuine new physics, as it impacts the validity of statistical significance claims.
+- Complex Foreground Residual Bias: As instrumental sensitivity increases, foreground contamination and the accuracy of foreground cleaning methods become dominant sources of systematic error in testing CMB anomalies.
+
+### Rejected Candidates
+- [open_question] Constrained vs Unconstrained Anomalies (`constrained-vs-unconstrained-cmbanomalies`) - duplicate_existing: Renamed to align with existing vault naming conventions.
+
+## Datasets
+
+- [[alicpt]]
+- [[simons-observatory-lat]]
 
 ## Links
 

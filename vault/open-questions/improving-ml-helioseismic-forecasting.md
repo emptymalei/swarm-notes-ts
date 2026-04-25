@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-24T05:09:26Z'
+modified_at: '2026-04-25T04:55:50Z'
 source_papers:
 - '[[arxiv-260420802-machine-learning-based-characterization-of-solar-p-mode-freq]]'
-title: Improving ML Helioseismic Forecasting
+title: Refining Machine-Learning Helioseismic Forecasting
 ---
 
 **Background:** Solar p-mode oscillation frequencies exhibit long-term cyclic variations that correlate with solar magnetic activity cycles, but the underlying physical mechanisms and their precise relationship with different solar activity proxies remain incompletely understood. Developing robust machine-learning methods to forecast these frequency shifts offers a potential diagnostic for solar dynamics and space weather.

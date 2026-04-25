@@ -17,7 +17,9 @@ domain: "time-series"
 tags:
   - "time-series"
   - "forecasting"
-  - "simulation"
+  - "digital-twin"
+  - "industrial-ai"
+  - "continuous-time-modeling"
 architectures:
   []
 datasets:
@@ -27,8 +29,8 @@ concept_slugs:
 dataset_slugs:
   - "avedøre-full-scale-benchmark"
 skill: "GeneralMLSkill"
-processed_at: "2026-04-24T05:10:10Z"
-created_at: "2026-04-24T05:10:10Z"
+processed_at: "2026-04-25T04:56:25Z"
+created_at: "2026-04-25T04:56:25Z"
 ---
 
 # Data-Driven Open-Loop Simulation for Digital-Twin Operator Decision Support in Wastewater Treatment
@@ -39,13 +41,13 @@ created_at: "2026-04-24T05:10:10Z"
 
 ## Summary
 
-The paper introduces CCSS-RS, a controlled continuous-time state-space model designed to serve as a digital-twin simulator for wastewater treatment plants. The architecture effectively decouples historical state inference from future control rollouts, utilizing typed context encoding and Student-t/hurdle distributions to handle irregular sampling, missing data, and heavy-tailed sensor observations. Evaluated on the Avedøre full-scale benchmark, CCSS-RS significantly outperforms standard Neural CDE approaches, providing accurate multi-hour forecasting that aids operators in offline scenario screening and setpoint optimization.
+This paper addresses the challenge of creating digital-twin decision support for wastewater treatment plants by introducing CCSS-RS, a controlled continuous-time state-space model. The framework handles irregular and missing sensor data through typed context encoding and semigroup-consistent rollouts, while using a Student-t plus hurdle output distribution to address heavy-tailed, zero-inflated sensor observations. Validated on the large-scale Avedøre dataset, CCSS-RS significantly outperforms neural CDE baselines in long-horizon forecasting and provides robust operational insights for offline scenario screening.
 
 ## Key Contributions
 
-- Introduces CCSS-RS, a controlled continuous-time state-space model that enables robust simulation under irregular sampling and high missingness (43%).
-- Achieves significant performance gains on the Avedøre benchmark (RMSE 0.696, CRPS 0.349), outperforming Neural CDE baselines by 40-46%.
-- Demonstrates operational utility for scenario screening, including robustness to sensor outages and accurate prediction of ammonium/nitrate/oxygen across 12-36 hour horizons.
+- Introduces CCSS-RS, a controlled continuous-time state-space model that effectively separates historical state inference from future control rollouts.
+- Achieves superior performance on the Avedøre benchmark with high missingness (43%) and irregular sampling, reducing RMSE by 31–46% against strong baselines.
+- Demonstrates practical utility in wastewater treatment scenario screening, maintaining accuracy under sensor outages and providing reliable predictions for multi-criterion operational decision support.
 
 ## Open Questions & Future Work
 
@@ -54,21 +56,22 @@ The paper introduces CCSS-RS, a controlled continuous-time state-space model des
 
 ## Key Concepts
 
-- [[ccss-rs]]: A continuous-time state-space architecture that decouples historical state estimation from future control rollouts to manage irregular sampling and missing data in industrial environments.
+- [[ccss-rs]]: A controlled continuous-time state-space model for industrial process simulation that decouples state inference from future control rollouts.
 
 ## Archivist Review
 
-I approved the CCSS-RS architecture as a reusable design pattern for decoupling state estimation from control in digital-twin simulators. I also approved two open questions concerning cross-facility generalization and hybrid modeling, as these are critical, non-boilerplate bottlenecks for industrial ML. The Avedøre dataset was initially considered but rejected as it is a highly localized, domain-specific benchmark with limited utility for general ML research.
+I approved CCSS-RS as a reusable architectural pattern for industrial time-series and the Avedøre benchmark as a significant high-missingness industrial dataset. The open questions were refined to align with existing vault naming conventions and to focus on fundamental bottlenecks in industrial AI deployment.
 
 ### Approved Concepts
-- Controlled Continuous-Time State-Space Model (CCSS-RS): It provides a specialized architectural pattern for industrial time-series forecasting where historical state inference must be decoupled from future control rollouts.
+- CCSS-RS: The model provides a robust architecture for industrial time-series that decouples latent state estimation from future control trajectories.
 
 ### Approved Open Questions
-- Generalization Across Wastewater Facilities: Generalization is the primary barrier to the broad industrial adoption of data-driven digital twin simulators across diverse infrastructure sites.
-- Hybrid Mechanistic-Data Modeling: Hybrid modeling is vital for increasing regulatory acceptance and long-term reliability in infrastructure monitoring systems.
+- Cross-Facility Generalization Bottlenecks: The industrial scalability of digital twins hinges on the ability to deploy models across facilities with minimal overhead.
+- Hybrid Mechanistic-Data Fusion: This fusion is essential for the regulatory acceptance and operational reliability of AI-based decision support in critical infrastructure.
 
 ### Rejected Candidates
-- [dataset] Avedøre full-scale benchmark (`avedøre-full-scale-benchmark`) - low_impact: The dataset is a specific site-level benchmark that is likely too narrow and niche for broad, reusable archival importance outside of this specific domain.
+- [open_question] Cross-Facility Generalization in WWTP (`cross-facility-generalization-wwtp`) - duplicate_existing: Renamed for better alignment with existing vault terminology (cross-facility-generalization-wastewater-simulation).
+- [open_question] Hybrid Mechanistic Data-Driven Modeling (`hybrid-mechanistic-data-driven-modeling`) - duplicate_existing: Renamed for conciseness (hybrid-mechanistic-data-modeling).
 
 ## Datasets
 

@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-24T05:10:10Z'
+modified_at: '2026-04-25T04:56:25Z'
 source_papers:
 - '[[arxiv-260420935-data-driven-open-loop-simulation-for-digital-twin-operator-d]]'
-title: Hybrid Mechanistic-Data Modeling
+title: Hybrid Mechanistic-Data Fusion
 ---
 
 **Background:** Mechanistic process models encode biochemical domain knowledge but are difficult to calibrate, whereas purely data-driven models lack such physical constraints.

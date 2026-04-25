@@ -1,12 +1,13 @@
 ---
-title: "Intrinsic Probabilistic Risk Forecasting"
-slug: "intrinsic-probabilistic-risk-forecasting"
-type: concept
+created_at: '2026-04-24T05:10:18Z'
 generated_stub: true
+modified_at: '2026-04-25T04:56:32Z'
+processed_at: '2026-04-24T05:10:18Z'
+slug: intrinsic-probabilistic-risk-forecasting
 source_papers:
-  - "[[arxiv-260420485-co-state-based-data-fusion-and-risk-aware-filtering-for-spac]]"
-processed_at: "2026-04-24T05:10:18Z"
-created_at: "2026-04-24T05:10:18Z"
+- '[[arxiv-260420485-co-state-based-data-fusion-and-risk-aware-filtering-for-spac]]'
+title: Intrinsic Probabilistic Risk Forecasting
+type: concept
 ---
 
 # Intrinsic Probabilistic Risk Forecasting

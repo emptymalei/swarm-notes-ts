@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-24T05:08:56Z'
+modified_at: '2026-04-25T04:55:25Z'
 source_papers:
 - '[[arxiv-260421097-learning-to-emulate-chaos-adversarial-optimal-transport-regu]]'
-title: Non-ergodic adversarial OT generalization
+title: Extending OT to Non-Ergodic Dynamics
 ---
 
 **Background:** Chaotic dynamical systems are highly sensitive to initial conditions, which renders long-term trajectory prediction fundamentally infeasible in many real-world scenarios. Future efforts are required to adapt methods for preserving invariant measures specifically to transient dynamics or systems with non-stationary behavior.

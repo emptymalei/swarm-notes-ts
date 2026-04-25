@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-24T05:09:49Z'
+modified_at: '2026-04-25T04:56:08Z'
 source_papers:
 - '[[arxiv-260420673-short-time-wavelet-inspired-mouse-submovement-detection]]'
-title: Confidence Metrics for Submovement Decomposition
+title: Confidence metrics submovement decomposition
 ---
 
 **Background:** Submovement decomposition of human motion is often limited by difficulties in handling highly overlapping components, which are typically addressed by threshold-based methods that struggle with non-discrete, superimposed movements.

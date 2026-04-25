@@ -11,20 +11,22 @@ url: "https://arxiv.org/abs/2604.20941"
 # Custom fields
 paper_id: "2604.20941"
 paper_source: "arxiv"
-domain: "astrophysics"
+domain: "physics-astronomy-ml"
 tags:
-  []
+  - "symbolic-regression"
+  - "astrophysics"
+  - "bayesian-inference"
 architectures:
   []
 datasets:
   - "gwtc-4"
 concept_slugs:
-  - "posterior-symbolic-compression"
+  - "symbolic-regression-for-population-inference"
 dataset_slugs:
   - "gwtc-4"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:09:54Z"
-created_at: "2026-04-24T05:09:54Z"
+processed_at: "2026-04-25T04:56:11Z"
+created_at: "2026-04-25T04:56:11Z"
 ---
 
 # Interpretable Analytic Formulae for GWTC-4 Binary Black Hole Population Properties via Symbolic Regression
@@ -35,27 +37,24 @@ created_at: "2026-04-24T05:09:54Z"
 
 ## Summary
 
-This paper introduces an approach to characterize binary black hole population properties by applying symbolic regression to the GWTC-4 posterior inference data. By compressing complex phenomenological models into compact, closed-form analytic expressions, the framework provides transparent insights into merger-rate evolution and spin-mass correlations. These analytic formulae enable exact gradient diagnostics and serve as efficient surrogate models for downstream astrophysical applications, overcoming the limitations of black-box numerical posteriors.
+This paper addresses the lack of transparency in current binary black hole (BBH) population models by utilizing symbolic regression to analyze GWTC-4 catalog posteriors. The author derives compact, closed-form analytic expressions for key astrophysical relationships, including merger-rate redshift evolution and spin-mass correlations. These analytic formulae provide exact gradient diagnostics and serve as efficient surrogate models for complex numerical posteriors, facilitating improved physical interpretation and faster computation for downstream astrophysical tasks.
 
 ## Key Contributions
 
-- Discovers four closed-form analytic expressions for key binary black hole population relationships using symbolic regression on GWTC-4 posterior data.
-- Demonstrates that observed mass-ratio--effective-spin and redshift--effective-spin correlations are driven by posterior broadening rather than shifts in the mean.
-- Provides analytic derivative diagnostics for population models, enabling more efficient downstream tasks like rate forecasting and stochastic background estimation.
+- Introduces a symbolic regression framework to derive interpretable, closed-form analytic expressions for BBH population properties from GWTC-4 posterior data.
+- Identifies that mass ratio-spin and redshift-spin correlations in BBH populations are primarily driven by posterior width broadening rather than mean shifts.
+- Enables rapid downstream astrophysics applications such as rate forecasting and formation channel comparison via exact analytic derivatives and compact surrogate modeling.
 
 ## Key Concepts
 
-- [[posterior-symbolic-compression]]: The use of symbolic regression to distill complex numerical posterior distributions into compact, differentiable, and interpretable closed-form analytic expressions.
+- [[symbolic-regression-for-population-inference]]: The use of symbolic regression to distill complex posterior inference products into compact, closed-form analytic expressions for physical parameters.
 
 ## Archivist Review
 
-I have approved 'Posterior Symbolic Compression' as a generalized, reusable method for distilling complex posterior models into interpretable analytic forms. This replaces the paper-specific 'Symbolic Regression for GWTC-4 Population Analysis'. I also approved 'GWTC-4' as a key dataset. All other candidates were rejected as they were either too specific or covered by the generalized concept.
+The paper provides a strong methodological contribution by using symbolic regression to extract interpretable, closed-form models from numerical astrophysical posteriors. I approved the core concept of symbolic regression for population inference due to its potential for reuse in other scientific domains where black-box Bayesian inference currently lacks transparency. The GWTC-4 dataset is included as it is the primary empirical source for these population studies.
 
 ### Approved Concepts
-- Posterior Symbolic Compression: Enables distillation of high-dimensional, complex numerical posterior models into interpretable, differentiable, and closed-form analytic laws, which are crucial for diagnostics and surrogate modeling.
-
-### Rejected Candidates
-- [concept] Symbolic Regression for GWTC-4 Population Analysis (`symbolic-regression-for-gwtc-4-population-analysis`) - duplicate_existing: Replaced by a more generalized and reusable concept 'Posterior Symbolic Compression'.
+- Symbolic Regression for Population Inference: It replaces opaque phenomenological models with interpretable, differentiable analytic laws for complex astrophysical populations, offering a bridge between numerical posterior estimation and physical law discovery.
 
 ## Datasets
 

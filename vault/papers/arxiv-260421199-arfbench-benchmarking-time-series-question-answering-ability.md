@@ -27,12 +27,12 @@ architectures:
 datasets:
   - "ARFBench"
 concept_slugs:
-  - "tsqa"
+  []
 dataset_slugs:
   - "arfbench"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:08:20Z"
-created_at: "2026-04-24T05:08:20Z"
+processed_at: "2026-04-25T04:54:55Z"
+created_at: "2026-04-25T04:54:55Z"
 ---
 
 # ARFBench: Benchmarking Time Series Question Answering Ability for Software Incident Response
@@ -43,28 +43,21 @@ created_at: "2026-04-24T05:08:20Z"
 
 ## Summary
 
-ARFBench addresses the under-explored task of Time Series Question-Answering (TSQA) by evaluating multimodal foundation models on real-world software incident telemetry. The benchmark evaluates LLMs, VLMs, and specialized time series FMs, revealing that frontier VLMs currently lead performance. Additionally, a new hybrid TSFM-VLM architecture is introduced, and the potential for human-model collaboration is quantified through a high-performing oracle selector.
+This paper introduces ARFBench, a new benchmark designed to evaluate the Time Series Question-Answering (TSQA) capabilities of foundation models specifically for software incident response. The dataset includes 750 questions derived from 63 production software incidents, providing a rigorous test for LLMs, VLMs, and specialized time series models. Findings reveal that while frontier VLMs currently dominate the task, specialized hybrid TSFM-VLM architectures show significant promise. Finally, the authors demonstrate that integrating human expert input with model predictions creates a superhuman oracle, setting a new performance benchmark for operational incident analysis.
 
 ## Key Contributions
 
-- Introduces ARFBench, a benchmark containing 750 questions over 142 time series from 63 production incidents for evaluating TSQA capabilities.
-- Demonstrates that frontier VLMs significantly outperform existing baselines, with top models achieving 62.7% accuracy and 51.9% F1.
-- Proposes a TSFM + VLM hybrid prototype that, after minimal post-training, matches the performance of frontier models.
-- Establishes a superhuman performance baseline (82.8% F1 and 87.2% accuracy) using a model-expert oracle selector.
-
-## Key Concepts
-
-- [[tsqa]]: A task where natural language questions are used to infer and reason about properties of time series data.
+- Introduced ARFBench, a benchmark with 750 questions across 142 time series from 63 production software incidents for evaluating TSQA capabilities.
+- Demonstrated that frontier VLMs significantly outperform existing baselines, with the top-performing model achieving 62.7% accuracy and 51.9% F1.
+- Developed a TSFM + VLM hybrid prototype that achieves competitive results via targeted post-training, demonstrating the efficacy of specialized multimodal approaches.
+- Established a model-expert oracle selector that reaches 87.2% accuracy, highlighting the complementary nature of human expertise and automated systems in incident response.
 
 ## Archivist Review
 
-I approved the TSQA concept as it formalizes an emerging intersection of time-series analysis and language reasoning. ARFBench was approved as a dataset, but rejected as a concept to avoid redundancy in the vault. No open questions were identified that met the criteria for a permanent research note.
-
-### Approved Concepts
-- Time Series Question-Answering (TSQA): TSQA defines the core research area of the paper, establishing a new task for multimodal foundation models.
+I have approved the ARFBench dataset as a valuable contribution to the time series domain. I rejected the concept candidate 'ARFBench' because it is essentially describing the dataset already approved; naming a benchmark as a reusable 'concept' is generally redundant when the asset itself is tracked in the dataset registry. I did not identify any research-grade open questions that move beyond specific performance reporting to address fundamental algorithmic or methodological bottlenecks.
 
 ### Rejected Candidates
-- [concept] ARFBench (`arfbench`) - subcomponent_of_broader_mechanism: This is a dataset, not a methodological concept; it is already approved as a dataset.
+- [concept] ARFBench (`arfbench`) - subcomponent_of_broader_mechanism: The benchmark itself is already approved as a dataset, and the methodology of using QA for time series evaluation is not yet a mature, distinct conceptual framework distinct from general TSQA.
 
 ## Datasets
 

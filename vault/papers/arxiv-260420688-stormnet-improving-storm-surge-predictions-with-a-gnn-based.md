@@ -18,10 +18,11 @@ paper_id: "2604.20688"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "spatio-temporal forecasting"
-  - "bias correction"
-  - "graph neural networks"
-  - "storm surge prediction"
+  - "forecasting"
+  - "graph-neural-networks"
+  - "bias-correction"
+  - "spatio-temporal-modeling"
+  - "operational-forecasting"
 architectures:
   []
 datasets:
@@ -31,8 +32,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-24T05:09:42Z"
-created_at: "2026-04-24T05:09:42Z"
+processed_at: "2026-04-25T04:56:03Z"
+created_at: "2026-04-25T04:56:03Z"
 ---
 
 # StormNet: Improving storm surge predictions with a GNN-based spatio-temporal offset forecasting model
@@ -43,13 +44,13 @@ created_at: "2026-04-24T05:09:42Z"
 
 ## Summary
 
-StormNet is a spatio-temporal graph neural network designed to address the inherent prediction errors of numerical storm surge models like ADCIRC. By combining GCN, GAT, and LSTM mechanisms, the model effectively learns spatial dependencies across water-level gauges and temporal patterns in hurricane dynamics. Empirical evaluation on Hurricane Idalia (2023) demonstrates substantial improvements in forecast accuracy over sequential baselines, particularly for 48-72 hour horizons. The framework's computational efficiency enables rapid deployment in real-time operational settings.
+StormNet is a spatio-temporal graph neural network designed to address the inaccuracies inherent in traditional numerical storm surge models like ADCIRC. By combining graph convolutional and attention layers with LSTM units, the model effectively captures the dependencies between coastal water-level gauge stations. It significantly outperforms standard sequential LSTM baselines in long-range forecasting, offering a computationally efficient tool for operational surge prediction.
 
 ## Key Contributions
 
-- Proposes StormNet, a hybrid GNN-LSTM framework that reduces RMSE in water-level predictions by over 70% for 48-hour forecasts.
-- Demonstrates significant accuracy gains over sequential LSTM baselines for long-range (48-72h) storm surge prediction horizons.
-- Provides a computationally efficient bias correction method suitable for real-time operational storm surge forecasting systems.
+- Introduces StormNet, a hybrid GNN-LSTM architecture that performs bias correction on traditional numerical storm surge models.
+- Achieves over 70% RMSE reduction for 48-hour forecasts and over 50% for 72-hour forecasts on Hurricane Idalia (2023) data.
+- Demonstrates superior performance over sequential LSTM baselines while maintaining computational efficiency suitable for real-time operational use.
 
 ## Open Questions & Future Work
 
@@ -57,17 +58,17 @@ StormNet is a spatio-temporal graph neural network designed to address the inher
 
 ## Key Concepts
 
-- [[stormnet]]: A spatio-temporal graph neural network architecture designed for bias correction in storm surge numerical models.
+- [[stormnet]]: A spatio-temporal GNN that integrates GCN, GAT, and LSTM components for bias correction in storm surge forecasting.
 
 ## Archivist Review
 
-I approved the StormNet architecture as a reusable concept for bias-correcting physical models, and the open question regarding ungauged locations as it highlights a clear limitation in scaling such systems. I rejected the Hurricane Idalia dataset because it is a single-event evaluation case rather than a comprehensive, reusable research dataset.
+StormNet is approved as it provides a clear, reusable framework for combining GNNs and LSTMs for bias correction in spatio-temporal systems. The open question regarding ungauged locations is approved as it addresses a fundamental, non-boilerplate limitation in geospatial time-series forecasting that limits real-world operational scalability.
 
 ### Approved Concepts
-- StormNet: It provides a reusable framework for bias-correcting high-fidelity numerical models using spatio-temporal dependencies.
+- StormNet: It is the primary novel architecture proposed for correcting bias in physical numerical storm surge models.
 
 ### Approved Open Questions
-- Bias-correction ungauged locations: This represents a fundamental bottleneck for scaling predictive storm surge models to data-sparse coastal regions.
+- Bias Correction at Ungauged Locations: Extending predictive capabilities to ungauged locations is critical for providing comprehensive coastal flood risk assessments and operational warnings in regions that lack dense gauge station networks.
 
 ## Links
 

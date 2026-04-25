@@ -1,12 +1,13 @@
 ---
-title: "ShapeFinder"
-slug: "shapefinder"
-type: concept
+created_at: '2026-04-24T05:09:05Z'
 generated_stub: true
+modified_at: '2026-04-25T04:55:32Z'
+processed_at: '2026-04-24T05:09:05Z'
+slug: shapefinder
 source_papers:
-  - "[[arxiv-260421067-the-geometry-of-conflict-3d-spatio-temporal-patterns-in-fata]]"
-processed_at: "2026-04-24T05:09:05Z"
-created_at: "2026-04-24T05:09:05Z"
+- '[[arxiv-260421067-the-geometry-of-conflict-3d-spatio-temporal-patterns-in-fata]]'
+title: ShapeFinder
+type: concept
 ---
 
 # ShapeFinder

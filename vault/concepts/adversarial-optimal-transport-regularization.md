@@ -1,12 +1,13 @@
 ---
-title: "Adversarial Optimal Transport Regularization"
-slug: "adversarial-optimal-transport-regularization"
-type: concept
+created_at: '2026-04-24T05:08:56Z'
 generated_stub: true
+modified_at: '2026-04-25T04:55:25Z'
+processed_at: '2026-04-24T05:08:56Z'
+slug: adversarial-optimal-transport-regularization
 source_papers:
-  - "[[arxiv-260421097-learning-to-emulate-chaos-adversarial-optimal-transport-regu]]"
-processed_at: "2026-04-24T05:08:56Z"
-created_at: "2026-04-24T05:08:56Z"
+- '[[arxiv-260421097-learning-to-emulate-chaos-adversarial-optimal-transport-regu]]'
+title: Adversarial Optimal Transport Regularization
+type: concept
 ---
 
 # Adversarial Optimal Transport Regularization

@@ -1,12 +1,13 @@
 ---
-title: "Shooting-based Mixed Finite Element Neural Integration"
-slug: "shooting-based-mixed-finite-element-neural-integration"
-type: concept
+created_at: '2026-04-24T05:08:47Z'
 generated_stub: true
+modified_at: '2026-04-25T04:55:18Z'
+processed_at: '2026-04-24T05:08:47Z'
+slug: shooting-based-mixed-finite-element-neural-integration
 source_papers:
-  - "[[arxiv-260421101-a-hybridizable-neural-time-integrator-for-stable-autoregress]]"
-processed_at: "2026-04-24T05:08:47Z"
-created_at: "2026-04-24T05:08:47Z"
+- '[[arxiv-260421101-a-hybridizable-neural-time-integrator-for-stable-autoregress]]'
+title: Shooting-based Mixed Finite Element Neural Integration
+type: concept
 ---
 
 # Shooting-based Mixed Finite Element Neural Integration

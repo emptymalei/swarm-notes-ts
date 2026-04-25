@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-23T05:06:21Z'
 generated_stub: true
-modified_at: '2026-04-24T05:10:18Z'
+modified_at: '2026-04-25T04:56:32Z'
 processed_at: '2026-04-23T05:06:21Z'
 slug: differential-algebraic-co-state-fusion
 source_papers:

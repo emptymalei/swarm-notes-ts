@@ -1,12 +1,13 @@
 ---
-title: "Deep FinResearch Bench"
-slug: "deep-finresearch-bench"
-type: concept
+created_at: '2026-04-24T05:09:12Z'
 generated_stub: true
+modified_at: '2026-04-25T04:55:38Z'
+processed_at: '2026-04-24T05:09:12Z'
+slug: deep-finresearch-bench
 source_papers:
-  - "[[arxiv-260421006-deep-finresearch-bench-evaluating-ais-ability-to-conduct-pro]]"
-processed_at: "2026-04-24T05:09:12Z"
-created_at: "2026-04-24T05:09:12Z"
+- '[[arxiv-260421006-deep-finresearch-bench-evaluating-ais-ability-to-conduct-pro]]'
+title: Deep FinResearch Bench
+type: concept
 ---
 
 # Deep FinResearch Bench
