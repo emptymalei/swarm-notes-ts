@@ -1,12 +1,13 @@
 ---
-title: "Persistent Homology for Eye-Tracking Time Series"
-slug: "persistent-homology-for-eye-tracking-time-series"
-type: concept
+created_at: '2026-04-25T04:54:10Z'
 generated_stub: true
+modified_at: '2026-04-26T05:08:43Z'
+processed_at: '2026-04-25T04:54:10Z'
+slug: persistent-homology-for-eye-tracking-time-series
 source_papers:
-  - "[[arxiv-260421698-fixation-sequences-as-time-series-a-topological-approach-to]]"
-processed_at: "2026-04-25T04:54:10Z"
-created_at: "2026-04-25T04:54:10Z"
+- '[[arxiv-260421698-fixation-sequences-as-time-series-a-topological-approach-to]]'
+title: Persistent Homology for Eye-Tracking Time Series
+type: concept
 ---
 
 # Persistent Homology for Eye-Tracking Time Series

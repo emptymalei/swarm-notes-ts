@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-24T05:08:06Z'
+modified_at: '2026-04-26T05:09:41Z'
 source_papers:
 - '[[arxiv-260421292-large-values-in-time-series-and-additive-combinatorics]]'
-title: Fourier ratio bound constant
+title: Fourier Ratio Constant C Determination
 ---
 
 **Background:** The theoretical framework connecting additive combinatorics to time series analysis relies on an unspecified constant 'C' within the bound for the generating set size.

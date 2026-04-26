@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-24T05:07:57Z'
+modified_at: '2026-04-26T05:09:24Z'
 source_papers:
 - '[[arxiv-260421297-identifying-dynamical-network-markers-of-financial-market-in]]'
-title: Robustness and Calibration of DNM-based Financial Early-Warning Systems
+title: Robustness of DNM Financial Indicators
 ---
 
 **Background:** Dynamical Network Marker (DNM) theory identifies precursors to critical transitions in complex systems by detecting structural changes in the correlation and fluctuation patterns of interacting elements. Applying this theory to financial markets allows for the potential early warning of market instability based on participant-level trading data.

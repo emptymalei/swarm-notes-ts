@@ -1,12 +1,13 @@
 ---
-title: "AR Spectral Flattening Flare Forecasting"
-slug: "ar-spectral-flattening-flare-forecasting"
-type: concept
+created_at: '2026-04-25T04:53:58Z'
 generated_stub: true
+modified_at: '2026-04-26T05:08:18Z'
+processed_at: '2026-04-25T04:53:58Z'
+slug: ar-spectral-flattening-flare-forecasting
 source_papers:
-  - "[[arxiv-260421737-correlation-between-active-regions-spectra-at-high-radio-fre]]"
-processed_at: "2026-04-25T04:53:58Z"
-created_at: "2026-04-25T04:53:58Z"
+- '[[arxiv-260421737-correlation-between-active-regions-spectra-at-high-radio-fre]]'
+title: AR Spectral Flattening Flare Forecasting
+type: concept
 ---
 
 # AR Spectral Flattening Flare Forecasting

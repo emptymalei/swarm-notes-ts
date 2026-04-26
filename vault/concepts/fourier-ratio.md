@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-24T05:08:06Z'
 generated_stub: true
-modified_at: '2026-04-25T04:54:45Z'
+modified_at: '2026-04-26T05:09:41Z'
 processed_at: '2026-04-24T05:08:06Z'
 slug: fourier-ratio
 source_papers:

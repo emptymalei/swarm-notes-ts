@@ -14,14 +14,10 @@ url: "https://arxiv.org/abs/2604.21180"
 # Custom fields
 paper_id: "2604.21180"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  - "time-series"
-  - "diffusion-models"
-  - "data-assimilation"
-  - "uncertainty-estimation"
-  - "super-resolution"
-  - "fluid-dynamics"
+  - "uncertainty-aware-trajectory-prediction"
+  - "probabilistic-electricity-price-forecasting-pepf"
 architectures:
   []
 datasets:
@@ -31,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-25T04:55:03Z"
-created_at: "2026-04-25T04:55:03Z"
+processed_at: "2026-04-26T05:11:05Z"
+created_at: "2026-04-26T05:11:05Z"
 ---
 
 # Uncertainty-Aware Spatiotemporal Super-Resolution Data Assimilation with Diffusion Models
@@ -43,33 +39,32 @@ created_at: "2026-04-25T04:55:03Z"
 
 ## Summary
 
-DiffSRDA is a novel probabilistic data assimilation framework that leverages denoising diffusion models to perform spatiotemporal super-resolution on chaotic fluid systems. By training on low-resolution forecasts and sparse high-resolution observations, it generates high-resolution ensemble analyses that quantify uncertainty without the computational overhead of running large high-resolution ensemble forecasts. Experiments on barotropic ocean jet instability show competitive performance with traditional EnKF methods, with additional benefits in computational efficiency and robustness to sensor-layout changes.
+The paper introduces DiffSRDA, a novel probabilistic data assimilation framework that uses denoising diffusion models to generate high-resolution analysis windows from low-resolution forecasts and sparse observations. By training on chaotic fluid flow data, the model provides both accurate point estimates and physically meaningful uncertainty quantification while avoiding the high computational costs of traditional high-resolution ensemble methods. The approach demonstrates effective performance with short reverse diffusion chains and includes a training-free mechanism to adapt to changes in observation configurations. Experimental results on a barotropic ocean jet instability testbed show performance parity with high-resolution Ensemble Kalman Filters.
 
 ## Key Contributions
 
-- Developed DiffSRDA, a diffusion-based framework that performs probabilistic spatiotemporal super-resolution data assimilation using only low-resolution forecasts.
-- Demonstrated that DiffSRDA achieves reconstruction quality comparable to high-resolution Ensemble Kalman Filters (EnKF) while providing physically meaningful uncertainty estimates.
-- Showed that DiffSRDA can achieve near-full-chain accuracy with very few reverse sampling steps and supports training-free adaptation to sensor-layout shifts via score-based guidance.
+- Introduces DiffSRDA, a probabilistic data assimilation framework that leverages denoising diffusion models to perform spatiotemporal super-resolution using only low-resolution forecasts.
+- Demonstrates that DiffSRDA achieves reconstruction quality comparable to Ensemble Kalman Filter (EnKF) driven by high-resolution forecasts while providing physically meaningful uncertainty estimates.
+- Identifies that accurate performance can be maintained with short reverse diffusion chains, enabling computational efficiency for repeated cycling in data assimilation.
+- Implements training-free observation-consistency guidance that allows the model to adapt to sensor-layout shifts at deployment time without retraining.
 
 ## Open Questions & Future Work
 
-- [[scalability-of-reverse-diffusion-chains]]
-- [[guidance-impact-on-uncertainty-calibration]]
+- [[generative-da-scalability-complexity]]
 
 ## Key Concepts
 
-- [[diffsrda]]: A probabilistic spatiotemporal super-resolution data assimilation framework that uses denoising diffusion models to generate high-resolution analyses from low-resolution forecasts and sparse observations.
+- [[diffsrda]]: A probabilistic spatiotemporal super-resolution data assimilation framework that uses denoising diffusion models to reconstruct high-resolution analysis windows from low-resolution forecasts and sparse observations.
 
 ## Archivist Review
 
-I approved the core framework DiffSRDA as it represents a significant new approach to probabilistic data assimilation. The two open questions are approved because they address critical bottlenecks—computational scalability of reverse chains and the preservation of uncertainty calibration under inference-time guidance—which are central to deploying diffusion models in scientific and meteorological forecasting contexts. All other candidates were rejected as they were either paper-local or secondary considerations.
+Approved the core DiffSRDA framework and a critical open question regarding its scalability to complex real-world dynamics. Rejected the second open question as it was essentially a boilerplate request for better guidance mechanisms without identifying a specific mechanism or structural limitation beyond standard iterative optimization challenges. Applied a strict standard for reusability and impact within the forecasting domain.
 
 ### Approved Concepts
-- DiffSRDA: DiffSRDA introduces a novel integration of denoising diffusion models into the data assimilation paradigm, enabling probabilistic super-resolution without requiring repeated high-resolution model forecasts.
+- DiffSRDA: Provides a novel framework for probabilistic data assimilation by combining super-resolution with denoising diffusion models, enabling efficient HR state reconstruction from LR forecasts.
 
 ### Approved Open Questions
-- Scalability of Reverse Diffusion Chains: Understanding the scalability of the number of diffusion steps to more realistic or complex physical systems is critical for determining the practical utility of diffusion-based data assimilation in operational meteorological and geophysical forecasting.
-- Guidance Impact on Uncertainty Calibration: Ensuring that uncertainty quantification remains robust during inference-time model adaptations is vital for high-stakes decision-making scenarios, such as severe-weather forecasting, where inaccurate uncertainty estimates can lead to poor decision outcomes.
+- Generative DA Scalability Limits: Determines the viability of generative data assimilation for real-world application, representing a major research frontier.
 
 ## Links
 

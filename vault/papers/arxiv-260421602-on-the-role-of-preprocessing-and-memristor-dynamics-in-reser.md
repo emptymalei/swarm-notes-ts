@@ -15,11 +15,11 @@ url: "https://arxiv.org/abs/2604.21602"
 # Custom fields
 paper_id: "2604.21602"
 paper_source: "arxiv"
-domain: "computer-vision"
+domain: "nlp"
 tags:
   []
 architectures:
-  - "parallel-delayed-feedback-network-pdfn"
+  []
 datasets:
   []
 concept_slugs:
@@ -27,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-25T04:54:26Z"
-created_at: "2026-04-25T04:54:26Z"
+processed_at: "2026-04-26T05:08:57Z"
+created_at: "2026-04-26T05:08:57Z"
 ---
 
 # On the Role of Preprocessing and Memristor Dynamics in Reservoir Computing for Image Classification
@@ -39,31 +39,34 @@ created_at: "2026-04-25T04:54:26Z"
 
 ## Summary
 
-This paper investigates the role of volatile memristor dynamics in a parallel delayed feedback network (PDFN) architecture for reservoir computing. By characterizing device-level requirements such as decay rates and quantization, the authors establish how physical hardware constraints influence performance in image classification tasks. The proposed framework achieves competitive classification accuracy on the MNIST benchmark and exhibits significant robustness to device variability. These findings underscore the suitability of volatile memristors for energy-efficient, neuromorphic spatio-temporal processing.
+This paper investigates the viability of using volatile memristors as the foundation for reservoir computing (RC) architectures in neuromorphic systems. By analyzing a parallel delayed feedback network (PDFN), the authors identify how specific device-level dynamics like decay rate and variability influence system-wide performance in image recognition. The proposed framework achieves competitive classification accuracy on the MNIST dataset and exhibits significant resilience to hardware-induced variability. These findings provide critical design guidelines for developing compact and energy-efficient neuromorphic computing hardware.
 
 ## Key Contributions
 
-- Analyzed the impact of volatile memristor dynamics (decay rate, quantization, variability) on the performance of the PDFN architecture.
-- Achieved 95.89% classification accuracy on the MNIST dataset, demonstrating competitiveness with existing memristor-based RC implementations.
-- Demonstrated high robustness of the proposed RC approach, maintaining 94.2% accuracy under 20% device variability.
+- Analyzes the impact of volatile memristor device-level characteristics—including decay rate, quantization, and variability—on reservoir computing performance.
+- Achieves 95.89% classification accuracy on MNIST using a parallel delayed feedback network (PDFN) architecture.
+- Demonstrates high robustness for the proposed memristive reservoir, maintaining 94.2% accuracy even under 20% device variability.
 
 ## Open Questions & Future Work
 
-- [[robust-co-design-memristive-rc]]
+- [[memristor-parameter-scaling-laws]]
 
 ## Key Concepts
 
-- [[parallel-delayed-feedback-network-pdfn]]: A recurrent neural network architecture designed to leverage memristor dynamics for efficient reservoir computing.
+- [[parallel-delayed-feedback-network-pdfn]]: A recurrent reservoir computing architecture optimized for memristive hardware that uses parallel delayed feedback to process information.
 
 ## Archivist Review
 
-I approved the PDFN concept as it is a specific, reusable architectural model for hardware-based reservoir computing. I also approved the co-design open question because it captures the critical bottleneck in scaling memristive hardware—moving from isolated performance measurements to systematic, robust system design. MNIST was rejected as a routine dataset unsuitable for a permanent vault entry under these strict guidelines.
+The review process focused on identifying the specific architectural innovation (PDFN) and the broader research challenge regarding memristor parameterization. The PDFN was approved as it represents a specific class of recurrent architecture for physical reservoir computing, while the open question was reformulated to emphasize the lack of mapping strategies rather than inventing scaling laws. MNIST was rejected as a routine benchmark.
 
 ### Approved Concepts
-- Parallel Delayed Feedback Network (PDFN): The paper provides a comprehensive analysis of the PDFN architecture in the context of memristive device constraints.
+- Parallel Delayed Feedback Network (PDFN): The paper focuses on the specific analysis and operational explanation of this architecture for memristor-based reservoir computing.
 
 ### Approved Open Questions
-- Robust Co-design of Memristive RC: This is critical because memristor-based hardware is inherently prone to variability; without clear co-design methodologies, scaling these systems to more complex, real-world tasks will be hindered by the lack of reliability.
+- Universal Memristor Parameter Scaling: Crucial for enabling the transition from empirical, task-specific memristor configurations to scalable, predictable neuromorphic system designs.
+
+### Rejected Candidates
+- [dataset] MNIST (`mnist`) - low_impact: MNIST is a routine, ubiquitous benchmark that does not require a standalone vault entry.
 
 ## Links
 

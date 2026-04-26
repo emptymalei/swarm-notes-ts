@@ -14,22 +14,20 @@ url: "https://arxiv.org/abs/2604.21930"
 # Custom fields
 paper_id: "2604.21930"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "nlp"
 tags:
-  - "continual-learning"
-  - "forecasting"
-  - "evaluation-robustness"
+  []
 architectures:
   []
 datasets:
-  - "CESNET-Timeseries24"
+  - "cesnet-timeseries24"
 concept_slugs:
   - "boundary-profile-sensitivity-bps"
 dataset_slugs:
   - "cesnet-timeseries24"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-25T04:53:54Z"
-created_at: "2026-04-25T04:53:54Z"
+processed_at: "2026-04-26T05:07:39Z"
+created_at: "2026-04-26T05:07:39Z"
 ---
 
 # Temporal Taskification in Streaming Continual Learning: A Source of Evaluation Instability
@@ -40,31 +38,31 @@ created_at: "2026-04-25T04:53:54Z"
 
 ## Summary
 
-This paper demonstrates that the common practice of partitioning continuous streams into discrete tasks (temporal taskification) in streaming continual learning is a critical, often ignored variable that induces evaluation instability. By analyzing network traffic forecasting benchmarks, the authors show that minor variations in temporal boundaries lead to significant discrepancies in model performance and forgetting metrics. To address this, they introduce Boundary-Profile Sensitivity (BPS), a diagnostic tool that measures how sensitive a stream's structure is to partitioning choices, suggesting that temporal taskification should be treated as a first-class evaluation parameter.
+This paper investigates the often-overlooked impact of temporal taskification—the process of splitting continuous data streams into discrete tasks—on streaming continual learning (CL) evaluation. By keeping the model and stream fixed while varying temporal split boundaries, the authors demonstrate that different valid taskifications lead to drastically different benchmarking conclusions. The study introduces Boundary-Profile Sensitivity (BPS) as a novel framework to diagnose the structural instability inherent in task partitioning and advocates for treating taskification as a primary variable in future CL research.
 
 ## Key Contributions
 
-- Identified that temporal taskification—partitioning a continuous stream into discrete tasks—acts as a non-neutral structural component that biases continual learning (CL) evaluation conclusions.
-- Introduced a framework to evaluate taskification quality using plasticity/stability profiles and structural distance metrics.
-- Proposed Boundary-Profile Sensitivity (BPS) to quantify benchmark instability, demonstrating that varying split boundaries significantly alters metrics like forecasting error, forgetting, and backward transfer across diverse CL algorithms.
+- Demonstrates that temporal taskification is a first-class evaluation variable that significantly impacts CL metrics such as forecasting error, forgetting, and backward transfer.
+- Introduces Boundary-Profile Sensitivity (BPS) as a diagnostic tool to assess the stability of temporal partitioning schemes prior to model training.
+- Shows that shorter temporal task windows consistently result in higher instability, increased structural distances, and greater susceptibility to perturbation-induced benchmark variation.
 
 ## Open Questions & Future Work
 
-- [[adaptive-robust-taskification-streaming-cl]]
+- [[robust-temporal-taskification-selection]]
 
 ## Key Concepts
 
-- [[boundary-profile-sensitivity-bps]]: A metric diagnosing how strongly small temporal boundary perturbations alter the induced distribution-level patterns before model training.
+- [[boundary-profile-sensitivity-bps]]: A metric that measures how significantly small temporal boundary shifts impact the statistical regime of a continual learning data stream prior to model training.
 
 ## Archivist Review
 
-The paper provides a significant diagnostic framework for understanding evaluation instability in streaming continual learning. BPS is approved as a key concept because it formalizes a new way to quantify sensitivity to preprocessing, and the open question addresses the lack of adaptive methodologies for partitioning. CESNET-Timeseries24 is approved as it is the central dataset used to demonstrate these instability findings.
+The paper successfully identifies a critical, overlooked vulnerability in streaming continual learning benchmarks: the sensitivity of performance conclusions to the choice of temporal task partitioning. I have approved the BPS diagnostic concept as a reusable evaluation metric, the CESNET-Timeseries24 dataset as a specific, non-generic benchmark, and an open question focused on the development of robust taskification strategies. Other candidates were not proposed, and no other concepts or datasets warranted standalone status under the strict scarcity policy.
 
 ### Approved Concepts
-- Boundary-Profile Sensitivity (BPS): It provides a novel, model-agnostic metric to quantify the impact of temporal partitioning choices on streaming continual learning regimes.
+- Boundary-Profile Sensitivity (BPS): BPS provides a model-agnostic metric for evaluating the structural stability of temporal taskification in continual learning, which is a major, previously unquantified, source of benchmarking noise.
 
 ### Approved Open Questions
-- Adaptive and Robust Taskification: This is critical because the current reliance on manual taskification introduces evaluation bias and instability that can undermine the validity of benchmark comparisons across different continual learning methods.
+- Optimal and Robust Taskification: Establishing a methodology for selecting robust taskifications is critical to ensuring that benchmarking conclusions in streaming continual learning are intrinsic to the models being evaluated rather than artifacts of the chosen segmentation.
 
 ## Datasets
 

@@ -19,8 +19,9 @@ paper_source: "arxiv"
 domain: "time-series"
 tags:
   - "forecasting"
-  - "optimization"
-  - "supply-chain"
+  - "supply-chain-optimization"
+  - "hybrid-modeling"
+  - "time-series"
 architectures:
   []
 datasets:
@@ -30,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-25T04:54:32Z"
-created_at: "2026-04-25T04:54:32Z"
+processed_at: "2026-04-26T05:09:16Z"
+created_at: "2026-04-26T05:09:16Z"
 ---
 
 # Hybrid Deep Learning Approach for Coupled Demand Forecasting and Supply Chain Optimization
@@ -42,31 +43,31 @@ created_at: "2026-04-25T04:54:32Z"
 
 ## Summary
 
-This paper addresses the decoupling of demand forecasting and supply chain optimization by introducing a hybrid framework (HAF-DS). HAF-DS utilizes an LSTM architecture for temporal demand modeling and a MILP layer for cost-efficient replenishment and allocation. By jointly training and optimizing these components, the model achieves superior predictive accuracy and significant operational improvements in textile and PPE supply chain management.
+This paper introduces HAF-DS, a hybrid AI framework that integrates LSTM-based demand forecasting with an MILP optimization layer to address supply chain volatility. By jointly optimizing for forecast accuracy and operational efficiency, the framework effectively minimizes replenishment costs and stockouts. Evaluations on textile and PPE supply chain datasets demonstrate that the coupled approach significantly outperforms standard statistical and deep learning baselines in both predictive accuracy and key supply chain performance metrics.
 
 ## Key Contributions
 
-- Proposed HAF-DS, a coupled framework integrating LSTM demand forecasting with MILP-based prescriptive optimization.
-- Achieved a 14.7% reduction in MAE, 12.4% reduction in RMSE, and 14.2% reduction in MAPE compared to existing baselines on textile and PPE supply chain datasets.
-- Demonstrated operational improvements, specifically a 5.4% decrease in inventory costs and a 27.5% reduction in stockouts, highlighting the efficacy of jointly optimizing forecasts and supply chain decisions.
+- Introduces HAF-DS, a hybrid framework that couples LSTM demand forecasting with MILP optimization for supply chain resilience.
+- Demonstrates a 14.7% reduction in MAE and a 12.4% reduction in RMSE compared to baseline models on textile sales datasets.
+- Achieves significant operational improvements including a 27.5% reduction in stockouts and a 2.3% increase in service level.
 
 ## Open Questions & Future Work
 
-- [[robust-forecasting-for-anomalous-demand]]
+- [[robustness-rare-events-supply-chain-optimization]]
 
 ## Key Concepts
 
-- [[haf-ds]]: A coupled framework integrating LSTM-based temporal demand forecasting with MILP-based inventory optimization for supply chain resilience.
+- [[haf-ds]]: A framework that couples LSTM-based demand forecasting with MILP optimization for supply chain replenishment and allocation.
 
 ## Archivist Review
 
-The HAF-DS framework is approved for its representative approach of coupling neural forecasting with classical MILP optimization, a pattern that is technically significant for supply chain management. The open question regarding robust forecasting under demand shocks addresses a critical, non-trivial limitation in current time-series modeling for industrial settings. No datasets were approved as they were described as general domain datasets rather than specific named benchmarks.
+The paper introduces a well-defined hybrid forecasting-optimization framework. I approved HAF-DS as it represents a distinct approach to coupling predictive and prescriptive layers. I also approved the open question regarding robustness to demand shocks, as it captures a critical bottleneck in deploying these models for real-world, high-stakes supply chain scenarios. No datasets were approved as they were not named explicitly enough to constitute a reusable resource.
 
 ### Approved Concepts
-- Hybrid AI Framework for Demand-Supply Forecasting and Optimization (HAF-DS): It introduces an architecture that bridges deep learning-based forecasting with mathematical optimization for supply chain management.
+- HAF-DS: Integrates demand forecasting with supply chain optimization to minimize forecasting error and operational cost jointly.
 
 ### Approved Open Questions
-- Robust Forecasting for Anomalies: This is a significant bottleneck for real-world supply chain reliability where unexpected disruptions are common.
+- Robustness to Demand Shocks: Addressing rare-event robustness and scalability to complex, multi-echelon networks is essential for moving these hybrid frameworks from academic benchmarks to reliable, industrial-scale deployment.
 
 ## Links
 

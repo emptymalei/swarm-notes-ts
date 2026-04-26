@@ -1,7 +1,7 @@
 ---
 created_at: '2026-04-24T05:07:17Z'
 generated_stub: true
-modified_at: '2026-04-25T04:54:04Z'
+modified_at: '2026-04-26T05:08:25Z'
 processed_at: '2026-04-24T05:07:17Z'
 slug: multivariate-hmm-auxiliary-covariates
 source_papers:

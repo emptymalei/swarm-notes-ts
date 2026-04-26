@@ -13,12 +13,9 @@ url: "https://arxiv.org/abs/2604.21698"
 # Custom fields
 paper_id: "2604.21698"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "nlp"
 tags:
-  - "time-series"
-  - "topological-data-analysis"
-  - "eye-tracking"
-  - "dyslexia-detection"
+  []
 architectures:
   []
 datasets:
@@ -28,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   - "copenhagen-corpus"
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-25T04:54:10Z"
-created_at: "2026-04-25T04:54:10Z"
+processed_at: "2026-04-26T05:08:43Z"
+created_at: "2026-04-26T05:08:43Z"
 ---
 
 # Fixation Sequences as Time Series: A Topological Approach to Dyslexia Detection
@@ -40,13 +37,13 @@ created_at: "2026-04-25T04:54:10Z"
 
 ## Summary
 
-This paper presents a topological data analysis approach for detecting dyslexia by interpreting eye-tracking fixation sequences as time series. The authors develop novel filtrations within the persistent homology framework to capture robust, multi-scale structural information from scanpaths. By integrating these topological features into hybrid classification models, the method outperforms traditional statistical baselines on the Copenhagen Corpus. The results suggest that topological features provide significant diagnostic value beyond standard metrics in behavioral time series analysis.
+This paper introduces a topological approach to analyzing eye-tracking data by treating fixation sequences as time series processed through persistent homology. The authors develop novel filtrations to extract stable, multi-scale topological features, which are then integrated into hybrid models alongside traditional statistical measures. Empirical evaluation on the Copenhagen Corpus confirms that these topological features significantly enhance dyslexia detection, outperforming models that rely solely on conventional features.
 
 ## Key Contributions
 
-- Introduces novel topological filtrations specifically designed for analyzing eye-tracking fixation sequences as time series data.
-- Develops hybrid models that integrate topological features with traditional statistical features, improving classification accuracy for dyslexia detection compared to statistical baselines alone.
-- Demonstrates that persistent homology captures complementary, multi-scale information from scanpaths that is otherwise missed by conventional feature engineering.
+- Introduces novel filtrations for time series that outperform existing methods in eye-tracking analysis.
+- Develops hybrid models combining topological features with traditional statistical metrics to improve dyslexia detection performance.
+- Demonstrates that persistent homology captures complementary, robust information from fixation sequences in the Copenhagen Corpus that standard features overlook.
 
 ## Open Questions & Future Work
 
@@ -54,17 +51,21 @@ This paper presents a topological data analysis approach for detecting dyslexia 
 
 ## Key Concepts
 
-- [[persistent-homology-for-eye-tracking-time-series]]: A topological data analysis approach using novel filtrations to extract multi-scale features from eye-tracking fixation sequences for diagnostic classification.
+- [[persistent-homology-for-eye-tracking-time-series]]: A method for representing fixation sequences as time series using persistent homology to extract robust topological features for clinical and diagnostic tasks.
 
 ## Archivist Review
 
-I approved the core topological method for eye-tracking as it offers a novel domain-specific application of persistent homology that is highly reusable for other behavioral time-series tasks. I also approved the open question regarding the interpretability of these topological signatures, as it highlights a fundamental bottleneck in applying complex topological tools to clinical domains. Other candidates were either too broad or served as routine dataset references.
+I have approved the core methodological approach (using persistent homology for eye tracking) and the dataset used for validation. The open question was refined to better fit the vault's standard of addressing substantial bottlenecks in interpretability rather than generic future work. Other candidates were rejected for being overly generic architectural patterns or subcomponents of the approved mechanism.
 
 ### Approved Concepts
-- Persistent Homology for Eye-Tracking Time Series: The paper introduces specific topological filtrations tailored to eye-tracking fixation sequences for classification tasks, moving beyond generic TDA applications.
+- Persistent Homology for Eye Tracking Time Series: Provides a novel, robust way to extract multi-scale features from eye-tracking data for diagnostic tasks.
 
 ### Approved Open Questions
-- Interpretable Topological Dyslexia Features: Translating abstract topological features into clinically or cognitively meaningful insights is essential for the adoption of TDA-based diagnostic tools.
+- Interpreting topological dyslexia features: Bridging the gap between high-level topological representations and lower-level cognitive processes is essential for gaining clinical trust and medical utility in screening tools.
+
+### Rejected Candidates
+- [concept] Hybrid Models for Dyslexia Detection (`hybrid-models-for-dyslexia-detection`) - generic: This is a generic architectural pattern of combining two feature sets rather than a specific, reusable methodological contribution.
+- [concept] Novel Filtrations for Eye Tracking (`novel-filtrations-for-eye-tracking`) - subcomponent_of_broader_mechanism: The specific filtrations are subcomponents of the broader persistent homology framework and are not independently detailed as reusable primitives.
 
 ## Datasets
 

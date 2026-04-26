@@ -1,12 +1,13 @@
 ---
-title: "Hybrid AI Framework for Demand-Supply Forecasting and Optimization (HAF-DS)"
-slug: "haf-ds"
-type: concept
+created_at: '2026-04-25T04:54:32Z'
 generated_stub: true
+modified_at: '2026-04-26T05:09:16Z'
+processed_at: '2026-04-25T04:54:32Z'
+slug: haf-ds
 source_papers:
-  - "[[arxiv-260421567-hybrid-deep-learning-approach-for-coupled-demand-forecasting]]"
-processed_at: "2026-04-25T04:54:32Z"
-created_at: "2026-04-25T04:54:32Z"
+- '[[arxiv-260421567-hybrid-deep-learning-approach-for-coupled-demand-forecasting]]'
+title: Hybrid AI Framework for Demand-Supply Forecasting and Optimization (HAF-DS)
+type: concept
 ---
 
 # Hybrid AI Framework for Demand-Supply Forecasting and Optimization (HAF-DS)

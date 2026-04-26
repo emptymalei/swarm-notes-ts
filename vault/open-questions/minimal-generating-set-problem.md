@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-25T04:54:45Z'
+modified_at: '2026-04-26T05:09:41Z'
 source_papers:
 - '[[arxiv-260421292-large-values-in-time-series-and-additive-combinatorics]]'
-title: Minimal Generating Set Construction
+title: Minimal Generating Set Problem
 ---
 
 **Background:** Additive combinatorics suggests that extreme values in certain signals can be reconstructed from a small set of base values (generators), but algorithms for identifying the optimal set remain heuristic.

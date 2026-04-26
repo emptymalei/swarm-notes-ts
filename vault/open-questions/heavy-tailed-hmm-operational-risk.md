@@ -1,9 +1,9 @@
 ---
 created_at: '2026-04-24T05:07:17Z'
-modified_at: '2026-04-25T04:54:04Z'
+modified_at: '2026-04-26T05:08:25Z'
 source_papers:
 - '[[arxiv-260421734-modeling-dependency-between-operational-risk-losses-and-macr]]'
-title: HMMs for Heavy-Tailed Distributions
+title: Heavy-tailed HMMs for Operational Risk
 ---
 
 **Background:** Hidden Markov Models (HMMs) typically assume Gaussian emission distributions for analytical convenience when modeling operational risk losses. These distributions often fail to capture the heavy-tailed nature of actual loss data, which is characteristic of extreme events in financial risk management.
