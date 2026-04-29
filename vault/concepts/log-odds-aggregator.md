@@ -1,12 +1,13 @@
 ---
-title: "Log-odds Aggregator"
-slug: "log-odds-aggregator"
-type: concept
+created_at: '2026-04-28T05:14:07Z'
 generated_stub: true
+modified_at: '2026-04-29T05:13:38Z'
+processed_at: '2026-04-28T05:14:07Z'
+slug: log-odds-aggregator
 source_papers:
-  - "[[arxiv-260424517-prior-agnostic-robust-forecast-aggregation]]"
-processed_at: "2026-04-28T05:14:07Z"
-created_at: "2026-04-28T05:14:07Z"
+- '[[arxiv-260424517-prior-agnostic-robust-forecast-aggregation]]'
+title: Log-odds Aggregator
+type: concept
 ---
 
 # Log-odds Aggregator

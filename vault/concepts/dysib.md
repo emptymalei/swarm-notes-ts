@@ -1,12 +1,13 @@
 ---
-title: "Dynamical Symmetric Information Bottleneck (DySIB)"
-slug: "dysib"
-type: concept
+created_at: '2026-04-28T05:13:22Z'
 generated_stub: true
+modified_at: '2026-04-29T05:12:59Z'
+processed_at: '2026-04-28T05:13:22Z'
+slug: dysib
 source_papers:
-  - "[[arxiv-260424662-information-bottleneck-for-learning-the-phase-space-of-dynam]]"
-processed_at: "2026-04-28T05:13:22Z"
-created_at: "2026-04-28T05:13:22Z"
+- '[[arxiv-260424662-information-bottleneck-for-learning-the-phase-space-of-dynam]]'
+title: Dynamical Symmetric Information Bottleneck (DySIB)
+type: concept
 ---
 
 # Dynamical Symmetric Information Bottleneck (DySIB)

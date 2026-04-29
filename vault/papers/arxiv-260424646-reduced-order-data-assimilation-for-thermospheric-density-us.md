@@ -13,9 +13,11 @@ url: "https://arxiv.org/abs/2604.24646"
 # Custom fields
 paper_id: "2604.24646"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  []
+  - "physics-informed-machine-learning"
+  - "time-series-forecasting"
+  - "data-assimilation"
 architectures:
   []
 datasets:
@@ -25,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-04-28T05:13:30Z"
-created_at: "2026-04-28T05:13:30Z"
+processed_at: "2026-04-29T05:13:08Z"
+created_at: "2026-04-29T05:13:08Z"
 ---
 
 # Reduced-Order Data Assimilation for Thermospheric Density Using Physics-informed SINDyc Models
@@ -37,33 +39,40 @@ created_at: "2026-04-28T05:13:30Z"
 
 ## Summary
 
-This paper proposes SINDyc-AR, an autoregressive, physics-informed reduced-order modeling framework for thermospheric mass density estimation. By extracting dominant modes from the TIE-GCM, the approach enables computationally efficient modeling of nonlinear atmospheric responses to space weather drivers. The framework is coupled with a Kalman filter to assimilate multi-satellite density observations, significantly reducing estimation error compared to open-loop forecasts during extreme geomagnetic conditions.
+This paper introduces a reduced-order modeling framework for thermospheric density estimation by coupling an autoregressive Sparse Identification of Nonlinear Dynamics with control (SINDy$_c$-AR) model with a Kalman filter. Derived from the TIE-GCM, the model captures complex, non-linear atmospheric responses to solar and geomagnetic forcing while maintaining computational efficiency. By assimilating density data from various satellite missions, the approach improves estimation accuracy over open-loop forecasts, especially during geomagnetic disturbances. The study highlights the trade-offs between physics-informed reduced-order models and empirical benchmarks in out-of-training conditions.
 
 ## Key Contributions
 
-- Introduces SINDyc-AR, a reduced-order model derived from TIE-GCM, enabling efficient atmospheric density estimation while maintaining nonlinear response to solar and geomagnetic forcing.
-- Integrates the SINDyc-AR model with a Kalman filter for real-time assimilation of in situ density observations from multiple satellite constellations.
-- Demonstrates improved density estimation performance over open-loop predictions, particularly during geomagnetic storms and scenarios with sparse satellite coverage.
+- Proposed SINDy$_c$-AR for efficient thermospheric mass density modeling, enabling data assimilation at a fraction of the cost of TIE-GCM.
+- Demonstrated that assimilating in-situ density observations with SINDy$_c$-AR significantly reduces estimation error compared to open-loop predictions, particularly during geomagnetic storms.
+- Compared the proposed physics-informed approach against linear DMDc benchmarks and empirical models (NRLMSIS 2.1, HASDM) across multiple satellite platforms.
 
 ## Open Questions & Future Work
 
-- [[adaptive-covariance-tuning-thermospheric-assimilation]]
-- [[ensemble-filter-extensions-thermospheric-assimilation]]
+- [[adaptive-covariance-tuning-thermospheric-rom]]
+- [[ensemble-based-assimilation-latentspace]]
 
 ## Key Concepts
 
-- [[sindyc-ar]]: An autoregressive extension of the Sparse Identification of Nonlinear Dynamics with control (SINDyc) framework for efficient, physics-informed reduced-order modeling.
+- [[sindyc-ar]]: An autoregressive sparse identification model with control used for efficient reduced-order modeling of high-dimensional physical systems.
 
 ## Archivist Review
 
-The paper's core contribution is the SINDyc-AR framework, which is a reusable architectural pattern for physics-informed reduced-order modeling of dynamical systems. The approved open questions represent significant, well-defined bottlenecks in data assimilation for non-stationary, complex physical systems that extend beyond the immediate scope of thermospheric density estimation. Satellite constellations were rejected as routine observational datasets rather than being central, monolithic benchmarks deserving of individual permanent notes.
+I approved the core method SINDyc-AR as a reusable reduced-order modeling technique and two open questions regarding adaptive covariance tuning and non-linear assimilation methods, which are significant bottlenecks in data-driven physical modeling. Standard satellite datasets were rejected as they are domain-specific evaluation sources rather than novel research benchmarks.
 
 ### Approved Concepts
-- SINDyc-AR: It provides a novel approach to reduced-order modeling for high-dimensional physical systems by integrating autoregressive structures with SINDy control.
+- SINDyc-AR: It is the core model proposed for capturing thermospheric variability at reduced computational cost.
 
 ### Approved Open Questions
-- Adaptive Covariance Tuning: Manual tuning is a bottleneck for operational scalability and accuracy; automated adaptive tuning would allow the filter to better respond to the non-stationary stochastic uncertainty inherent in geomagnetically disturbed conditions.
-- Ensemble Filter Extensions: Replacing linearization-based filters with ensemble-based or sampling-based alternatives can improve performance in highly nonlinear dynamical regimes typical of severe space weather events.
+- Adaptive covariance tuning for ROMs: Manual tuning is suboptimal and labor-intensive; automated adaptive tuning is critical for real-time operational reliability and robustness during extreme events.
+- Ensemble-based latent space assimilation: Moving beyond the EKF linear-first-order approximation is essential to better capture non-Gaussian and nonlinear uncertainties inherent in upper atmospheric dynamics.
+
+### Rejected Candidates
+- [dataset] CHAMP (`CHAMP`) - not_novel: Standard satellite dataset used for model validation rather than a core research contribution.
+- [dataset] GRACE (`GRACE`) - not_novel: Standard satellite dataset used for model validation rather than a core research contribution.
+- [dataset] GRACE-FO (`GRACE-FO`) - not_novel: Standard satellite dataset used for model validation rather than a core research contribution.
+- [dataset] GOCE (`GOCE`) - not_novel: Standard satellite dataset used for model validation rather than a core research contribution.
+- [dataset] Swarm (`Swarm`) - not_novel: Standard satellite dataset used for model validation rather than a core research contribution.
 
 ## Links
 

@@ -1,12 +1,13 @@
 ---
-title: "Energy-Arena"
-slug: "energy-arena"
-type: concept
+created_at: '2026-04-28T05:13:16Z'
 generated_stub: true
+modified_at: '2026-04-29T05:12:53Z'
+processed_at: '2026-04-28T05:13:16Z'
+slug: energy-arena
 source_papers:
-  - "[[arxiv-260424705-energy-arena-a-dynamic-benchmark-for-operational-energy-fore]]"
-processed_at: "2026-04-28T05:13:16Z"
-created_at: "2026-04-28T05:13:16Z"
+- '[[arxiv-260424705-energy-arena-a-dynamic-benchmark-for-operational-energy-fore]]'
+title: Energy-Arena
+type: concept
 ---
 
 # Energy-Arena

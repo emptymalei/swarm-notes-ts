@@ -13,20 +13,25 @@ url: "https://arxiv.org/abs/2604.24507"
 # Custom fields
 paper_id: "2604.24507"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  []
+  - "reinforcement-learning"
+  - "edge-computing"
+  - "distributed-systems"
+  - "energy-efficiency"
+  - "workload-scheduling"
 architectures:
-  []
+  - "dqn"
+  - "lstm"
 datasets:
   []
 concept_slugs:
-  []
+  - "decoffee"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-28T05:14:14Z"
-created_at: "2026-04-28T05:14:14Z"
+processed_at: "2026-04-29T05:13:44Z"
+created_at: "2026-04-29T05:13:44Z"
 ---
 
 # DECOFFEE: Decentralized Reinforcement Learning for Time-critical Workload Offloading and Energy Efficiency across the Computing Continuum
@@ -37,29 +42,31 @@ created_at: "2026-04-28T05:14:14Z"
 
 ## Summary
 
-DECOFFEE is a decentralized multi-agent reinforcement learning framework designed for optimal workload offloading and energy management across the edge-cloud continuum. By formulating the placement problem as parallel Markov Decision Processes, edge nodes autonomously decide between local execution and offloading based on local observations and LSTM-predicted network states. The approach leverages a Double Dueling Deep Q-Network architecture, demonstrating superior performance over heuristic and rule-based baselines in latency-sensitive, resource-constrained environments.
+DECOFFEE is a decentralized multi-agent reinforcement learning framework designed to optimize workload offloading in the Edge-Cloud computing continuum. The system employs a Double Dueling Deep Q-Network combined with LSTM-based forecasting to address the challenges of stochastic load arrivals and heterogeneous network conditions. By formulating placement as parallel Markov Decision Processes, it effectively manages the trade-offs between execution delay, energy consumption, and workload reliability. Simulations confirm that the approach significantly outperforms traditional heuristic and rule-based methods in highly dynamic distributed environments.
 
 ## Key Contributions
 
-- Proposes DECOFFEE, a decentralized multi-agent reinforcement learning framework for joint optimization of delay, energy, and drop rate in computing continuum workloads.
-- Formulates the workload placement problem as parallel Markov Decision Processes solved via Double Dueling Deep Q-Networks.
-- Integrates LSTM-based load forecasting into the agent policy to dynamically adapt to time-varying network and traffic conditions.
+- Introduces DECOFFEE, a decentralized multi-agent reinforcement learning framework for workload offloading across the edge-cloud continuum.
+- Formulates workload placement as parallel Markov Decision Processes, solved via a Double Dueling DQN architecture integrated with LSTM forecasting.
+- Demonstrates consistent performance improvements over rule-based and heuristic baselines in reducing latency, energy consumption, and workload drop rates under dynamic stochastic conditions.
 
 ## Open Questions & Future Work
 
-- [[federated-collaborative-decentralized-rl]]
-- [[heterogeneous-qos-offloading]]
+- [[federated-collaborative-learning-edge-cloud]]
+
+## Key Concepts
+
+- [[decoffee]]: A decentralized reinforcement learning framework for joint optimization of latency, energy, and reliability in edge-cloud computing.
 
 ## Archivist Review
 
-The proposed framework, DECOFFEE, is a system-level implementation that combines standard reinforcement learning techniques (MARL, Double Dueling DQN) with common time-series forecasting (LSTM). As these are well-established components, the paper does not introduce a novel, reusable concept worthy of a standalone note. The two open questions provided are relevant to the ongoing maturation of decentralized RL and QoS management in edge-computing scenarios.
+The paper proposes a specific reinforcement learning framework for distributed resource management. I have approved the framework name as a concept because its design pattern (decentralized multi-agent RL for heterogeneous continuum nodes) is recurring, and I have approved the open question on collaborative learning for the continuum because it addresses the inherent scaling and privacy challenges of such architectures. Other candidates were not proposed.
+
+### Approved Concepts
+- DECOFFEE: Acts as the primary novel framework for decentralized multi-agent workload offloading in edge-cloud continuum environments.
 
 ### Approved Open Questions
-- Federated decentralized learning mechanisms: This addresses the trade-off between decentralized training efficiency and the potential for collective intelligence in distributed reinforcement learning architectures.
-- Support for heterogeneous workloads: This is essential for moving from theoretical workload models to functional deployments that must satisfy diverse user-level SLAs.
-
-### Rejected Candidates
-- [concept] DECOFFEE Framework (`decoffee-framework`) - paper_local: The proposed framework is a paper-specific system architecture that describes a combination of existing methods (MARL, DQN, LSTM) rather than a novel, reusable core concept.
+- Federated Collaborative Continuum Learning: This is a critical bottleneck for deploying large-scale decentralized systems where individual agents need global intelligence but face constraints regarding communication overhead, data privacy, and the complexity of non-stationary environments.
 
 ## Links
 

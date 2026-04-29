@@ -1,5 +1,6 @@
 ---
 created_at: '2026-04-28T05:13:41Z'
+modified_at: '2026-04-29T05:13:16Z'
 source_papers:
 - '[[arxiv-260424645-k-metbench-a-multi-dimensional-benchmark-for-fine-grained-ev]]'
 title: Temporal Visual Reasoning in Meteorology

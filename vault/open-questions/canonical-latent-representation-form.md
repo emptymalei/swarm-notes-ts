@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-28T05:13:22Z'
+modified_at: '2026-04-29T05:12:59Z'
 source_papers:
 - '[[arxiv-260424662-information-bottleneck-for-learning-the-phase-space-of-dynam]]'
-title: Canonical form for latent representations
+title: Canonicalizing Learned Latent Representations
 ---
 
 **Background:** The latent representation learned by dynamical systems modeling methods like DySIB is defined only up to a smooth invertible reparameterization (gauge freedom).

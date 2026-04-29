@@ -18,21 +18,20 @@ paper_id: "2604.24330"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
+  - "time-series-forecasting"
   - "bayesian-inference"
-  - "gravitational-waves"
-  - "real-time-forecasting"
+  - "gravitational-wave-analysis"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  []
+  - "amortized-bayesian-inference-pipeline"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-28T05:14:33Z"
-created_at: "2026-04-28T05:14:33Z"
+processed_at: "2026-04-29T05:14:02Z"
+created_at: "2026-04-29T05:14:02Z"
 ---
 
 # Pre-localization of Massive Black Hole Binaries in the Millihertz Band
@@ -43,27 +42,34 @@ created_at: "2026-04-28T05:14:33Z"
 
 ## Summary
 
-This paper introduces a fast, normalizing flow-based Bayesian inference pipeline for the real-time detection and localization of massive black hole binaries (MBHBs) in space-borne gravitational-wave detectors like TianQin. By leveraging a learned embedding of detector time series combined with a neural spline flow, the pipeline achieves efficient pre-merger parameter estimation and sky localization. The model provides results comparable to classical PTMCMC methods within a one-minute processing window, enabling rapid electromagnetic follow-up for pre-merger events.
+This paper introduces a fast, amortized Bayesian inference pipeline for early-warning analysis of Massive Black Hole Binary (MBHB) signals in space-borne gravitational-wave detectors like TianQin. By combining a learned embedding of the detector time series with a neural spline flow, the method enables rapid source parameter estimation and sky localization. The pipeline significantly reduces computational overhead, achieving comparable accuracy to parallel-tempered Markov chain Monte Carlo (PTMCMC) methods while providing sufficient lead time for electromagnetic follow-up observations.
 
 ## Key Contributions
 
-- Proposes a Normalizing Flow-based inference pipeline using Neural Spline Flows (NSF) for real-time MBHB early-warning parameter estimation.
-- Demonstrates that the proposed pipeline achieves ~20 deg^2 sky localization for events 15 minutes before merger in a TianQin-like configuration.
-- Matches the accuracy and recovery capability of standard Parallel-Tempered Markov Chain Monte Carlo (PTMCMC) methods while reducing inference time to approximately one minute.
+- Developed a normalizing flow-based inference pipeline using neural spline flows to achieve near-real-time parameter estimation for MBHB gravitational-wave signals.
+- Demonstrated the capability to produce sky localizations of ~20 deg^2 roughly 15 minutes before merger for TianQin-like configurations.
+- Validated the pipeline against PTMCMC benchmarks, showing comparable parameter recovery accuracy and uncertainty while reducing computational latency to ~1 minute per event.
 
 ## Open Questions & Future Work
 
-- [[handling-overlapping-gravitational-wave-signals]]
+- [[generalizing-mbhb-inference-pipelines]]
+
+## Key Concepts
+
+- [[amortized-bayesian-inference-pipeline]]: A neural-based pipeline that maps time-series data directly to posterior distributions, enabling near-real-time gravitational wave source characterization.
 
 ## Archivist Review
 
-The paper presents a domain-specific application of normalizing flows for real-time parameter estimation in gravitational-wave astronomy. While the pipeline is effective for its specific use case, it does not introduce a sufficiently novel or generalizable forecasting concept to warrant a permanent vault entry. The open question regarding overlapping signal handling is approved as it addresses a critical scalability bottleneck for high-density time-series monitoring environments.
+I approved the concept of 'amortized Bayesian inference pipeline' as it captures the architectural shift in GW analysis from slow MCMC to neural-based inference. I also approved the open question regarding the generalization of these pipelines to complex astrophysical parameters and noise, as this is a key barrier to deploying these models on real space-based detector streams. Other candidates were either too local to the paper or subcomponents of the approved overarching framework.
+
+### Approved Concepts
+- Amortized Bayesian Inference Pipeline: This represents a shift from iterative sampling (PTMCMC) to amortized neural approaches for gravitational-wave parameter estimation, a pattern likely to recur in low-latency astrophysical forecasting.
 
 ### Approved Open Questions
-- Handling overlapping GW signals: As space-based detectors will observe signals from numerous overlapping sources, developing techniques to perform robust parameter estimation and deblending in high-density data is a fundamental requirement for operational pipeline scalability.
+- Generalizing MBHB Inference Pipelines: This question addresses the gap between idealized simulation-based neural inference and the physical complexity required for operational space-based GW observatories.
 
 ### Rejected Candidates
-- [concept] Normalizing Flow-based inference pipeline (`normalizing-flow-based-inference-pipeline`) - not_novel: Normalizing flows are a well-established generative modeling technique; applying them to gravitational wave inference is a domain-specific application rather than a novel, reusable forecasting concept.
+- [concept] Normalizing Flow-Based Inference Pipeline (`normalising-flow-based-inference-pipeline`) - subcomponent_of_broader_mechanism: This is a subcomponent or specific implementation of the broader amortized Bayesian inference framework.
 
 ## Links
 
