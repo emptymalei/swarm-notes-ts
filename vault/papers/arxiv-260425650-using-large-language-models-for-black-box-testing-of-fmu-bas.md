@@ -18,18 +18,18 @@ paper_id: "2604.25650"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "nlp"
+  []
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  []
+  - "llm-assisted-fmu-testing"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-29T05:11:00Z"
-created_at: "2026-04-29T05:11:00Z"
+processed_at: "2026-04-30T05:15:34Z"
+created_at: "2026-04-30T05:15:34Z"
 ---
 
 # Using Large Language Models for Black-Box Testing of FMU-Based Simulations
@@ -40,27 +40,34 @@ created_at: "2026-04-29T05:11:00Z"
 
 ## Summary
 
-This paper introduces a human-in-the-loop framework for black-box testing of FMU-based simulation models by leveraging Large Language Models (LLMs). The system generates structured test scenarios—expressed as Given-When-Then goals—from FMU interface specifications, subsequently translating them into executable input time-series and assertion oracles. By automating scenario design and providing interpretable diagnostic reports, the approach streamlines the verification process for dynamic simulations. The effectiveness of this methodology is empirically validated using a Lube Oil Cooling system case study.
+This paper introduces a framework that utilizes Large Language Models to automate the black-box testing of Functional Mock-up Units (FMUs) in dynamic simulations. By ingesting interface specifications, the LLM generates structured Given-When-Then scenario goals and corresponding assertion oracles. The system executes these scenarios against the FMU, validates outputs, and produces comprehensive logs and visual statistics to improve test interpretability. The approach is validated on a Lube Oil Cooling system, demonstrating its potential to reduce manual test design efforts for dynamic models.
 
 ## Key Contributions
 
-- Proposes an LLM-based black-box testing framework for Functional Mock-up Units (FMUs) that automates the generation of test scenarios from functional specifications.
-- Implements a translation pipeline that converts LLM-generated Given-When-Then scenarios into concrete input time-series and assertion oracles for simulation verification.
-- Demonstrates utility on a Lube Oil Cooling system, showing reduced manual effort in defining test scenarios and improved interpretability through automated visualization and logging.
+- Develops a human-in-the-loop framework for generating test scenarios for Functional Mock-up Units (FMUs) using Large Language Models.
+- Automates the generation of Given-When-Then structured scenario goals and assertion oracles from functional interface specifications.
+- Demonstrates the practicality of the approach through testing a Lube Oil Cooling system, providing human-readable logs and performance metrics for verification.
 
 ## Open Questions & Future Work
 
-- [[adaptive-oracle-calibration]]
+- [[adaptive-oracle-calibration-dynamic-simulation]]
+
+## Key Concepts
+
+- [[llm-assisted-fmu-testing]]: A framework that uses LLMs to translate interface specifications of functional mock-up units into structured test scenarios and assertion oracles.
 
 ## Archivist Review
 
-The paper proposes a specific application of LLMs for software testing of simulations (FMUs). While the practical framework is well-described, it does not introduce a novel forecasting, representation, or calibration concept that would recur as a standard method in time-series research, so the framework itself was rejected. The open question regarding the adaptive calibration of qualitative oracles in simulation testing is highly relevant to ensuring reliability in automated temporal verification and was approved.
+I have approved the concept for LLM-assisted FMU testing as it represents a novel and reusable framework for simulation-based verification. I also approved the open question regarding adaptive oracle calibration, as it identifies a substantive research bottleneck in automated software testing for dynamic systems. Other candidates were rejected based on the requirement that only standalone, reusable contributions be admitted to the vault.
+
+### Approved Concepts
+- LLM-assisted FMU testing: Introduces a paradigm for automating the generation of test scenarios and oracles for black-box dynamic system simulations, which is a significant challenge in cyber-physical verification.
 
 ### Approved Open Questions
-- Adaptive Calibration of Testing Oracles: Crucial for ensuring the reliability and trustworthiness of automated testing, as improperly configured oracles lead to inaccurate test verdicts.
+- Adaptive Oracle Calibration: This is a fundamental bottleneck in automated black-box testing; without reliable automated calibration, the approach remains dependent on intensive expert tuning, limiting scalability and trustworthiness.
 
 ### Rejected Candidates
-- [concept] LLM-based FMU Testing Framework (`llm-based-fmu-testing-framework`) - paper_local: This is a paper-local application of LLMs to a specific testing task rather than a reusable forecasting mechanism or temporal representation.
+- [dataset] Lube Oil Cooling system (`lube-oil-cooling-system`) - paper_local: This is a single case study application rather than a reusable benchmark dataset.
 
 ## Links
 

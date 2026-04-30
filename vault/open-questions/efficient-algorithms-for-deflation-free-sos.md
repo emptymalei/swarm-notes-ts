@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-29T05:10:54Z'
+modified_at: '2026-04-30T05:15:28Z'
 source_papers:
 - '[[arxiv-260425664-deflation-free-optimal-scoring]]'
-title: Efficient Algorithms for DFSOS
+title: Efficient algorithms for DFSOS
 ---
 
 **Background:** Sparse discriminant analysis is commonly performed using deflation-based methods that compute discriminant vectors sequentially, which can propagate numerical and statistical errors. While deflation-free approaches have been developed to jointly estimate discriminant vectors under a global orthogonality constraint, existing heuristics for these constrained optimization problems remain computationally demanding.

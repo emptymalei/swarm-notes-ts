@@ -1,12 +1,13 @@
 ---
-title: "EvoTSC"
-slug: "evotsc"
-type: concept
+created_at: '2026-04-29T05:11:16Z'
 generated_stub: true
+modified_at: '2026-04-30T05:15:50Z'
+processed_at: '2026-04-29T05:11:16Z'
+slug: evotsc
 source_papers:
-  - "[[arxiv-260425499-evotsc-evolving-feature-learning-models-for-time-series-clas]]"
-processed_at: "2026-04-29T05:11:16Z"
-created_at: "2026-04-29T05:11:16Z"
+- '[[arxiv-260425499-evotsc-evolving-feature-learning-models-for-time-series-clas]]'
+title: EvoTSC
+type: concept
 ---
 
 # EvoTSC
