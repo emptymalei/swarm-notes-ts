@@ -1,8 +1,9 @@
 ---
 created_at: '2026-04-30T05:13:11Z'
+modified_at: '2026-05-01T05:24:58Z'
 source_papers:
 - '[[arxiv-260426637-atlas-an-annotation-tool-for-long-horizon-robotic-action-seg]]'
-title: Optimizing Multimodal Annotation Efficiency
+title: Multimodal Annotation Cognitive Load
 ---
 
 **Background:** The integration of multi-modal robotic sensory data (e.g., force/torque, proprioception) in annotation tools improves temporal precision but complicates user interaction.

@@ -20,12 +20,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "control-oriented-induced-seismicity-mitigation"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-04-30T05:12:49Z"
-created_at: "2026-04-30T05:12:49Z"
+processed_at: "2026-05-01T05:24:33Z"
+created_at: "2026-05-01T05:24:33Z"
 ---
 
 # A Control Framework for Induced Seismicity Mitigation in Groningen Gas Reservoir
@@ -36,28 +36,31 @@ created_at: "2026-04-30T05:12:49Z"
 
 ## Summary
 
-This paper addresses the inverse problem of managing gas field operations to mitigate induced seismicity without sacrificing production goals. The authors develop a framework that couples pore-pressure diffusion models with seismicity rate dynamics and a stochastic event-generation procedure to create synthetic earthquake catalogs. A robust feedback controller then uses these estimates to compute optimal, constrained well-rate commands, effectively regulating seismic activity while maintaining production targets. The framework is validated against data from the Groningen gas reservoir and demonstrates efficacy across various operational scenarios.
+This paper presents a control-theoretic framework for managing gas extraction in the Groningen reservoir to minimize induced seismicity while meeting production targets. The methodology employs a cascaded physical model linking pore-pressure diffusion to seismicity rate dynamics, augmented by a stochastic process for synthetic earthquake event generation. A robust feedback controller is then implemented to dynamically adjust production rates, accounting for operational constraints and actuator saturation. Experiments validate the effectiveness of this approach in regulating seismic activity under various operational and injection-reinjection scenarios.
 
 ## Key Contributions
 
-- Introduces a control-oriented methodology for gas production management that minimizes induced seismicity while meeting production quotas.
-- Integrates a cascade model of pore-pressure diffusion with seismicity rate (SR) dynamics and a stochastic event-generation procedure for earthquake catalogs.
-- Designs a robust feedback controller capable of regulating seismic rates via well-rate commands while accounting for actuator saturation (flux limits) and discrete-time updates.
+- Proposed a control-oriented methodology for managing gas reservoir production under induced-seismicity constraints using a cascaded pore-pressure and seismicity rate model.
+- Developed a stochastic event-generation procedure that maps continuous seismicity rate dynamics into discrete earthquake catalogs for robust controller feedback.
+- Demonstrated that the proposed robust feedback controller successfully balances production maximization with seismicity reduction while respecting actuator saturation limits.
 
 ## Open Questions & Future Work
 
-- [[seismicity-rate-estimation-challenges-from-discrete-data]]
+- [[estimation-of-unobservable-seismicity-rate]]
+
+## Key Concepts
+
+- [[control-oriented-induced-seismicity-mitigation]]: A control-theoretic approach to optimizing gas extraction rates while regulating seismic dynamics under induced seismicity constraints.
 
 ## Archivist Review
 
-The paper provides a domain-specific engineering framework for seismic control rather than a general-purpose machine learning or time-series forecasting advancement. I have approved the open question regarding the estimation of latent seismicity rates, as this represents a fundamental bottleneck in the application of state-space or control-based approaches to stochastic point processes in temporal domains.
+The paper proposes a novel framework for controlling industrial fluid extraction to mitigate seismicity. The concepts and open questions were selected based on their relevance to feedback control in complex physical time-series systems where the control variable is a latent construct derived from discrete event data. Other candidates were rejected as being overly tied to the specific Groningen reservoir implementation or generic research steps.
+
+### Approved Concepts
+- Control-oriented induced seismicity mitigation: Provides a foundational methodology for bridging physical reservoir modeling with industrial production control to mitigate environmental hazards.
 
 ### Approved Open Questions
-- Unobservable Seismicity Rate Estimation: Effective closed-loop control of seismic risks requires a reliable, real-time estimate of the state variable (seismicity rate). Without an accurate estimation method, feedback controllers cannot be effectively tuned or deployed in industrial settings.
-
-### Rejected Candidates
-- [concept] Control-Oriented Seismicity Mitigation Framework (`control-oriented-seismicity-mitigation-framework`) - not_reusable: This is a specific application of control theory rather than a general-purpose, reusable forecasting or ML concept.
-- [concept] Pore-Pressure Seismicity Cascade Model (`pore-pressure-seismicity-cascade-model`) - not_reusable: This is a domain-specific physical model rather than a general-purpose ML concept or forecasting mechanism.
+- Estimating Unobservable Seismicity Rate: This represents a fundamental bottleneck for implementing feedback control systems in seismic mitigation, as the control law requires accurate feedback of the system's latent state.
 
 ## Links
 

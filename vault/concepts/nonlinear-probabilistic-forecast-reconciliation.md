@@ -1,12 +1,13 @@
 ---
-title: "Nonlinear Probabilistic Forecast Reconciliation"
-slug: "nonlinear-probabilistic-forecast-reconciliation"
-type: concept
+created_at: '2026-04-30T05:13:05Z'
 generated_stub: true
+modified_at: '2026-05-01T05:24:52Z'
+processed_at: '2026-04-30T05:13:05Z'
+slug: nonlinear-probabilistic-forecast-reconciliation
 source_papers:
-  - "[[arxiv-260426668-nonlinear-probabilistic-forecast-reconciliation]]"
-processed_at: "2026-04-30T05:13:05Z"
-created_at: "2026-04-30T05:13:05Z"
+- '[[arxiv-260426668-nonlinear-probabilistic-forecast-reconciliation]]'
+title: Nonlinear Probabilistic Forecast Reconciliation
+type: concept
 ---
 
 # Nonlinear Probabilistic Forecast Reconciliation

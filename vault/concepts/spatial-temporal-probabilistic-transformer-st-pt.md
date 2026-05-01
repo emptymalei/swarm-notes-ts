@@ -1,12 +1,13 @@
 ---
-title: "Spatial-Temporal Probabilistic Transformer (ST-PT)"
-slug: "spatial-temporal-probabilistic-transformer-st-pt"
-type: concept
+created_at: '2026-04-30T05:12:58Z'
 generated_stub: true
+modified_at: '2026-05-01T05:24:44Z'
+processed_at: '2026-04-30T05:12:58Z'
+slug: spatial-temporal-probabilistic-transformer-st-pt
 source_papers:
-  - "[[arxiv-260426762-exploring-the-potential-of-probabilistic-transformer-for-tim]]"
-processed_at: "2026-04-30T05:12:58Z"
-created_at: "2026-04-30T05:12:58Z"
+- '[[arxiv-260426762-exploring-the-potential-of-probabilistic-transformer-for-tim]]'
+title: Spatial-Temporal Probabilistic Transformer (ST-PT)
+type: concept
 ---
 
 # Spatial-Temporal Probabilistic Transformer (ST-PT)
