@@ -1,12 +1,13 @@
 ---
-title: "Any-Subset Autoregression (ABC)"
-slug: "any-subset-autoregression-abc"
-type: concept
+created_at: '2026-05-01T05:23:29Z'
 generated_stub: true
+modified_at: '2026-05-02T05:08:35Z'
+processed_at: '2026-05-01T05:23:29Z'
+slug: any-subset-autoregression-abc
 source_papers:
-  - "[[arxiv-260427443-abc-any-subset-autoregression-via-non-markovian-diffusion-br]]"
-processed_at: "2026-05-01T05:23:29Z"
-created_at: "2026-05-01T05:23:29Z"
+- '[[arxiv-260427443-abc-any-subset-autoregression-via-non-markovian-diffusion-br]]'
+title: Any-Subset Autoregression (ABC)
+type: concept
 ---
 
 # Any-Subset Autoregression (ABC)

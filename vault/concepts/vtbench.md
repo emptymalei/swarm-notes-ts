@@ -1,12 +1,13 @@
 ---
-title: "VTBench"
-slug: "vtbench"
-type: concept
+created_at: '2026-05-01T05:23:49Z'
 generated_stub: true
+modified_at: '2026-05-02T05:08:53Z'
+processed_at: '2026-05-01T05:23:49Z'
+slug: vtbench
 source_papers:
-  - "[[arxiv-260427259-vtbench-a-multimodal-framework-for-time-series-classificatio]]"
-processed_at: "2026-05-01T05:23:49Z"
-created_at: "2026-05-01T05:23:49Z"
+- '[[arxiv-260427259-vtbench-a-multimodal-framework-for-time-series-classificatio]]'
+title: VTBench
+type: concept
 ---
 
 # VTBench

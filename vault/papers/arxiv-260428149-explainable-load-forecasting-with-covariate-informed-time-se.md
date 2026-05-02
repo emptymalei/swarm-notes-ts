@@ -28,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:21:56Z"
-created_at: "2026-05-01T05:21:56Z"
+processed_at: "2026-05-02T05:07:18Z"
+created_at: "2026-05-02T05:07:18Z"
 ---
 
 # Explainable Load Forecasting with Covariate-Informed Time Series Foundation Models
@@ -40,29 +40,26 @@ created_at: "2026-05-01T05:21:56Z"
 
 ## Summary
 
-This paper addresses the interpretability challenge of applying Time Series Foundation Models (TSFMs) in critical energy infrastructure by introducing an efficient SHAP-based explanation algorithm. The approach exploits the flexible input-context capabilities of TSFMs to perform targeted temporal and covariate masking, enabling scalable feature attribution. Experiments on day-ahead transmission system operator (TSO) load forecasting show that Chronos-2 and TabPFN-TS perform competitively against specialized models while providing explanations consistent with domain-specific expectations. The findings suggest that TSFMs can reliably integrate into operational forecasting workflows when paired with transparent explanation mechanisms.
+This paper addresses the interpretability challenge of Time Series Foundation Models (TSFMs) in critical energy infrastructure. By exploiting the inherent flexibility of TSFMs to handle variable input contexts and covariates, the authors introduce a scalable SHAP-based explanation method via temporal and covariate masking. Experiments on day-ahead transmission system operator load forecasting show that Chronos-2 and TabPFN-TS provide competitive zero-shot performance and physically meaningful explanations that align with domain expertise.
 
 ## Key Contributions
 
-- Proposes a computationally efficient Shapley Additive Explanations (SHAP) algorithm specifically designed for Time Series Foundation Models (TSFMs).
-- Demonstrates that Chronos-2 and TabPFN-TS in a zero-shot setting achieve predictive performance matching domain-specific trained Transformers on TSO load forecasting.
-- Validates that TSFM-generated SHAP explanations align with established energy domain knowledge by confirming the model's reliance on relevant weather and calendar covariates.
+- Proposes an efficient SHAP-based explanation algorithm for Time Series Foundation Models (TSFMs) by leveraging their context length flexibility.
+- Demonstrates that TSFMs (Chronos-2 and TabPFN-TS) achieve zero-shot predictive performance competitive with task-specific Transformer models in load forecasting.
+- Validates that TSFMs appropriately utilize weather and calendar covariates, aligning model explanations with established energy domain knowledge.
 
 ## Open Questions & Future Work
 
-- [[efficient-shap-estimation-for-tsfms]]
-- [[explaining-probabilistic-tsfm-forecasts]]
+- [[efficient-shap-tsfm-grouping]]
+- [[explaining-probabilistic-forecasts]]
 
 ## Archivist Review
 
-The review focused on identifying core challenges in the explainability of time series foundation models. The two approved open questions capture substantial bottlenecks in computational scalability and the extension of explainability to probabilistic forecasts, which are critical for the deployment of TSFMs in real-world infrastructure. The proposed masking technique was rejected as a concept because it is an implementation detail of the SHAP explanation workflow rather than a standalone theoretical contribution.
+I have approved the two open questions as they address critical bottlenecks in scaling model interpretability and reliability for high-stakes operational environments. I rejected the concept proposal for the SHAP-masking method as it is a specific application of existing explainability techniques (SHAP) rather than a novel conceptual framework that warrants a permanent vault entry. No new datasets were approved as the paper utilizes existing public models and established load forecasting tasks.
 
 ### Approved Open Questions
-- Efficient SHAP Estimation for TSFMs: This addresses a primary bottleneck in making foundation models transparent for operational energy forecasting where feature sets are often large and diverse.
-- Explaining Probabilistic TSFM Forecasts: Transparency in uncertainty is a fundamental requirement for the integration of AI models into grid operations and other risk-sensitive systems.
-
-### Rejected Candidates
-- [concept] Temporal and Covariate Masking Explanation Mechanism (`temporal-and-covariate-masking-explanation-mechanism`) - subcomponent_of_broader_mechanism: This is an application-specific heuristic for implementing SHAP rather than a standalone, reusable architectural concept or theoretical mechanism.
+- Scalable SHAP for TSFMs: As TSFMs become more complex and the number of input covariates increases, the current exhaustive evaluation approach becomes a bottleneck for real-time or scalable model interpretability in operational environments. Developing sub-sampling or approximation strategies is essential for the practical deployment of these explainability methods.
+- Explaining Probabilistic Load Forecasts: Understanding not just the 'why' of a prediction, but also the 'why' behind the uncertainty, is vital for high-stakes infrastructure applications where safety margins and risk management are paramount. Point-forecast explanations alone may lead to overconfidence in model reliability.
 
 ## Links
 

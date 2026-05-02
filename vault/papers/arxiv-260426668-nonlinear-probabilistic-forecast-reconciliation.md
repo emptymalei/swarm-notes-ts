@@ -26,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:24:52Z"
-created_at: "2026-05-01T05:24:52Z"
+processed_at: "2026-05-02T05:11:56Z"
+created_at: "2026-05-02T05:11:56Z"
 ---
 
 # Nonlinear Probabilistic Forecast Reconciliation
@@ -38,33 +38,33 @@ created_at: "2026-05-01T05:24:52Z"
 
 ## Summary
 
-This paper addresses the gap in probabilistic forecast reconciliation by introducing methodologies for handling nonlinear constraints. The authors extend both projection and conditioning techniques to ensure reconciled forecasts satisfy non-linear coherence requirements. Empirical evaluations demonstrate that both approaches enhance forecast accuracy, with the proposed UKF-based conditioning method offering a significant advantage in both performance and computational efficiency.
+This paper addresses the challenge of reconciling probabilistic forecasts when variables must satisfy nonlinear constraints, a significant limitation of existing linear reconciliation methods. The authors propose two novel strategies: a projection approach that maps forecast samples to the nonlinear manifold, and a conditioning approach leveraging an Unscented Kalman Filter (UKF) algorithm. Empirical evaluations indicate that both methods effectively improve forecast accuracy, with the UKF-based conditioning approach providing a more scalable and performant solution.
 
 ## Key Contributions
 
-- Introduces the first comprehensive framework for probabilistic forecast reconciliation subject to nonlinear constraints.
-- Extends projection-based reconciliation by mapping samples directly onto nonlinear coherent manifolds.
-- Develops a conditioning-based reconciliation method utilizing an Unscented Kalman Filter (UKF) sampler, achieving superior accuracy and speed compared to projection methods.
+- Introduces a novel framework for probabilistic forecast reconciliation subject to nonlinear constraints, covering both projection and conditioning methods.
+- Adapts the Unscented Kalman Filter (UKF) as a conditioning approach for non-linear forecast reconciliation, providing a computationally efficient alternative to sample-based projection.
+- Demonstrates that both proposed reconciliation approaches improve accuracy across synthetic and real-world datasets, with the UKF-based method offering superior speed and performance.
 
 ## Open Questions & Future Work
 
-- [[non-gaussian-nonlinear-reconciliation]]
 - [[geodesic-evaluation-nonlinear-reconciliation]]
+- [[nonlinear-reconciliation-non-gaussian]]
 
 ## Key Concepts
 
-- [[nonlinear-probabilistic-forecast-reconciliation]]: A framework for adjusting independently generated probabilistic forecasts to satisfy nonlinear coherence constraints via projection or UKF-inspired conditioning.
+- [[nonlinear-probabilistic-forecast-reconciliation]]: A framework to ensure probabilistic forecast coherence when variables are related through nonlinear constraints.
 
 ## Archivist Review
 
-I have approved the concept of 'Nonlinear Probabilistic Forecast Reconciliation' as it introduces a critical methodological advancement in time-series forecasting. I also approved two open questions that specifically highlight theoretical limitations in distribution assumptions (Non-Gaussianity) and evaluation geometry (Geodesic metrics), which are substantial bottlenecks in the field. No datasets were approved as none were central to the paper's primary methodological contribution.
+I have approved the core conceptual framework for nonlinear forecast reconciliation as it introduces a new and important domain for time series forecasting. I have also approved two open questions that specifically identify theoretical bottlenecks—the limitations of Euclidean scoring rules on manifolds and the Gaussian constraints of current UKF-based reconciliation. No datasets were approved as none provided sufficient evidence of being novel or reusable benchmarks in the context of this specific paper.
 
 ### Approved Concepts
-- Nonlinear Probabilistic Forecast Reconciliation: This provides the fundamental framework for moving beyond linear constraints in hierarchical forecasting, a common requirement in physical and industrial time-series systems.
+- Nonlinear Probabilistic Forecast Reconciliation: Establishes a novel framework for handling nonlinear constraints in probabilistic forecasting, overcoming the limitations of standard linear reconciliation methods.
 
 ### Approved Open Questions
-- Non-Gaussian Nonlinear Reconciliation Methods: Many real-world time series, such as those representing counts or intermittent data, do not follow Gaussian distributions, limiting the applicability of the currently proposed UKF-based reconciliation methods.
-- Geodesic-based Evaluation for Reconciliation: Existing metrics are scale-dependent or Euclidean-based, which may not correctly capture the performance of models constrained by nonlinear relationships, potentially leading to inaccurate model assessment.
+- Geodesic evaluation nonlinear reconciliation: Current metrics like CRPS or Energy Scores are rooted in Euclidean space and may not accurately reflect performance on non-linear coherent manifolds.
+- Non-Gaussian nonlinear reconciliation: The reliance on Gaussianity in UKF-based reconciliation prevents the application of this efficient framework to common real-world data types like intermittent or discrete time series.
 
 ## Links
 

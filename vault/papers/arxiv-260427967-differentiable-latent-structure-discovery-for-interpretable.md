@@ -17,10 +17,7 @@ paper_id: "2604.27967"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "healthcare"
-  - "interpretability"
-  - "uncertainty-estimation"
+  []
 architectures:
   []
 datasets:
@@ -32,8 +29,8 @@ dataset_slugs:
   - "mimic-iv"
   - "physionet-challenge"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:22:16Z"
-created_at: "2026-05-01T05:22:16Z"
+processed_at: "2026-05-02T05:07:35Z"
+created_at: "2026-05-02T05:07:35Z"
 ---
 
 # Differentiable latent structure discovery for interpretable forecasting in clinical time series
@@ -44,31 +41,36 @@ created_at: "2026-05-01T05:22:16Z"
 
 ## Summary
 
-StructGP is a continuous-time multi-task Gaussian process model designed for forecasting irregular clinical time series while maintaining interpretability and uncertainty calibration. By coupling process convolutions with differentiable DAG structure learning, the model recovers interpretable inter-variable dependencies. The LP-StructGP variant further enhances predictive performance by incorporating latent pathways to model cross-patient progression patterns. Experiments on MIMIC-IV and PhysioNet datasets demonstrate that these models improve forecasting accuracy and calibration compared to unstructured and graph-based baselines.
+StructGP is a continuous-time multi-task Gaussian process model designed for forecasting irregular clinical time series while maintaining interpretability and uncertainty estimation. By learning sparse, ordered DAGs of dependencies, the model effectively captures variable interactions without resorting to standard grid-based imputation. The extended LP-StructGP variant further incorporates latent pathways to model shared cross-patient progression patterns, providing a scalable and highly calibrated solution validated on the MIMIC-IV and PhysioNet Challenge datasets.
 
 ## Key Contributions
 
-- Introduced StructGP, a continuous-time multi-task Gaussian process that enables interpretable, sparse DAG structure learning on irregular EHR data.
-- Proposed LP-StructGP, which uses latent pathways and subject-specific coupling filters to capture complex cross-patient progression patterns.
-- StructGP achieves a 6h forecasting RMSE of 0.68 on the MIMIC-IV septic shock cohort, significantly outperforming independent-task and unstructured baselines.
+- Introduces StructGP, a continuous-time multi-task Gaussian process that combines process convolutions with differentiable DAG structure learning.
+- Proposes LP-StructGP, which uses latent pathways and subject-specific coupling filters to model complex cross-patient progression patterns.
+- Demonstrates significant performance gains and superior uncertainty calibration over unstructured baseline kernels on the MIMIC-IV septic shock cohort.
 
 ## Open Questions & Future Work
 
-- [[non-gaussian-clinical-likelihoods]]
+- [[scalability-of-gp-models-in-clinical-settings]]
+- [[non-gaussian-likelihoods-clinical-time-series]]
 
 ## Key Concepts
 
-- [[structgp]]: A continuous-time multi-task Gaussian process framework for discovering sparse, ordered DAGs of inter-variable dependencies in irregular time series.
+- [[structgp]]: A continuous-time multi-task Gaussian process that learns inter-variable DAG dependencies through differentiable structure learning.
 
 ## Archivist Review
 
-I approved the core StructGP framework and the specific open problem of non-Gaussian likelihoods for clinical time-series, as these provide the most value for future longitudinal forecasting research. I rejected LP-StructGP as a standalone concept because it is a subcomponent extension of the primary StructGP model, and I rejected the latent pathway scalability question as it is primarily a localized performance concern rather than a fundamental scientific bottleneck. The datasets MIMIC-IV and PhysioNet Challenge are accepted as they are industry-standard benchmarks in the healthcare forecasting domain.
+The paper introduces a novel approach to combining structure learning with Gaussian process convolutions. I approved the core framework (StructGP) and two open questions regarding the scalability and likelihood flexibility of these models. The variant 'LP-StructGP' was rejected as it is a specific extension of the overarching StructGP framework. MIMIC-IV and PhysioNet Challenge were approved as they are standard, central datasets in the clinical time-series forecasting literature.
 
 ### Approved Concepts
-- StructGP: It introduces a novel framework for learning interpretable, sparse DAG dependencies within a continuous-time Gaussian process for irregular time series.
+- StructGP: Provides a novel framework for combining differentiable DAG structure learning with Gaussian process convolutions to maintain uncertainty estimation in time-series forecasting.
 
 ### Approved Open Questions
-- Non-Gaussian likelihoods for clinical series: Expanding the likelihood framework is critical for clinical utility, as clinical EHR data is inherently multimodal and rarely strictly Gaussian.
+- Scalability of GP Clinical Models: Scalability is a primary bottleneck for adopting principled, uncertainty-aware GP models in large-scale settings, which often forces a trade-off between statistical rigor and computational feasibility.
+- Non-Gaussian Clinical Likelihoods: Clinical data is rarely purely Gaussian; bridging this gap is essential for building models that can handle the complex, real-world constraints of intensive care unit data.
+
+### Rejected Candidates
+- [concept] LP-StructGP (`lp-structgp`) - subcomponent_of_broader_mechanism: This is a sub-module or specific variant of the broader StructGP framework, which is already being approved as the primary contribution.
 
 ## Datasets
 

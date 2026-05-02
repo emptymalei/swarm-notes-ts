@@ -1,9 +1,9 @@
 ---
 created_at: '2026-04-30T05:13:11Z'
-modified_at: '2026-05-01T05:24:58Z'
+modified_at: '2026-05-02T05:12:01Z'
 source_papers:
 - '[[arxiv-260426637-atlas-an-annotation-tool-for-long-horizon-robotic-action-seg]]'
-title: Multimodal Annotation Cognitive Load
+title: Cognitive Load in Multimodal Annotation
 ---
 
 **Background:** The integration of multi-modal robotic sensory data (e.g., force/torque, proprioception) in annotation tools improves temporal precision but complicates user interaction.

@@ -1,12 +1,13 @@
 ---
-title: "Quaternionic Kinematic Chain Representation"
-slug: "quaternionic-kinematic-chain-representation"
-type: concept
+created_at: '2026-05-01T05:21:43Z'
 generated_stub: true
+modified_at: '2026-05-02T05:07:05Z'
+processed_at: '2026-05-01T05:21:43Z'
+slug: quaternionic-kinematic-chain-representation
 source_papers:
-  - "[[arxiv-260428161-ropedreamer-a-kinematic-recurrent-state-space-model-for-dyna]]"
-processed_at: "2026-05-01T05:21:43Z"
-created_at: "2026-05-01T05:21:43Z"
+- '[[arxiv-260428161-ropedreamer-a-kinematic-recurrent-state-space-model-for-dyna]]'
+title: Quaternionic Kinematic Chain Representation
+type: concept
 ---
 
 # Quaternionic Kinematic Chain Representation

@@ -13,7 +13,7 @@ url: "https://arxiv.org/abs/2604.26637"
 # Custom fields
 paper_id: "2604.26637"
 paper_source: "arxiv"
-domain: "computer-vision"
+domain: "robotics"
 tags:
   []
 architectures:
@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   - "reassemble"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:24:58Z"
-created_at: "2026-05-01T05:24:58Z"
+processed_at: "2026-05-02T05:12:01Z"
+created_at: "2026-05-02T05:12:01Z"
 ---
 
 # ATLAS: An Annotation Tool for Long-horizon Robotic Action Segmentation
@@ -37,13 +37,13 @@ created_at: "2026-05-01T05:24:58Z"
 
 ## Summary
 
-ATLAS is a specialized annotation tool designed to streamline the labeling of long-horizon robotic demonstrations by integrating multi-view video with synchronized proprioceptive time-series data. The tool features a modular architecture that natively supports standard robotics formats like ROS bags and RLDS, facilitating easier integration into diverse research pipelines. By leveraging a keyboard-centric interface and multi-modal visualization, ATLAS significantly reduces annotation effort while substantially improving temporal boundary precision in complex, contact-rich assembly tasks.
+ATLAS is a specialized annotation tool designed to address the challenges of labeling long-horizon robotic demonstrations by integrating multi-view video with time-synchronized proprioceptive signals. Unlike traditional vision-only tools, it supports native import of robotics-standard formats like ROS bags and RLDS, facilitating efficient segmentation of complex tasks. The tool features a modular architecture for extensibility and a keyboard-centric interface, resulting in significant improvements in both annotation speed and temporal boundary precision for contact-rich assembly tasks.
 
 ## Key Contributions
 
-- Introduces ATLAS, a modular, keyboard-centric tool for synchronizing and annotating multi-modal robotic data.
-- Reduces average per-action annotation time by at least 6% compared to existing ELAN tools.
-- Improves temporal alignment by 2.8% and reduces boundary error fivefold by incorporating time-series signals over vision-only approaches.
+- Introduced ATLAS, a modular, multi-modal annotation tool designed for long-horizon robotic action segmentation.
+- Enabled native integration and synchronized visualization of multi-view video and proprioceptive robotic signals (ROS bags, RLDS).
+- Demonstrated 6% faster annotation and a fivefold reduction in boundary error on contact-rich assembly tasks compared to vision-only approaches.
 
 ## Open Questions & Future Work
 
@@ -51,17 +51,17 @@ ATLAS is a specialized annotation tool designed to streamline the labeling of lo
 
 ## Key Concepts
 
-- [[atlas-annotation-tool]]: A modular, keyboard-centric annotation tool designed for long-horizon robotic action segmentation using synchronized multi-modal data.
+- [[atlas-annotation-tool]]: A modular annotation tool for long-horizon robotic demonstrations that enables time-synchronized visualization of multi-view video and proprioceptive time-series signals.
 
 ## Archivist Review
 
-I have approved the ATLAS annotation tool and the associated open question regarding the cognitive load of multimodal annotation. These entries address critical bottlenecks in human-in-the-loop data labeling for long-horizon robotic tasks. The REASSEMBLE dataset is also approved as a key reference for robotic assembly benchmarks.
+I have approved the ATLAS annotation tool and the associated REASSEMBLE dataset, as they represent a notable contribution to the robotics data pipeline. I also approved the open question regarding the cognitive load of multi-modal annotation, as it identifies a substantive research bottleneck in high-quality data generation for robot learning. The selection was made to capture these specific, reusable tools and research questions rather than transient experimental results.
 
 ### Approved Concepts
-- ATLAS (Annotation Tool): Provides a specialized, modular solution for annotating multi-modal robotic data (video + proprioception) which addresses current bottlenecks in robotics research.
+- ATLAS (Annotation Tool): Addresses the specific bottleneck of multi-modal, long-horizon annotation in robotics which currently lacks integrated tools.
 
 ### Approved Open Questions
-- Multimodal Annotation Cognitive Load: Understanding the trade-off between annotation speed and accuracy is critical for developing scalable data pipelines for robotic learning, where human-provided ground truth is a significant bottleneck.
+- Cognitive Load in Multimodal Annotation: Human-in-the-loop annotation is a primary bottleneck for scaling robot learning; understanding these cognitive trade-offs is essential for sustainable data creation.
 
 ## Datasets
 

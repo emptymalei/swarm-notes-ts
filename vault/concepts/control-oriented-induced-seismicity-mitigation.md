@@ -1,12 +1,13 @@
 ---
-title: "Control-oriented induced seismicity mitigation"
-slug: "control-oriented-induced-seismicity-mitigation"
-type: concept
+created_at: '2026-05-01T05:24:33Z'
 generated_stub: true
+modified_at: '2026-05-02T05:09:28Z'
+processed_at: '2026-05-01T05:24:33Z'
+slug: control-oriented-induced-seismicity-mitigation
 source_papers:
-  - "[[arxiv-260426802-a-control-framework-for-induced-seismicity-mitigation-in-gro]]"
-processed_at: "2026-05-01T05:24:33Z"
-created_at: "2026-05-01T05:24:33Z"
+- '[[arxiv-260426802-a-control-framework-for-induced-seismicity-mitigation-in-gro]]'
+title: Control-oriented induced seismicity mitigation
+type: concept
 ---
 
 # Control-oriented induced seismicity mitigation

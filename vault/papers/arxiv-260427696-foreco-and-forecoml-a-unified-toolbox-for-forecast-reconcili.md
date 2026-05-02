@@ -22,12 +22,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "forecast-reconciliation"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:22:56Z"
-created_at: "2026-05-01T05:22:56Z"
+processed_at: "2026-05-02T05:08:11Z"
+created_at: "2026-05-02T05:08:11Z"
 ---
 
 # FoReco and FoRecoML: A Unified Toolbox for Forecast Reconciliation in R
@@ -38,13 +38,27 @@ created_at: "2026-05-01T05:22:56Z"
 
 ## Summary
 
-This paper introduces FoReco and FoRecoML, two R packages designed as a unified, accessible framework for forecast reconciliation of linearly constrained time series. The suite covers cross-sectional, temporal, and cross-temporal hierarchies by integrating classical linear methods with advanced non-linear machine learning models. By offering both high-level defaults and low-level customization, the toolbox serves as a standardized resource for both practitioners and researchers working on hierarchical forecasting.
+The authors present FoReco and FoRecoML, a comprehensive suite of R packages designed for forecast reconciliation in hierarchical and grouped time-series data. The framework unifies classical linear methods with advanced non-linear machine learning approaches, supporting cross-sectional, temporal, and cross-temporal reconciliation tasks. By balancing ease-of-use with advanced customization, these tools provide a standardized ecosystem for researchers and practitioners to improve forecast coherence and accuracy under linear constraints.
 
 ## Key Contributions
 
-- Introduces FoReco and FoRecoML, a unified R software framework for cross-sectional, temporal, and cross-temporal forecast reconciliation.
-- Implements both classical linear reconciliation approaches and modern non-linear machine learning-based methods in a single, flexible package suite.
-- Provides a dual-mode API supporting both sensible defaults for accessibility and highly granular configuration for advanced research applications.
+- Introduces FoReco, an R package for classical and regression-based linear forecast reconciliation across cross-sectional, temporal, and cross-temporal hierarchies.
+- Introduces FoRecoML, an R package providing non-linear, machine-learning-based forecast reconciliation methods for various hierarchical structures.
+- Provides a unified and accessible software ecosystem to bridge the gap between traditional econometric reconciliation and contemporary machine learning approaches.
+
+## Key Concepts
+
+- [[forecast-reconciliation]]: A process for adjusting incoherent base forecasts of linearly constrained time series to satisfy aggregation constraints.
+
+## Archivist Review
+
+I approved the central concept of 'Forecast Reconciliation' as it is a fundamental research problem in time-series analysis that is well-defined and widely used. I rejected the package-specific candidates as they are essentially software implementations and not reusable methodological research concepts. No datasets or open questions were proposed, which aligns with the request to remain scarce.
+
+### Approved Concepts
+- Forecast Reconciliation: The paper explicitly introduces a unified software framework for this core time-series task, consolidating various reconciliation methods.
+
+### Rejected Candidates
+- [concept] FoReco and FoRecoML Toolbox (`foreco-forecoml-toolbox`) - paper_local: This is a specific software package/implementation detail rather than a reusable algorithmic concept or mechanism.
 
 ## Links
 

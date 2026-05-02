@@ -1,12 +1,13 @@
 ---
-title: "Iterative Refinement Mechanism"
-slug: "iterative-refinement-mechanism"
-type: concept
+created_at: '2026-05-01T05:22:06Z'
 generated_stub: true
+modified_at: '2026-05-02T05:07:28Z'
+processed_at: '2026-05-01T05:22:06Z'
+slug: iterative-refinement-mechanism
 source_papers:
-  - "[[arxiv-260427981-its-mina-a-harris-hawks-optimization-based-all-mlp-framework]]"
-processed_at: "2026-05-01T05:22:06Z"
-created_at: "2026-05-01T05:22:06Z"
+- '[[arxiv-260427981-its-mina-a-harris-hawks-optimization-based-all-mlp-framework]]'
+title: Iterative Refinement Mechanism
+type: concept
 ---
 
 # Iterative Refinement Mechanism

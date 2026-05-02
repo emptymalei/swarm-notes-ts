@@ -21,12 +21,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  - "circuits"
+  - "circuits-imts"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:22:44Z"
-created_at: "2026-05-01T05:22:44Z"
+processed_at: "2026-05-02T05:07:59Z"
+created_at: "2026-05-02T05:07:59Z"
 ---
 
 # Probabilistic Circuits for Irregular Multivariate Time Series Forecasting
@@ -37,31 +37,31 @@ created_at: "2026-05-01T05:22:44Z"
 
 ## Summary
 
-This paper presents CircuITS, an architecture designed for irregular multivariate time series (IMTS) forecasting that leverages probabilistic circuits to capture complex channel dependencies. By construction, the model guarantees consistent joint distributions, overcoming common challenges in balancing expressivity with valid marginalization. Empirical evaluations show that CircuITS outperforms existing state-of-the-art baselines in both joint and marginal density estimation tasks.
+This paper introduces CircuITS, a novel architecture designed for probabilistic forecasting of irregular multivariate time series (IMTS). By leveraging probabilistic circuits, the model effectively captures intricate channel dependencies while maintaining structural guarantees for valid joint distribution marginalization. Empirical evaluation across four real-world datasets shows that the proposed approach outperforms existing state-of-the-art methods in both joint and marginal density estimation tasks.
 
 ## Key Contributions
 
-- Introduces CircuITS, a novel architecture for forecasting irregular multivariate time series using probabilistic circuits to ensure structural validity of joint distributions.
-- Addresses the trade-off between model expressivity and consistent marginalization in joint probabilistic modeling.
-- Demonstrates superior performance in joint and marginal density estimation on four real-world benchmark datasets compared to state-of-the-art methods.
+- Introduces CircuITS, an architecture based on probabilistic circuits that ensures valid joint distributions for irregular multivariate time series.
+- Demonstrates that CircuITS provides superior joint and marginal density estimation compared to current state-of-the-art baselines on four real-world benchmarks.
+- Addresses the trade-off between model expressivity and marginal consistency in irregular multivariate forecasting.
 
 ## Open Questions & Future Work
 
-- [[optimal-channel-ordering-spn]]
+- [[dynamic-channel-ordering-pc-imts]]
 
 ## Key Concepts
 
-- [[circuits]]: A probabilistic circuit-based architecture for joint density estimation and forecasting of irregular multivariate time series.
+- [[circuits-imts]]: A probabilistic circuit-based architecture for irregular multivariate time series forecasting that guarantees consistent marginalization.
 
 ## Archivist Review
 
-I approved CircuITS as a representative architecture for probabilistic circuit-based time series modeling. I also approved the open question regarding channel ordering in SPNs because it identifies a fundamental structural bottleneck in recursive probabilistic models. No datasets were approved as the candidates listed were generic, non-specific descriptions.
+I approved the CircuITS architecture as it represents a clear, reusable application of probabilistic circuits to the problem of maintaining marginal consistency in IMTS. I also approved the open question regarding dynamic channel ordering, as it highlights a fundamental architectural bottleneck (computational intractability of optimal ordering) inherent to this class of probabilistic models. No datasets were approved as the paper utilizes standard, non-unique benchmarks.
 
 ### Approved Concepts
-- CircuITS: The paper introduces CircuITS as the central methodological innovation for handling irregular multivariate time series via probabilistic circuits, providing a framework that ensures consistent joint marginalization.
+- CircuITS: It introduces a specific application of Probabilistic Circuits to the structural consistency problem in irregular multivariate time series forecasting.
 
 ### Approved Open Questions
-- Optimal channel ordering in SPNs: Understanding how channel ordering affects the joint density approximation in recursive probabilistic circuits is vital for scaling these models to higher-dimensional datasets where correlations are highly non-uniform across channels.
+- Dynamic Channel Ordering in PCs: Channel ordering defines the inductive bias of the recursive decomposition in circuit-based models, and its optimization is a known bottleneck for capacity scaling in high-dimensional multivariate settings.
 
 ## Links
 

@@ -1,12 +1,13 @@
 ---
-title: "Regime-Adaptive Weighted Ensemble Learning"
-slug: "regime-adaptive-weighted-ensemble-learning"
-type: concept
+created_at: '2026-05-01T05:23:56Z'
 generated_stub: true
+modified_at: '2026-05-02T05:08:58Z'
+processed_at: '2026-05-01T05:23:56Z'
+slug: regime-adaptive-weighted-ensemble-learning
 source_papers:
-  - "[[arxiv-260427207-regime-adaptive-weighted-ensemble-learning-for-computing-dri]]"
-processed_at: "2026-05-01T05:23:56Z"
-created_at: "2026-05-01T05:23:56Z"
+- '[[arxiv-260427207-regime-adaptive-weighted-ensemble-learning-for-computing-dri]]'
+title: Regime-Adaptive Weighted Ensemble Learning
+type: concept
 ---
 
 # Regime-Adaptive Weighted Ensemble Learning

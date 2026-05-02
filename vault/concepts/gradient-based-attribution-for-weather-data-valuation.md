@@ -1,12 +1,13 @@
 ---
-title: "Gradient-based Attribution for Weather Data Valuation"
-slug: "gradient-based-attribution-for-weather-data-valuation"
-type: concept
+created_at: '2026-05-01T05:22:25Z'
 generated_stub: true
+modified_at: '2026-05-02T05:07:42Z'
+processed_at: '2026-05-01T05:22:25Z'
+slug: gradient-based-attribution-for-weather-data-valuation
 source_papers:
-  - "[[arxiv-260427944-calibrating-attribution-proxies-for-reward-allocation-in-par]]"
-processed_at: "2026-05-01T05:22:25Z"
-created_at: "2026-05-01T05:22:25Z"
+- '[[arxiv-260427944-calibrating-attribution-proxies-for-reward-allocation-in-par]]'
+title: Gradient-based Attribution for Weather Data Valuation
+type: concept
 ---
 
 # Gradient-based Attribution for Weather Data Valuation

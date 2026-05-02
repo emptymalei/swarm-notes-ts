@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-01T05:24:52Z'
+modified_at: '2026-05-02T05:11:56Z'
 source_papers:
 - '[[arxiv-260426668-nonlinear-probabilistic-forecast-reconciliation]]'
-title: Geodesic-based Evaluation for Reconciliation
+title: Geodesic evaluation nonlinear reconciliation
 ---
 
 **Background:** Forecast reconciliation for nonlinear constraints often relies on Euclidean-based scoring rules, which are potentially suboptimal on non-Euclidean manifolds. The development of evaluation metrics better aligned with the underlying geometry is an open problem.

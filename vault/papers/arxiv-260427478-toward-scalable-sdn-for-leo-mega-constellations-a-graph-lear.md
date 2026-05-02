@@ -18,12 +18,11 @@ paper_id: "2604.27478"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "forecasting"
+  - "time-series-forecasting"
   - "graph-neural-networks"
-  - "koopman-theory"
-  - "sdn"
-  - "leo-constellations"
+  - "software-defined-networking"
+  - "spatio-temporal-forecasting"
+  - "network-management"
 architectures:
   []
 datasets:
@@ -33,8 +32,8 @@ concept_slugs:
 dataset_slugs:
   - "starlink"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:23:19Z"
-created_at: "2026-05-01T05:23:19Z"
+processed_at: "2026-05-02T05:08:28Z"
+created_at: "2026-05-02T05:08:28Z"
 ---
 
 # Toward Scalable SDN for LEO Mega-Constellations: A Graph Learning Approach
@@ -45,31 +44,31 @@ created_at: "2026-05-01T05:23:19Z"
 
 ## Summary
 
-This paper addresses network management bottlenecks in LEO mega-constellations by proposing a hierarchical software-defined networking (SDN) framework. The core of the approach, the Graph Koopman Autoencoder (GKAE), uses GNNs and Koopman theory to linearize complex spatio-temporal dynamics at the orbital shell level. By decomposing the constellation, the central controller can perform globally coordinated management with significantly reduced model complexity. Evaluations on the Starlink constellation demonstrate superior spatial compression and temporal forecasting accuracy compared to existing methods.
+This paper addresses the scalability challenges of software-defined networking (SDN) in large-scale LEO satellite constellations by introducing a hierarchical, graph-based architecture. The core innovation is the Graph Koopman Autoencoder (GKAE), which uses Koopman theory to linearize complex, nonlinear satellite network dynamics into a more manageable linear subspace. By aggregating these shell-specific predictions, the system enables efficient, globally coordinated network control with reduced computational footprint. Experimental results using the Starlink topology confirm significant gains in both spatial data compression and temporal forecasting accuracy compared to existing baselines.
 
 ## Key Contributions
 
-- Introduces a hierarchical SDN framework for LEO mega-constellations to mitigate management bottlenecks in massive scale networks.
-- Develops the Graph Koopman Autoencoder (GKAE) to model satellite constellation dynamics within a linear subspace.
-- Achieves 42.8% improvement in spatial compression and 10.81% improvement in temporal forecasting over established baselines on the Starlink dataset.
+- Introduces a hierarchical SDN framework for LEO mega-constellations using Graph Koopman Autoencoders (GKAEs) to manage large-scale topology.
+- Leverages Koopman theory to linearize nonlinear spatio-temporal dynamics within orbital shells, facilitating efficient global network control.
+- Demonstrates a 42.8% improvement in spatial compression and 10.81% improvement in temporal forecasting over established baselines using the Starlink constellation as a benchmark.
 
 ## Open Questions & Future Work
 
-- [[sdn-controller-placement-tradeoffs]]
+- [[optimal-sdn-controller-placement-leo]]
 
 ## Key Concepts
 
-- [[graph-koopman-autoencoder]]: A neural architecture that combines graph neural networks with Koopman theory to linearize and forecast nonlinear spatio-temporal dynamics in complex, large-scale networks.
+- [[graph-koopman-autoencoder]]: A neural architecture that combines graph neural networks with Koopman theory to forecast spatio-temporal dynamics in complex, hierarchical network topologies.
 
 ## Archivist Review
 
-Approved the Graph Koopman Autoencoder as a reusable mechanism for linearized spatiotemporal forecasting on graphs. The Starlink dataset was approved as a specific, large-scale constellation benchmark. Finally, the controller placement question was selected for its universal relevance to space-based network management.
+I approved the Graph Koopman Autoencoder (GKAE) as a reusable architectural paradigm for nonlinear dynamical systems on graphs. The Starlink dataset was approved as a core benchmark for evaluating LEO constellation management, and the question regarding SDN controller placement was approved as a critical, multi-faceted engineering bottleneck for future satellite networking. The HeteroGNN candidate was rejected as a general evolution of graph learning rather than a paper-specific breakthrough.
 
 ### Approved Concepts
-- Graph Koopman Autoencoder: It is the core architectural innovation, combining graph representations with Koopman operator theory for scalable spatiotemporal forecasting in complex dynamic systems.
+- Graph Koopman Autoencoder: It is the central methodological contribution, enabling the linearization of nonlinear satellite constellation dynamics within a graph-based latent space.
 
 ### Approved Open Questions
-- SDN Controller Placement Trade-offs: Effective controller placement is critical for managing the high-latency and dynamic nature of large-scale LEO networks while ensuring consistent and stable network operations.
+- Optimal SDN Controller Placement: The choice of controller placement fundamentally dictates the feasibility of real-time orchestration for mega-constellations; an suboptimal architecture would exacerbate latency bottlenecks or lead to network instability.
 
 ## Datasets
 

@@ -16,11 +16,9 @@ paper_id: "2604.27207"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "forecasting"
-  - "time-series"
+  - "time-series-forecasting"
   - "ensemble-learning"
-  - "load-forecasting"
-  - "non-stationary-time-series"
+  - "energy-informatics"
 architectures:
   []
 datasets:
@@ -30,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   - "mit-supercloud-dataset"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:23:56Z"
-created_at: "2026-05-01T05:23:56Z"
+processed_at: "2026-05-02T05:08:58Z"
+created_at: "2026-05-02T05:08:58Z"
 ---
 
 # Regime-Adaptive Weighted Ensemble Learning for Computing-Driven Dynamic Load Forecasting in AI Data Centers
@@ -42,34 +40,31 @@ created_at: "2026-05-01T05:23:56Z"
 
 ## Summary
 
-This paper introduces a regime-adaptive ensemble learning framework designed to address the non-stationary, bursty nature of power demand in AI data centers. The method utilizes a weight-learned neural network to dynamically calibrate contributions from different submodels, supported by a novel feature engineering strategy for streaming data. Evaluation on the MIT Supercloud dataset demonstrates superior accuracy, with the proposed approach achieving sub-1% minute-class forecasting error, facilitating better grid-interactive load management.
+This paper addresses the challenge of non-stationary, computing-driven load forecasting in AI data centers by proposing a regime-adaptive weighted ensemble learning framework. The approach leverages a weight-learned neural network to dynamically balance the contributions of multiple ML submodels, paired with an incremental feature engineering strategy to handle bursty, heterogeneous job dynamics. Evaluations on the MIT Supercloud dataset demonstrate superior accuracy and adaptability compared to existing models, achieving minute-class forecasting errors below 1%.
 
 ## Key Contributions
 
-- Proposes a regime-adaptive ensemble learning forecasting framework that optimizes submodel contributions for non-stationary computing-driven workloads.
-- Introduces a feature engineering strategy that enables incremental learning from streaming, bursty AI data center power demand data.
-- Achieves minute-class forecasting errors below 1% on the MIT Supercloud dataset, outperforming baseline model combinations for data center load prediction.
+- Introduces a regime-adaptive ensemble learning algorithm that dynamically optimizes submodel contributions for computing-driven data center workloads.
+- Develops a feature engineering strategy that enables incremental learning from non-stationary, bursty data streams.
+- Achieves sub-1% minute-class load forecasting error on the MIT Supercloud dataset, outperforming baseline combinations for grid-interactive coordination.
 
 ## Open Questions & Future Work
 
-- [[generalizability-of-ensemble-model-pairs]]
+- [[regime-adaptive-ensemble-forecasting-without-labeling]]
 
 ## Key Concepts
 
-- [[regime-adaptive-weighted-ensemble-learning]]: An ensemble learning forecasting method that dynamically optimizes weights between submodels based on detected operating regimes.
+- [[regime-adaptive-weighted-ensemble-learning]]: An ensemble learning framework that uses a weight-learned neural network to dynamically calibrate submodel contributions across varying computing load regimes.
 
 ## Archivist Review
 
-The approved concept captures a reusable framework for dynamic regime-based ensemble weight calibration, which is highly relevant for non-stationary load forecasting. The dataset and open question were approved for their focus on specific benchmarking bottlenecks in the emerging field of computing-driven grid load management. Other candidates were rejected as implementation-level details.
+I have approved the core regime-adaptive ensemble concept and the critical open question regarding label-free regime adaptation. The MIT Supercloud dataset is approved as a key empirical benchmark used in the paper. Other candidates were not proposed, and I have maintained high selectivity by ensuring only the central mechanism and its most significant research challenge were included.
 
 ### Approved Concepts
-- Regime-Adaptive Weighted Ensemble Learning: Provides a mechanism for dynamic recalibration of model contributions in highly non-stationary environments, specifically addressing the volatility of computing-driven loads.
+- Regime-Adaptive Weighted Ensemble Learning: The method explicitly targets non-stationary, bursty computing workloads through dynamic weight optimization, which is central to the paper's contribution in AI data center load forecasting.
 
 ### Approved Open Questions
-- Generalizability of ensemble model-pairs: Understanding the robustness of ensemble structures beyond individual case studies is essential for reliable deployment in grid-interactive applications.
-
-### Rejected Candidates
-- [concept] Incremental Feature Engineering Strategy (`incremental-learning-feature-engineering`) - subcomponent_of_broader_mechanism: This is an implementation-specific technique for streaming data rather than a foundational forecasting concept.
+- Regime-Adaptive Forecasting Without Labeling: Robust load forecasting is critical for maintaining power grid stability; as AI data center loads become more volatile, the ability to adapt to unseen or rapidly shifting regimes is essential for effective demand response and grid-interactive coordination.
 
 ## Datasets
 

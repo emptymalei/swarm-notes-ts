@@ -31,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:24:16Z"
-created_at: "2026-05-01T05:24:16Z"
+processed_at: "2026-05-02T05:09:16Z"
+created_at: "2026-05-02T05:09:16Z"
 ---
 
 # LLM-Enhanced Topical Trend Detection at Snapchat
@@ -43,24 +43,28 @@ created_at: "2026-05-01T05:24:16Z"
 
 ## Summary
 
-This paper presents an end-to-end system designed for identifying emerging topical trends within the high-velocity, short-video ecosystem of Snapchat. The architecture combines multimodal topic extraction and time-series burst detection with LLM-based consolidation to synthesize meaningful trend signals from noisy, large-scale data. The system has been successfully deployed at global scale, demonstrably improving downstream performance in content ranking and search.
+This paper presents an end-to-end production system designed to detect emerging topical trends on Snapchat's short-video ecosystem. The architecture integrates multimodal topic extraction with time-series burst detection, followed by LLM-based consolidation to synthesize and enrich detected signals. Deployed at a global scale, the system significantly improves content freshness and user engagement across downstream applications like content ranking and search.
 
 ## Key Contributions
 
-- Introduces a production-scale end-to-end system for topical trend detection on short-video social platforms.
-- Integrates multimodal topic extraction with time-series burst detection and LLM-based trend consolidation.
-- Demonstrates high precision via six months of offline human evaluation and significant improvements in content freshness and search performance in production.
+- Presents an end-to-end production-scale system for topical trend detection on a major short-video social platform.
+- Integrates a multi-stage pipeline combining multimodal topic extraction, time-series burst detection, and LLM-based trend consolidation.
+- Demonstrates, through six months of continuous human evaluation, high precision in identifying actionable topical trends with measurable gains in content freshness and search performance.
 
 ## Open Questions & Future Work
 
-- [[recall-evaluation-in-trend-detection]]
+- [[lack-of-ground-truth-for-trend-detection-recall]]
 
 ## Archivist Review
 
-The paper describes a production-scale engineering system for Snapchat, but lacks the methodological novelty in forecasting or AI architecture required for a permanent vault concept note. The open question regarding recall in trend detection is accepted as a substantial, domain-agnostic bottleneck for systems evaluating emerging, ground-truth-scarce phenomena.
+I approved the open question regarding the lack of ground truth for trend detection as it identifies a major, recurring bottleneck in social media intelligence. I rejected the proposed concepts because they represent implementation-specific production pipelines rather than reusable architectural or algorithmic primitives suitable for the research vault.
 
 ### Approved Open Questions
-- Recall Evaluation for Trends: Precision-only evaluation is insufficient for understanding system coverage, making the development of automated ground-truth generation or recall estimation techniques essential for improving the discovery of novel and emerging trends.
+- Benchmarking Trend Detection Recall: Without a standardized ground-truth, it is impossible to objectively compare the effectiveness, recall, and sensitivity of different trend-detection architectures across disparate social media platforms.
+
+### Rejected Candidates
+- [concept] LLM-based Trend Consolidation (`llm-based-trend-consolidation`) - subcomponent_of_broader_mechanism: This is a specific application of LLMs to a pipeline rather than a reusable core mechanism or architecture.
+- [concept] Multimodal Topic Extraction Pipeline (`multimodal-topic-extraction-pipeline`) - not_novel: This describes a standard operational pipeline for social platforms rather than a distinct algorithmic contribution.
 
 ## Links
 

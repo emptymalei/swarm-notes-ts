@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-01T05:23:35Z'
+modified_at: '2026-05-02T05:08:41Z'
 source_papers:
 - '[[arxiv-260427431-a-study-on-the-performance-of-distributed-training-of-data-d]]'
-title: Scalability of Distributed CFD Training
+title: Distributed training scalability bottlenecks
 ---
 
 **Background:** Deep learning surrogate models for computational fluid dynamics (CFD) involve large-scale data processing that can create significant communication bottlenecks during distributed training.

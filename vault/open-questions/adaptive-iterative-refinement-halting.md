@@ -1,5 +1,6 @@
 ---
 created_at: '2026-05-01T05:22:06Z'
+modified_at: '2026-05-02T05:07:28Z'
 source_papers:
 - '[[arxiv-260427981-its-mina-a-harris-hawks-optimization-based-all-mlp-framework]]'
 title: Adaptive Iterative Refinement Halting

@@ -27,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:23:12Z"
-created_at: "2026-05-01T05:23:12Z"
+processed_at: "2026-05-02T05:08:21Z"
+created_at: "2026-05-02T05:08:21Z"
 ---
 
 # Gender Bias in YouTube Exposure: Allocative and Structural Inequalities in Political Information Environments
@@ -39,28 +39,28 @@ created_at: "2026-05-01T05:23:12Z"
 
 ## Summary
 
-This paper investigates how YouTube's recommendation algorithms contribute to gender-based political information inequality through a controlled social-bot field experiment. By comparing male-coded and female-coded profiles, the study reveals significant allocative and structural biases in content distribution, including differences in ideological orientation and political entity representation. The researchers further demonstrate that these biases are reinforced by community clustering and temporal dynamics, successfully reproducing the observed inequalities using a collaborative-filtering model.
+This paper investigates gender-based algorithmic bias in YouTube's political recommendation environment using a controlled social-bot field experiment. By comparing recommendations for male-coded and female-coded profiles, the authors uncover significant disparities in both content allocation and the underlying community structure of political information. The study further provides a mechanistic explanation for these findings by developing a collaborative filtering model that reproduces the observed inequalities.
 
 ## Key Contributions
 
-- Identifies systemic gender bias in YouTube recommendations via a controlled social-bot field experiment across both allocative and structural dimensions.
-- Demonstrates that gender-coded profiles receive significantly different political content exposure regarding issue distribution, ideology, and political entities.
-- Shows that bias is reinforced by distinct clustering patterns and time-evolving community structures, which can be captured by collaborative-filtering models.
+- Demonstrated statistically significant gender-based allocative bias in YouTube's recommendation system regarding issue distribution, ideological orientation, and political entities.
+- Identified structural bias in political information environments through distinct clustering patterns of recommendations for male-coded and female-coded profiles.
+- Developed a collaborative filtering model that successfully replicates the observed empirical gender bias patterns.
 
 ## Open Questions & Future Work
 
-- [[causal-drivers-of-algorithmic-bias]]
+- [[algorithmic-mechanism-structural-bias]]
 
 ## Archivist Review
 
-I approved the open question regarding causal drivers of algorithmic bias as it addresses a substantial bottleneck in algorithmic fairness research. I rejected the proposed concepts 'allocative bias' and 'structural bias' because they are established social science and network analysis terms rather than unique ML methodological contributions. The paper's empirical experiment with social bots does not introduce a novel enough methodology to warrant a new concept note.
+The review focused on distinguishing between general sociological observations and specific algorithmic mechanisms. While the study provides useful empirical findings on gender bias in recommendations, the conceptual terms used (allocative and structural bias) are too generic for standalone vault entries. The open question regarding the mechanisms of structural bias was approved as it frames a critical research gap for future algorithmic auditing work.
 
 ### Approved Open Questions
-- Causal drivers of algorithmic bias: This is a fundamental causal question in algorithmic fairness; if inequalities are purely user-driven, interventions must target user behavior, whereas algorithmically driven bias requires platform-level architectural redesigns.
+- Mechanisms of Algorithmic Structural Bias: Understanding the underlying technical mechanisms is essential for designing effective algorithmic audits and developing mitigation strategies that address the root causes of structural inequality in digital information ecosystems.
 
 ### Rejected Candidates
-- [concept] Allocative bias (`allocative-bias`) - generic: This is a generic concept in algorithmic fairness and social science, not specific to this paper's methodology.
-- [concept] Structural bias (`structural-bias`) - generic: This is a standard concept in network science and sociology rather than a reusable ML forecasting or modeling contribution.
+- [concept] Allocative Bias (`allocative-bias`) - generic: This is a common social science and fairness term already widely used and does not represent a novel technical mechanism in this context.
+- [concept] Structural Bias (`structural-bias`) - generic: This is a general sociological term rather than a specific algorithmic technique or framework worthy of a permanent vault entry.
 
 ## Links
 

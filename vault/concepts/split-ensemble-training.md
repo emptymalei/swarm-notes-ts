@@ -1,12 +1,13 @@
 ---
-title: "Split-ensemble training"
-slug: "split-ensemble-training"
-type: concept
+created_at: '2026-05-01T05:21:49Z'
 generated_stub: true
+modified_at: '2026-05-02T05:07:11Z'
+processed_at: '2026-05-01T05:21:49Z'
+slug: split-ensemble-training
 source_papers:
-  - "[[arxiv-260428160-reorganizing-quantum-measurement-records-improves-time-serie]]"
-processed_at: "2026-05-01T05:21:49Z"
-created_at: "2026-05-01T05:21:49Z"
+- '[[arxiv-260428160-reorganizing-quantum-measurement-records-improves-time-serie]]'
+title: Split-ensemble training
+type: concept
 ---
 
 # Split-ensemble training

@@ -16,20 +16,22 @@ paper_id: "2604.27182"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "generative-modeling"
+  - "generative-models"
   - "data-augmentation"
+  - "forecasting"
+  - "time-series-generation"
+  - "mcmc"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "mcmc-based-temporal-alignment"
+  - "mcmc-based-temporal-dynamics-correction"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:24:03Z"
-created_at: "2026-05-01T05:24:03Z"
+processed_at: "2026-05-02T05:09:05Z"
+created_at: "2026-05-02T05:09:05Z"
 ---
 
 # Preserving Temporal Dynamics in Time Series Generation
@@ -40,31 +42,33 @@ created_at: "2026-05-01T05:24:03Z"
 
 ## Summary
 
-This paper addresses the degradation of synthetic time series fidelity caused by temporal drift and distribution shift in existing GAN frameworks. The authors demonstrate that relying solely on marginal distribution matching is insufficient, proposing a model-agnostic MCMC-based framework to enforce consistency with empirical transition laws. Experiments across several generative models show that incorporating this transition-preserving correction significantly improves both autocorrelation alignment and downstream forecasting performance.
+This paper addresses the common issue of temporal drift and distribution shift in GAN-based time series generation, where models fail to preserve sequential dynamics. The authors introduce a model-agnostic MCMC-based framework that enforces consistency with empirical transition laws during generation to mitigate these discrepancies. By correcting the transition statistics between neighboring time points, the proposed approach significantly enhances the fidelity and utility of synthetic time series as measured by autocorrelation, skewness, and predictive performance.
 
 ## Key Contributions
 
-- Identifies that GAN-based time series generation often suffers from distribution shift and temporal drift due to neglecting transition statistics.
-- Introduces a model-agnostic MCMC-based framework that enforces consistency with empirical transition laws between neighboring time points.
-- Demonstrates consistent improvement in autocorrelation alignment and predictive metrics across five generative models and four datasets (Lorenz, Licor, ETTh, ILI).
+- Proposes a model-agnostic MCMC-based framework that corrects cumulative deviations and temporal drift in synthetic time series.
+- Provides a theoretical analysis of how conditional generative models accumulate errors during sequential generation.
+- Demonstrates significant improvements in autocorrelation alignment and predictive metrics across multiple datasets (Lorenz, Licor, ETTh, and ILI) when integrated with existing GAN models.
 
 ## Open Questions & Future Work
 
-- [[mcmc-integration-in-generative-training]]
+- [[mcmc-integration-with-diffusion-models]]
+- [[end-to-end-mcmc-training]]
 
 ## Key Concepts
 
-- [[mcmc-based-temporal-alignment]]: A model-agnostic MCMC framework that enforces consistency with empirical transition statistics to improve synthetic time-series fidelity.
+- [[mcmc-based-temporal-dynamics-correction]]: A model-agnostic MCMC framework that enforces consistency with empirical transition statistics to improve temporal fidelity in synthetic time series.
 
 ## Archivist Review
 
-I approved the MCMC-based temporal alignment concept for its model-agnostic utility in mitigating cumulative temporal drift, a common issue in time-series generation. The open question regarding MCMC integration in training was approved because it addresses the shift from post-hoc correction to structural training objectives, which is a major research frontier. I rejected the datasets because they are common benchmarks that do not represent novel contributions in this context.
+The approved concepts and open questions address a fundamental issue in time-series generation: the tendency of generative models to suffer from temporal drift and error accumulation. The MCMC-based correction framework is identified as a reusable mechanism, and the open questions prioritize the investigation of how these consistency constraints can move from post-hoc correction to native integration and diffusion-based generation. I rejected the proposed datasets as they are standard benchmarking datasets rather than novel contributions central to the paper's identity.
 
 ### Approved Concepts
-- MCMC-based Temporal Alignment: Provides a model-agnostic correction mechanism to mitigate temporal drift and distribution shift in synthetic time-series generation, which is a fundamental challenge for autoregressive and generative models.
+- MCMC-based temporal dynamics correction: It provides a principled, model-agnostic method to correct cumulative temporal drift in synthetic time series generation, which is a major bottleneck in existing generative approaches.
 
 ### Approved Open Questions
-- MCMC Integration in Generative Training: This explores the transition from external, post-hoc correction to end-to-end differentiable regularization, which is critical for long-horizon time-series generation.
+- MCMC-diffusion model integration: Diffusion models represent a state-of-the-art approach to generative modeling; understanding if post-hoc correction mechanisms apply to them is essential for future synthetic data reliability.
+- End-to-end MCMC training integration: End-to-end integration would potentially eliminate post-processing overhead and allow generators to learn native temporal consistency, representing a significant shift in training methodology.
 
 ## Links
 

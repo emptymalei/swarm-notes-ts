@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-01T05:24:11Z'
+modified_at: '2026-05-02T05:09:11Z'
 source_papers:
 - '[[arxiv-260427172-context-aware-graph-attention-for-unsupervised-telco-anomaly]]'
-title: Principled Uncertainty Quantification for AD
+title: Principled Uncertainty Quantification in AD
 ---
 
 **Background:** Deep learning-based anomaly detectors typically produce point estimates that do not naturally convey the reliability of an alarm, leading to high rates of false positives in critical industrial infrastructure.

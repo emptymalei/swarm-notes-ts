@@ -1,12 +1,13 @@
 ---
-title: "Halo Occupation Distribution (HOD) Model Fitting"
-slug: "halo-occupation-distribution-hod-model-fitting"
-type: concept
+created_at: '2026-05-01T05:24:24Z'
 generated_stub: true
+modified_at: '2026-05-02T05:09:22Z'
+processed_at: '2026-05-01T05:24:24Z'
+slug: halo-occupation-distribution-hod-model-fitting
 source_papers:
-  - "[[arxiv-260426886-predicted-number-counts-and-clustering-of-hi-galaxies-from-f]]"
-processed_at: "2026-05-01T05:24:24Z"
-created_at: "2026-05-01T05:24:24Z"
+- '[[arxiv-260426886-predicted-number-counts-and-clustering-of-hi-galaxies-from-f]]'
+title: Halo Occupation Distribution (HOD) Model Fitting
+type: concept
 ---
 
 # Halo Occupation Distribution (HOD) Model Fitting

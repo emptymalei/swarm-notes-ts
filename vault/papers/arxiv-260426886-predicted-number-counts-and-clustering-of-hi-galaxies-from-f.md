@@ -15,22 +15,20 @@ paper_id: "2604.26886"
 paper_source: "arxiv"
 domain: "astrophysics"
 tags:
-  - "astrophysics"
-  - "cosmology"
-  - "radio-astronomy"
+  []
 architectures:
   []
 datasets:
-  - "S3-SAX"
-  - "IllustrisTNG"
+  - "s3-sax"
+  - "gaea"
 concept_slugs:
   - "halo-occupation-distribution-hod-model-fitting"
 dataset_slugs:
   - "s3-sax"
-  - "illustristng"
+  - "gaea"
 skill: "GeneralMLSkill"
-processed_at: "2026-05-01T05:24:24Z"
-created_at: "2026-05-01T05:24:24Z"
+processed_at: "2026-05-02T05:09:22Z"
+created_at: "2026-05-02T05:09:22Z"
 ---
 
 # Predicted number counts and clustering of Hi galaxies from future radio surveys
@@ -41,36 +39,39 @@ created_at: "2026-05-01T05:24:24Z"
 
 ## Summary
 
-This paper provides systematic predictions for the distribution and clustering of neutral hydrogen (HI) galaxies to inform future cosmological surveys using the SKA-MID radio array. By leveraging three different simulation suites—S3-SAX, GAEA, and IllustrisTNG—the authors quantify expected galaxy number counts across sensitivity thresholds and redshift ranges. The work further employs Halo Occupation Distribution (HOD) modeling to estimate sample variance, providing critical benchmarks for planning large-scale structure observations in the radio spectrum.
+This paper provides updated predictions for the number counts and clustering of HI galaxies observable by future radio surveys like SKA-MID. By leveraging three diverse simulations—S$^3$-SAX, GAEA, and IllustrisTNG—the authors characterize the expected galaxy distribution and evaluate the corresponding cosmological survey performance. Furthermore, the study applies halo occupation distribution modeling to constrain clustering properties and estimate the sample variance critical for interpreting future survey data.
 
 ## Key Contributions
 
-- Provided new theoretical predictions for HI galaxy number counts and clustering expectations specifically for the upcoming SKA-MID radio survey.
-- Evaluated and compared the consistency of HI galaxy distribution predictions across three distinct simulation frameworks (S3-SAX, GAEA, IllustrisTNG).
-- Used Halo Occupation Distribution (HOD) fitting to quantify expected sample variance in future cosmological surveys over smaller sky areas.
+- Derived HI galaxy number counts for SKA-MID across varying sensitivity cuts and redshifts.
+- Forecasted cosmological performance of proposed SKA-MID surveys using multi-simulation predictions.
+- Quantified the impact of model uncertainty and sample variance on HI galaxy clustering predictions using HOD modeling.
 
 ## Open Questions & Future Work
 
-- [[hi-galaxy-simulation-uncertainty]]
+- [[hi-galaxy-simulation-discrepancies-high-redshift]]
 
 ## Key Concepts
 
-- [[halo-occupation-distribution-hod-model-fitting]]: A technique used to model and constrain the clustering properties of HI galaxies by fitting their spatial distribution within dark matter halos.
+- [[halo-occupation-distribution-hod-model-fitting]]: A statistical framework for modeling galaxy distribution by connecting galaxy counts to dark matter halo mass.
 
 ## Archivist Review
 
-I have approved the HOD modeling concept and the open question regarding theoretical uncertainty in HI galaxy predictions, as these are foundational to cosmological survey forecasting. I have also added two of the simulation suites as datasets, as they represent the primary standardized simulation benchmarks used for this class of cosmological prediction. All other candidates were rejected as they were either generic astronomical datasets or sub-components of the broader cosmological modeling pipeline.
+I have approved the HOD fitting concept and the high-redshift HI simulation discrepancy open question, as they are central to the field's challenges in cosmology. I also approved two of the simulation catalogues as datasets to track these specific model-based sources. I rejected IllustrisTNG as it is an extremely well-known, foundational dataset in the field.
 
 ### Approved Concepts
-- Halo Occupation Distribution (HOD) Model Fitting: Essential for bridging galaxy distribution simulations with expected cosmological clustering observations in SKA-MID survey planning.
+- Halo Occupation Distribution (HOD) model fitting: Essential for linking dark matter simulations to observed galaxy clustering statistics in cosmological surveys.
 
 ### Approved Open Questions
-- HI Galaxy Prediction Uncertainty: Determining accurate predictions for HI galaxy distributions is critical for forecasting the scientific yield of large-scale radio survey missions and for interpreting observed signals in terms of cosmological parameters.
+- HI galaxy simulation discrepancies: This uncertainty hampers the ability to reliably forecast the sensitivity and cosmological utility of future large-scale HI surveys, potentially biasing cosmological parameter inference.
+
+### Rejected Candidates
+- [dataset] IllustrisTNG (`illustristng`) - duplicate_existing: This is a large-scale, well-established public cosmological simulation that is already represented in the broader scientific literature and does not require a new vault note.
 
 ## Datasets
 
 - [[s3-sax]]
-- [[illustristng]]
+- [[gaea]]
 
 ## Links
 

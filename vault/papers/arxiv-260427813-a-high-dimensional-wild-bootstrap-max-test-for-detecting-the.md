@@ -13,18 +13,20 @@ paper_id: "2604.27813"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "time-series-forecasting"
+  - "statistical-inference"
+  - "high-dimensional-data"
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "block-bootstrap-max-test"
+  - "high-dimensional-wild-bootstrap-max-test"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:22:52Z"
-created_at: "2026-05-01T05:22:52Z"
+processed_at: "2026-05-02T05:08:05Z"
+created_at: "2026-05-02T05:08:05Z"
 ---
 
 # A High Dimensional Wild Bootstrap Max-Test for Detecting the Presence of Significant Predictors
@@ -35,34 +37,31 @@ created_at: "2026-05-01T05:22:52Z"
 
 ## Summary
 
-This paper introduces a block bootstrap max-test for detecting significant predictors in high-dimensional regression scenarios where the number of covariates grows exponentially relative to the sample size. The method specifically addresses the challenges of weakly dependent and heterogeneous, potentially non-stationary time series data. By leveraging a max-statistic over computed parameters, the framework avoids complex covariance matrix estimation and ad-hoc corrections like Bonferroni. The resulting non-standard limit distribution is effectively approximated via a multiplier block bootstrap, ensuring reliable performance even with weak or sparse signals.
+This paper introduces a high-dimensional block bootstrap max-test designed to detect significant predictors when the number of covariates p grows exponentially relative to sample size n. By utilizing a max-statistic approach, the method effectively accounts for weakly dependent and non-stationary time series data without requiring complex covariance matrix estimation or manual Bonferroni adjustments. The validity of the test is established under mild conditions on memory decay and moment growth, with performance validated through numerical experiments and an empirical analysis of the VIX volatility index.
 
 ## Key Contributions
 
-- Introduces a block bootstrap max-test for identifying significant predictors in high-dimensional settings where p >> n, supporting exponential growth of covariates relative to sample size.
-- Eliminates the requirement for explicit covariance matrix estimation or post-estimation Bonferroni corrections by utilizing a max-statistic approach under physical dependence conditions.
-- Demonstrates robust size control and performance against weak signals through theoretical analysis and empirical validation on VIX volatility index data.
+- Proposes a block bootstrap max-test for significance detection in settings where p >> n with exponentially growing covariate counts.
+- Demonstrates that the approach handles weakly dependent and non-stationary data by leveraging physical dependence measures.
+- Eliminates the requirement for explicit covariance matrix estimation and post-estimation Bonferroni corrections in correlation screening.
 
 ## Open Questions & Future Work
 
-- [[endogenous-predictor-selection-weak-dependence]]
+- [[post-model-selection-weak-dependence]]
 
 ## Key Concepts
 
-- [[block-bootstrap-max-test]]: A statistical test for high-dimensional predictor significance that uses a multiplier block bootstrap to handle non-standard limit distributions of max-statistics.
+- [[high-dimensional-wild-bootstrap-max-test]]: A block bootstrap-based max-test for identifying significant predictors in high-dimensional settings (p >> n) with non-stationary, weakly dependent data.
 
 ## Archivist Review
 
-The paper provides a rigorous statistical framework for high-dimensional inference in time series. The block bootstrap max-test is approved as a reusable method for high-dimensional predictor detection. The open question regarding endogenous predictor selection is approved as it addresses a fundamental, unresolved theoretical bottleneck in high-dimensional time-series inference. VIX is rejected as a dataset because it is a broad economic indicator, not a specialized machine learning benchmark.
+The paper presents a significant contribution to high-dimensional time series inference. I approved the max-test concept as it represents a robust statistical methodology that addresses the high-dimensional setting without standard, computationally expensive requirements like covariance matrix inversion or Bonferroni corrections. The open question is approved because it articulates a clear limitation in existing post-model selection inference frameworks specifically for dependent data.
 
 ### Approved Concepts
-- Block bootstrap max-test: It provides a method to detect significant predictors in high-dimensional, non-stationary time series without needing covariance matrix estimation or Bonferroni corrections.
+- High-dimensional Wild Bootstrap Max-Test: Provides a method for high-dimensional significance testing in the presence of weakly dependent and heterogeneous data, avoiding the need for covariance matrix estimation or Bonferroni corrections.
 
 ### Approved Open Questions
-- Optimal predictor index selection: Adaptive post-model-selection inference is a central challenge in high-dimensional statistics, and extending existing methods to handle temporal or cross-sectional dependence is crucial for their application in fields like macroeconomics and finance.
-
-### Rejected Candidates
-- [dataset] VIX volatility index (`vix-volatility-index`) - low_impact: This is a general economic indicator rather than a specific research dataset for benchmarking models.
+- Post-model-selection under dependence: Developing post-model-selection inference that is valid for dependent time-series data is critical for accurate applications in fields like macroeconomics and finance, where traditional i.i.d. assumptions often do not hold.
 
 ## Links
 

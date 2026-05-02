@@ -1,12 +1,13 @@
 ---
-title: "StructGP"
-slug: "structgp"
-type: concept
+created_at: '2026-05-01T05:22:16Z'
 generated_stub: true
+modified_at: '2026-05-02T05:07:35Z'
+processed_at: '2026-05-01T05:22:16Z'
+slug: structgp
 source_papers:
-  - "[[arxiv-260427967-differentiable-latent-structure-discovery-for-interpretable]]"
-processed_at: "2026-05-01T05:22:16Z"
-created_at: "2026-05-01T05:22:16Z"
+- '[[arxiv-260427967-differentiable-latent-structure-discovery-for-interpretable]]'
+title: StructGP
+type: concept
 ---
 
 # StructGP

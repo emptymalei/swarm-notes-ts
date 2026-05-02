@@ -20,8 +20,8 @@ domain: "time-series"
 tags:
   - "diffusion-models"
   - "stochastic-differential-equations"
+  - "time-series-forecasting"
   - "generative-modeling"
-  - "forecasting"
 architectures:
   []
 datasets:
@@ -31,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:23:29Z"
-created_at: "2026-05-01T05:23:29Z"
+processed_at: "2026-05-02T05:08:35Z"
+created_at: "2026-05-02T05:08:35Z"
 ---
 
 # ABC: Any-Subset Autoregression via Non-Markovian Diffusion Bridges in Continuous Time and Space
@@ -43,34 +43,31 @@ created_at: "2026-05-01T05:23:29Z"
 
 ## Summary
 
-ABC is a generative framework for continuous-time, continuous-space stochastic processes that addresses the limitations of standard diffusion models in modeling temporal dynamics. By utilizing a single SDE where time and states track physical processes, ABC enables robust conditioning on arbitrary subsets of observations rather than rigid noise-to-data mapping. This approach ensures that noise injection is physically consistent with elapsed time and allows for flexible interpolation and extrapolation, outperforming existing methods in video generation and weather forecasting.
+ABC is a generative framework for continuous-time, continuous-space stochastic processes that addresses limitations in standard diffusion models regarding physical plausibility and flexible conditioning. By modeling processes through a single continuous SDE with non-Markovian diffusion bridges, the model starts generation from previous states instead of uninformative noise. This approach allows for path-dependent conditioning on arbitrary subsets of time, facilitating irregular sampling and future-state constraints. ABC demonstrates improved performance over existing methods in video generation and weather forecasting by ensuring dynamics remain aligned with elapsed physical time.
 
 ## Key Contributions
 
-- ABC framework models continuous-time, continuous-space stochastic processes using a single SDE where the time variable and state align with real-world physical evolution.
-- ABC enables flexible conditioning on arbitrary subsets of states (including historical and future observations) via path-dependent dynamics derived from change-of-measure.
-- Introduces a path- and time-dependent extension of denoising score matching to ensure noise injection scales physically with elapsed time, improving dynamics over standard diffusion models.
+- Introduces ABC, a continuous-time/space framework that uses non-Markovian diffusion bridges to perform autoregression from preceding states rather than Gaussian noise.
+- Derives SDE dynamics via changes-of-measure, enabling flexible conditioning on arbitrary, irregularly sampled subsets of historical and future states.
+- Achieves superior generation quality and physically plausible dynamics on video and weather forecasting tasks by scaling noise injection according to elapsed physical time.
 
 ## Open Questions & Future Work
 
-- [[scalability-efficiency-continuous-time-generative-models]]
+- [[hybrid-ode-sde-sampling-continuous-time]]
 
 ## Key Concepts
 
-- [[any-subset-autoregression-abc]]: A generative framework that uses a single continuous-time SDE to allow flexible conditioning on arbitrary subsets of historical and future observations.
+- [[any-subset-autoregression-abc]]: A continuous-time, continuous-space generative modeling framework using non-Markovian diffusion bridges to enable autoregressive generation conditioned on any subset of states.
 
 ## Archivist Review
 
-Approved the core ABC framework as a significant contribution to continuous-time generative modeling and identified a focused open question regarding the scalability and architectural efficiency of such models. Other candidate concepts were excluded to maintain the vault's focus on high-impact, reusable mechanistic insights.
+I have approved the Any-Subset Autoregression framework as a novel conditioning paradigm for continuous-time generative models and the open question regarding hybrid sampling schemes for their potential to address long-horizon, high-fidelity modeling bottlenecks. All other candidates were either too local to the specific implementation of this paper or already sufficiently represented in the vault.
 
 ### Approved Concepts
-- Any-Subset Autoregression (ABC): Provides a principled framework for continuous-time generative modeling that moves beyond rigid noise-to-data mapping by allowing conditioning on arbitrary temporal subsets.
+- Any-Subset Autoregression (ABC): The method overcomes traditional diffusion limitations by enabling path-dependent conditioning on arbitrary, irregular subsets of process states.
 
 ### Approved Open Questions
-- Scalability of Continuous-Time Generative Models: Addresses critical scalability and sampling efficiency bottlenecks inherent in current diffusion-based continuous-time generative frameworks.
-
-### Rejected Candidates
-- [open_question] Future Directions for Continuous-Time Models (`future-directions-continuous-time-generative-models`) - other: The candidate is too broad and describes a list of disparate tasks rather than a singular, focused research bottleneck.
+- Hybrid ODE-SDE sampling schemes: Efficient and structurally coherent sampling is essential for scaling continuous-time generative models to high-resolution spatiotemporal tasks.
 
 ## Links
 

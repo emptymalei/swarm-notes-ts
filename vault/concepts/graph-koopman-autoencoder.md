@@ -1,12 +1,13 @@
 ---
-title: "Graph Koopman Autoencoder"
-slug: "graph-koopman-autoencoder"
-type: concept
+created_at: '2026-05-01T05:23:19Z'
 generated_stub: true
+modified_at: '2026-05-02T05:08:28Z'
+processed_at: '2026-05-01T05:23:19Z'
+slug: graph-koopman-autoencoder
 source_papers:
-  - "[[arxiv-260427478-toward-scalable-sdn-for-leo-mega-constellations-a-graph-lear]]"
-processed_at: "2026-05-01T05:23:19Z"
-created_at: "2026-05-01T05:23:19Z"
+- '[[arxiv-260427478-toward-scalable-sdn-for-leo-mega-constellations-a-graph-lear]]'
+title: Graph Koopman Autoencoder
+type: concept
 ---
 
 # Graph Koopman Autoencoder

@@ -19,19 +19,21 @@ tags:
   - "forecasting"
   - "time-series-forecasting"
   - "multivariate-forecasting"
-  - "attention-mechanisms"
+  - "mlp-architecture"
+  - "attention-mechanism"
+  - "optimization"
+  - "regularization"
 architectures:
   []
 datasets:
   []
 concept_slugs:
   - "iterative-refinement-mechanism"
-  - "external-attention-module"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-01T05:22:06Z"
-created_at: "2026-05-01T05:22:06Z"
+processed_at: "2026-05-02T05:07:28Z"
+created_at: "2026-05-02T05:07:28Z"
 ---
 
 # ITS-Mina: A Harris Hawks Optimization-Based All-MLP Framework with Iterative Refinement and External Attention for Multivariate Time Series Forecasting
@@ -42,39 +44,32 @@ created_at: "2026-05-01T05:22:06Z"
 
 ## Summary
 
-ITS-Mina is a novel all-MLP architecture designed for multivariate time series forecasting that avoids the high computational overhead of Transformer-based models. The framework features an iterative refinement module for deep representation learning with shared parameters and an external attention mechanism for linear-time global dependency modeling. Additionally, it incorporates Harris Hawks Optimization (HHO) for adaptive dropout regularization, yielding superior predictive performance across multiple benchmark datasets.
+ITS-Mina is an all-MLP framework designed for efficient multivariate time series forecasting. It employs an iterative refinement mechanism to deepen representation learning through parameter sharing and replaces traditional self-attention with linear-complexity external memory units. Additionally, the framework utilizes Harris Hawks Optimization to automatically tune dropout rates, demonstrating state-of-the-art results on six benchmark datasets across various forecasting horizons.
 
 ## Key Contributions
 
-- Introduces ITS-Mina, an all-MLP framework for multivariate time series forecasting leveraging parameter-efficient iterative refinement.
-- Implements an external attention module with linear computational complexity to model cross-sample dependencies.
-- Utilizes Harris Hawks Optimization (HHO) for dataset-specific adaptive dropout tuning to improve generalization.
-- Achieves state-of-the-art performance on six common multivariate time series benchmarks across varying forecasting horizons.
+- ITS-Mina proposes a novel all-MLP framework for multivariate time series forecasting that combines iterative refinement, external attention, and automated hyperparameter optimization.
+- The iterative refinement mechanism enhances model depth through shared-parameter residual mixers without increasing the parameter count.
+- The external attention module leverages learnable memory units to capture global cross-sample dependencies with linear complexity.
+- Harris Hawks Optimization (HHO) is introduced for adaptive dataset-specific dropout rate tuning, improving generalization across six standard benchmarks.
 
 ## Open Questions & Future Work
 
 - [[adaptive-iterative-refinement-halting]]
-- [[auxiliary-information-integration-forecasting]]
 
 ## Key Concepts
 
-- [[iterative-refinement-mechanism]]: A shared-parameter residual mixer stack that iteratively refines temporal representations to improve model depth efficiently.
-- [[external-attention-module]]: A linear-complexity attention mechanism using learnable memory units to capture cross-sample global dependencies.
+- [[iterative-refinement-mechanism]]: A technique to deepen a model's representation learning via repeated applications of shared-parameter residual mixer stacks.
 
 ## Archivist Review
 
-Approved the core architectural innovations of the framework (iterative refinement and external attention) and two substantial research questions regarding adaptive computation and auxiliary feature integration. Rejected the Harris Hawks Optimization proposal as it is a specific hyperparameter optimization technique rather than a foundational forecasting mechanism.
+The concept of iterative refinement via shared-parameter stacks is a reusable architectural pattern that balances capacity with parameter efficiency, distinct enough for its own note. The open question on adaptive halting for iterative processes addresses a fundamental limitation in current static-depth forecasting architectures. Other candidates were rejected as either implementation-specific details (HHO dropout tuning) or general boilerplate suggestions for future work (auxiliary data integration).
 
 ### Approved Concepts
-- Iterative Refinement Mechanism: Central mechanism for enhancing temporal representation depth without increasing parameter count.
-- External Attention Module: Addresses the O(n^2) complexity of standard self-attention in multivariate forecasting.
+- Iterative Refinement Mechanism: Enables increasing the effective model depth and computational capacity without increasing the number of learnable parameters.
 
 ### Approved Open Questions
-- Adaptive Iterative Refinement Halting: Implementing adaptive computation is technically significant as it enables models to scale their computational effort based on input complexity, potentially leading to faster inference for "easy" samples while maintaining accuracy for "hard" samples.
-- Auxiliary Information Integration Forecasting: Integrating external information is critical for real-world deployment, where forecasting accuracy is often capped by the absence of domain-specific context.
-
-### Rejected Candidates
-- [concept] Harris Hawks Optimization for Dropout Tuning (`hho-dropout-tuning`) - subcomponent_of_broader_mechanism: Using a global optimization heuristic for a sub-task like hyperparameter tuning is a common implementation detail that does not warrant a core architectural concept note.
+- Adaptive Iterative Refinement Halting: Developing dynamic stopping criteria for iterative models can potentially improve computational efficiency by allocating more compute to complex inputs and less to simpler ones.
 
 ## Links
 

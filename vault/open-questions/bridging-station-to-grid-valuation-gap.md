@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-01T05:22:25Z'
+modified_at: '2026-05-02T05:07:42Z'
 source_papers:
 - '[[arxiv-260427944-calibrating-attribution-proxies-for-reward-allocation-in-par]]'
-title: Station-to-Grid Valuation Gap
+title: Bridging station to grid valuation gap
 ---
 
 **Background:** Large-scale participatory weather sensing networks increasingly require incentive mechanisms to allocate rewards based on data utility rather than mere availability, yet establishing a model-informed value signal remains an open problem.

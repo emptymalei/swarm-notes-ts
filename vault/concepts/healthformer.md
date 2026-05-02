@@ -1,12 +1,13 @@
 ---
-title: "HealthFormer"
-slug: "healthformer"
-type: concept
+created_at: '2026-05-01T05:22:30Z'
 generated_stub: true
+modified_at: '2026-05-02T05:07:46Z'
+processed_at: '2026-05-01T05:22:30Z'
+slug: healthformer
 source_papers:
-  - "[[arxiv-260427899-simulating-clinical-interventions-with-a-generative-multimod]]"
-processed_at: "2026-05-01T05:22:30Z"
-created_at: "2026-05-01T05:22:30Z"
+- '[[arxiv-260427899-simulating-clinical-interventions-with-a-generative-multimod]]'
+title: HealthFormer
+type: concept
 ---
 
 # HealthFormer

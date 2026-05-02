@@ -1,12 +1,13 @@
 ---
-title: "Continuous-Depth Transformer Encoder"
-slug: "continuous-depth-transformer-encoder"
-type: concept
+created_at: '2026-05-01T05:23:42Z'
 generated_stub: true
+modified_at: '2026-05-02T05:08:46Z'
+processed_at: '2026-05-01T05:23:42Z'
+slug: continuous-depth-transformer-encoder
 source_papers:
-  - "[[arxiv-260427313-pinn-cast-exploring-the-role-of-continuous-depth-node-in-tra]]"
-processed_at: "2026-05-01T05:23:42Z"
-created_at: "2026-05-01T05:23:42Z"
+- '[[arxiv-260427313-pinn-cast-exploring-the-role-of-continuous-depth-node-in-tra]]'
+title: Continuous-Depth Transformer Encoder
+type: concept
 ---
 
 # Continuous-Depth Transformer Encoder
