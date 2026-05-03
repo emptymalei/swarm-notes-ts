@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-01T05:22:06Z'
+modified_at: '2026-05-03T05:14:12Z'
 source_papers:
 - '[[arxiv-260427981-its-mina-a-harris-hawks-optimization-based-all-mlp-framework]]'
-title: Auxiliary Information Integration Forecasting
+title: Integrating Auxiliary Information Covariates
 ---
 
 **Background:** Time series forecasting models often rely on internal temporal dynamics to produce predictions. Incorporating auxiliary information, such as static features and future covariates, is a known strategy for improving forecast accuracy in real-world scenarios.

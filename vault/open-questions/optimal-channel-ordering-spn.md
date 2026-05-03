@@ -1,5 +1,6 @@
 ---
 created_at: '2026-05-01T05:22:44Z'
+modified_at: '2026-05-03T05:14:44Z'
 source_papers:
 - '[[arxiv-260427814-probabilistic-circuits-for-irregular-multivariate-time-serie]]'
 title: Optimal channel ordering in SPNs

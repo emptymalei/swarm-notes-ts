@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-02T05:07:35Z'
+modified_at: '2026-05-03T05:14:20Z'
 source_papers:
 - '[[arxiv-260427967-differentiable-latent-structure-discovery-for-interpretable]]'
-title: Non-Gaussian Clinical Likelihoods
+title: Non-Gaussian Clinical GP Likelihoods
 ---
 
 **Background:** Many clinical time-series forecasting models are restricted to Gaussian likelihoods, failing to account for the inherent heterogeneity and prevalence of discrete events in real-world EHR data.

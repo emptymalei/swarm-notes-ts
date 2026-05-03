@@ -1,7 +1,7 @@
 ---
 created_at: '2026-05-01T05:21:43Z'
 generated_stub: true
-modified_at: '2026-05-02T05:07:05Z'
+modified_at: '2026-05-03T05:13:49Z'
 processed_at: '2026-05-01T05:21:43Z'
 slug: quaternionic-kinematic-chain-representation
 source_papers:

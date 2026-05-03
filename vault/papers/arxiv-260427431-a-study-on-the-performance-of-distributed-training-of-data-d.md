@@ -14,7 +14,7 @@ url: "https://arxiv.org/abs/2604.27431"
 # Custom fields
 paper_id: "2604.27431"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "computer-vision"
 tags:
   []
 architectures:
@@ -26,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-02T05:08:41Z"
-created_at: "2026-05-02T05:08:41Z"
+processed_at: "2026-05-03T05:15:27Z"
+created_at: "2026-05-03T05:15:27Z"
 ---
 
 # A Study on the Performance of Distributed Training of Data-driven CFD Simulations
@@ -38,27 +38,27 @@ created_at: "2026-05-02T05:08:41Z"
 
 ## Summary
 
-This paper examines the computational trade-offs in training data-driven models for fluid dynamics simulations, which aim to replace computationally expensive PDE-based CFD solvers. The authors compare the efficiency of CPU-only, multi-GPU, and distributed training paradigms for a time-series forecasting deep learning model. The study highlights that distributed GPU training significantly accelerates the training stage while maintaining high-fidelity physical predictions compared to classical iterative methods.
+This paper investigates the performance scaling of training data-driven models for computational fluid dynamics (CFD) simulations. It evaluates various infrastructure implementations, including CPU-only, multi-GPU, and distributed setups, to accelerate the traditionally time-consuming training phase for PDE-based simulation surrogates. The results demonstrate the efficiency gains of distributed GPU-enabled training in achieving high-accuracy fluid state predictions compared to conventional solvers.
 
 ## Key Contributions
 
-- Evaluates training performance of deep learning models for time-series CFD simulation across CPU, multi-GPU, and distributed architectures.
-- Demonstrates that distributed GPU-enabled training significantly reduces training time compared to traditional CFD PDE-based solvers without compromising predictive accuracy.
-- Provides a comparative analysis of implementation strategies for scaling AI-driven physical simulation training workloads.
+- Analyzes performance of CPU-only, multi-GPU, and distributed training configurations for data-driven CFD simulation forecasting.
+- Demonstrates that distributed GPU-enabled training significantly reduces training time compared to traditional iterative PDE-based solvers.
+- Provides a comparative implementation study for time-series forecasting models applied to fluid simulation physical behavior.
 
 ## Open Questions & Future Work
 
-- [[distributed-training-scalability-cfd-surrogates]]
+- [[distributed-training-scalability-bottlenecks]]
 
 ## Archivist Review
 
-The paper provides a comparative study of hardware scaling for neural PDE surrogates. I approved the open question regarding the scalability of small-model/large-data paradigms in distributed scientific computing, as it represents a persistent challenge for transitioning CFD to AI-based inference. No new concepts were approved as the study primarily applies existing distributed training paradigms to a specific domain use case.
+The paper provides a comparative study of infrastructure for training CFD surrogates, which is an applied systems engineering result rather than a methodological contribution to the field of time-series forecasting or scientific ML. The proposed open question is rejected because it describes general distributed computing overheads common to many domains rather than a specific research gap in the context of PDE-based surrogate modeling.
 
 ### Approved Open Questions
-- Distributed training scalability bottlenecks: This addresses a fundamental limitation in applying standard data-parallel distributed training to scientific computing, where the model-to-data size ratio often leads to communication-bound performance bottlenecks.
+- Distributed training scalability bottlenecks: Communication overhead relative to compute intensity remains a fundamental scaling limitation for scientific machine learning surrogate modeling.
 
 ### Rejected Candidates
-- [open_question] Distributed Training Scalability Bottlenecks (`ai-cfd-training-scalability-bottleneck`) - other: Renamed to a more descriptive slug for consistency with existing vault naming patterns.
+- [open_question] Distributed training scalability bottlenecks (`distributed-training-scalability-bottlenecks`) - generic: The candidate is generic to distributed machine learning rather than specific to a unique methodological hurdle in scientific forecasting.
 
 ## Links
 

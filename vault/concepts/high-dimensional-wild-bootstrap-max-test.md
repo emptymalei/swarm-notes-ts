@@ -1,12 +1,13 @@
 ---
-title: "High-dimensional Wild Bootstrap Max-Test"
-slug: "high-dimensional-wild-bootstrap-max-test"
-type: concept
+created_at: '2026-05-02T05:08:05Z'
 generated_stub: true
+modified_at: '2026-05-03T05:14:51Z'
+processed_at: '2026-05-02T05:08:05Z'
+slug: high-dimensional-wild-bootstrap-max-test
 source_papers:
-  - "[[arxiv-260427813-a-high-dimensional-wild-bootstrap-max-test-for-detecting-the]]"
-processed_at: "2026-05-02T05:08:05Z"
-created_at: "2026-05-02T05:08:05Z"
+- '[[arxiv-260427813-a-high-dimensional-wild-bootstrap-max-test-for-detecting-the]]'
+title: High-dimensional Wild Bootstrap Max-Test
+type: concept
 ---
 
 # High-dimensional Wild Bootstrap Max-Test

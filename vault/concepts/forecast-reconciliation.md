@@ -1,12 +1,13 @@
 ---
-title: "Forecast Reconciliation"
-slug: "forecast-reconciliation"
-type: concept
+created_at: '2026-05-02T05:08:11Z'
 generated_stub: true
+modified_at: '2026-05-03T05:14:56Z'
+processed_at: '2026-05-02T05:08:11Z'
+slug: forecast-reconciliation
 source_papers:
-  - "[[arxiv-260427696-foreco-and-forecoml-a-unified-toolbox-for-forecast-reconcili]]"
-processed_at: "2026-05-02T05:08:11Z"
-created_at: "2026-05-02T05:08:11Z"
+- '[[arxiv-260427696-foreco-and-forecoml-a-unified-toolbox-for-forecast-reconcili]]'
+title: Forecast Reconciliation
+type: concept
 ---
 
 # Forecast Reconciliation

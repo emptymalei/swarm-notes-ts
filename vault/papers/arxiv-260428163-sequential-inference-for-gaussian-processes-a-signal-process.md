@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-02T05:06:59Z"
-created_at: "2026-05-02T05:06:59Z"
+processed_at: "2026-05-03T05:13:44Z"
+created_at: "2026-05-03T05:13:44Z"
 ---
 
 # Sequential Inference for Gaussian Processes: A Signal Processing Perspective
@@ -37,26 +37,29 @@ created_at: "2026-05-02T05:06:59Z"
 
 ## Summary
 
-This paper provides a unified, tutorial-style overview of Gaussian processes (GPs) with a specific emphasis on sequential and streaming inference techniques. By bridging recent machine learning advancements with classical signal processing perspectives, the authors categorize methods for modeling nonlinear relationships in non-i.i.d. data streams. The work serves as a practical guide for researchers and engineers tasked with deploying GP-based systems for time-series forecasting, anomaly detection, and decision-making.
+This paper presents a comprehensive tutorial on Gaussian Processes (GPs) tailored for sequential inference, a critical requirement in real-time signal processing systems where data arrive incrementally. It synthesizes theoretical foundations with recent methodological advancements, bridging the gap between traditional signal processing paradigms and contemporary machine learning techniques. The authors organize these developments into a coherent roadmap designed to assist practitioners in deploying scalable, adaptive GP models for complex time-series and decision-making tasks.
 
 ## Key Contributions
 
-- Provides a comprehensive tutorial-style survey of Gaussian process (GP) methodology tailored for signal processing (SP) practitioners.
-- Organizes and bridges recent machine learning advancements in sequential and streaming GP inference with traditional signal processing frameworks.
-- Establishes a structured roadmap for deploying sequential GP models across diverse applications including state-space modeling, sequential forecasting, and adaptive sensing.
+- Provides a self-contained, tutorial-style overview of Gaussian Processes (GPs) focused on sequential, incremental, and streaming inference.
+- Establishes a bridge between traditional signal processing perspectives and modern machine learning approaches for GP modeling.
+- Systematizes applications of sequential GP models across state-space modeling, forecasting, anomaly detection, Bayesian optimization, and active sensing.
 
 ## Open Questions & Future Work
 
-- [[nonstationary-kernel-expressiveness]]
-- [[distributed-gp-scalability]]
+- [[flexible-nonstationary-kernels-for-sgps]]
+- [[scalable-distributed-gps-in-networks]]
 
 ## Archivist Review
 
-This paper is a survey and does not propose new specific methods or novel concepts that meet the vault's high bar for standalone notes, although it does clearly identify key research bottlenecks. The two open questions were approved because they represent central, long-standing research challenges in the GP and signal processing literature that require persistent tracking. No datasets were proposed by the authors, and no concepts were identified that qualify as unique, reusable architectural or methodological contributions beyond the existing knowledge base.
+The paper is a high-quality tutorial synthesis rather than a source of novel methodology. I have therefore approved the two open questions, which concisely capture the critical limitations of GP-based sequential inference in complex environments, but I have rejected the concept category as no novel, standalone mechanism was identified.
 
 ### Approved Open Questions
-- Flexible kernels for nonstationarity: Developing nonstationary kernels that maintain computational efficiency is critical for applying Gaussian processes to complex, real-world signal processing problems where signal properties evolve significantly over time.
-- Scalable distributed GP inference: As signal processing systems become increasingly decentralized, developing scalable, fault-tolerant inference mechanisms for distributed Gaussian processes is essential for practical deployment.
+- Flexible kernels for sequential GPs: Improving the expressiveness of sequential GP models is critical for deploying probabilistic models in complex, nonstationary signal processing environments where standard stationary kernels fail.
+- Scalable distributed GP inference: This is essential for enabling scalable, fault-tolerant, and autonomous sensor networks where decentralized signal estimation is required.
+
+### Rejected Candidates
+- [concept] No concepts were proposed. (`none-proposed`) - not_novel: The paper is a tutorial overview and did not propose a new, standalone ML methodology worthy of a permanent vault entry.
 
 ## Links
 

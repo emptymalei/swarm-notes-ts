@@ -1,7 +1,7 @@
 ---
 created_at: '2026-05-01T05:23:19Z'
 generated_stub: true
-modified_at: '2026-05-02T05:08:28Z'
+modified_at: '2026-05-03T05:15:13Z'
 processed_at: '2026-05-01T05:23:19Z'
 slug: graph-koopman-autoencoder
 source_papers:

@@ -19,7 +19,7 @@ url: "https://arxiv.org/abs/2604.27840"
 # Custom fields
 paper_id: "2604.27840"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "nlp"
 tags:
   - "time-series"
   - "forecasting"
@@ -34,8 +34,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-02T05:07:52Z"
-created_at: "2026-05-02T05:07:52Z"
+processed_at: "2026-05-03T05:14:37Z"
+created_at: "2026-05-03T05:14:37Z"
 ---
 
 # CastFlow: Learning Role-Specialized Agentic Workflows for Time Series Forecasting
@@ -46,31 +46,31 @@ created_at: "2026-05-02T05:07:52Z"
 
 ## Summary
 
-CastFlow is a dynamic agentic forecasting framework that transitions from static, single-pass generative models to a multi-stage workflow involving planning, action, forecasting, and reflection. By utilizing a role-specialized design, it leverages a frozen LLM for reasoning and a fine-tuned domain-specific LLM for numerical forecasting, supported by an ensemble-based multi-view toolkit. This approach enables iterative forecast refinement and evidence-based predictions, significantly improving forecasting performance on diverse benchmarks.
+CastFlow is an agentic framework for time series forecasting that moves beyond static, one-shot generative paradigms by utilizing iterative, multi-view, and ensemble-based processes. The framework organizes the forecasting task into specialized planning, action, and reflection agents supported by a memory module and diagnostic toolkits. By leveraging a role-specialized design that combines frozen general reasoning with fine-tuned domain-specific numerical forecasting, CastFlow achieves superior accuracy on diverse forecasting benchmarks. A workflow-oriented training approach further ensures the system effectively learns to integrate evidence and ensemble baselines.
 
 ## Key Contributions
 
-- CastFlow implements a novel dynamic agentic forecasting workflow consisting of planning, action, forecasting, and reflection to overcome the limitations of static single-pass generative paradigms.
-- Introduces a role-specialized architecture that separates general-purpose reasoning (frozen LLM) from evidence-guided numerical forecasting (fine-tuned domain-specific LLM).
-- Develops a two-stage workflow-oriented training strategy utilizing supervised fine-tuning (SFT) and reinforcement learning with verifiable rewards (RLVR) to optimize forecast accuracy.
+- Introduces CastFlow, an agentic forecasting framework that decomposes the task into planning, action, forecasting, and reflection stages.
+- Employs a role-specialized architecture by combining frozen LLM reasoning with a fine-tuned, domain-specific model for numerical evidence-guided forecasting.
+- Develops a two-stage workflow-oriented training strategy utilizing supervised fine-tuning and reinforcement learning with verifiable rewards (RLVR).
 
 ## Open Questions & Future Work
 
-- [[generalizing-agentic-forecasting-to-noisy-domains]]
+- [[balancing-reasoning-and-precision-in-llm-forecasting]]
 
 ## Key Concepts
 
-- [[castflow]]: A dynamic agentic framework for time series forecasting that decomposes the process into planning, action, forecasting, and reflection stages using role-specialized LLMs.
+- [[castflow]]: An agentic time series forecasting framework that uses role-specialized agents to perform iterative multi-view temporal analysis and forecast refinement.
 
 ## Archivist Review
 
-The paper provides a distinct architectural approach to time series forecasting by formalizing a multi-stage agentic workflow (planning, action, forecasting, reflection). I approved CastFlow as a novel forecasting paradigm and the open question regarding its generalization across noisy, heterogeneous domains, as these address significant bottlenecks in moving beyond single-pass LLM generation.
+I approved the 'CastFlow' framework as it introduces a reusable agentic paradigm for time series analysis that decouples general reasoning from numerical tasks. The open question 'Balancing Reasoning and Precision' was approved as it effectively captures the core technical bottleneck in LLM-based time series modeling. No datasets were approved because the paper did not propose or highlight a single novel dataset, but rather used diverse existing benchmarks.
 
 ### Approved Concepts
-- CastFlow: It is the core contribution of the paper, introducing a dynamic agentic paradigm for time series forecasting that replaces static generation with planning, reflection, and iterative refinement.
+- CastFlow: The paper introduces an agentic forecasting workflow that decomposes time series analysis into multi-stage tasks (planning, action, reflection), which is a distinct departure from single-pass generative models.
 
 ### Approved Open Questions
-- Generalizing Agentic Forecasting Performance: The inability to maintain performance across all temporal domains, particularly when diagnostic evidence provides conflicting or non-predictive signals, represents a fundamental bottleneck for deploying agentic forecasting systems in heterogeneous real-world infrastructures.
+- Balancing Reasoning and Precision: This bottleneck characterizes the fundamental trade-off in modern LLM-driven forecasting systems and is crucial for measuring progress in the field.
 
 ## Links
 

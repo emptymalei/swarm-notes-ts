@@ -1,7 +1,7 @@
 ---
 created_at: '2026-05-01T05:22:16Z'
 generated_stub: true
-modified_at: '2026-05-02T05:07:35Z'
+modified_at: '2026-05-03T05:14:20Z'
 processed_at: '2026-05-01T05:22:16Z'
 slug: structgp
 source_papers:

@@ -1,12 +1,13 @@
 ---
-title: "CircuITS"
-slug: "circuits-imts"
-type: concept
+created_at: '2026-05-02T05:07:59Z'
 generated_stub: true
+modified_at: '2026-05-03T05:14:44Z'
+processed_at: '2026-05-02T05:07:59Z'
+slug: circuits-imts
 source_papers:
-  - "[[arxiv-260427814-probabilistic-circuits-for-irregular-multivariate-time-serie]]"
-processed_at: "2026-05-02T05:07:59Z"
-created_at: "2026-05-02T05:07:59Z"
+- '[[arxiv-260427814-probabilistic-circuits-for-irregular-multivariate-time-serie]]'
+title: CircuITS
+type: concept
 ---
 
 # CircuITS

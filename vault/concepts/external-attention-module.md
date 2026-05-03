@@ -1,12 +1,13 @@
 ---
-title: "External Attention Module"
-slug: "external-attention-module"
-type: concept
+created_at: '2026-05-01T05:22:06Z'
 generated_stub: true
+modified_at: '2026-05-03T05:14:12Z'
+processed_at: '2026-05-01T05:22:06Z'
+slug: external-attention-module
 source_papers:
-  - "[[arxiv-260427981-its-mina-a-harris-hawks-optimization-based-all-mlp-framework]]"
-processed_at: "2026-05-01T05:22:06Z"
-created_at: "2026-05-01T05:22:06Z"
+- '[[arxiv-260427981-its-mina-a-harris-hawks-optimization-based-all-mlp-framework]]'
+title: External Attention Module
+type: concept
 ---
 
 # External Attention Module

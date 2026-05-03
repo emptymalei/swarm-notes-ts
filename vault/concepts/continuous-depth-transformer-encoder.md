@@ -1,7 +1,7 @@
 ---
 created_at: '2026-05-01T05:23:42Z'
 generated_stub: true
-modified_at: '2026-05-02T05:08:46Z'
+modified_at: '2026-05-03T05:15:33Z'
 processed_at: '2026-05-01T05:23:42Z'
 slug: continuous-depth-transformer-encoder
 source_papers:

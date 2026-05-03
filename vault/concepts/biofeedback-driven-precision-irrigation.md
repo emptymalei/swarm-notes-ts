@@ -1,12 +1,13 @@
 ---
-title: "Biofeedback-Driven Precision Irrigation"
-slug: "biofeedback-driven-precision-irrigation"
-type: concept
+created_at: '2026-05-02T05:07:21Z'
 generated_stub: true
+modified_at: '2026-05-03T05:14:05Z'
+processed_at: '2026-05-02T05:07:21Z'
+slug: biofeedback-driven-precision-irrigation
 source_papers:
-  - "[[arxiv-260428038-early-detection-of-water-stress-by-plant-electrophysiology-m]]"
-processed_at: "2026-05-02T05:07:21Z"
-created_at: "2026-05-02T05:07:21Z"
+- '[[arxiv-260428038-early-detection-of-water-stress-by-plant-electrophysiology-m]]'
+title: Biofeedback-Driven Precision Irrigation
+type: concept
 ---
 
 # Biofeedback-Driven Precision Irrigation
