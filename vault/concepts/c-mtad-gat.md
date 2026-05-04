@@ -1,12 +1,14 @@
 ---
-title: "Context-Aware Graph Attention for Anomaly Detection (C-MTAD-GAT)"
-slug: "c-mtad-gat"
-type: concept
+created_at: '2026-05-02T05:09:11Z'
 generated_stub: true
+modified_at: '2026-05-04T05:15:31Z'
+processed_at: '2026-05-02T05:09:11Z'
+slug: c-mtad-gat
 source_papers:
-  - "[[arxiv-260427172-context-aware-graph-attention-for-unsupervised-telco-anomaly]]"
-processed_at: "2026-05-02T05:09:11Z"
-created_at: "2026-05-02T05:09:11Z"
+- '[[arxiv-260427172-context-aware-graph-attention-for-unsupervised-telco-anomaly]]'
+- '[[arxiv-260500482-scalable-context-aware-graph-attention-for-unsupervised-anom]]'
+title: Context-Aware Graph Attention for Anomaly Detection (C-MTAD-GAT)
+type: concept
 ---
 
 # Context-Aware Graph Attention for Anomaly Detection (C-MTAD-GAT)
@@ -27,3 +29,4 @@ The paper introduces a novel architecture that fuses graph attention mechanisms 
 ## Related Papers
 
 - [[arxiv-260427172-context-aware-graph-attention-for-unsupervised-telco-anomaly]]
+- [[arxiv-260500482-scalable-context-aware-graph-attention-for-unsupervised-anom]]
