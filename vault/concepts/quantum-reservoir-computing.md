@@ -1,12 +1,14 @@
 ---
-title: "Quantum Reservoir Computing"
-slug: "quantum-reservoir-computing"
-type: concept
+created_at: '2026-04-09T04:56:57Z'
 generated_stub: true
+modified_at: '2026-05-07T05:14:11Z'
+processed_at: '2026-04-09T04:56:57Z'
+slug: quantum-reservoir-computing
 source_papers:
-  - "[[arxiv-260406075-late-breaking-results-hardware-efficient-quantum-reservoir-c]]"
-processed_at: "2026-04-09T04:56:57Z"
-created_at: "2026-04-09T04:56:57Z"
+- '[[arxiv-260406075-late-breaking-results-hardware-efficient-quantum-reservoir-c]]'
+- '[[arxiv-260504991-scalable-quantum-reservoir-computing-over-distributed-quantu]]'
+title: Quantum Reservoir Computing
+type: concept
 ---
 
 # Quantum Reservoir Computing
@@ -27,3 +29,4 @@ It is the core architectural paradigm proposed for efficient time-series forecas
 ## Related Papers
 
 - [[arxiv-260406075-late-breaking-results-hardware-efficient-quantum-reservoir-c]]
+- [[arxiv-260504991-scalable-quantum-reservoir-computing-over-distributed-quantu]]

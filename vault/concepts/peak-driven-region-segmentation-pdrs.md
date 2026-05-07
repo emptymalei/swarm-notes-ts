@@ -1,12 +1,14 @@
 ---
-title: "Peak-Driven Region Segmentation (PDRS)"
-slug: "peak-driven-region-segmentation-pdrs"
-type: concept
+created_at: '2026-05-06T05:13:35Z'
 generated_stub: true
+modified_at: '2026-05-07T05:15:41Z'
+processed_at: '2026-05-06T05:13:35Z'
+slug: peak-driven-region-segmentation-pdrs
 source_papers:
-  - "[[arxiv-260502843-pdrs-a-linear-on-algorithm-for-segmentation-of-high-activity]]"
-processed_at: "2026-05-06T05:13:35Z"
-created_at: "2026-05-06T05:13:35Z"
+- '[[arxiv-260502843-pdrs-a-linear-on-algorithm-for-segmentation-of-high-activity]]'
+- '[[arxiv-260504552-the-newsworthiness-of-brazilian-distress-a-peak-analysis-on]]'
+title: Peak-Driven Region Segmentation (PDRS)
+type: concept
 ---
 
 # Peak-Driven Region Segmentation (PDRS)
@@ -27,3 +29,4 @@ It offers a computationally scalable, O(N) alternative to O(N^2) Bayesian Blocks
 ## Related Papers
 
 - [[arxiv-260502843-pdrs-a-linear-on-algorithm-for-segmentation-of-high-activity]]
+- [[arxiv-260504552-the-newsworthiness-of-brazilian-distress-a-peak-analysis-on]]

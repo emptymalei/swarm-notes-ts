@@ -1,12 +1,14 @@
 ---
-title: "Participant Failure Impact Analysis in FL"
-slug: "participant-failure-impact-analysis-fl"
-type: concept
+created_at: '2026-03-29T20:18:23Z'
 generated_stub: true
+modified_at: '2026-05-07T05:14:04Z'
+processed_at: '2026-03-29T20:18:23Z'
+slug: participant-failure-impact-analysis-fl
 source_papers:
-  - "[[openalex-2603.25289-revealing-the-influence-of-participant-failures-on-model-qua]]"
-processed_at: "2026-03-29T20:18:23Z"
-created_at: "2026-03-29T20:18:23Z"
+- '[[openalex-2603.25289-revealing-the-influence-of-participant-failures-on-model-qua]]'
+- '[[arxiv-260504993-federated-learning-for-early-prediction-of-ev-charging-deman]]'
+title: Participant Failure Impact Analysis in FL
+type: concept
 ---
 
 # Participant Failure Impact Analysis in FL
@@ -27,3 +29,4 @@ This is the central analytical contribution, systematically studying the effects
 ## Related Papers
 
 - [[openalex-2603.25289-revealing-the-influence-of-participant-failures-on-model-qua]]
+- [[arxiv-260504993-federated-learning-for-early-prediction-of-ev-charging-deman]]
