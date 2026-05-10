@@ -1,12 +1,13 @@
 ---
-title: "Spectral Lens Diagnostic Protocol"
-slug: "spectral-lens-diagnostic-protocol"
-type: concept
+created_at: '2026-05-09T05:13:00Z'
 generated_stub: true
+modified_at: '2026-05-10T05:21:05Z'
+processed_at: '2026-05-09T05:13:00Z'
+slug: spectral-lens-diagnostic-protocol
 source_papers:
-  - "[[arxiv-260505683-spectral-lens-activation-and-gradient-spectra-as-diagnostics]]"
-processed_at: "2026-05-09T05:13:00Z"
-created_at: "2026-05-09T05:13:00Z"
+- '[[arxiv-260505683-spectral-lens-activation-and-gradient-spectra-as-diagnostics]]'
+title: Spectral Lens Diagnostic Protocol
+type: concept
 ---
 
 # Spectral Lens Diagnostic Protocol

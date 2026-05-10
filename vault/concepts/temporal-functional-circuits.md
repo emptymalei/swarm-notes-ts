@@ -1,12 +1,13 @@
 ---
-title: "Temporal Functional Circuits"
-slug: "temporal-functional-circuits"
-type: concept
+created_at: '2026-05-09T05:12:51Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:58Z'
+processed_at: '2026-05-09T05:12:51Z'
+slug: temporal-functional-circuits
 source_papers:
-  - "[[arxiv-260505685-temporal-functional-circuits-from-spline-plots-to-faithful-e]]"
-processed_at: "2026-05-09T05:12:51Z"
-created_at: "2026-05-09T05:12:51Z"
+- '[[arxiv-260505685-temporal-functional-circuits-from-spline-plots-to-faithful-e]]'
+title: Temporal Functional Circuits
+type: concept
 ---
 
 # Temporal Functional Circuits

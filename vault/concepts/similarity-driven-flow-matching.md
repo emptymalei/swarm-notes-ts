@@ -1,12 +1,13 @@
 ---
-title: "Similarity-Driven Flow Matching"
-slug: "similarity-driven-flow-matching"
-type: concept
+created_at: '2026-05-09T05:12:25Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:35Z'
+processed_at: '2026-05-09T05:12:25Z'
+slug: similarity-driven-flow-matching
 source_papers:
-  - "[[arxiv-260505736-sdflow-similarity-driven-flow-matching-for-time-series-gener]]"
-processed_at: "2026-05-09T05:12:25Z"
-created_at: "2026-05-09T05:12:25Z"
+- '[[arxiv-260505736-sdflow-similarity-driven-flow-matching-for-time-series-gener]]'
+title: Similarity-Driven Flow Matching
+type: concept
 ---
 
 # Similarity-Driven Flow Matching

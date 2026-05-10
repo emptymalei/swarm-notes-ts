@@ -20,12 +20,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  - "proactive-forecast-based-feedback"
+  - "gaze-and-mental-effort-synchrony"
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-05-09T05:12:11Z"
-created_at: "2026-05-09T05:12:11Z"
+processed_at: "2026-05-10T05:20:20Z"
+created_at: "2026-05-10T05:20:20Z"
 ---
 
 # Can providing feedback on gaze and mental-effort synchrony improve pair programming performance?
@@ -36,27 +36,35 @@ created_at: "2026-05-09T05:12:11Z"
 
 ## Summary
 
-This paper investigates the effectiveness of AI-supported feedback on collaborative pair programming performance, specifically focusing on joint visual attention and mental effort synchrony. Through two experimental studies, the authors compare reactive threshold-based interventions with proactive, machine learning-based forecasts of regulatory breakdowns. Results indicate that proactive feedback improves debugging success and time-on-task while better preserving learner agency and reducing intervention intrusiveness. The work establishes that monitoring gaze and mental effort synchrony provides a viable pathway for real-time, AI-augmented collaborative support.
+This paper explores the efficacy of AI-supported feedback in improving pair programming through the monitoring of joint visual attention and mental effort. Through two experiments involving dual eye-tracking, the authors compare reactive interventions triggered by regulatory thresholds against proactive interventions based on machine learning forecasts of future breakdowns. The results indicate that both feedback modalities significantly improve collaborative performance, with proactive models being particularly effective at increasing feedback uptake while minimizing intrusive disruptions.
 
 ## Key Contributions
 
-- Demonstrated that multimodal AI-supported feedback on joint visual attention and mental effort significantly improves collaborative debugging performance in pair programming.
-- Compared reactive (threshold-based) and proactive (predictive) feedback, showing that proactive interventions achieve better performance and efficiency while reducing intrusiveness.
-- Showed that combining gaze and mental effort synchrony metrics serves as a robust signal for triggering effective AI-assisted collaborative learning interventions.
+- Proposed a multimodal feedback framework for pair programming that utilizes gaze and mental-effort synchrony as regulatory triggers.
+- Demonstrated that reactive feedback based on joint visual attention and mental effort thresholds improves debugging success and efficiency.
+- Validated that proactive forecast-based feedback reduces time-on-task and increases constructive feedback uptake while better preserving learner agency compared to reactive interventions.
+
+## Open Questions & Future Work
+
+- [[balancing-intervention-timing-and-user-agency]]
 
 ## Key Concepts
 
-- [[proactive-forecast-based-feedback]]: An AI-driven intervention strategy that uses machine learning to forecast and prevent collaborative performance breakdowns before they occur.
+- [[gaze-and-mental-effort-synchrony]]: A multimodal framework using dual eye-tracking gaze and physiological/cognitive load data to quantify synchronization in collaborative pairs.
 
 ## Archivist Review
 
-The paper introduces a compelling framework for shifting from reactive, threshold-based AI interventions to proactive, forecast-based collaborative support. I approved the concept of proactive feedback as it represents a significant methodological shift in human-AI collaborative systems that is likely to recur. I rejected the gaze and mental effort synchrony metric as a concept because it is specific to the educational debugging context and lacks the generality expected for a long-lived vault note.
+I have approved the core concept of 'gaze and mental-effort synchrony' as a representative framework for studying human team coordination via multimodal telemetry. I also approved an open question regarding the fundamental trade-off between intervention timing and user agency, which is a known challenge in proactive human-AI collaboration research. Other specific implementation strategies were rejected as sub-components of these broader frameworks.
 
 ### Approved Concepts
-- Proactive Forecast-based Feedback: Provides a mechanism for preemptive intervention in collaborative human-AI interactions, shifting from reactive thresholds to anticipatory support.
+- Gaze and mental-effort synchrony: Establishes a measurable proxy for collaborative regulation using dual-stream multimodal sensor data, which is central to investigating AI-driven intervention strategies.
+
+### Approved Open Questions
+- Intervention timing vs agency: This is a critical bottleneck in the design of collaborative AI agents that aim to act as seamless teammates rather than intrusive monitors.
 
 ### Rejected Candidates
-- [concept] Gaze and mental effort synchrony (`gaze-and-mental-effort-synchrony`) - not_reusable: This is a domain-specific metric rather than a generalized architectural pattern or method.
+- [concept] Reactive threshold-based feedback (`reactive-threshold-feedback`) - subcomponent_of_broader_mechanism: This is a specific instance of a feedback mechanism that is less generalizable than the core synchrony metric identified.
+- [concept] Proactive forecast-based feedback (`proactive-forecast-based-feedback`) - subcomponent_of_broader_mechanism: This is a sub-implementation strategy for the broader proactive intervention research area.
 
 ## Links
 

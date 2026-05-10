@@ -1,12 +1,13 @@
 ---
-title: "Weight-Space World Model"
-slug: "weight-space-world-model"
-type: concept
+created_at: '2026-05-09T05:11:00Z'
 generated_stub: true
+modified_at: '2026-05-10T05:19:06Z'
+processed_at: '2026-05-09T05:11:00Z'
+slug: weight-space-world-model
 source_papers:
-  - "[[arxiv-260506298-render-dont-decode-weight-space-world-models-with-latent-str]]"
-processed_at: "2026-05-09T05:11:00Z"
-created_at: "2026-05-09T05:11:00Z"
+- '[[arxiv-260506298-render-dont-decode-weight-space-world-models-with-latent-str]]'
+title: Weight-Space World Model
+type: concept
 ---
 
 # Weight-Space World Model

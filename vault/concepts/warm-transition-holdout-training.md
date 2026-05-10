@@ -1,12 +1,13 @@
 ---
-title: "Warm-transition Holdout Training"
-slug: "warm-transition-holdout-training"
-type: concept
+created_at: '2026-05-09T05:12:18Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:28Z'
+processed_at: '2026-05-09T05:12:18Z'
+slug: warm-transition-holdout-training
 source_papers:
-  - "[[arxiv-260505771-beyond-long-tail-pois-transition-centered-generalization-for]]"
-processed_at: "2026-05-09T05:12:18Z"
-created_at: "2026-05-09T05:12:18Z"
+- '[[arxiv-260505771-beyond-long-tail-pois-transition-centered-generalization-for]]'
+title: Warm-transition Holdout Training
+type: concept
 ---
 
 # Warm-transition Holdout Training

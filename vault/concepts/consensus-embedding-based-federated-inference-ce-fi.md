@@ -1,12 +1,13 @@
 ---
-title: "Consensus Embedding-based Federated Inference (CE-FI)"
-slug: "consensus-embedding-based-federated-inference-ce-fi"
-type: concept
+created_at: '2026-05-09T05:12:43Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:50Z'
+processed_at: '2026-05-09T05:12:43Z'
+slug: consensus-embedding-based-federated-inference-ce-fi
 source_papers:
-  - "[[arxiv-260505718-enabling-federated-inference-via-unsupervised-consensus-embe]]"
-processed_at: "2026-05-09T05:12:43Z"
-created_at: "2026-05-09T05:12:43Z"
+- '[[arxiv-260505718-enabling-federated-inference-via-unsupervised-consensus-embe]]'
+title: Consensus Embedding-based Federated Inference (CE-FI)
+type: concept
 ---
 
 # Consensus Embedding-based Federated Inference (CE-FI)

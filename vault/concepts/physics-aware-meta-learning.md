@@ -1,12 +1,13 @@
 ---
-title: "Physics-Aware Meta-Learning"
-slug: "physics-aware-meta-learning"
-type: concept
+created_at: '2026-05-09T05:13:10Z'
 generated_stub: true
+modified_at: '2026-05-10T05:21:14Z'
+processed_at: '2026-05-09T05:13:10Z'
+slug: physics-aware-meta-learning
 source_papers:
-  - "[[arxiv-260505623-region-adaptable-retrieval-of-coastal-biogeochemical-paramet]]"
-processed_at: "2026-05-09T05:13:10Z"
-created_at: "2026-05-09T05:13:10Z"
+- '[[arxiv-260505623-region-adaptable-retrieval-of-coastal-biogeochemical-paramet]]'
+title: Physics-Aware Meta-Learning
+type: concept
 ---
 
 # Physics-Aware Meta-Learning

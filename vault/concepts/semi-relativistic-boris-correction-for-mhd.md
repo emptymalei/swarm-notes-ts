@@ -1,12 +1,13 @@
 ---
-title: "Semi-relativistic Boris Correction for MHD"
-slug: "semi-relativistic-boris-correction-for-mhd"
-type: concept
+created_at: '2026-05-09T05:11:52Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:00Z'
+processed_at: '2026-05-09T05:11:52Z'
+slug: semi-relativistic-boris-correction-for-mhd
 source_papers:
-  - "[[arxiv-260505883-modeling-of-coronal-mass-ejection-originated-from-a-sheared]]"
-processed_at: "2026-05-09T05:11:52Z"
-created_at: "2026-05-09T05:11:52Z"
+- '[[arxiv-260505883-modeling-of-coronal-mass-ejection-originated-from-a-sheared]]'
+title: Semi-relativistic Boris Correction for MHD
+type: concept
 ---
 
 # Semi-relativistic Boris Correction for MHD

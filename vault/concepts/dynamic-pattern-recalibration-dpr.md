@@ -1,12 +1,13 @@
 ---
-title: "Dynamic Pattern Recalibration (DPR)"
-slug: "dynamic-pattern-recalibration-dpr"
-type: concept
+created_at: '2026-05-09T05:10:48Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:55Z'
+processed_at: '2026-05-09T05:10:48Z'
+slug: dynamic-pattern-recalibration-dpr
 source_papers:
-  - "[[arxiv-260506310-perceive-route-and-modulate-dynamic-pattern-recalibration-fo]]"
-processed_at: "2026-05-09T05:10:48Z"
-created_at: "2026-05-09T05:10:48Z"
+- '[[arxiv-260506310-perceive-route-and-modulate-dynamic-pattern-recalibration-fo]]'
+title: Dynamic Pattern Recalibration (DPR)
+type: concept
 ---
 
 # Dynamic Pattern Recalibration (DPR)

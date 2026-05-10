@@ -1,12 +1,13 @@
 ---
-title: "Consistency-Distilled Flow Matching"
-slug: "consistency-distilled-flow-matching"
-type: concept
+created_at: '2026-05-09T05:11:31Z'
 generated_stub: true
+modified_at: '2026-05-10T05:19:37Z'
+processed_at: '2026-05-09T05:11:31Z'
+slug: consistency-distilled-flow-matching
 source_papers:
-  - "[[arxiv-260505975-physical-fidelity-reconstruction-via-improved-consistency-di]]"
-processed_at: "2026-05-09T05:11:31Z"
-created_at: "2026-05-09T05:11:31Z"
+- '[[arxiv-260505975-physical-fidelity-reconstruction-via-improved-consistency-di]]'
+title: Consistency-Distilled Flow Matching
+type: concept
 ---
 
 # Consistency-Distilled Flow Matching

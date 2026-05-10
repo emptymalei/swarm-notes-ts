@@ -22,12 +22,12 @@ architectures:
 datasets:
   []
 concept_slugs:
-  []
+  - "topological-sorting-via-node-relatives"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:11:02Z"
-created_at: "2026-05-09T05:11:02Z"
+processed_at: "2026-05-10T05:19:10Z"
+created_at: "2026-05-10T05:19:10Z"
 ---
 
 # A Topological Sorting Criterion for Random Causal Directed Acyclic Graphs
@@ -38,14 +38,35 @@ created_at: "2026-05-09T05:11:02Z"
 
 ## Summary
 
-This paper investigates the structural properties of common random DAG generation schemes used to benchmark causal discovery algorithms. The authors prove that the set of reachable nodes (relatives) in these graphs grows monotonically along the causal order, a feature that can be exploited to recover the causal ordering itself. They demonstrate that many existing benchmarks may be inadvertently simplified by this property, and argue that time-series DAGs offer a more robust alternative for future causal discovery research.
+This paper investigates structural patterns in random causal DAGs, specifically focusing on the relationship between node order and reachability. The authors demonstrate that the number of reachable nodes (termed 'relatives') increases monotonically along the causal order, providing an unintended, simple heuristic for causal order recovery. They show that this pattern is prevalent in many synthetic datasets used in the literature, which may lead to overly optimistic performance results for causal discovery algorithms. Consequently, the authors propose sampling time-series DAGs as a more rigorous approach for evaluating causal discovery methods.
 
 ## Key Contributions
 
-- Demonstrates that the number of reachable nodes (relatives) in standard random DAGs increases monotonically along the causal order.
-- Proposes a causal order recovery method based on sorting nodes by their estimated number of relatives.
-- Identifies that strict monotonicity of relatives implies a singular Markov equivalence class, suggesting potential biases in common causal discovery evaluations.
-- Proposes sampling time-series DAGs as an alternative to existing random DAG models to avoid structural artifacts.
+- Identified that the number of reachable nodes (relatives) in random causal DAGs increases monotonically along the causal order.
+- Proposed a causal order recovery algorithm based on sorting nodes by their estimated count of relatives.
+- Demonstrated that this simple sorting strategy serves as an effective proxy for causal order in many existing synthetic causal discovery evaluation settings.
+- Identified potential biases in current causal discovery evaluation methodologies and proposed time-series DAGs as a more robust alternative.
+
+## Open Questions & Future Work
+
+- [[synthetic-dag-evaluation-bias]]
+
+## Key Concepts
+
+- [[topological-sorting-via-node-relatives]]: A causal order recovery heuristic that sorts nodes by the number of reachable nodes (relatives) in a DAG.
+
+## Archivist Review
+
+Archivist review kept only candidates judged central to the paper and reusable across future work. Approved 1 concept(s), 1 open question(s), and 0 dataset(s), with 1 rejected candidate note(s).
+
+### Approved Concepts
+- Topological sorting via node relatives: Reveals an unintended, prevalent structural property in synthetic causal discovery benchmarks that simplifies causal order recovery.
+
+### Approved Open Questions
+- Synthetic DAG evaluation bias: Existing synthetic benchmarks may overestimate algorithmic performance by allowing simple heuristics to recover causal order, necessitating more rigorous synthetic data generation methods.
+
+### Rejected Candidates
+- [concept] Causal discovery evaluation methodologies (`causal-discovery-evaluation-methodologies`) - generic: This is a general research area rather than a specific mechanism or concept.
 
 ## Links
 

@@ -11,9 +11,11 @@ url: "https://arxiv.org/abs/2605.05685"
 # Custom fields
 paper_id: "2605.05685"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  []
+  - "forecasting"
+  - "interpretability"
+  - "mechanistic-interpretability"
 architectures:
   []
 datasets:
@@ -23,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:12:51Z"
-created_at: "2026-05-09T05:12:51Z"
+processed_at: "2026-05-10T05:20:58Z"
+created_at: "2026-05-10T05:20:58Z"
 ---
 
 # Temporal Functional Circuits: From Spline Plots to Faithful Explanations in KAN Forecasting
@@ -35,34 +37,33 @@ created_at: "2026-05-09T05:12:51Z"
 
 ## Summary
 
-This paper presents Temporal Functional Circuits, a framework designed to enhance the interpretability of Kolmogorov-Arnold Networks (KANs) in time-series forecasting. By employing a gated residual structure that separates linear trends from sparse KAN-based corrections, the method allows for rigorous faithfulness testing via edge-level interventions. Experimental results on eight benchmarks and synthetic datasets show that the architecture provides competitive performance while enabling mechanistic insights into how specific input lags influence predictions.
+This paper presents Temporal Functional Circuits, an interpretability framework for Kolmogorov-Arnold Networks (KAN) applied to time-series forecasting. By utilizing a gated residual architecture that separates linear base components from sparse KAN spline corrections, the model achieves competitive accuracy while enabling edge-level attribution and faithfulness validation. The approach effectively maps edge functions to specific input lags and demonstrates that learned spline shapes are essential for capturing signal complexity beyond standard linear activations.
 
 ## Key Contributions
 
-- Introduces Temporal Functional Circuits, a framework providing faithful, temporally grounded explanations for KAN-based time-series forecasting.
-- Achieves 59% lower MSE on regime-switching signals compared to linear-only models using a gated residual KAN architecture.
-- Demonstrates through edge-level interventions that learned B-spline components contribute significant predictive value beyond base activations.
+- Introduces Temporal Functional Circuits to transform KAN latent edge functions into temporally grounded, faithful explanations.
+- Develops a gated residual KAN architecture that achieves 59% lower MSE than linear baselines on regime-switching signals.
+- Demonstrates that learned B-spline edge functions carry predictive value beyond base activation through edge-level intervention experiments.
 
 ## Open Questions & Future Work
 
-- [[adaptive-gate-regularization]]
+- [[automated-gate-regularization-selection]]
+- [[faithfulness-vs-causal-discovery]]
 
 ## Key Concepts
 
-- [[temporal-functional-circuits]]: A KAN-based framework for time-series forecasting that decomposes predictions into linear base and nonlinear spline corrections, enabling edge-level faithfulness testing.
+- [[temporal-functional-circuits]]: A framework for transforming Kolmogorov-Arnold Network edge functions into temporally grounded and faithful explanations for time-series forecasting.
 
 ## Archivist Review
 
-I approved the overarching framework of Temporal Functional Circuits, as it provides a novel and reusable methodology for interpreting Kolmogorov-Arnold Networks in a temporal context. I also approved the open question regarding adaptive gate regularization, as it addresses a significant, recurring bottleneck in training sparse, gated architectures. I rejected the gated residual KAN as a standalone concept because it is a subcomponent of the Temporal Functional Circuits framework.
+I approved the Temporal Functional Circuits framework as a key contribution to KAN interpretability in time-series. The open questions regarding gate regularization and the distinction between internal faithfulness and external causality are substantial bottlenecks in deploying these architectures safely. No datasets were approved as none were cited as primary, novel contributions.
 
 ### Approved Concepts
-- Temporal Functional Circuits: It bridges the gap between Kolmogorov-Arnold Networks (KANs) and time-series interpretability by grounding edge-level spline functions in specific temporal lags.
+- Temporal Functional Circuits: It provides a systematic framework for interpreting and validating latent functional edges in KAN architectures for time-series.
 
 ### Approved Open Questions
-- Adaptive Gate Regularization: Automated gate regulation would facilitate the scaling of gated architectures across diverse forecasting domains without the need for exhaustive manual validation.
-
-### Rejected Candidates
-- [concept] Gated Residual KAN (`gated-residual-kan`) - subcomponent_of_broader_mechanism: This is a subcomponent architecture of the overarching 'Temporal Functional Circuits' framework.
+- Automated Gate Regularization Selection: The lack of an automated selection mechanism limits the robustness and ease of deployment of gated KAN architectures.
+- Faithfulness vs. Causal Discovery: Distinguishing between predictive faithfulness and true causal explanation is critical for high-stakes forecasting.
 
 ## Links
 

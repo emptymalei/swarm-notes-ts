@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-09T05:10:11Z'
+modified_at: '2026-05-10T05:18:21Z'
 source_papers:
 - '[[arxiv-260506438-neural-actuarial-longevity-forecasting-anchoring-lstms-for-e]]'
-title: Actuarial-Informed Neural Networks
+title: Actuarial-Informed Neural Networks Development
 ---
 
 **Background:** Integrating domain-specific constraints into neural network training, such as demographic coherence and monotonic age-dependent mortality growth, improves model interpretability and adherence to actuarial fundamental laws.

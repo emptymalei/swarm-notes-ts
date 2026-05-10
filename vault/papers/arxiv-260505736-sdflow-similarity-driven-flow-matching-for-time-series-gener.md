@@ -15,9 +15,10 @@ url: "https://arxiv.org/abs/2605.05736"
 # Custom fields
 paper_id: "2605.05736"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
-  []
+  - "time-series-augmented-generation-tsag"
+  - "similarity-driven-flow-matching"
 architectures:
   []
 datasets:
@@ -27,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:12:25Z"
-created_at: "2026-05-09T05:12:25Z"
+processed_at: "2026-05-10T05:20:35Z"
+created_at: "2026-05-10T05:20:35Z"
 ---
 
 # SDFlow: Similarity-Driven Flow Matching for Time Series Generation
@@ -39,13 +40,13 @@ created_at: "2026-05-09T05:12:25Z"
 
 ## Summary
 
-SDFlow is a non-autoregressive generative framework for time series that addresses the exposure bias inherent in autoregressive vector-quantized token models. By operating entirely within a frozen latent space, the model utilizes a variational flow-matching formulation to enable parallel sequence generation via global transport maps. The framework further incorporates a low-rank manifold decomposition and categorical posterior supervision, resulting in superior long-horizon generation quality and faster inference speeds compared to traditional autoregressive baselines.
+SDFlow is a non-autoregressive generative model for time series that operates within a frozen vector-quantized (VQ) latent space using flow matching. By replacing step-wise autoregressive token prediction with a global transport map, the method eliminates exposure bias, which is a major limitation for long-horizon generation. The model further improves generation quality and computational efficiency through a low-rank manifold decomposition and the integration of categorical posterior supervision into a variational flow-matching framework.
 
 ## Key Contributions
 
-- Introduces SDFlow, a non-autoregressive generative framework for time series that eliminates exposure bias through global transport maps.
-- Implements a low-rank manifold decomposition with learned latent anchor priors to mitigate high-dimensional VQ token space complexities.
-- Integrates discrete codebook supervision into continuous flow dynamics using a variational flow-matching formulation, achieving SOTA discriminative scores and reduced Context-FID.
+- Introduces SDFlow, a non-autoregressive flow-matching framework that eliminates exposure bias in long-horizon time-series generation by utilizing global transport maps.
+- Improves training efficiency and stability through a low-rank manifold decomposition and a learned anchor prior for VQ latent spaces.
+- Achieves state-of-the-art performance on Discriminative Score and Context-FID while significantly outperforming autoregressive baselines in inference speed.
 
 ## Open Questions & Future Work
 
@@ -53,17 +54,17 @@ SDFlow is a non-autoregressive generative framework for time series that address
 
 ## Key Concepts
 
-- [[similarity-driven-flow-matching]]: A non-autoregressive time series generation framework that uses a variational flow-matching formulation over frozen VQ latent spaces.
+- [[similarity-driven-flow-matching]]: A non-autoregressive framework for parallel time-series generation that maps distributions via flow matching in a frozen VQ latent space.
 
 ## Archivist Review
 
-The paper presents a significant departure from standard autoregressive VQ-based time series generation. I have approved the framework concept and the open question regarding universal tokenization, as both address fundamental bottlenecks in the field. The other minor implementation subcomponents were rejected to maintain the vault's focus on high-level methodology.
+The paper presents a novel approach to time-series generation by utilizing flow matching within a vector-quantized (VQ) latent space. I approved 'Similarity-Driven Flow Matching' as a reusable framework for non-autoregressive sequence generation, and 'Universal Time Series Tokenizer' as a substantial open research problem in the field. Other potential candidates were not present or were deemed too specific to the proposed implementation.
 
 ### Approved Concepts
-- Similarity-Driven Flow Matching: It is the core methodological contribution, enabling non-autoregressive parallel generation of time series by replacing sequential token prediction with a global transport map in latent space.
+- Similarity-Driven Flow Matching: Core framework for generating long-horizon time series without autoregressive error accumulation by using flow matching in a VQ latent space.
 
 ### Approved Open Questions
-- Universal Time Series Tokenizer: Universal tokenization is essential for scaling time series generative models across diverse domains and simplifying the pipeline for new applications.
+- Universal Time Series Tokenizer: A universal tokenizer would significantly enhance the generalizability and utility of generative models across diverse time-series domains, facilitating pre-training on large, heterogeneous datasets.
 
 ## Links
 

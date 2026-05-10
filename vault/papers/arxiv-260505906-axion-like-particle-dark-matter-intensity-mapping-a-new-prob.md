@@ -17,14 +17,14 @@ tags:
 architectures:
   []
 datasets:
-  - "2MASS Redshift Survey"
+  - "2mass-redshift-survey"
 concept_slugs:
   - "alp-dark-matter-intensity-mapping"
 dataset_slugs:
   - "2mass-redshift-survey"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:11:45Z"
-created_at: "2026-05-09T05:11:45Z"
+processed_at: "2026-05-10T05:19:52Z"
+created_at: "2026-05-10T05:19:52Z"
 ---
 
 # Axion-Like Particle Dark Matter Intensity Mapping: A New Probe via Cross-Correlation with Galaxy Surveys
@@ -35,31 +35,31 @@ created_at: "2026-05-09T05:11:45Z"
 
 ## Summary
 
-This paper proposes a new method to probe μeV-scale axion-like particle (ALP) dark matter by cross-correlating radio intensity mapping with galaxy distribution data from the 2MASS Redshift Survey. The authors develop a theoretical framework accounting for stimulated decay effects driven by both the Cosmic Microwave Background and an extragalactic radio background model. Forecasting for the Square Kilometre Array (SKA) Phase 2 indicates that this technique offers a viable, complementary approach for detecting dark matter on cosmological scales.
+This paper introduces a novel approach for detecting μeV-scale axion-like particle (ALP) dark matter by cross-correlating radio intensity mapping with galaxy redshift distribution from the 2MRS survey. The methodology rigorously accounts for stimulated decay signals enhanced by both the cosmic microwave background and extragalactic radio backgrounds. Performance analysis using forecasted SKA Phase 2 sensitivity suggests that this cross-correlation strategy offers a powerful, complementary method for probing dark matter at cosmic scales.
 
 ## Key Contributions
 
-- Introduces a theoretical framework for ALP dark matter detection using stimulated decay effects from CMB and extragalactic radio background.
-- Demonstrates that cross-correlating radio intensity mapping with 2MRS galaxy distributions serves as a sensitive probe for μeV-scale ALP dark matter.
-- Provides sensitivity forecasts for the SKA Phase 2, confirming the viability of this approach as a complementary tool for cosmic-scale dark matter searches.
+- Develops a theoretical framework for stimulated radiative decay of μeV-scale ALP dark matter driven by CMB and ERB fields.
+- Proposes a cross-correlation methodology linking radio intensity mapping signals with large-scale structure from the 2MRS galaxy catalog.
+- Forecasts detection sensitivity for the SKA Phase 2, establishing the technique as a viable probe for dark matter properties at cosmological scales.
 
 ## Open Questions & Future Work
 
-- [[erb-modeling-uncertainties-fluctuations]]
+- [[erb-modeling-uncertainty-alp-mapping]]
 
 ## Key Concepts
 
-- [[alp-dark-matter-intensity-mapping]]: A novel observational technique for detecting axion-like particle (ALP) dark matter via cross-correlation of radio intensity mapping with galaxy survey distributions.
+- [[alp-dark-matter-intensity-mapping]]: A methodology for detecting μeV-scale axion-like particle dark matter through the cross-correlation of radio intensity mapping data with galaxy survey distributions.
 
 ## Archivist Review
 
-I have approved the core methodological concept and the associated critical modeling bottleneck regarding extragalactic background uncertainties. These items represent a reusable framework for future cosmological intensity mapping research. Other elements were rejected as routine domain-specific background or single-paper refinements.
+The paper proposes a specific, reusable statistical framework for cross-correlating radio intensity mapping with galaxy surveys to detect ALP dark matter. I approved the core methodological concept and the critical open question regarding ERB modeling uncertainty, as these represent significant technical and methodological contributions for cosmological forecasting. The 2MRS dataset was added as a standard reference for the survey used in the analysis.
 
 ### Approved Concepts
-- Axion-like particle (ALP) dark matter intensity mapping: This represents a novel methodological approach to detecting ALP dark matter by linking radio intensity maps with established galaxy surveys.
+- ALP Dark Matter Intensity Mapping: It introduces a novel observational framework linking radio intensity mapping with large-scale structure catalogs to constrain the particle nature of dark matter.
 
 ### Approved Open Questions
-- ERB Modeling and Fluctuations: Uncertainties in the ERB modeling directly affect the sensitivity projections for axion-like particle (ALP) dark matter detection, as these backgrounds act as both signal enhancers (via stimulated decay) and potential sources of systematic noise.
+- ERB Modeling and Fluctuations: Since the stimulated decay rate is proportional to the background radiation intensity, uncertainties in ERB modeling directly propagate to the limits derived for ALP-photon coupling.
 
 ## Datasets
 

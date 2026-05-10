@@ -22,7 +22,11 @@ paper_id: "2605.06168"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  []
+  - "forecasting"
+  - "time-series"
+  - "count-data"
+  - "model-selection"
+  - "structural-breaks"
 architectures:
   []
 datasets:
@@ -32,8 +36,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:11:09Z"
-created_at: "2026-05-09T05:11:09Z"
+processed_at: "2026-05-10T05:19:16Z"
+created_at: "2026-05-10T05:19:16Z"
 ---
 
 # Scalable model selection for count time series with structural breaks: application to solid-organ transplantation during and after COVID-19 in the USA and Italy
@@ -44,27 +48,27 @@ created_at: "2026-05-09T05:11:09Z"
 
 ## Summary
 
-This paper addresses the challenges of forecasting non-negative count time series affected by structural breaks, specifically focusing on solid-organ transplantation activity during and after the COVID-19 pandemic. The authors propose a portfolio-based model selection strategy using BIC, comparing Poisson and negative-binomial specifications that incorporate autoregressive dynamics, calendar effects, and pandemic-specific indicators. Empirical validation on US and Italian datasets demonstrates that autoregressive structures are sufficient for capturing recovery trajectories, rendering exogenous COVID-related covariates largely redundant for this specific application.
+This paper introduces a scalable framework for modelling and forecasting healthcare count time series, focusing on the impact of major external shocks like the COVID-19 pandemic on solid-organ transplant activity. The methodology involves an automated model selection process that evaluates Poisson and negative-binomial specifications, accounting for structural breaks, calendar effects, and short-term temporal dependencies. Through extensive empirical validation on data from the USA and Italy, the study finds that autoregressive components significantly outperform models augmented with external COVID-burden covariates. Results indicate that these donation processes are largely self-contained phenomena, facilitating more focused post-pandemic resource management.
 
 ## Key Contributions
 
-- Developed a scalable model selection framework for non-negative count time series subject to system-wide structural breaks and external shocks.
-- Evaluated predictive performance using an expanding-window design across 4, 8, and 12-week horizons for SOT activity in the USA and Italy.
-- Demonstrated that for SOT donation counts, autoregressive and calendar-effect models outperform specifications incorporating exogenous COVID-burden covariates, simplifying post-pandemic forecasting.
+- Proposes a scalable model selection framework for count time series featuring structural breaks, specifically tailored for healthcare data subject to system-wide disruptions.
+- Systematically evaluates Poisson and negative-binomial models across multiple healthcare strata, demonstrating robust performance using expanding-window validation on horizons of 4, 8, and 12 weeks.
+- Provides empirical evidence that for solid-organ transplant activity, intrinsic temporal dynamics and calendar effects are more predictive than exogenous pandemic-related auxiliary covariates.
 
 ## Open Questions & Future Work
 
-- [[hierarchical-modeling-count-time-series]]
+- [[causal-inference-healthcare-shocks]]
 
 ## Archivist Review
 
-The paper addresses a specific, narrow forecasting application. I rejected the concept candidate because the proposed model selection framework is standard and lacks novelty. I approved a rewritten open question that generalizes the hierarchical modeling requirement to the broader domain of count time-series forecasting, making it a valuable research direction for future systemic work.
+I reviewed the paper's framework for modeling healthcare count data. The proposed model selection framework is fundamentally standard econometric practice for count data and thus does not constitute a novel, reusable research concept worthy of the vault. The open question regarding causal inference in healthcare shocks represents a substantial, tracking-worthy challenge in forecasting methodology and was approved.
 
 ### Approved Open Questions
-- Hierarchical Count Time Series: Hierarchical models are essential for capturing latent sources of variance in medical and operational domains that aggregate models routinely overlook.
+- Causal Inference for Healthcare Shocks: Moving from descriptive intervention models to explicit causal identification is critical for informing policy and clinical practice in post-disaster healthcare recovery.
 
 ### Rejected Candidates
-- [open_question] Hierarchical Modeling for Transplants (`hierarchical-modeling-transplant-series`) - other: The question was rewritten to be more general and reusable beyond the specific domain of organ transplants.
+- [concept] Scalable model selection framework for count time series (`scalable-model-selection-for-count-time-series`) - not_novel: The proposed model selection framework is a standard implementation detail for statistical forecasting and lacks a unique, reusable methodological identity beyond being a common practice in econometrics.
 
 ## Links
 

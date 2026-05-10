@@ -16,20 +16,19 @@ paper_source: "arxiv"
 domain: "time-series"
 tags:
   - "forecasting"
-  - "epidemiology"
-  - "spatiotemporal-forecasting"
-  - "benchmarking"
+  - "spatio-temporal"
+  - "public-health"
 architectures:
   []
 datasets:
-  - "spatialepibench-suite"
+  - "spatialepibench"
 concept_slugs:
   - "spatialepibench"
 dataset_slugs:
-  - "spatialepibench-suite"
+  - "spatialepibench"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:10:02Z"
-created_at: "2026-05-09T05:10:02Z"
+processed_at: "2026-05-10T05:18:12Z"
+created_at: "2026-05-10T05:18:12Z"
 ---
 
 # SpatialEpiBench: Benchmarking Spatial Information and Epidemic Priors in Forecasting
@@ -40,35 +39,36 @@ created_at: "2026-05-09T05:10:02Z"
 
 ## Summary
 
-SpatialEpiBench addresses the lack of standardized evaluation frameworks in spatiotemporal epidemic forecasting by providing 11 curated datasets and rigorous rolling evaluation protocols. The paper benchmarks various adjacency-informed models and identifies that most fail to outperform basic persistence models, regardless of the epidemic prior used. The findings reveal critical deficiencies in existing models regarding outbreak anticipation, noise resilience, and the representation of epidemiological spatial interactions.
+SpatialEpiBench addresses the lack of standardized, realistic evaluation frameworks in epidemic forecasting by introducing a comprehensive benchmark suite of 11 spatiotemporal datasets. By implementing rolling evaluation protocols and outbreak-specific metrics, the authors demonstrate that current models often struggle to outperform simple last-value baselines. Their analysis reveals significant limitations in existing approaches regarding outbreak anticipation, data robustness, and the efficacy of standard geographic adjacency priors. This work provides an essential resource for developing more operationally relevant and reliable public health forecasting tools.
 
 ## Key Contributions
 
-- Introduces SpatialEpiBench, a standardized benchmark suite comprising 11 epidemic datasets with rolling evaluation protocols and outbreak-specific metrics.
-- Demonstrates that current state-of-the-art adjacency-informed models often fail to outperform naive last-value baselines across varying forecasting horizons.
-- Identifies three core systemic failure modes in modern spatiotemporal models: poor outbreak anticipation, limited robustness to data noise, and the inadequacy of standard geographic adjacency priors.
+- Introduces SpatialEpiBench, a comprehensive benchmark for spatiotemporal epidemic forecasting featuring 11 standardized datasets.
+- Implements rolling evaluation protocols and outbreak-specific metrics to better mirror real-time public health forecasting requirements.
+- Reveals that existing adjacency-informed models and epidemic priors consistently underperform simple last-value baselines across 1-day to 1-month horizons.
+- Identifies three critical failure modes in current models: poor outbreak anticipation, limited robustness to data sparsity/noise, and weak utility of geographic adjacency for epidemiology.
 
 ## Open Questions & Future Work
 
-- [[geographic-adjacency-epidemic-forecasting-utility]]
+- [[limitations-of-geographic-adjacency]]
 
 ## Key Concepts
 
-- [[spatialepibench]]: A comprehensive benchmark for spatiotemporal epidemic forecasting that employs standardized rolling evaluations and outbreak-specific metrics.
+- [[spatialepibench]]: A standardized benchmark for spatiotemporal epidemic forecasting designed to reflect realistic public-health evaluation practices.
 
 ## Archivist Review
 
-I have approved the SpatialEpiBench concept and the dataset suite to provide a necessary foundation for evaluating epidemic forecasting models, as these are critical for standardizing evaluation in a field where ad-hoc practices dominate. The open question on geographic adjacency was approved because it addresses a fundamental, domain-specific challenge revealed by the benchmark's performance analysis, namely the disconnect between architectural spatial priors and actual disease transmission dynamics. I applied a strict filter to ensure only the core benchmarking suite and the central open research question were retained.
+SpatialEpiBench is approved as it addresses a significant gap in the standardization of epidemic forecasting evaluations. The open question regarding the utility of geographic adjacency is approved because it articulates a fundamental structural bottleneck identified by the authors that challenges the status quo in the field. Other components were kept concise in alignment with the strict archival policy.
 
 ### Approved Concepts
-- SpatialEpiBench: It provides a standardized benchmark suite and protocol for an area of epidemic forecasting that has historically relied on ad-hoc evaluation, revealing foundational performance gaps in existing spatiotemporal models.
+- SpatialEpiBench: Provides a standardized, realistic evaluation framework for epidemic forecasting, addressing the lack of real-time practice alignment in existing literature.
 
 ### Approved Open Questions
-- Utility of Geographic Adjacency: Understanding the utility of spatial priors is fundamental to the design of spatiotemporal models in public health, as the current reliance on geographic adjacency may be a limiting factor in predictive accuracy.
+- Efficacy of geographic adjacency: Identifying the correct structural priors is a fundamental bottleneck in spatiotemporal epidemic forecasting, as current reliance on geographic adjacency fails to yield performance gains over univariate models.
 
 ## Datasets
 
-- [[spatialepibench-suite]]
+- [[spatialepibench]]
 
 ## Links
 

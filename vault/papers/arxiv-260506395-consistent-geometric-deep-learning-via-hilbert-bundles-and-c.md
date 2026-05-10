@@ -16,9 +16,12 @@ url: "https://arxiv.org/abs/2605.06395"
 # Custom fields
 paper_id: "2605.06395"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "computer-vision"
 tags:
   - "geometric-deep-learning"
+  - "manifold-learning"
+  - "neural-networks"
+  - "representation-learning"
 architectures:
   []
 datasets:
@@ -29,8 +32,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:10:21Z"
-created_at: "2026-05-09T05:10:21Z"
+processed_at: "2026-05-10T05:18:31Z"
+created_at: "2026-05-10T05:18:31Z"
 ---
 
 # Consistent Geometric Deep Learning via Hilbert Bundles and Cellular Sheaves
@@ -41,33 +44,33 @@ created_at: "2026-05-09T05:10:21Z"
 
 ## Summary
 
-This paper introduces HilbNets, a novel geometric deep learning framework designed for signals residing in infinite-dimensional Hilbert spaces over irregular manifold domains. The authors leverage connection Laplacians and formalize a Hilbert Cellular Sheaf to enable the discretization and implementation of these architectures. By proving the convergence of sheaf Laplacians to continuous connection Laplacians and establishing the transferability of discretized networks, the work provides a rigorous theoretical foundation for learning on complex, bundle-valued data.
+The paper presents a unified geometric learning framework for infinite-dimensional signals (e.g., time series or operators) defined on manifolds. By utilizing connection Laplacians on Hilbert bundles, the authors define a convolutional operator that is implemented through the construction of a Hilbert Cellular Sheaf. The framework provides theoretical guarantees for convergence in the discretization process and ensures model transferability across varying sampling densities of the underlying manifold.
 
 ## Key Contributions
 
-- Introduces HilbNets, a convolutional learning framework for infinite-dimensional signals supported on manifolds using connection Laplacians.
-- Establishes a Hilbert Cellular Sheaf framework, proving its sheaf Laplacian converges to the underlying manifold connection Laplacian as sampling density increases.
-- Provides theoretical consistency proofs demonstrating that discretized HilbNets converge to continuous architectures and remain transferable across different manifold samplings.
+- Introduces HilbNets, a convolutional learning framework for infinite-dimensional signals supported on a manifold using connection Laplacians.
+- Proves the convergence of the sheaf Laplacian to the underlying connection Laplacian as sampling density increases, generalizing the Belkin & Niyogi result.
+- Demonstrates that discretized HilbNets converge to continuous architectures and maintain transferability across different manifold samplings.
 
 ## Open Questions & Future Work
 
-- [[convergence-hilbert-bundle-laplacian]]
+- [[scalability-of-sheaf-laplacian-computation]]
 
 ## Key Concepts
 
-- [[hilbnets]]: A convolutional neural network framework designed for infinite-dimensional signals on manifolds, utilizing the connection Laplacian of a Hilbert bundle.
-- [[hilbert-cellular-sheaf]]: A generalized graph structure that maps continuous manifold Hilbert bundles to discrete, computationally tractable representations for learning.
+- [[hilbnets]]: A convolutional neural network architecture for infinite-dimensional signals defined over manifolds using connection Laplacians.
+- [[hilbert-cellular-sheaf]]: A discrete data structure extending cellular sheaves to accommodate Hilbert spaces, serving as an approximation for manifold-based Hilbert bundles.
 
 ## Archivist Review
 
-I have approved the core architectural framework (HilbNets) and its theoretical foundation (Hilbert Cellular Sheaf) as they represent a significant advancement in geometric learning for infinite-dimensional signals. The open question regarding convergence is critical for scaling these theoretical insights to more complex, real-world non-compact domains. No datasets were approved as none were identified as central, canonical, or reusable across the field.
+The paper introduces a mathematically rigorous framework for geometric deep learning on infinite-dimensional signals. The selected concepts (HilbNets, Hilbert Cellular Sheaf) are central to the contribution and provide a new paradigm for handling signals on manifolds that likely exceeds the scope of this single work. The approved open question addresses the primary computational bottleneck—scaling the operator complexity—which is crucial for the framework's adoption.
 
 ### Approved Concepts
-- HilbNets: Core architectural contribution for learning on infinite-dimensional signals supported on a manifold using connection Laplacians.
-- Hilbert Cellular Sheaf: A novel theoretical bridge between continuous Hilbert bundles and discrete, implementable graph structures.
+- HilbNets: It is the core convolutional learning framework introduced by the paper for infinite-dimensional signals on manifolds.
+- Hilbert Cellular Sheaf: It bridges the gap between continuous Hilbert bundles and discrete, implementable graph-based learning.
 
 ### Approved Open Questions
-- Convergence for Infinite-Dimensional Fibers: This question is fundamental to unifying geometric deep learning theory and establishing consistent convergence for infinite-dimensional data modalities on non-Euclidean domains.
+- Scalability of Sheaf Laplacian Computation: The current computational complexity (quadratic in the product of spatial and fiber dimensions) is a primary bottleneck for scaling these models to high-resolution data or complex signals.
 
 ## Links
 

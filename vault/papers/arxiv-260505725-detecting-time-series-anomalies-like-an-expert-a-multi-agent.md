@@ -16,9 +16,11 @@ paper_id: "2605.05725"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "anomaly-detection"
-  - "large-language-models"
+  - "time-series-anomaly-detection"
   - "multi-agent-systems"
+  - "large-language-models"
+  - "in-context-learning"
+  - "explainable-ai"
 architectures:
   []
 datasets:
@@ -28,8 +30,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:12:34Z"
-created_at: "2026-05-09T05:12:34Z"
+processed_at: "2026-05-10T05:20:42Z"
+created_at: "2026-05-10T05:20:42Z"
 ---
 
 # Detecting Time Series Anomalies Like an Expert: A Multi-Agent LLM Framework with Specialized Analyzers
@@ -40,31 +42,33 @@ created_at: "2026-05-09T05:12:34Z"
 
 ## Summary
 
-SAGE is a multi-agent LLM framework designed to enhance the controllability and interpretability of univariate time-series anomaly detection. By decomposing the task into specialized analyzers—each utilizing targeted numerical tools and visualizations—the framework generates evidence-grounded detection records and analyst-facing reports. SAGE avoids reliance on labeled anomalous segments by constructing synthetic in-context examples from normal training data, consistently outperforming existing machine learning and language-model-based baselines across three benchmark datasets.
+SAGE addresses the limitations of monolithic LLM-based time-series anomaly detection by using a multi-agent architecture. The system decomposes analysis into four specialized modules—point, structural, seasonal, and pattern analyzers—that utilize numerical tools and visualizations to generate evidence. An evidence-grounded detector then synthesizes these diagnostics into comprehensive reports, while a synthetic in-context learning pipeline enables effective detection without requiring explicit anomaly labels.
 
 ## Key Contributions
 
-- Proposes SAGE, a multi-agent framework decomposing anomaly detection into four specialized analyzers for point, structural, seasonal, and pattern anomalies.
-- Implements evidence-grounded anomaly detection using family-specific numerical tools and diagnostic visualizations.
-- Achieves state-of-the-art performance on three standard time-series anomaly detection benchmarks while improving interpretability through structured diagnostic reporting.
+- Proposed SAGE, a multi-agent framework that decomposes univariate time-series anomaly detection into specialized analyzers for point, structural, seasonal, and pattern anomalies.
+- Implemented a novel synthetic in-context learning strategy that relies on normal-reference segments rather than labeled anomalous data.
+- Achieved state-of-the-art average performance across three time-series benchmarks, demonstrating superior detection reliability and diagnostic output quality compared to baseline models.
 
 ## Open Questions & Future Work
 
-- [[multivariate-agentic-tsad-scalability-bottlenecks]]
+- [[multi-agent-tsad-efficiency]]
+- [[multivariate-extension-tsad]]
 
 ## Key Concepts
 
-- [[sage-specialized-analyzer-group-for-expert-like-detection]]: A multi-agent framework that decomposes time-series anomaly detection into specialized analyzers for different anomaly types, resulting in evidence-grounded diagnostic reports.
+- [[sage-specialized-analyzer-group-for-expert-like-detection]]: A multi-agent LLM framework that decomposes time-series anomaly detection into specialized diagnostic analyzers and evidence-grounded consolidation.
 
 ## Archivist Review
 
-I approved the SAGE framework concept as it introduces a reusable multi-agent paradigm for time-series analysis tasks by decomposing analysis into specialized numerical sub-tasks. The open question was approved after condensing the scope to focus on the core scalability bottlenecks (multivariate extension and latency) inherent in agentic time-series systems, aligning with the vault's standards for substantial research challenges. No datasets were approved as they were mentioned only in passing as benchmarks.
+I approved the multi-agent framework (SAGE) as a central, modular approach to time-series anomaly detection, and two open questions concerning its scalability and extension to multivariate settings. I applied a strict filter for reusability, rejecting any paper-local implementation components and ensuring the questions reflect genuine, substantial bottlenecks for LLM-based time-series diagnostics.
 
 ### Approved Concepts
-- SAGE (Specialized Analyzer Group for Expert-like Detection): Provides a central multi-agent architecture for structured, expert-like anomaly diagnosis by decomposing detection into specialized, numerical-tool-backed analyzers.
+- SAGE (Specialized Analyzer Group for Expert-like Detection): Introduces a modular, multi-agent decomposition approach to time-series anomaly detection, moving beyond monolithic LLM-based inference.
 
 ### Approved Open Questions
-- Multivariate Agentic TSAD Bottlenecks: These issues are central to the scalability and practical reliability of agentic TSAD frameworks in industrial or critical monitoring settings.
+- Efficiency of Multi-Agent TSAD: Addressing these bottlenecks is essential for transitioning from research-grade prototypes to production-level anomaly detection systems where responsiveness and resource efficiency are critical.
+- Multivariate Extension for TSAD: Multivariate anomaly detection is a standard requirement in industrial and financial applications, and extending diagnostic capabilities to such settings is necessary for broader practical utility.
 
 ## Links
 

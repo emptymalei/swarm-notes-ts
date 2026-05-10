@@ -1,12 +1,13 @@
 ---
-title: "AirQualityBench"
-slug: "airqualitybench"
-type: concept
+created_at: '2026-05-09T05:12:08Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:15Z'
+processed_at: '2026-05-09T05:12:08Z'
+slug: airqualitybench
 source_papers:
-  - "[[arxiv-260505854-airqualitybench-a-realistic-evaluation-benchmark-for-global]]"
-processed_at: "2026-05-09T05:12:08Z"
-created_at: "2026-05-09T05:12:08Z"
+- '[[arxiv-260505854-airqualitybench-a-realistic-evaluation-benchmark-for-global]]'
+title: AirQualityBench
+type: concept
 ---
 
 # AirQualityBench

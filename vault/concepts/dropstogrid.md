@@ -1,12 +1,13 @@
 ---
-title: "DropsToGrid"
-slug: "dropstogrid"
-type: concept
+created_at: '2026-05-09T05:11:38Z'
 generated_stub: true
+modified_at: '2026-05-10T05:19:45Z'
+processed_at: '2026-05-09T05:11:38Z'
+slug: dropstogrid
 source_papers:
-  - "[[arxiv-260505912-from-drops-to-grid-noise-aware-spatio-temporal-neural-proces]]"
-processed_at: "2026-05-09T05:11:38Z"
-created_at: "2026-05-09T05:11:38Z"
+- '[[arxiv-260505912-from-drops-to-grid-noise-aware-spatio-temporal-neural-proces]]'
+title: DropsToGrid
+type: concept
 ---
 
 # DropsToGrid

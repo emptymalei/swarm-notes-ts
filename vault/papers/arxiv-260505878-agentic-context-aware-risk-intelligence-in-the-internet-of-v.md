@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-05-09T05:12:01Z"
-created_at: "2026-05-09T05:12:01Z"
+processed_at: "2026-05-10T05:20:07Z"
+created_at: "2026-05-10T05:20:07Z"
 ---
 
 # Agentic, Context-Aware Risk Intelligence in the Internet of Value
@@ -36,31 +36,31 @@ created_at: "2026-05-09T05:12:01Z"
 
 ## Summary
 
-This paper proposes a composite risk intelligence architecture designed to address the heterogeneous, multi-layered risk landscape of the Internet of Value. The system integrates a decentralized verification subnet, multi-modal sentiment fusion, and agentic control modules to convert complex market data into pre-committed action programs. By validating the framework through empirical stress testing on Solana and long-duration calibration experiments, the authors demonstrate the feasibility of agentic, context-aware risk management in decentralized networks.
+This paper addresses composite risk in the Internet of Value by proposing an integrated architecture comprising five specialized engines: prediction, decentralized verification, sentiment-fusion, agentic action, and scenario generation. By synthesizing diverse data streams—including on-chain flows and grey-literature sentiment—the system translates forecasts into pre-committed action programs. The effectiveness of this framework is validated through empirical experiments on the Solana blockchain and formal analysis of validator-loss decomposition.
 
 ## Key Contributions
 
-- Introduces a composite risk intelligence architecture for the Internet of Value (IoV) integrating prediction, verification, sentiment fusion, agentic control, and scenario analysis.
-- Demonstrates deployability through a 27-hour liquidity stress-response experiment on Solana and a 168-hour prediction-router calibration study.
-- Provides a formally stated, falsifiable validator-loss decomposition mechanism for decentralised economic scoring of risk predictions.
+- Proposes a multi-engine risk framework for the Internet of Value (IoV) that integrates prediction, sentiment-fusion, agentic decision-making, and scenario-generation.
+- Introduces a decentralized verification mechanism for prediction outputs using a Bittensor subnet for economic scoring.
+- Demonstrates the architecture's viability through a 27-hour policy-constrained liquidity stress-response experiment on Solana and a 168-hour prediction-router calibration arc.
 
 ## Open Questions & Future Work
 
-- [[decentralized-validator-loss-validation]]
+- [[validator-loss-metagraph-measurement]]
 
 ## Key Concepts
 
-- [[agentic-risk-intelligence-engine]]: A framework for agentic decision-making under constitutional constraints driven by multi-modal risk forecasts.
+- [[agentic-risk-intelligence-engine]]: A framework for managing multi-dimensional network risks through an agentic system constrained by constitutional and role-bound policies.
 
 ## Archivist Review
 
-I have approved the core agentic framework concept and the specific challenge of validating decentralized loss functions at scale. These represent the primary technical novelties of the paper that are likely to be debated or refined in future literature. Other candidates were rejected to maintain the high selectivity of the vault and avoid duplication with existing concepts.
+I have approved the core conceptual agentic engine architecture and the open research question regarding the practical validation of its proposed incentive mechanism. The remaining proposal is central to the work and distinct from other vault entries. Other potential sub-components were rejected as being secondary to this primary architecture.
 
 ### Approved Concepts
-- Agentic Risk Intelligence Engine: Central to the paper's novel approach of integrating automated decision-making with risk forecasting in decentralized financial environments.
+- Agentic Risk Intelligence Engine: It is the central component of the proposed multi-engine architecture for managing composite risks in the Internet of Value.
 
 ### Approved Open Questions
-- Validating Decentralized Validator Loss: This mechanism is the core of the decentralized verification subnet. Without empirical validation at scale, its integrity remains theoretical.
+- Validator-Loss Metagraph Measurement: This is a fundamental step in testing the mechanism's ability to resist gaming and reward genuinely accurate predictive agents in a decentralized system.
 
 ## Links
 

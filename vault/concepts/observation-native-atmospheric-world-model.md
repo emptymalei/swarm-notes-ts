@@ -1,12 +1,13 @@
 ---
-title: "Observation-native Atmospheric World Model"
-slug: "observation-native-atmospheric-world-model"
-type: concept
+created_at: '2026-05-09T05:10:36Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:45Z'
+processed_at: '2026-05-09T05:10:36Z'
+slug: observation-native-atmospheric-world-model
 source_papers:
-  - "[[arxiv-260506337-earth-o1-a-grid-free-observation-native-atmospheric-world-mo]]"
-processed_at: "2026-05-09T05:10:36Z"
-created_at: "2026-05-09T05:10:36Z"
+- '[[arxiv-260506337-earth-o1-a-grid-free-observation-native-atmospheric-world-mo]]'
+title: Observation-native Atmospheric World Model
+type: concept
 ---
 
 # Observation-native Atmospheric World Model

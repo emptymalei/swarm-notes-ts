@@ -1,12 +1,13 @@
 ---
-title: "SpatialEpiBench"
-slug: "spatialepibench"
-type: concept
+created_at: '2026-05-09T05:10:02Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:12Z'
+processed_at: '2026-05-09T05:10:02Z'
+slug: spatialepibench
 source_papers:
-  - "[[arxiv-260506530-spatialepibench-benchmarking-spatial-information-and-epidemi]]"
-processed_at: "2026-05-09T05:10:02Z"
-created_at: "2026-05-09T05:10:02Z"
+- '[[arxiv-260506530-spatialepibench-benchmarking-spatial-information-and-epidemi]]'
+title: SpatialEpiBench
+type: concept
 ---
 
 # SpatialEpiBench

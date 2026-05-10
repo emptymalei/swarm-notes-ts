@@ -18,20 +18,18 @@ paper_id: "2605.05854"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series-forecasting"
-  - "spatio-temporal-forecasting"
-  - "benchmark-dataset"
+  []
 architectures:
   []
 datasets:
-  - "airqualitybench"
+  - "AirQualityBench"
 concept_slugs:
   - "airqualitybench"
 dataset_slugs:
   - "airqualitybench"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:12:08Z"
-created_at: "2026-05-09T05:12:08Z"
+processed_at: "2026-05-10T05:20:15Z"
+created_at: "2026-05-10T05:20:15Z"
 ---
 
 # AirQualityBench: A Realistic Evaluation Benchmark for Global Air Quality Forecasting
@@ -42,31 +40,34 @@ created_at: "2026-05-09T05:12:08Z"
 
 ## Summary
 
-AirQualityBench is a comprehensive, real-world benchmark for air quality forecasting that addresses the limitations of current research practices relying on sanitized, cleaned data. By preserving heterogeneous observation masks and requiring forecasts to be evaluated on unnormalized physical scales, the benchmark exposes the challenges of structured missingness and non-uniform global coverage. The authors show that standard spatiotemporal models often fail when applied to these more realistic, fragmented environmental data streams.
+AirQualityBench is a new, realistic benchmark for global air-quality forecasting that addresses the limitations of existing datasets by preserving structured missingness and heterogeneous pollutant scales. Unlike conventional benchmarks that use imputed, sanitized data, this testbed requires models to operate on native observation masks and report results in physical concentration units. The study demonstrates that high performance on cleaned datasets often fails to generalize to the fragmented and uneven monitoring networks encountered in real-world deployment. This work provides a critical resource for developing scalable and mask-aware forecasting models.
 
 ## Key Contributions
 
-- Introduces AirQualityBench, a new benchmark containing 5 years of hourly data from 3,720 global stations, specifically designed to address limitations of traditional sanitized air quality datasets.
-- Shifts the forecasting evaluation paradigm by maintaining provider-native observation masks and requiring error assessment on physical concentration scales rather than normalized, imputed tensors.
-- Demonstrates that performance on idealized, preprocessed datasets does not correlate with success in realistic, fragmented monitoring scenarios, highlighting the need for robust mask-aware modeling.
+- Introduces AirQualityBench, a global multi-pollutant benchmark with 3,720 stations over 2021-2025, to address gaps in evaluating air-quality forecasting models.
+- Enforces a unified evaluation protocol that mandates the handling of provider-native observation masks and avoids dense tensor imputation.
+- Demonstrates through empirical evaluation that existing spatio-temporal models often struggle to maintain performance when transitioning from sanitized to fragmented, real-world monitoring streams.
 
 ## Open Questions & Future Work
 
-- [[harmonized-pollutant-unit-conversion]]
+- [[region-stratified-evaluation]]
 
 ## Key Concepts
 
-- [[airqualitybench]]: A global multi-pollutant benchmark for air-quality forecasting that treats structured missingness and realistic observation masks as core components of the problem.
+- [[airqualitybench]]: A global multi-pollutant benchmark for air quality forecasting that emphasizes realistic evaluation protocols including structured missingness and native observation masks.
 
 ## Archivist Review
 
-The paper provides a significant methodological shift for evaluating spatio-temporal forecasting by emphasizing the importance of native observation masks and physical scale evaluation over traditional, sanitized benchmarks. I have approved the benchmark as both a concept and a dataset, as it serves as a new foundation for testing model robustness. The open question regarding unit harmonization is approved as it addresses a core limitation to generalizability in real-world environmental monitoring.
+I approved AirQualityBench as a concept and dataset because it formalizes a standard for realistic evaluation in time-series forecasting, specifically moving beyond sanitized imputation. I also approved the region-stratified evaluation question, as it targets a significant gap in spatio-temporal modeling where data scarcity biases research toward affluent, high-sensor regions. I rejected the physical-scale unit harmonization question as it is a specific data-engineering requirement rather than a broad, reusable research problem.
 
 ### Approved Concepts
-- AirQualityBench: It addresses a significant gap in time-series forecasting by shifting from sanitized, pre-imputed data to a paradigm that includes structured missingness and physical scale evaluation, which are critical for real-world environmental monitoring.
+- AirQualityBench: Establishes a new standard for evaluating air quality forecasting models by emphasizing realistic data characteristics such as structured missingness and heterogeneous scales.
 
 ### Approved Open Questions
-- Harmonization of Pollutant Units: This issue is a fundamental bottleneck to achieving physically valid evaluation and cross-region model generalization in global environmental monitoring.
+- Region-Stratified Evaluation Tracks: Addressing spatial bias is critical for ensuring that air-quality forecasting models perform reliably across the globe rather than only in data-rich urban centers.
+
+### Rejected Candidates
+- [open_question] Physical-Scale Unit Harmonization (`physical-unit-harmonization`) - low_impact: This describes a data-cleaning task rather than a foundational research bottleneck.
 
 ## Datasets
 

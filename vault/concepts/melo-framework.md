@@ -1,12 +1,13 @@
 ---
-title: "MELO Framework"
-slug: "melo-framework"
-type: concept
+created_at: '2026-05-09T05:09:55Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:05Z'
+processed_at: '2026-05-09T05:09:55Z'
+slug: melo-framework
 source_papers:
-  - "[[arxiv-260506541-hedging-memory-horizons-for-non-stationary-prediction-via-on]]"
-processed_at: "2026-05-09T05:09:55Z"
-created_at: "2026-05-09T05:09:55Z"
+- '[[arxiv-260506541-hedging-memory-horizons-for-non-stationary-prediction-via-on]]'
+title: MELO Framework
+type: concept
 ---
 
 # MELO Framework

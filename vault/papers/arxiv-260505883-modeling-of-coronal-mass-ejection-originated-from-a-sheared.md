@@ -17,10 +17,10 @@ url: "https://arxiv.org/abs/2605.05883"
 # Custom fields
 paper_id: "2605.05883"
 paper_source: "arxiv"
-domain: "physics-informed-modeling"
+domain: "physics-simulations-ml"
 tags:
-  - "physics-informed-modeling"
-  - "time-series-forecasting"
+  - "physics-informed-ml"
+  - "space-weather-forecasting"
 architectures:
   []
 datasets:
@@ -30,8 +30,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:11:52Z"
-created_at: "2026-05-09T05:11:52Z"
+processed_at: "2026-05-10T05:20:00Z"
+created_at: "2026-05-10T05:20:00Z"
 ---
 
 # Modeling of Coronal Mass Ejection Originated from a Sheared Arcade of Realistic Active-Region Scale and Its Propagation in the Heliosphere: Methodology
@@ -42,31 +42,33 @@ created_at: "2026-05-09T05:11:52Z"
 
 ## Summary
 
-This paper presents an end-to-end computational framework for modeling coronal mass ejections (CMEs) from their active-region origins to their propagation through the heliosphere. By coupling nested magnetohydrodynamic simulations with block-structured adaptive mesh refinement and a semi-relativistic Boris correction, the model resolves active-region scales at high magnetic field strengths with significant computational efficiency. The approach successfully captures critical physical processes, including pre-eruption energy buildup, magnetic reconnection triggering, and shock formation, providing a viable two-day lead time for forecasting CME arrivals.
+This paper presents an end-to-end magnetohydrodynamic (MHD) modeling methodology for coronal mass ejections (CMEs) that spans from the solar active region to 1.5 au. To balance high resolution with computational efficiency, the authors utilize a nested, block-structured adaptive mesh refinement strategy and a novel semi-relativistic Boris correction to handle high magnetic field strengths. The approach successfully simulates the initiation, acceleration, and propagation of CMEs, yielding synthetic observations that align with physical expectations and demonstrating potential for operational space weather forecasting.
 
 ## Key Contributions
 
-- Introduces an end-to-end CME modeling methodology using three coupled nested magnetohydrodynamic simulations covering from the solar surface to 1.5 AU.
-- Achieves sub-megameter resolution (700 km) in the corona while maintaining global computational efficiency through block-structured adaptive mesh refinement.
-- Demonstrates 2-day lead-time predictive capability for CME arrival at 1 AU by simulating initiation, eruption, and propagation on a standard compute cluster.
+- Introduced a nested MHD modeling framework coupling three domains from solar surface to 1.5 au, achieving ~700 km resolution in the low corona.
+- Implemented a semi-relativistic Boris correction to simulate realistic 10^3 G magnetic fields without requiring excessively small time steps.
+- Demonstrated an end-to-end CME simulation from energy buildup to 1 au arrival, capturing characteristic three-part structures and in-situ shock/B_z signatures.
 
 ## Open Questions & Future Work
 
-- [[realistic-thermodynamics-cme-simulations]]
+- [[realistic-thermodynamics-in-solar-wind-modeling]]
+- [[data-driven-mhd-cme-modeling]]
 
 ## Key Concepts
 
-- [[semi-relativistic-boris-correction-for-mhd]]: A numerical stability technique that utilizes semi-relativistic modifications to the Boris integrator to handle extreme magnetic field strengths without forcing prohibitively small computational time steps.
+- [[semi-relativistic-boris-correction-for-mhd]]: A numerical technique for handling extreme magnetic field strengths in MHD simulations by limiting the effective speed of light to prevent prohibitively small time steps.
 
 ## Archivist Review
 
-I have approved the Boris correction method as it provides a reusable, domain-specific numerical stability technique for high-intensity MHD simulations. The open question on thermodynamic modeling addresses a significant bottleneck in physical fidelity for solar forecasting models. No other candidates met the high selectivity threshold for permanent vault inclusion.
+I approved the semi-relativistic Boris correction as it is a specific, reusable numerical technique for MHD stability. I also approved two high-level research challenges concerning thermodynamic realism and data-driven assimilation, as these represent fundamental bottlenecks for the field of space weather forecasting. Other candidates were rejected to maintain focus on high-impact, reusable primitives.
 
 ### Approved Concepts
-- Semi-relativistic Boris Correction for MHD: Enables high-fidelity magnetohydrodynamic simulations of solar coronal phenomena by bypassing severe stability constraints in strong-field regimes.
+- Semi-relativistic Boris Correction for MHD: Enables high-fidelity magnetohydrodynamic simulations in regions with extreme magnetic field strengths by decoupling simulation time-step constraints from the Alfven speed.
 
 ### Approved Open Questions
-- Advanced Thermodynamic Modeling in MHD: Accurate thermodynamics are essential for predicting the speed, density, and magnetic field characteristics of the solar wind, which directly influence the impact of CMEs on Earth. Simplified polytropic indices are a known limitation in the existing methodology for reproducing observed solar wind properties.
+- Advanced Solar Wind Thermodynamics: Thermodynamic realism is crucial for reproducing the structure and speed of the solar wind, which directly impacts the predicted arrival times and impact strengths of CMEs.
+- Data-Driven CME Modeling: Data-driven modeling is essential for moving from theoretical studies to reliable operational space weather forecasting that reflects actual solar conditions.
 
 ## Links
 

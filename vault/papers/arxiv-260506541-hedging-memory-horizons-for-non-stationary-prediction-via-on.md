@@ -16,10 +16,9 @@ paper_source: "arxiv"
 domain: "time-series"
 tags:
   - "online-learning"
+  - "distribution-shift"
+  - "forecast-reconciliation"
   - "time-series-forecasting"
-  - "non-stationary-time-series"
-  - "model-agnostic-aggregation"
-  - "probabilistic-forecasting"
 architectures:
   []
 datasets:
@@ -29,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:09:55Z"
-created_at: "2026-05-09T05:09:55Z"
+processed_at: "2026-05-10T05:18:05Z"
+created_at: "2026-05-10T05:18:05Z"
 ---
 
 # Hedging Memory Horizons for Non-Stationary Prediction via Online Aggregation
@@ -41,34 +40,31 @@ created_at: "2026-05-09T05:09:55Z"
 
 ## Summary
 
-This paper introduces MELO, a model-agnostic online aggregation method for time-series forecasting under non-stationary conditions where the optimal memory length for adaptation is unknown. By wrapping base-predictor pools in exponentially weighted least-squares (EWLS) experts and using a parameter-free aggregation rule, the method effectively tracks shifting regimes without requiring explicit change-point detection or external covariates. Extensive evaluation on French electricity-load data during the COVID-19 pandemic confirms significant improvements over baseline aggregation methods.
+The paper introduces MELO (Memory-hedged Exponentially Weighted Least-Squares Online aggregation) to address online prediction under non-stationary regimes where the optimal adaptation memory is unknown. MELO aggregates forecasts from base-predictors across various forgetting factors using a parameter-free online rule, requiring only lightweight recursive updates. It provides theoretical guarantees through oracle inequalities and demonstrates practical robustness by outperforming covariate-assisted benchmarks in electricity-load forecasting during the COVID-19 pandemic.
 
 ## Key Contributions
 
-- Introduces MELO, a model-agnostic online aggregation framework that hedges across multiple forgetting factors using EWLS adaptation experts.
-- Establishes deterministic oracle inequalities demonstrating competitiveness with the best time-varying combinations of base predictors.
-- Demonstrates 34.7% RMSE reduction on French electricity-load forecasting during COVID-19 without external regime covariates, outperforming state-of-the-art baselines.
+- Proposes MELO, a model-agnostic aggregation framework that wraps base-predictor pools with multi-scale EWLS adaptation experts.
+- Establishes deterministic oracle inequalities demonstrating that MELO competes with the best time-varying affine combinations of base predictors.
+- Demonstrates superior performance on French electricity-load forecasting, achieving a 34.7% RMSE reduction over base-only MLpol without needing exogenous policy covariates.
 
 ## Open Questions & Future Work
 
-- [[dynamic-memory-scale-grid-expansion]]
+- [[diversity-diagnostics-online-aggregation]]
 
 ## Key Concepts
 
-- [[melo-framework]]: A model-agnostic framework that aggregates base predictors across multiple adaptation scales using exponentially weighted least-squares experts and a parameter-free online aggregation rule.
+- [[melo-framework]]: A model-agnostic online aggregation method that hedges across multiple memory scales to handle distribution shifts and regime transitions.
 
 ## Archivist Review
 
-I have approved the MELO framework as a central contribution for handling non-stationary time series through online aggregation of memory horizons. I also approved an open question regarding the dynamic expansion of memory scales, which represents a substantial research bottleneck in adaptive online learning. Other candidates were either too specific to the paper or did not meet the bar for long-term knowledge retention.
+The MELO framework is approved as a reusable method for online aggregation under non-stationarity, as it addresses the common forecasting bottleneck of unknown optimal adaptation scales. The open question regarding the relationship between base-model diversity and aggregation gain was approved as a substantial and tracked issue in online time-series learning. No datasets were approved, as the study used standard utility-load electricity data that is already represented in the vault or is routine.
 
 ### Approved Concepts
-- MELO Framework: The paper's core contribution, providing a robust, model-agnostic way to handle unknown non-stationary memory horizons in online prediction.
+- MELO: It provides a novel, model-agnostic framework for handling non-stationarity by aggregating forecasts across multiple forgetting factors, requiring only lightweight recursive updates.
 
 ### Approved Open Questions
-- Dynamic memory-scale grid expansion: Dynamically adjusting the memory-scale grid could mitigate the limitations of a fixed geometric grid, which might be too coarse or incorrectly placed if the drift characteristics change drastically over time.
-
-### Rejected Candidates
-- [dataset] French national electricity-load dataset (`french-national-electricity-load-dataset`) - not_reusable: Dataset is a specific, non-publicly named study-local collection rather than a standard benchmark or widely accessible research resource.
+- Aggregation gain and diversity: Understanding the relationship between base-model diversity and aggregation utility is essential for assessing the applicability of online meta-learning approaches in real-world time-series forecasting.
 
 ## Links
 

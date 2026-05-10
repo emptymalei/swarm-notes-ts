@@ -14,7 +14,7 @@ url: "https://arxiv.org/abs/2605.06315"
 # Custom fields
 paper_id: "2605.06315"
 paper_source: "arxiv"
-domain: "nlp"
+domain: "time-series"
 tags:
   []
 architectures:
@@ -26,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:10:40Z"
-created_at: "2026-05-09T05:10:40Z"
+processed_at: "2026-05-10T05:18:48Z"
+created_at: "2026-05-10T05:18:48Z"
 ---
 
 # End-to-End Identifiable and Consistent Recurrent Switching Dynamical Systems
@@ -38,24 +38,24 @@ created_at: "2026-05-09T05:10:40Z"
 
 ## Summary
 
-This paper addresses the challenge of learning identifiable latent representations in sequential data with regime-switching dynamics. It introduces ΩSDS, a flow-based estimator that avoids the approximation gaps common in VAE-based approaches by enabling exact likelihood optimization through expectation-maximisation. The authors provide theoretical proofs for identifiability under flexible assumptions and show that their model outperforms variational alternatives in both latent disentanglement and predictive performance.
+This paper addresses the challenge of learning identifiable latent representations for sequential data governed by regime-switching dynamics. The authors provide a theoretical framework for identifying recurrent nonlinear switching systems under relaxed assumptions. They introduce ΩSDS, a flow-based estimator that avoids the approximation biases inherent in standard VAE approaches by performing exact likelihood optimization through expectation-maximisation. Empirical results show that the method yields better disentanglement and more robust dynamic forecasting.
 
 ## Key Contributions
 
-- Establishes theoretical identifiability for a broad class of recurrent nonlinear switching dynamical systems under flexible assumptions.
-- Introduces ΩSDS, a flow-based estimator that replaces VAE-based approaches with exact likelihood optimization using expectation-maximisation.
-- Demonstrates superior disentanglement of latent structures and improved dynamic forecasting accuracy compared to variational baselines on synthetic and real-world datasets.
+- Establishes theoretical identifiability conditions for a broad class of recurrent nonlinear switching dynamical systems.
+- Introduces ΩSDS, a flow-based estimator that circumvents VAE approximation gaps by utilizing exact likelihood optimization via expectation-maximisation.
+- Demonstrates superior latent structure disentanglement and improved forecasting accuracy on both synthetic and real-world time-series benchmarks.
 
 ## Key Concepts
 
-- [[ωsds]]: A flow-based estimator for recurrent switching dynamical systems that enables exact likelihood optimization via expectation-maximisation.
+- [[ωsds]]: A flow-based estimator for recurrent nonlinear switching dynamical systems that utilizes expectation-maximisation for exact likelihood optimization.
 
 ## Archivist Review
 
-I approved the core estimator ΩSDS, as it represents a significant methodological shift from standard variational approaches (VAEs) to exact likelihood optimization for recurrent switching dynamical systems. I rejected other potential candidates as they were either local implementation details or already represented by general dynamical system terminology. The selection focuses on the central contribution that provides a new paradigm for learning identifiable representations in sequential regime-switching regimes.
+The paper makes a clear theoretical and methodological contribution to the field of identifiable latent representations for switching dynamical systems. ΩSDS is approved as it provides a novel, reusable estimator architecture combining flow-based modeling with expectation-maximisation. No datasets or open questions were proposed, and the contribution is self-contained and impactful for time-series forecasting.
 
 ### Approved Concepts
-- ΩSDS: It is the primary model introduced to address identifiability and consistent likelihood optimization in switching dynamical systems.
+- ΩSDS: It is the core methodological contribution enabling exact likelihood-based identification of regime-switching dynamics in recurrent systems.
 
 ## Links
 

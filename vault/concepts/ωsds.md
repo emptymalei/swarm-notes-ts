@@ -1,12 +1,13 @@
 ---
-title: "ΩSDS"
-slug: "ωsds"
-type: concept
+created_at: '2026-05-09T05:10:40Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:48Z'
+processed_at: '2026-05-09T05:10:40Z'
+slug: ωsds
 source_papers:
-  - "[[arxiv-260506315-end-to-end-identifiable-and-consistent-recurrent-switching-d]]"
-processed_at: "2026-05-09T05:10:40Z"
-created_at: "2026-05-09T05:10:40Z"
+- '[[arxiv-260506315-end-to-end-identifiable-and-consistent-recurrent-switching-d]]'
+title: ΩSDS
+type: concept
 ---
 
 # ΩSDS

@@ -27,8 +27,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-09T05:10:55Z"
-created_at: "2026-05-09T05:10:55Z"
+processed_at: "2026-05-10T05:19:02Z"
+created_at: "2026-05-10T05:19:02Z"
 ---
 
 # Higher-order interactions in ecology can be hidden in plain sight
@@ -39,24 +39,24 @@ created_at: "2026-05-09T05:10:55Z"
 
 ## Summary
 
-This paper investigates the limits of inferring ecological interaction structures from abundance time-series data. The authors demonstrate that higher-order Lotka-Volterra dynamics can be functionally indistinguishable from effective pairwise models, creating a mechanistic identifiability trap. Consequently, time-series data alone is insufficient to reconstruct the true ecological connectivity, necessitating the integration of multi-modal ecological data.
+This paper investigates the fundamental limitations of inferring ecological interaction structures from abundance time-series data. The authors show that higher-order Lotka-Volterra dynamics can be accurately captured by effective pairwise models, leading to a mechanistic identifiability problem where different underlying processes generate indistinguishable temporal patterns. Consequently, relying solely on observational time-series data may result in misleading ecological interpretations, necessitating the integration of supplementary domain-specific ecological information.
 
 ## Key Contributions
 
-- Demonstrates that higher-order Lotka-Volterra dynamics can be accurately approximated by effective pairwise models, rendering higher-order interactions unidentifiable from time-series data alone.
-- Identifies a fundamental mechanistic identifiability problem where distinct underlying ecological interaction mechanisms yield nearly identical dynamical outputs.
-- Argues that complementary ecological information beyond simple abundance time series is essential for reliable interaction structure inference.
+- Demonstrates that higher-order Lotka-Volterra dynamics can be statistically mimicked by effective pairwise interaction models.
+- Formally establishes a mechanistic identifiability problem where distinct underlying ecological interactions produce nearly identical time-series outputs.
+- Proves that the topology of interaction networks cannot be reliably inferred from abundance time series alone without external mechanistic constraints.
 
 ## Open Questions & Future Work
 
-- [[mechanistic-identifiability-ecological-interactions]]
+- [[mechanistic-identifiability-of-ecological-hoi]]
 
 ## Archivist Review
 
-I have approved the open question regarding the mechanistic identifiability of ecological interactions, as it identifies a profound, non-trivial limitation in time-series modeling where predictive accuracy does not imply mechanistic truth. No new concepts were approved because the core phenomenon (model indistinguishability) is a well-known theoretical issue in dynamical systems, and no new datasets were introduced. The rejection policy was applied to maintain the vault's focus on reusable methodology and significant research gaps.
+The paper highlights a fundamental issue in time-series modeling where different causal mechanisms (pairwise vs. higher-order) produce indistinguishable data outputs. I have approved the open question regarding mechanistic identifiability, as it addresses a core limitation in causal discovery from observational time-series data. No new concepts were approved as the core contribution focuses on a negative result (the limit of inference) rather than a novel, reusable modeling architecture or representation.
 
 ### Approved Open Questions
-- Mechanistic Identifiability of Ecological Interactions: This is a central bottleneck in ecological modeling because it addresses the core issue of mechanistic identifiability. Without resolving this, researchers risk applying models that are predictively convenient but ecologically and mechanistically incorrect, particularly when predicting outcomes of perturbations like management actions or environmental changes.
+- Mechanistic Identifiability of Ecological HOIs: This is a foundational problem because currently, model selection based solely on goodness-of-fit to time-series data is insufficient to claim the existence of higher-order interactions, which may be critical for predicting system responses to environmental stressors or interventions.
 
 ## Links
 

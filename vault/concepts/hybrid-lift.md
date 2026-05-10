@@ -1,12 +1,13 @@
 ---
-title: "Hybrid-Lift"
-slug: "hybrid-lift"
-type: concept
+created_at: '2026-05-09T05:10:11Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:21Z'
+processed_at: '2026-05-09T05:10:11Z'
+slug: hybrid-lift
 source_papers:
-  - "[[arxiv-260506438-neural-actuarial-longevity-forecasting-anchoring-lstms-for-e]]"
-processed_at: "2026-05-09T05:10:11Z"
-created_at: "2026-05-09T05:10:11Z"
+- '[[arxiv-260506438-neural-actuarial-longevity-forecasting-anchoring-lstms-for-e]]'
+title: Hybrid-Lift
+type: concept
 ---
 
 # Hybrid-Lift

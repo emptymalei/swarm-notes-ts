@@ -1,5 +1,6 @@
 ---
 created_at: '2026-05-09T05:12:25Z'
+modified_at: '2026-05-10T05:20:35Z'
 source_papers:
 - '[[arxiv-260505736-sdflow-similarity-driven-flow-matching-for-time-series-gener]]'
 title: Universal Time Series Tokenizer

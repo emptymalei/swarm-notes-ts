@@ -1,12 +1,13 @@
 ---
-title: "Axion-like particle (ALP) dark matter intensity mapping"
-slug: "alp-dark-matter-intensity-mapping"
-type: concept
+created_at: '2026-05-09T05:11:45Z'
 generated_stub: true
+modified_at: '2026-05-10T05:19:52Z'
+processed_at: '2026-05-09T05:11:45Z'
+slug: alp-dark-matter-intensity-mapping
 source_papers:
-  - "[[arxiv-260505906-axion-like-particle-dark-matter-intensity-mapping-a-new-prob]]"
-processed_at: "2026-05-09T05:11:45Z"
-created_at: "2026-05-09T05:11:45Z"
+- '[[arxiv-260505906-axion-like-particle-dark-matter-intensity-mapping-a-new-prob]]'
+title: Axion-like particle (ALP) dark matter intensity mapping
+type: concept
 ---
 
 # Axion-like particle (ALP) dark matter intensity mapping

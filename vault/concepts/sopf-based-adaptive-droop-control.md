@@ -1,12 +1,13 @@
 ---
-title: "SOPF-Based Adaptive Droop Control"
-slug: "sopf-based-adaptive-droop-control"
-type: concept
+created_at: '2026-05-09T05:11:23Z'
 generated_stub: true
+modified_at: '2026-05-10T05:19:29Z'
+processed_at: '2026-05-09T05:11:23Z'
+slug: sopf-based-adaptive-droop-control
 source_papers:
-  - "[[arxiv-260505992-sopf-based-adaptive-droop-control-for-hybrid-ac-hvdc-grids-u]]"
-processed_at: "2026-05-09T05:11:23Z"
-created_at: "2026-05-09T05:11:23Z"
+- '[[arxiv-260505992-sopf-based-adaptive-droop-control-for-hybrid-ac-hvdc-grids-u]]'
+title: SOPF-Based Adaptive Droop Control
+type: concept
 ---
 
 # SOPF-Based Adaptive Droop Control

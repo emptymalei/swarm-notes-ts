@@ -1,12 +1,13 @@
 ---
-title: "Agentic Risk Intelligence Engine"
-slug: "agentic-risk-intelligence-engine"
-type: concept
+created_at: '2026-05-09T05:12:01Z'
 generated_stub: true
+modified_at: '2026-05-10T05:20:07Z'
+processed_at: '2026-05-09T05:12:01Z'
+slug: agentic-risk-intelligence-engine
 source_papers:
-  - "[[arxiv-260505878-agentic-context-aware-risk-intelligence-in-the-internet-of-v]]"
-processed_at: "2026-05-09T05:12:01Z"
-created_at: "2026-05-09T05:12:01Z"
+- '[[arxiv-260505878-agentic-context-aware-risk-intelligence-in-the-internet-of-v]]'
+title: Agentic Risk Intelligence Engine
+type: concept
 ---
 
 # Agentic Risk Intelligence Engine

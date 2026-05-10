@@ -1,12 +1,13 @@
 ---
-title: "Hilbert Cellular Sheaf"
-slug: "hilbert-cellular-sheaf"
-type: concept
+created_at: '2026-05-09T05:10:21Z'
 generated_stub: true
+modified_at: '2026-05-10T05:18:31Z'
+processed_at: '2026-05-09T05:10:21Z'
+slug: hilbert-cellular-sheaf
 source_papers:
-  - "[[arxiv-260506395-consistent-geometric-deep-learning-via-hilbert-bundles-and-c]]"
-processed_at: "2026-05-09T05:10:21Z"
-created_at: "2026-05-09T05:10:21Z"
+- '[[arxiv-260506395-consistent-geometric-deep-learning-via-hilbert-bundles-and-c]]'
+title: Hilbert Cellular Sheaf
+type: concept
 ---
 
 # Hilbert Cellular Sheaf
