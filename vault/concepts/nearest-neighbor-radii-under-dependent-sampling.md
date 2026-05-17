@@ -1,12 +1,13 @@
 ---
-title: "Nearest-neighbor radii under dependent sampling"
-slug: "nearest-neighbor-radii-under-dependent-sampling"
-type: concept
+created_at: '2026-05-16T05:13:14Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:55Z'
+processed_at: '2026-05-16T05:13:14Z'
+slug: nearest-neighbor-radii-under-dependent-sampling
 source_papers:
-  - "[[arxiv-260514343-nearest-neighbor-radii-under-dependent-sampling]]"
-processed_at: "2026-05-16T05:13:14Z"
-created_at: "2026-05-16T05:13:14Z"
+- '[[arxiv-260514343-nearest-neighbor-radii-under-dependent-sampling]]'
+title: Nearest-neighbor radii under dependent sampling
+type: concept
 ---
 
 # Nearest-neighbor radii under dependent sampling

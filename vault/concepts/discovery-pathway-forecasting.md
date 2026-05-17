@@ -1,12 +1,13 @@
 ---
-title: "Discovery pathway forecasting"
-slug: "discovery-pathway-forecasting"
-type: concept
+created_at: '2026-05-16T05:12:28Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:10Z'
+processed_at: '2026-05-16T05:12:28Z'
+slug: discovery-pathway-forecasting
 source_papers:
-  - "[[arxiv-260514600-scipaths-forecasting-pathways-to-scientific-discovery]]"
-processed_at: "2026-05-16T05:12:28Z"
-created_at: "2026-05-16T05:12:28Z"
+- '[[arxiv-260514600-scipaths-forecasting-pathways-to-scientific-discovery]]'
+title: Discovery pathway forecasting
+type: concept
 ---
 
 # Discovery pathway forecasting

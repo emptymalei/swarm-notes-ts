@@ -1,12 +1,13 @@
 ---
-title: "Monetary-Policy Sentiment Indicators"
-slug: "monetary-policy-sentiment-indicators"
-type: concept
+created_at: '2026-05-16T05:10:59Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:39Z'
+processed_at: '2026-05-16T05:10:59Z'
+slug: monetary-policy-sentiment-indicators
 source_papers:
-  - "[[arxiv-260515092-monetary-policy-in-the-media-spotlight-sentiments-signals-an]]"
-processed_at: "2026-05-16T05:10:59Z"
-created_at: "2026-05-16T05:10:59Z"
+- '[[arxiv-260515092-monetary-policy-in-the-media-spotlight-sentiments-signals-an]]'
+title: Monetary-Policy Sentiment Indicators
+type: concept
 ---
 
 # Monetary-Policy Sentiment Indicators

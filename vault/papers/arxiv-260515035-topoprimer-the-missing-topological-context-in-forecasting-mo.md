@@ -15,9 +15,7 @@ paper_id: "2605.15035"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "forecasting"
-  - "time-series"
-  - "topological-data-analysis"
+  []
 architectures:
   []
 datasets:
@@ -27,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:11:07Z"
-created_at: "2026-05-16T05:11:07Z"
+processed_at: "2026-05-17T05:22:46Z"
+created_at: "2026-05-17T05:22:46Z"
 ---
 
 # TopoPrimer: The Missing Topological Context in Forecasting Models
@@ -39,36 +37,32 @@ created_at: "2026-05-16T05:11:07Z"
 
 ## Summary
 
-TopoPrimer is a topological augmentation framework that injects global structural context into time-series forecasting models. By utilizing persistent homology and spectral sheaf coordinates, the approach provides per-token features for trained models or lightweight adapters for pre-trained backbones. Experimental results show significant improvements in forecasting accuracy across Chronos and TimesFM architectures, particularly during high-volatility seasonal spikes and cold-start scenarios.
+TopoPrimer is a novel forecasting framework that integrates the global topological structure of time-series populations—computed via persistent homology and spectral sheaf coordinates—as explicit contextual input. It acts as either a token-level feature or a lightweight adapter for pre-trained backbones, proving effective across both zero-shot and fine-tuned settings. Evaluations on major benchmarks like ECL demonstrate significant gains in predictive accuracy, particularly in challenging regimes such as seasonal demand spikes and cold-start scenarios.
 
 ## Key Contributions
 
-- Introduces TopoPrimer, a framework that integrates global topological structure into time-series forecasting via persistent homology and spectral sheaf coordinates.
-- Achieves significant accuracy improvements on public benchmarks, specifically yielding a 7.3% MSE reduction on the ECL dataset.
-- Demonstrates strong robustness in difficult regimes, maintaining performance within 10% under peak seasonal demand and reducing cold-start MAE by 27%.
+- Introduces TopoPrimer, a framework that incorporates global topological structure via persistent homology and spectral sheaf coordinates to enhance forecasting models.
+- Achieves up to 7.3% improvement in MSE on the ECL benchmark when applied to Chronos and TimesFM models.
+- Demonstrates superior robustness during seasonal demand spikes, maintaining accuracy within 10% compared to 50% degradation in baseline models.
+- Reduces cold-start MAE by 27% by leveraging population-level topological context.
 
 ## Open Questions & Future Work
 
-- [[learned-topological-filtration-metric]]
-- [[multi-parameter-persistent-homology]]
+- [[multi-parameter-persistent-homology-forecasting]]
 
 ## Key Concepts
 
-- [[topoprimer]]: A framework that incorporates global topological structure into forecasting models as explicit inputs to improve accuracy and cold-start performance.
+- [[topoprimer]]: A forecasting framework that injects global topological structure of time-series populations via persistent homology and spectral sheaf coordinates as explicit model input.
 
 ## Archivist Review
 
-TopoPrimer was approved as a model-agnostic topological augmentation framework suitable for various forecasting backbones. I approved two open questions concerning the advancement of TDA metrics and persistent homology methods, as these represent substantial research bottlenecks. The ECL dataset was rejected as it is a standard, widely used benchmark in time-series forecasting.
+I approved TopoPrimer as a novel, modular architectural adaptation for injecting topological context into forecasting models. The open question regarding multi-parameter persistent homology captures a concrete, non-trivial research direction in temporal topological data analysis. Other candidates were rejected to prioritize the most impactful contributions in accordance with the scarcity policy.
 
 ### Approved Concepts
-- TopoPrimer: Introduces a model-agnostic framework for augmenting forecasting models with global topological features via persistent homology and spectral sheaf coordinates.
+- TopoPrimer: Provides a novel, model-agnostic method to inject global population-level topology into forecasting backbones, addressing gaps in cold-start and seasonal performance.
 
 ### Approved Open Questions
-- Learned Topological Filtration Metrics: Determining the optimal metric for TDA is a fundamental bottleneck, as the choice of metric currently bounds the quality and expressiveness of the topological representation.
-- Multi-parameter Persistent Homology: Multi-parameter persistence potentially offers a more expressive characterization of population manifolds critical for forecasting performance in volatile regimes.
-
-### Rejected Candidates
-- [dataset] ECL (`ecl`) - not_novel: ECL is a widely used benchmark dataset already well-documented in time-series literature.
+- Multi-Parameter Topological Forecasting Extensions: Identifying better ways to capture higher-order topological relational dynamics is crucial for improving forecasting robustness in complex, non-stationary data regimes.
 
 ## Links
 

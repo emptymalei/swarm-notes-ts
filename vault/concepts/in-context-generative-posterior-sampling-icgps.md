@@ -1,12 +1,13 @@
 ---
-title: "In-context Generative Posterior Sampling (ICGPS)"
-slug: "in-context-generative-posterior-sampling-icgps"
-type: concept
+created_at: '2026-05-16T05:11:45Z'
 generated_stub: true
+modified_at: '2026-05-17T05:23:25Z'
+processed_at: '2026-05-16T05:11:45Z'
+slug: in-context-generative-posterior-sampling-icgps
 source_papers:
-  - "[[arxiv-260514840-in-context-learning-for-data-driven-censored-inventory-contr]]"
-processed_at: "2026-05-16T05:11:45Z"
-created_at: "2026-05-16T05:11:45Z"
+- '[[arxiv-260514840-in-context-learning-for-data-driven-censored-inventory-contr]]'
+title: In-context Generative Posterior Sampling (ICGPS)
+type: concept
 ---
 
 # In-context Generative Posterior Sampling (ICGPS)

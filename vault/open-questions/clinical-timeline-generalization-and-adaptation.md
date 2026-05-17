@@ -1,8 +1,9 @@
 ---
 created_at: '2026-05-16T05:10:38Z'
+modified_at: '2026-05-17T05:22:18Z'
 source_papers:
 - '[[arxiv-260515168-text-knows-what-tables-know-when-clinical-timeline-reconstru]]'
-title: Generalizing Clinical Timeline Reconstruction
+title: Multimodal Timeline Generalization Limits
 ---
 
 **Background:** Clinical timeline reconstruction requires accurate temporal ordering and absolute timestamp assignment for patient events, yet narrative text often provides rich semantic context while lacking temporal precision, whereas structured EHR data provides precise anchors but lacks event coverage.

@@ -1,12 +1,13 @@
 ---
-title: "FutureSim"
-slug: "futuresim"
-type: concept
+created_at: '2026-05-16T05:10:31Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:11Z'
+processed_at: '2026-05-16T05:10:31Z'
+slug: futuresim
 source_papers:
-  - "[[arxiv-260515188-futuresim-replaying-world-events-to-evaluate-adaptive-agents]]"
-processed_at: "2026-05-16T05:10:31Z"
-created_at: "2026-05-16T05:10:31Z"
+- '[[arxiv-260515188-futuresim-replaying-world-events-to-evaluate-adaptive-agents]]'
+title: FutureSim
+type: concept
 ---
 
 # FutureSim

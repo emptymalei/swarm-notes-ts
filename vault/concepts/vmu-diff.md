@@ -1,12 +1,13 @@
 ---
-title: "VMU-Diff"
-slug: "vmu-diff"
-type: concept
+created_at: '2026-05-16T05:12:33Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:16Z'
+processed_at: '2026-05-16T05:12:33Z'
+slug: vmu-diff
 source_papers:
-  - "[[arxiv-260514597-vmu-diff-a-coarse-to-fine-multi-source-data-fusion-framework]]"
-processed_at: "2026-05-16T05:12:33Z"
-created_at: "2026-05-16T05:12:33Z"
+- '[[arxiv-260514597-vmu-diff-a-coarse-to-fine-multi-source-data-fusion-framework]]'
+title: VMU-Diff
+type: concept
 ---
 
 # VMU-Diff

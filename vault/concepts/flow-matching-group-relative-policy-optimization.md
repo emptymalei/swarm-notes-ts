@@ -1,12 +1,13 @@
 ---
-title: "Flow matching group relative policy optimization"
-slug: "flow-matching-group-relative-policy-optimization"
-type: concept
+created_at: '2026-05-16T05:12:01Z'
 generated_stub: true
+modified_at: '2026-05-17T05:23:40Z'
+processed_at: '2026-05-16T05:12:01Z'
+slug: flow-matching-group-relative-policy-optimization
 source_papers:
-  - "[[arxiv-260514696-eponav2-driving-world-model-with-comprehensive-future-reason]]"
-processed_at: "2026-05-16T05:12:01Z"
-created_at: "2026-05-16T05:12:01Z"
+- '[[arxiv-260514696-eponav2-driving-world-model-with-comprehensive-future-reason]]'
+title: Flow matching group relative policy optimization
+type: concept
 ---
 
 # Flow matching group relative policy optimization

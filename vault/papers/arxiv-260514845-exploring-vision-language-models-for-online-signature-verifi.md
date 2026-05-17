@@ -14,11 +14,9 @@ url: "https://arxiv.org/abs/2605.14845"
 # Custom fields
 paper_id: "2605.14845"
 paper_source: "arxiv"
-domain: "computer-vision"
+domain: "nlp"
 tags:
-  - "biometrics"
-  - "vision-language-models"
-  - "zero-shot-learning"
+  []
 architectures:
   []
 datasets:
@@ -28,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:11:36Z"
-created_at: "2026-05-16T05:11:36Z"
+processed_at: "2026-05-17T05:23:16Z"
+created_at: "2026-05-17T05:23:16Z"
 ---
 
 # Exploring Vision-Language Models for Online Signature Verification: A Zero-Shot Capability Study
@@ -40,34 +38,34 @@ created_at: "2026-05-16T05:11:36Z"
 
 ## Summary
 
-This study investigates the zero-shot biometric verification capabilities of state-of-the-art vision-language models by transforming online signature kinematic data into static images. While models like GPT-5.2 achieve state-of-the-art performance in random forgery detection, they struggle significantly with skilled forgeries. A key finding is the emergence of a 'Rationalization Trap', where chain-of-thought prompting causes models to hallucinate justifications for forgery artifacts, thereby reducing overall system accuracy.
+This study evaluates the zero-shot performance of vision-language models (VLMs) on online signature verification by transforming kinematic data into static images. While models achieve superior performance in random forgery scenarios, they struggle with skilled forgeries due to the 'Rationalization Trap,' where chain-of-thought reasoning generates false kinematic justifications. The findings provide a critical assessment of the limitations of current multimodal models in high-stakes biometric verification tasks.
 
 ## Key Contributions
 
-- Evaluated zero-shot VLM performance (GPT-5.2, Gemini 2.5 Pro) on the Signature Verification Challenge benchmark, demonstrating high efficacy for random forgery detection but poor performance on skilled forgeries.
-- Introduced a kinematic-to-static image conversion strategy that encodes pressure as stroke opacity to facilitate VLM processing of online signatures.
-- Developed a token-probability-based scoring protocol for robust biometric assessment and identified the 'Rationalization Trap', where CoT reasoning induces kinematic hallucinations that mask forgery artifacts.
+- Establishes a baseline for zero-shot online signature verification using state-of-the-art VLMs via kinematic-to-static image conversion.
+- Proposes a novel scoring protocol leveraging latent token probabilities from VLMs for biometric verification.
+- Identifies the 'Rationalization Trap' where chain-of-thought reasoning leads to kinematic hallucinations, significantly degrading performance on skilled forgeries.
 
 ## Open Questions & Future Work
 
-- [[vlm-biometric-rationalization-hallucination]]
+- [[mitigating-vlm-rationalization-traps]]
 
 ## Key Concepts
 
-- [[rationalization-trap]]: A phenomenon where Chain-of-Thought reasoning leads models to generate false kinematic justifications for forgery artifacts, degrading verification performance.
+- [[rationalization-trap]]: A phenomenon where chain-of-thought reasoning causes models to hallucinate justifications for artifacts, paradoxically degrading performance in high-precision verification tasks.
 
 ## Archivist Review
 
-The paper provides a significant contribution by defining the 'Rationalization Trap' as a systematic failure mode for VLMs in biometric reasoning. This concept and the associated open question regarding its mitigation are highly relevant for future XAI and VLM research in high-stakes domains. The signature benchmark itself is considered standard and was rejected as a dataset candidate to maintain archival selectivity.
+I approved the Rationalization Trap as a central concept because it describes a significant and counterintuitive failure mode in multimodal foundation models that is likely to recur in other high-stakes domains. I also approved the corresponding open question regarding mitigation of this trap, as it addresses a critical research bottleneck in AI safety and interpretability. The SVC dataset was rejected as it is a standard competition benchmark rather than a novel research-derived dataset.
 
 ### Approved Concepts
-- Rationalization Trap: Identifies a fundamental failure mode in VLM biometric reasoning where CoT leads to false positives via hallucinated justifications.
+- Rationalization Trap: It identifies a failure mode in LLMs/VLMs where reasoning processes lead to incorrect, hallucinated justifications in sensitive classification tasks.
 
 ### Approved Open Questions
-- Mitigating VLM Rationalization Hallucinations: The rationalization trap significantly undermines the trustworthiness of XAI in high-stakes biometric scenarios, as it can cause models to confidently misclassify forgeries while providing misleading, human-sounding justifications.
+- Mitigating VLM Rationalization Traps: Understanding this phenomenon is critical for the safety and reliability of foundation models in high-assurance domains where interpretability is a requirement.
 
 ### Rejected Candidates
-- [dataset] Signature Verification Challenge (SVC) (`svc-signature-verification-challenge`) - duplicate_existing: The Signature Verification Challenge is a well-established academic benchmark and not a novel dataset deserving a unique note.
+- [dataset] Signature Verification Challenge (SVC) (`SVC`) - not_novel: This is a standard, longstanding competition benchmark dataset that does not warrant a new standalone vault entry.
 
 ## Links
 

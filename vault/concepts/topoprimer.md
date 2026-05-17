@@ -1,12 +1,13 @@
 ---
-title: "TopoPrimer"
-slug: "topoprimer"
-type: concept
+created_at: '2026-05-16T05:11:07Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:46Z'
+processed_at: '2026-05-16T05:11:07Z'
+slug: topoprimer
 source_papers:
-  - "[[arxiv-260515035-topoprimer-the-missing-topological-context-in-forecasting-mo]]"
-processed_at: "2026-05-16T05:11:07Z"
-created_at: "2026-05-16T05:11:07Z"
+- '[[arxiv-260515035-topoprimer-the-missing-topological-context-in-forecasting-mo]]'
+title: TopoPrimer
+type: concept
 ---
 
 # TopoPrimer

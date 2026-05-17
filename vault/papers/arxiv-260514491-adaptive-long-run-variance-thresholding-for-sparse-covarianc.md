@@ -24,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:12:51Z"
-created_at: "2026-05-16T05:12:51Z"
+processed_at: "2026-05-17T05:24:30Z"
+created_at: "2026-05-17T05:24:30Z"
 ---
 
 # Adaptive Long-Run Variance Thresholding for Sparse Covariance Estimation in High-Dimensional Time Series
@@ -36,33 +36,31 @@ created_at: "2026-05-16T05:12:51Z"
 
 ## Summary
 
-This paper addresses the limitations of standard covariance thresholding methods, which often assume independent data and fail when applied to high-dimensional time series. The authors propose an adaptive thresholding procedure that dynamically adjusts entry-specific thresholds based on estimated long-run variance to account for temporal dependence. The proposed estimator achieves optimal convergence rates under the spectral norm and ensures consistent support recovery, outperforming traditional approaches in both synthetic simulations and real-world applications involving gene expression and financial data.
+This paper addresses the challenge of sparse covariance matrix estimation in high-dimensional time series, where standard thresholding methods designed for independent data fail due to temporal dependence. The authors introduce an adaptive thresholding procedure that incorporates long-run variance into entry-specific thresholds to handle autocorrelation. Theoretical analysis proves the estimator's consistency under the spectral norm and confirms its optimal convergence rate and support recovery capabilities. Empirical results on synthetic and real-world datasets, including gene expression and stock returns, validate the method's effectiveness over existing techniques.
 
 ## Key Contributions
 
-- Introduced Adaptive Long-Run Variance Thresholding to enable consistent sparse covariance estimation in high-dimensional time series with weak temporal dependence.
-- Proved spectral norm consistency and optimal convergence rates for the proposed estimator under regularity conditions.
-- Established support recovery consistency and demonstrated that standard i.i.d.-based thresholding methods fail to accurately identify non-zero covariance entries in the presence of autocorrelation.
+- Proposes a thresholding procedure for sparse covariance estimation that accounts for temporal dependence using long-run variance.
+- Proves consistency under the spectral norm and optimal convergence rates for the proposed estimator.
+- Establishes support recovery consistency and demonstrates superiority over standard independent-data thresholding methods in simulations and real-world applications.
 
 ## Open Questions & Future Work
 
-- [[theoretical-justification-block-cv]]
-- [[adaptive-thresholding-complex-dependence]]
+- [[theoretical-justification-tuning-parameter-selection-time-series]]
 
 ## Key Concepts
 
-- [[adaptive-long-run-variance-thresholding]]: A thresholding procedure for sparse covariance estimation that adjusts entry-specific thresholds using estimated long-run variance to account for temporal autocorrelation.
+- [[adaptive-long-run-variance-thresholding]]: A thresholding procedure for sparse covariance estimation in high-dimensional time series that adapts to temporal dependence by incorporating long-run variance.
 
 ## Archivist Review
 
-The paper presents a significant improvement in high-dimensional covariance estimation by incorporating long-run variance into thresholding, directly addressing the limitations of i.i.d. assumptions. I have approved the proposed methodology as a core concept and the two identified research questions regarding theoretical gaps in tuning and dependence modeling, which are significant for high-dimensional time-series statistics. No datasets were approved as the applications (gene expression, stock returns) were standard domains rather than novel, specific datasets.
+The submitted candidates directly address the foundational statistical challenge of adapting sparse covariance estimation for dependent time series. The approved concept and open question are technically precise, address a clear methodological gap, and are highly reusable for future high-dimensional time series research. No datasets were approved as the ones mentioned in the paper were generic applications rather than core benchmarks defined by the authors.
 
 ### Approved Concepts
-- Adaptive Long-Run Variance Thresholding: It addresses the failure of standard thresholding methods when applied to high-dimensional time series with temporal dependence by replacing naive i.i.d. assumptions.
+- Adaptive Long-Run Variance Thresholding: Provides a novel mechanism to adapt covariance thresholding specifically for high-dimensional time series, overcoming failures of methods designed for independent data.
 
 ### Approved Open Questions
-- Theoretical justification of block-CV: Tuning parameter selection is crucial for the practical performance of thresholding estimators. Understanding the theoretical validity of these selection methods is necessary to ensure the reliability of the resulting covariance estimates in applied settings.
-- Adaptive thresholding for complex dependence: Real-world high-dimensional data frequently exhibit complex temporal dependencies. Proving the robustness of these estimators in more general settings is essential for their widespread applicability.
+- Theoretical justification for parameter selection: Reliable tuning parameter selection is critical for the practical utility and statistical consistency of thresholding estimators in high-dimensional settings.
 
 ## Links
 

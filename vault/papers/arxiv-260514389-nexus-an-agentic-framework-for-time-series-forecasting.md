@@ -19,24 +19,20 @@ url: "https://arxiv.org/abs/2605.14389"
 # Custom fields
 paper_id: "2605.14389"
 paper_source: "arxiv"
-domain: "time-series"
+domain: "nlp"
 tags:
-  - "forecasting"
-  - "time-series-foundation-models"
-  - "large-language-models"
-  - "agentic-reasoning"
-  - "contextual-grounding"
+  []
 architectures:
   []
 datasets:
   []
 concept_slugs:
-  - "nexus"
+  - "nexus-framework"
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:13:07Z"
-created_at: "2026-05-16T05:13:07Z"
+processed_at: "2026-05-17T05:24:48Z"
+created_at: "2026-05-17T05:24:48Z"
 ---
 
 # Nexus : An Agentic Framework for Time Series Forecasting
@@ -47,34 +43,36 @@ created_at: "2026-05-16T05:13:07Z"
 
 ## Summary
 
-Nexus is a multi-agent framework designed to address the limitations of existing TSFMs and LLMs in time series forecasting by treating prediction as an agentic reasoning problem. The framework decomposes the forecasting process into distinct stages that isolate macro and micro temporal fluctuations and integrate contextual textual data, such as news or events. By organizing these reasoning tasks, Nexus effectively bridges the gap between numerical pattern recognition and real-world contextual grounding, achieving superior performance on post-knowledge-cutoff datasets compared to traditional benchmarks.
+Nexus is a multi-agent forecasting framework that bridges the gap between specialized Time Series Foundation Models and LLMs by decomposing the forecasting process into specialized stages. It integrates macro and micro-level temporal fluctuations with unstructured textual context to handle complex, event-driven dynamics. Validated on Zillow and stock market data, Nexus consistently outperforms existing methods while providing explicit reasoning traces for its forecasts. This work reformulates real-world forecasting as an agentic reasoning task rather than a purely sequence-modeling one.
 
 ## Key Contributions
 
-- Nexus introduces an agentic decomposition approach to forecasting, separating macro-level, micro-level, and contextual reasoning stages to enhance prediction in event-driven scenarios.
-- Demonstrates that LLMs possess strong intrinsic forecasting capabilities when numerical and contextual reasoning are systematically organized within an agentic framework.
-- Outperforms state-of-the-art TSFMs and zero-shot LLM baselines on post-cutoff datasets, including Zillow real estate and stock market equities, while providing human-interpretable reasoning traces.
+- Introduces Nexus, a multi-agent forecasting framework that decomposes time series prediction into stages for macro-temporal, micro-temporal, and contextual integration.
+- Demonstrates that current LLMs exhibit strong intrinsic forecasting capabilities when numerical and contextual reasoning are systematically organized.
+- Outperforms SOTA Time Series Foundation Models (TSFMs) and LLM baselines on real estate and volatile stock market datasets, specifically on data post-dating LLM knowledge cutoffs.
+- Produces interpretable reasoning traces that clarify the drivers of each forecast, moving beyond black-box sequence modeling.
 
 ## Open Questions & Future Work
 
-- [[computational-efficiency-in-agentic-forecasting]]
+- [[evaluation-cost-agentic-forecasting]]
 
 ## Key Concepts
 
-- [[nexus]]: A multi-agent framework for time series forecasting that decomposes predictions into specialized macro/micro-temporal and contextual reasoning stages.
+- [[nexus-framework]]: A multi-agent forecasting framework that decomposes time series prediction into stages for macro-temporal, micro-temporal, and contextual integration to bridge numerical and reasoning gaps.
 
 ## Archivist Review
 
-I approved the 'Nexus' concept as it introduces a reusable agentic decomposition paradigm for time-series forecasting. I also approved a refined version of the open question regarding the efficiency of agentic forecasting, as it identifies a critical bottleneck for future research in this area. I rejected the Zillow metrics as a dataset candidate because it lacks the formal structure and provenance of a specific, named research benchmark.
+I have approved the Nexus Framework as a representative architectural approach for multi-agent temporal reasoning and defined an open question regarding the evaluation scalability of these compute-intensive systems. I rejected generic candidates and prioritized the overarching framework over specific module components. The evaluation focuses on the shift toward agentic forecasting as a research field rather than paper-specific implementation details.
 
 ### Approved Concepts
-- Nexus: It establishes a novel agentic paradigm for time series forecasting that bridges the gap between TSFMs and LLMs through task decomposition and contextual grounding.
+- Nexus Framework: It introduces a multi-agent decomposition paradigm for time series forecasting that separates numerical pattern extraction from contextual reasoning, framing forecasting as a multi-stage agentic task rather than monolithic sequence modeling.
 
 ### Approved Open Questions
-- Efficiency of Agentic Forecasting: The absence of rigorous statistical validation and suitable non-leaking benchmarks currently prevents accurate assessment of agentic forecasting performance versus traditional statistical baselines.
+- Evaluation cost agentic forecasting: This question highlights a critical systemic limitation that hinders the transition of agentic forecasting from prototype to production-grade reliable systems.
 
 ### Rejected Candidates
-- [dataset] Zillow real estate metrics (`zillow-real-estate-metrics`) - low_impact: This is a general category of real-world metrics rather than a standardized, specifically named research dataset.
+- [concept] Nexus (`nexus`) - other: Renamed to Nexus Framework for specificity.
+- [open_question] Efficiency of Evaluating Agentic Forecasting (`reproducibility-cost-agentic-forecasting`) - other: Renamed for conciseness.
 
 ## Links
 

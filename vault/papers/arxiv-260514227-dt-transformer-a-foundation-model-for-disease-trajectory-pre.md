@@ -16,10 +16,7 @@ paper_id: "2605.14227"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "healthcare"
-  - "clinical-forecasting"
-  - "foundation-models"
-  - "ehr-analysis"
+  []
 architectures:
   []
 datasets:
@@ -29,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:13:42Z"
-created_at: "2026-05-16T05:13:42Z"
+processed_at: "2026-05-17T05:25:26Z"
+created_at: "2026-05-17T05:25:26Z"
 ---
 
 # DT-Transformer: A Foundation Model for Disease Trajectory Prediction on a Real-world Health System
@@ -41,33 +38,33 @@ created_at: "2026-05-16T05:13:42Z"
 
 ## Summary
 
-DT-Transformer is a foundation model designed for clinical disease trajectory prediction using large-scale electronic health record (EHR) data. Trained on 57.1 million entries from 1.7 million patients across the Mass General Brigham health system, the model aims to address the limitations of small-scale, single-site models. It demonstrates high predictive discrimination across nearly 900 disease categories, confirming the potential of system-wide EHR integration for robust real-world clinical forecasting.
+DT-Transformer is a foundation model designed for large-scale disease trajectory prediction using multi-hospital electronic health record (EHR) data. By training on 57.1 million entries from 1.7 million patients, the model captures clinical complexities often missed in smaller research cohorts. Empirical evaluation across 896 disease categories demonstrates strong predictive discrimination, with a median age- and sex-stratified AUC of 0.871, supporting the viability of system-scale training for clinical forecasting.
 
 ## Key Contributions
 
-- Introduces DT-Transformer, a foundation model trained on 57.1M structured EHR entries from 1.7M patients across 11 hospitals.
-- Achieves a median age- and sex-stratified AUC of 0.871 for next-event prediction across 896 disease categories.
-- Demonstrates strong performance in both held-out and prospective validation settings, validating the efficacy of health system-scale training for clinical forecasting.
+- Introduces DT-Transformer, a foundation model for disease trajectory prediction trained on 57.1 million EHR entries from 1.7 million patients.
+- Demonstrates superior clinical forecasting performance, achieving a median age- and sex-stratified AUC of 0.871 for next-event prediction across 896 disease categories.
+- Validates the efficacy of health system-scale training to improve generalizability across heterogeneous multi-hospital clinical environments.
 
 ## Open Questions & Future Work
 
-- [[ehr-temporal-encoding-optimization]]
-- [[clinical-utility-of-trajectory-models]]
+- [[cross-institutional-data-fragmentation-impact]]
+- [[optimal-temporal-encoding-ehr]]
 
 ## Key Concepts
 
-- [[dt-transformer]]: A foundation model trained on large-scale electronic health records for clinical disease trajectory forecasting.
+- [[dt-transformer]]: A foundation model architecture designed for predicting patient disease trajectories from large-scale, multi-hospital electronic health record systems.
 
 ## Archivist Review
 
-I approved the DT-Transformer architecture as it represents a significant shift toward system-level foundation models in healthcare. I also approved the two open questions, as they highlight critical, recurring bottlenecks in modeling irregular clinical longitudinal data and the ongoing challenge of clinical translation for foundation models. Other potential dataset candidates were excluded to maintain focus on the methodology.
+I approved the DT-Transformer architecture as a representative instance of healthcare-domain foundation modeling and two open questions regarding data observability and temporal representation in clinical sequences. These items are specific, reusable, and address fundamental barriers in longitudinal EHR forecasting. I ensured no existing datasets were duplicated and adhered to the scarcity constraints.
 
 ### Approved Concepts
-- DT-Transformer: Represents a specific implementation of a foundation model for health-system scale EHR data, likely to serve as a benchmark or reference architecture in future clinical AI research.
+- DT-Transformer: Represents a scaling of foundation model architectures specifically to multi-hospital EHR records for longitudinal disease forecasting.
 
 ### Approved Open Questions
-- Optimizing temporal representation for EHRs: Effective time representation is critical for foundation models to accurately predict disease trajectories over varying time horizons in fragmented real-world clinical systems.
-- Clinical utility of trajectory models: Bridging the gap between high-performing predictive models in research settings and actionable clinical tools is essential for the translation of AI in medicine.
+- Cross-institutional data fragmentation impact: Foundation models for healthcare depend on large-scale data to generalize; fragmentation remains a fundamental barrier to achieving reliable long-horizon clinical predictions.
+- Optimal temporal encoding for EHRs: Temporal representation is a critical bottleneck for accurate clinical sequence modeling when dealing with non-uniform density and complex longitudinal gaps.
 
 ## Links
 

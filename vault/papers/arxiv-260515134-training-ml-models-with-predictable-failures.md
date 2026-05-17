@@ -14,9 +14,7 @@ paper_id: "2605.15134"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "safety"
-  - "reliability"
-  - "evaluation"
+  []
 architectures:
   []
 datasets:
@@ -26,8 +24,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-05-16T05:10:47Z"
-created_at: "2026-05-16T05:10:47Z"
+processed_at: "2026-05-17T05:22:27Z"
+created_at: "2026-05-17T05:22:27Z"
 ---
 
 # Training ML Models with Predictable Failures
@@ -38,31 +36,33 @@ created_at: "2026-05-16T05:10:47Z"
 
 ## Summary
 
-This paper addresses the challenge of predicting ML model failure rates at deployment scale, where rare but critical failure modes are often missing from evaluation sets. The authors decompose the forecast error of existing extrapolation methods, revealing a systematic bias that can lead to dangerous under-predictions when rare events are omitted. To mitigate this, they propose a fine-tuning objective called the forecastability loss, which improves the model's consistency with failure rate projections. Experiments in language and reinforcement learning domains confirm that the objective effectively reduces forecast error without sacrificing primary task capability.
+This paper analyzes the reliability of extrapolating deployment-scale failure rates from limited evaluation sets, identifying a systemic bias in existing methods. The authors prove that while these estimators typically err on the side of safety, they fail when the evaluation set misses rare high-failure modes. To mitigate this, they introduce the forecastability loss, a fine-tuning objective that improves the accuracy of failure rate predictions. Experiments in language modeling and reinforcement learning demonstrate that this approach reduces forecast error while maintaining task capability.
 
 ## Key Contributions
 
-- Formalized the finite-k decomposition of existing failure rate estimators to quantify forecast error and bias.
-- Identified that current extrapolation methods under-predict deployment failure rates when rare failure modes are absent from the evaluation set.
-- Introduced the forecastability loss objective, demonstrating reduced held-out forecast error on a language-model password game and an RL gridworld while maintaining task performance.
+- Formulates a finite-k decomposition of existing extreme-value failure rate estimators to quantify bias toward safety-favorable over-prediction.
+- Identifies a critical failure mode where missing rare, high-failure modes in small evaluation sets leads to under-prediction of deployment-scale failures.
+- Introduces the 'forecastability loss' to optimize model training for more reliable failure rate prediction without sacrificing primary task performance.
 
 ## Open Questions & Future Work
 
-- [[failure-tail-forecastability-scaling]]
+- [[understanding-model-failure-tail-dependence]]
+- [[composing-evt-importance-sampling]]
 
 ## Key Concepts
 
-- [[forecastability-loss]]: A fine-tuning objective that optimizes a model for consistency with extreme-value failure rate projections to improve safety at deployment scale.
+- [[forecastability-loss]]: A fine-tuning objective designed to reduce the forecast error of deployment-scale failure rates by explicitly optimizing for predictable performance degradation.
 
 ## Archivist Review
 
-I approved the forecastability loss concept as it provides a distinct, reusable architectural training technique for safety-critical forecasting. I approved the failure-tail scalability question because it identifies a fundamental bottleneck in the long-term reliability of safety evaluation methods. The second open question was rejected as it was framed primarily as a request for more scaling and domain-specific experiments.
+The approved concept, forecastability loss, represents a novel fine-tuning objective for safety-aware model training. The approved open questions address the foundational limitations in extrapolating failure tail behavior and the potential for integrating EVT with importance sampling, which are high-level research bottlenecks in AI safety.
 
 ### Approved Concepts
-- Forecastability Loss: It addresses a critical safety gap in model failure rate estimation by aligning training with extrapolation reliability.
+- Forecastability Loss: It provides a specific learning objective to minimize forecast error of failure rates at deployment scale.
 
 ### Approved Open Questions
-- Failure-tail forecastability scaling: This question is central to the future scalability and validity of current model safety assessment methodologies.
+- Model Failure Tail Dependence: This is crucial for scaling pre-deployment safety assessments to larger models and diverse real-world deployment domains where failure tail behavior may not be well-behaved under current assumptions.
+- Composing EVT and IS: Combining these two complementary paradigms could provide more robust safety guarantees by leveraging the strengths of both extrapolation and rare-event simulation.
 
 ## Links
 

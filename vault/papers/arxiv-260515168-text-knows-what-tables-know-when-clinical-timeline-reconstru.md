@@ -16,22 +16,18 @@ paper_id: "2605.15168"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "medical-imaging-parsing"
-  - "llm-assisted-fmu-testing"
-  - "sequence-to-point-knowledge-distillation"
+  []
 architectures:
   []
 datasets:
-  - "mimic-iii"
-  - "mimic-iv"
+  - "i2m4-benchmark"
 concept_slugs:
   - "retrieval-augmented-multimodal-alignment"
 dataset_slugs:
-  - "mimic-iii"
-  - "mimic-iv"
+  - "i2m4-benchmark"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:10:38Z"
-created_at: "2026-05-16T05:10:38Z"
+processed_at: "2026-05-17T05:22:18Z"
+created_at: "2026-05-17T05:22:18Z"
 ---
 
 # Text Knows What, Tables Know When: Clinical Timeline Reconstruction via Retrieval-Augmented Multimodal Alignment
@@ -42,13 +38,13 @@ created_at: "2026-05-16T05:10:38Z"
 
 ## Summary
 
-This paper addresses the challenge of clinical timeline reconstruction by integrating unstructured narrative text with precise structured EHR data. The authors propose a graph-based multistep approach that uses structured EHR entries as temporal evidence to calibrate timestamps extracted from clinical narratives. Empirical results on the i2m4 benchmark (MIMIC-III and MIMIC-IV) show that this multimodal alignment significantly improves temporal precision compared to text-only methods without compromising event coverage.
+This paper presents a retrieval-augmented multimodal alignment framework to address the temporal ambiguity in unstructured clinical narratives by leveraging the precise timestamps found in structured EHR data. The approach builds a temporal scaffold from clinical text, performs relative event placement, and refines the timeline through structured EHR record retrieval. Experiments on the i2m4 benchmark demonstrate that integrating these modalities significantly enhances the temporal accuracy and completeness of reconstructed patient trajectories compared to text-only methods.
 
 ## Key Contributions
 
-- Introduced a retrieval-augmented multimodal alignment framework that improves absolute timestamp accuracy (AULTC) in clinical timelines.
-- Formulated clinical timeline reconstruction as a multistep graph-based process using structured EHR data as temporal anchors for narrative events.
-- Demonstrated that 34.8% of clinically relevant events are absent in structured records, highlighting the necessity of multimodal alignment for patient trajectory modeling.
+- Introduces a graph-based multistep pipeline that constructs temporal scaffolds from clinical narratives and calibrates them with structured EHR evidence.
+- Demonstrates that the proposed alignment method improves absolute timestamp accuracy (AULTC) and temporal concordance over unimodal baselines on the i2m4 benchmark.
+- Quantifies the clinical importance of multimodal fusion by showing 34.8% of narrative events are missing from tabular EHR records.
 
 ## Open Questions & Future Work
 
@@ -56,22 +52,24 @@ This paper addresses the challenge of clinical timeline reconstruction by integr
 
 ## Key Concepts
 
-- [[retrieval-augmented-multimodal-alignment]]: A framework that integrates clinical text with structured EHR data using retrieval to improve the accuracy of reconstructed patient timelines.
+- [[retrieval-augmented-multimodal-alignment]]: A framework for reconstructing clinical timelines by aligning semantically rich narrative text with temporally precise structured EHR data using retrieval.
 
 ## Archivist Review
 
-The submission introduced a retrieval-augmented multimodal alignment concept and identified a substantial open question regarding the modularity and generalizability of clinical timeline reconstruction. The datasets MIMIC-III and MIMIC-IV are standard in this domain and are approved for their central role in the benchmark evaluation. No other concepts or open questions met the bar for long-term significance.
+Approved the central methodological contribution and a refined open question regarding timeline generalization. I consolidated the dataset into a specific benchmark name rather than the underlying generic MIMIC databases. I rejected the original open question candidate in favor of a more concise phrasing that better aligns with existing vault terminology.
 
 ### Approved Concepts
-- Retrieval-Augmented Multimodal Alignment: Provides a novel mechanism for integrating unstructured clinical narratives with structured EHR data to resolve temporal ambiguity.
+- Retrieval-Augmented Multimodal Alignment: Central novel method for combining unstructured clinical narratives with structured EHR data to improve temporal precision.
 
 ### Approved Open Questions
-- Generalizing Clinical Timeline Reconstruction: Understanding the generalizability and modularity of the proposed multistep reconstruction pipeline is critical for healthcare informatics where documentation styles vary across clinical settings.
+- Multimodal Timeline Generalization Limits: Understanding the generalizability of these methods is critical for moving from research-based phenotyping to hospital-wide temporal decision support.
+
+### Rejected Candidates
+- [open_question] Generalization of Multimodal Timeline Reconstruction (`clinical-timeline-generalization-scalability`) - duplicate_existing: Replaced with a more concise and canonical slug and title.
 
 ## Datasets
 
-- [[mimic-iii]]
-- [[mimic-iv]]
+- [[i2m4-benchmark]]
 
 ## Links
 

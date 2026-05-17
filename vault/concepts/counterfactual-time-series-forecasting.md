@@ -1,12 +1,13 @@
 ---
-title: "Counterfactual Time Series Forecasting"
-slug: "counterfactual-time-series-forecasting"
-type: concept
+created_at: '2026-05-16T05:12:59Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:39Z'
+processed_at: '2026-05-16T05:12:59Z'
+slug: counterfactual-time-series-forecasting
 source_papers:
-  - "[[arxiv-260514422-what-if-tomorrow-is-the-world-cup-final-counterfactual-time]]"
-processed_at: "2026-05-16T05:12:59Z"
-created_at: "2026-05-16T05:12:59Z"
+- '[[arxiv-260514422-what-if-tomorrow-is-the-world-cup-final-counterfactual-time]]'
+title: Counterfactual Time Series Forecasting
+type: concept
 ---
 
 # Counterfactual Time Series Forecasting

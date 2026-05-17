@@ -1,12 +1,13 @@
 ---
-title: "ForcingDAS"
-slug: "forcingdas"
-type: concept
+created_at: '2026-05-16T05:13:35Z'
 generated_stub: true
+modified_at: '2026-05-17T05:25:19Z'
+processed_at: '2026-05-16T05:13:35Z'
+slug: forcingdas
 source_papers:
-  - "[[arxiv-260514285-forcingdas-unified-and-robust-data-assimilation-via-diffusio]]"
-processed_at: "2026-05-16T05:13:35Z"
-created_at: "2026-05-16T05:13:35Z"
+- '[[arxiv-260514285-forcingdas-unified-and-robust-data-assimilation-via-diffusio]]'
+title: ForcingDAS
+type: concept
 ---
 
 # ForcingDAS

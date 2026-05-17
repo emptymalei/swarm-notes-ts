@@ -15,10 +15,7 @@ paper_id: "2605.14343"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "nearest-neighbor-methods"
-  - "geometric-theory"
-  - "high-dimensional-data"
+  []
 architectures:
   []
 datasets:
@@ -28,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:13:14Z"
-created_at: "2026-05-16T05:13:14Z"
+processed_at: "2026-05-17T05:24:55Z"
+created_at: "2026-05-17T05:24:55Z"
 ---
 
 # Nearest-Neighbor Radii under Dependent Sampling
@@ -40,13 +37,13 @@ created_at: "2026-05-16T05:13:14Z"
 
 ## Summary
 
-This paper investigates the geometric properties of nearest-neighbor radii when observations are sampled dependently rather than independently. The authors provide theoretical guarantees, including almost sure convergence under polynomial mixing and non-asymptotic moment bounds under geometric mixing, that explicitly account for the local intrinsic dimension of the data. These findings extend the applicability of k-nearest neighbor methods to high-dimensional manifold-concentrated data with temporal or spatial dependencies, as validated through synthetic and time-series experiments.
+This paper investigates the geometric properties of nearest-neighbor radii when observations are sampled dependently, departing from the standard i.i.d. assumption. The authors analyze strongly mixing processes to derive conditions for almost sure convergence and non-asymptotic moment bounds. These theoretical findings reveal that nearest-neighbor scales remain meaningful under dependence and effectively capture local intrinsic dimensionality in high-dimensional manifolds. The paper validates these insights using both synthetic data and real-world time-series benchmarks.
 
 ## Key Contributions
 
-- Derived distribution-free almost sure convergence results for nearest-neighbor radii under polynomial mixing conditions.
-- Established sharp non-asymptotic moment bounds for nearest-neighbor radii under geometric mixing, revealing dependence on intrinsic dimension rather than ambient dimension.
-- Demonstrated that nearest-neighbor geometry remains statistically informative under dependent sampling through empirical validation on time-series benchmarks.
+- Establishes distribution-free almost sure convergence of nearest-neighbor radii under polynomial mixing conditions.
+- Derives sharp non-asymptotic moment bounds under geometric mixing that scale with local intrinsic dimension rather than ambient dimension.
+- Demonstrates that nearest-neighbor geometry remains statistically informative for high-dimensional dependent data through synthetic and time-series benchmarks.
 
 ## Open Questions & Future Work
 
@@ -54,17 +51,17 @@ This paper investigates the geometric properties of nearest-neighbor radii when 
 
 ## Key Concepts
 
-- [[nearest-neighbor-radii-under-dependent-sampling]]: A theoretical framework characterizing the scale of nearest-neighbor neighborhoods under strong mixing dependence.
+- [[nearest-neighbor-radii-under-dependent-sampling]]: Theoretical analysis of nearest-neighbor neighborhood scales for strongly mixing dependent observations.
 
 ## Archivist Review
 
-The paper provides a rigorous theoretical foundation for analyzing nearest-neighbor geometry under dependent, non-i.i.d. data, which is highly relevant for time-series and manifold-concentrated data. I approved the core concept of NN radii under dependency and a corresponding open question regarding uniform consistency, as these are foundational, research-oriented, and widely applicable beyond this specific paper. No datasets were approved as none were presented as specific, uniquely named research contributions.
+The paper introduces a mathematically rigorous framework for nearest-neighbor geometry under dependent sampling, which fills a significant theoretical gap. I have approved the core concept and the open question regarding uniform convergence as they provide foundational insights for temporal analysis beyond i.i.d. assumptions. No datasets were approved as none were identified as central or distinct enough to warrant a permanent vault entry.
 
 ### Approved Concepts
-- Nearest-neighbor radii under dependent sampling: Establishes a theoretical foundation for nearest-neighbor geometric properties under non-i.i.d. conditions, which is crucial for high-dimensional time-series analysis.
+- Nearest-Neighbor Radii under Dependent Sampling: The paper provides a theoretical foundation for extending nearest-neighbor geometric properties beyond the standard i.i.d. assumption, which is critical for high-dimensional time-series and manifold-constrained data.
 
 ### Approved Open Questions
-- Uniform Convergence under Dependence: A uniform theory is critical for providing global consistency and convergence rate guarantees for k-NN-based algorithms in dependent settings.
+- Uniform convergence and dependence: This is foundational for validating the usage of local learning methods and graph-based estimators in dynamic, non-i.i.d. environments, which are ubiquitous in modern machine learning applications.
 
 ## Links
 

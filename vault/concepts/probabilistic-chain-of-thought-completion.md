@@ -1,12 +1,13 @@
 ---
-title: "Probabilistic Chain-of-Thought Completion (COTC)"
-slug: "probabilistic-chain-of-thought-completion"
-type: concept
+created_at: '2026-05-16T05:11:15Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:55Z'
+processed_at: '2026-05-16T05:11:15Z'
+slug: probabilistic-chain-of-thought-completion
 source_papers:
-  - "[[arxiv-260515016-cotcagent-preventive-consultation-via-probabilistic-chain-of]]"
-processed_at: "2026-05-16T05:11:15Z"
-created_at: "2026-05-16T05:11:15Z"
+- '[[arxiv-260515016-cotcagent-preventive-consultation-via-probabilistic-chain-of]]'
+title: Probabilistic Chain-of-Thought Completion (COTC)
+type: concept
 ---
 
 # Probabilistic Chain-of-Thought Completion (COTC)

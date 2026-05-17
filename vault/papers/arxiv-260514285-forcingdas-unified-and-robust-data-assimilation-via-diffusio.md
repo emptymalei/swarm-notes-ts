@@ -9,7 +9,11 @@ author:
   - literal: "Lianghe Shi"
   - literal: "Chanyong Jung"
   - literal: "Haijie Yuan"
-  - literal: "Ismail Alkhouri, Yue Cynthia Wu, Saiprasad Ravishankar, Jeffrey A Fessler, Qing Qu"
+  - literal: "Ismail Alkhouri"
+  - literal: "Yue Cynthia Wu"
+  - literal: "Saiprasad Ravishankar"
+  - literal: "Jeffrey A Fessler"
+  - literal: "Qing Qu"
 issued:
   date-parts:
     - [2026, 5, 14]
@@ -20,9 +24,8 @@ paper_id: "2605.14285"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "forecasting"
-  - "diffusion-models"
-  - "time-series-forecasting"
+  - "forecasting horizon"
+  - "seasonality handling"
 architectures:
   []
 datasets:
@@ -32,8 +35,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:13:35Z"
-created_at: "2026-05-16T05:13:35Z"
+processed_at: "2026-05-17T05:25:19Z"
+created_at: "2026-05-17T05:25:19Z"
 ---
 
 # ForcingDAS: Unified and Robust Data Assimilation via Diffusion Forcing
@@ -44,33 +47,33 @@ created_at: "2026-05-16T05:13:35Z"
 
 ## Summary
 
-ForcingDAS is a robust data assimilation framework that addresses the accumulation of errors in long-horizon dynamical system tracking by learning a joint-trajectory prior rather than iterative frame-to-frame transitions. By applying Diffusion Forcing with independent per-frame noise, the framework enables a single trained model to perform both real-time nowcasting and retrospective smoothing via adjustable inference-time scheduling. Experimental results across diverse domains, including atmospheric state estimation, demonstrate superior performance and stability compared to specialized baseline methods.
+ForcingDAS addresses the fragility of traditional frame-to-frame data assimilation models by leveraging diffusion forcing to learn a joint-trajectory prior. This approach effectively captures long-horizon temporal dependencies and mitigates error accumulation in non-Markovian systems. Crucially, the framework allows a single trained model to span the entire spectrum from filtering to smoothing via adaptive inference scheduling, eliminating the need for retraining across different regimes. Experimental results demonstrate robust performance improvements over specialized baselines in complex dynamical scenarios including atmospheric state estimation.
 
 ## Key Contributions
 
-- Introduces ForcingDAS, a unified data assimilation framework that eliminates the need for distinct filtering and smoothing pipelines.
-- Replaces brittle frame-to-frame transition models with joint-trajectory priors, significantly mitigating error accumulation over long horizons.
-- Achieves state-of-the-art performance on 2D Navier-Stokes and global atmospheric state estimation benchmarks by leveraging inference-time scheduling to adapt across the filtering-smoothing spectrum.
+- Introduces ForcingDAS, a data assimilation framework that learns a joint-trajectory prior to mitigate error accumulation in non-Markovian dynamical systems.
+- Enables a unified inference pipeline where a single model performs nowcasting, fixed-lag smoothing, and batch reanalysis by adjusting the inference schedule.
+- Outperforms specialized learned and classical baselines across 2D Navier-Stokes, precipitation, and global atmospheric state estimation benchmarks.
 
 ## Open Questions & Future Work
 
-- [[unified-da-inference-regimes]]
-- [[robust-da-non-markovian-systems]]
+- [[unified-data-assimilation-regimes]]
+- [[causal-smoothing-limitations]]
 
 ## Key Concepts
 
-- [[forcingdas]]: A unified data assimilation framework utilizing diffusion forcing with independent frame-wise noise levels to learn joint-trajectory priors.
+- [[forcingdas]]: A unified data assimilation framework that utilizes diffusion forcing to learn a joint-trajectory prior, enabling robust performance across filtering and smoothing tasks without retraining.
 
 ## Archivist Review
 
-The submission identifies a significant advance in data assimilation by replacing iterative frame-to-frame models with trajectory-based diffusion forcing. I have approved the framework itself and the two open questions addressing the unification of DA inference regimes and the problem of non-Markovian observation sequences, as these are foundational challenges in scientific time-series forecasting. No datasets were approved as the candidates were either generic or insufficiently documented as standalone benchmarks.
+I approved the core framework 'ForcingDAS' and two foundational open questions regarding the unification of filtering-smoothing regimes and the limitations of causal-gradient-based smoothing. These items represent significant conceptual shifts in data assimilation methodology rather than incremental performance improvements. I applied a strict filter to ensure only reusable, paradigm-level concepts were added to the vault.
 
 ### Approved Concepts
-- ForcingDAS: Represents a novel paradigm for unified data assimilation that handles both filtering and smoothing without separate models.
+- ForcingDAS: The framework achieves a unified approach for filtering and smoothing in data assimilation by learning a joint-trajectory prior rather than frame-to-frame transitions.
 
 ### Approved Open Questions
-- Unified Data Assimilation Regimes: Unifying DA regimes allows for more efficient model training, facilitates the creation of foundation models for scientific discovery, and avoids the redundant overhead of maintaining multiple specialized pipelines.
-- Robust DA in Non-Markovian Systems: Robustness to non-Markovian data is essential for real-world scientific applications like weather and climate forecasting where full state observability is impossible.
+- Unified Data Assimilation Frameworks: The authors identify this as a primary motivation for the unified ForcingDAS framework, contrasting it with existing specialized methods. This unification is crucial for efficient operational pipelines in weather and climate science.
+- Causal-Only Smoothing Limitations: This is explicitly listed as a key limitation of the proposed ForcingDAS framework, directly impacting its potential performance in batch reanalysis tasks.
 
 ## Links
 

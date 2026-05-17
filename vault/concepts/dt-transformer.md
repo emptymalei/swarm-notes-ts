@@ -1,12 +1,13 @@
 ---
-title: "DT-Transformer"
-slug: "dt-transformer"
-type: concept
+created_at: '2026-05-16T05:13:42Z'
 generated_stub: true
+modified_at: '2026-05-17T05:25:26Z'
+processed_at: '2026-05-16T05:13:42Z'
+slug: dt-transformer
 source_papers:
-  - "[[arxiv-260514227-dt-transformer-a-foundation-model-for-disease-trajectory-pre]]"
-processed_at: "2026-05-16T05:13:42Z"
-created_at: "2026-05-16T05:13:42Z"
+- '[[arxiv-260514227-dt-transformer-a-foundation-model-for-disease-trajectory-pre]]'
+title: DT-Transformer
+type: concept
 ---
 
 # DT-Transformer

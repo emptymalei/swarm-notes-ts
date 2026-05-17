@@ -1,12 +1,13 @@
 ---
-title: "Fusion-fission behavioral forecasting"
-slug: "fusion-fission-behavioral-forecasting"
-type: concept
+created_at: '2026-05-16T05:13:49Z'
 generated_stub: true
+modified_at: '2026-05-17T05:25:33Z'
+processed_at: '2026-05-16T05:13:49Z'
+slug: fusion-fission-behavioral-forecasting
 source_papers:
-  - "[[arxiv-260514218-fusion-fission-forecasts-when-ai-will-shift-to-undesirable-b]]"
-processed_at: "2026-05-16T05:13:49Z"
-created_at: "2026-05-16T05:13:49Z"
+- '[[arxiv-260514218-fusion-fission-forecasts-when-ai-will-shift-to-undesirable-b]]'
+title: Fusion-fission behavioral forecasting
+type: concept
 ---
 
 # Fusion-fission behavioral forecasting

@@ -1,12 +1,13 @@
 ---
-title: "Adaptive Long-Run Variance Thresholding"
-slug: "adaptive-long-run-variance-thresholding"
-type: concept
+created_at: '2026-05-16T05:12:51Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:30Z'
+processed_at: '2026-05-16T05:12:51Z'
+slug: adaptive-long-run-variance-thresholding
 source_papers:
-  - "[[arxiv-260514491-adaptive-long-run-variance-thresholding-for-sparse-covarianc]]"
-processed_at: "2026-05-16T05:12:51Z"
-created_at: "2026-05-16T05:12:51Z"
+- '[[arxiv-260514491-adaptive-long-run-variance-thresholding-for-sparse-covarianc]]'
+title: Adaptive Long-Run Variance Thresholding
+type: concept
 ---
 
 # Adaptive Long-Run Variance Thresholding

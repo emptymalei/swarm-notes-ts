@@ -20,9 +20,7 @@ paper_id: "2605.15188"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "agents"
-  - "evaluation"
-  - "benchmarking"
+  []
 architectures:
   []
 datasets:
@@ -32,8 +30,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-05-16T05:10:31Z"
-created_at: "2026-05-16T05:10:31Z"
+processed_at: "2026-05-17T05:22:11Z"
+created_at: "2026-05-17T05:22:11Z"
 ---
 
 # FutureSim: Replaying World Events to Evaluate Adaptive Agents
@@ -44,24 +42,24 @@ created_at: "2026-05-16T05:10:31Z"
 
 ## Summary
 
-FutureSim is a grounded simulation benchmark designed to evaluate how AI agents adapt to dynamic environments by replaying chronologically ordered real-world news and event resolutions. The framework requires agents to forecast events beyond their training knowledge cutoff, providing a high-fidelity testbed for long-horizon prediction. Evaluation of frontier models using this benchmark reveals substantial gaps in agent adaptability, with many models failing to exceed basic baseline performance metrics.
+FutureSim is a benchmarking framework designed to evaluate the adaptive capabilities of AI agents in dynamic environments by replaying real-world events chronologically. By requiring agents to forecast unfolding news and resolve queries over a three-month horizon, the framework reveals significant limitations in current frontier models' ability to update their knowledge and reason about evolving global events. This approach provides a rigorous, longitudinal testbed for research into long-horizon adaptation, memory, and uncertainty quantification in real-world scenarios.
 
 ## Key Contributions
 
-- Introduces FutureSim, a benchmark framework that evaluates AI agents on their ability to forecast real-world events across a three-month chronological replay.
-- Demonstrates that current frontier agents exhibit significant limitations in long-horizon forecasting, with top performance at 25% accuracy and many underperforming baseline models.
-- Establishes a realistic evaluation setting to analyze agent capabilities in test-time adaptation, search, memory, and uncertainty reasoning.
+- Introduces FutureSim, a grounded simulation benchmark for evaluating AI agent adaptation using chronological real-world news and event data.
+- Demonstrates that current frontier models struggle with long-horizon forecasting in dynamic environments, with many showing negative Brier skill scores.
+- Provides a realistic experimental setup for studying long-horizon test-time adaptation, search, and reasoning about uncertainty in open-ended scenarios.
 
 ## Key Concepts
 
-- [[futuresim]]: A grounded simulation framework that replays chronologically ordered real-world events to evaluate the long-horizon predictive capabilities and adaptability of AI agents.
+- [[futuresim]]: A grounded simulation framework that evaluates AI agent performance by replaying chronological real-world news and events to assess long-horizon adaptation and forecasting.
 
 ## Archivist Review
 
-FutureSim is approved as a landmark evaluation framework for testing AI agent adaptability in dynamic, long-horizon, real-world environments. No other candidates were provided, and the framework itself is distinct enough from existing benchmarks to warrant a standalone entry.
+I have approved FutureSim as a concept because it represents a distinct methodological framework for evaluating AI agent adaptation in long-horizon dynamic settings, which is likely to see further adoption in LLM evaluation research. No open questions or datasets were approved as the former were not explicitly formulated as fundamental bottlenecks and the latter was essentially part of the framework itself.
 
 ### Approved Concepts
-- FutureSim: It provides a novel, grounded framework for evaluating agent adaptability in open-ended real-world scenarios by replaying chronologically ordered events.
+- FutureSim: It is the central framework proposed for evaluating AI agents' adaptive capabilities in open-ended, dynamic environments through chronological real-world event replay.
 
 ## Links
 

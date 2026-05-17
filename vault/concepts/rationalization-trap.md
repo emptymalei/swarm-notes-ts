@@ -1,12 +1,13 @@
 ---
-title: "Rationalization Trap"
-slug: "rationalization-trap"
-type: concept
+created_at: '2026-05-16T05:11:36Z'
 generated_stub: true
+modified_at: '2026-05-17T05:23:16Z'
+processed_at: '2026-05-16T05:11:36Z'
+slug: rationalization-trap
 source_papers:
-  - "[[arxiv-260514845-exploring-vision-language-models-for-online-signature-verifi]]"
-processed_at: "2026-05-16T05:11:36Z"
-created_at: "2026-05-16T05:11:36Z"
+- '[[arxiv-260514845-exploring-vision-language-models-for-online-signature-verifi]]'
+title: Rationalization Trap
+type: concept
 ---
 
 # Rationalization Trap

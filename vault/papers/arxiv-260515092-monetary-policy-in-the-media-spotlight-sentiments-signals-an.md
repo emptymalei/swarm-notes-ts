@@ -16,7 +16,7 @@ paper_id: "2605.15092"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  []
+  - "nlp"
 architectures:
   []
 datasets:
@@ -26,8 +26,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "GeneralMLSkill"
-processed_at: "2026-05-16T05:10:59Z"
-created_at: "2026-05-16T05:10:59Z"
+processed_at: "2026-05-17T05:22:39Z"
+created_at: "2026-05-17T05:22:39Z"
 ---
 
 # Monetary Policy in the Media Spotlight: Sentiments, Signals, and Economic Impact
@@ -38,31 +38,32 @@ created_at: "2026-05-16T05:10:59Z"
 
 ## Summary
 
-This paper investigates the role of news media in monetary policy transmission by constructing sentiment indicators from over 50,000 Canadian newspaper articles. The researchers incorporate these indicators into a behavioral New-Keynesian model, revealing that media sentiment acts as an endogenous variable that influences inflation expectations and policy reactions. Empirical results from a Bayesian structural vector autoregression (SVAR) confirm that narrative shocks drive macroeconomic fluctuations and amplify the impact of policy decisions on output and prices.
+This paper explores how news media sentiment influences monetary policy transmission by constructing indicators from over 50,000 newspaper articles. Using a behavioral New-Keynesian model and Bayesian SVAR, the researchers demonstrate that media sentiment is not merely informative but an active driver of economic expectations and policy dynamics. Their findings indicate that 'narrative shocks' significantly influence macroeconomic variance and that the feedback loop between media sentiment and central bank policy is central to the transmission of monetary policy to output and prices.
 
 ## Key Contributions
 
-- Constructs monetary-policy sentiment indicators using a hybrid approach of dictionary methods, transformer models, and generative AI.
-- Integrates media sentiment into a behavioral New-Keynesian model where sentiment is treated as an endogenous variable.
-- Demonstrates that media narrative shocks significantly contribute to medium-horizon macroeconomic variance and mediate the transmission of monetary policy.
+- Constructs novel monetary-policy sentiment indicators from a large-scale Canadian newspaper corpus using a multi-model pipeline.
+- Demonstrates that media sentiment significantly impacts household expectations and improves GDP and inflation forecasting.
+- Integrates media sentiment into a behavioral New-Keynesian model, proving that central bank reactions to sentiment are a vital component of monetary policy transmission.
+- Identifies a 'narrative shock' via Bayesian SVAR analysis, showing it accounts for a non-trivial share of medium-horizon macroeconomic variance.
 
 ## Open Questions & Future Work
 
-- [[llm-temporal-alignment-in-economics]]
+- [[llm-temporal-alignment-bias]]
 
 ## Key Concepts
 
-- [[monetary-policy-sentiment-indicators]]: Indices quantifying monetary policy sentiment derived from news media through generative-AI, transformer, and dictionary-based pipelines.
+- [[monetary-policy-sentiment-indicators]]: A hybrid construction pipeline using dictionary, transformer, and generative-AI techniques to quantify monetary-policy narratives from news media.
 
 ## Archivist Review
 
-The selected concept addresses a reusable methodology for constructing domain-specific sentiment indicators, while the open question highlights a fundamental methodological bottleneck regarding temporal bias in LLM-based retrospective analysis. All other candidates were rejected to maintain the required scarcity of the vault and avoid redundant or paper-local terminology.
+I have approved the concept of Monetary Policy Sentiment Indicators as it provides a clear, multi-methodological framework for economic narrative analysis that is likely to be reused in behavioral macroeconomics. The open question regarding LLM temporal alignment addresses a fundamental, recurring bottleneck in applying modern foundation models to historical economic time-series analysis without contaminating inference with post-event information.
 
 ### Approved Concepts
-- Monetary-Policy Sentiment Indicators: These indicators quantify the media's filtering of central-bank communications, serving as a new endogenous variable that explains macroeconomic variance.
+- Monetary Policy Sentiment Indicators: This represents a formal methodology for translating news narratives into quantitative exogenous drivers for macroeconomic models.
 
 ### Approved Open Questions
-- Temporal Alignment for LLMs: Look-ahead bias compromises the validity of using LLM-based sentiment indicators as regressors in causal models or for out-of-sample forecasting, as the 'sentiment' variable becomes contaminated with future realizations.
+- Mitigating LLM look-ahead bias: Look-ahead bias currently undermines the validity of applying state-of-the-art LLMs to historical longitudinal data, especially in policy transmission and causal discovery tasks.
 
 ## Links
 

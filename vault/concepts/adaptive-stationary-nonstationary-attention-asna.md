@@ -1,12 +1,13 @@
 ---
-title: "Adaptive Stationary-Nonstationary Attention (ASNA)"
-slug: "adaptive-stationary-nonstationary-attention-asna"
-type: concept
+created_at: '2026-05-16T05:12:41Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:23Z'
+processed_at: '2026-05-16T05:12:41Z'
+slug: adaptive-stationary-nonstationary-attention-asna
 source_papers:
-  - "[[arxiv-260514551-seesawnet-towards-non-stationary-time-series-forecasting-wit]]"
-processed_at: "2026-05-16T05:12:41Z"
-created_at: "2026-05-16T05:12:41Z"
+- '[[arxiv-260514551-seesawnet-towards-non-stationary-time-series-forecasting-wit]]'
+title: Adaptive Stationary-Nonstationary Attention (ASNA)
+type: concept
 ---
 
 # Adaptive Stationary-Nonstationary Attention (ASNA)

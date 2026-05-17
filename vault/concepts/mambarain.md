@@ -1,12 +1,13 @@
 ---
-title: "MambaRain"
-slug: "mambarain"
-type: concept
+created_at: '2026-05-16T05:12:21Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:03Z'
+processed_at: '2026-05-16T05:12:21Z'
+slug: mambarain
 source_papers:
-  - "[[arxiv-260514606-mambarain-multi-scale-mamba-attention-framework-for-0-3-hour]]"
-processed_at: "2026-05-16T05:12:21Z"
-created_at: "2026-05-16T05:12:21Z"
+- '[[arxiv-260514606-mambarain-multi-scale-mamba-attention-framework-for-0-3-hour]]'
+title: MambaRain
+type: concept
 ---
 
 # MambaRain

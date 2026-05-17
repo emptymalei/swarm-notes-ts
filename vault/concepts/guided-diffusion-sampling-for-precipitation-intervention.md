@@ -1,12 +1,13 @@
 ---
-title: "Guided Diffusion Sampling for Precipitation Intervention"
-slug: "guided-diffusion-sampling-for-precipitation-intervention"
-type: concept
+created_at: '2026-05-16T05:13:27Z'
 generated_stub: true
+modified_at: '2026-05-17T05:25:09Z'
+processed_at: '2026-05-16T05:13:27Z'
+slug: guided-diffusion-sampling-for-precipitation-intervention
 source_papers:
-  - "[[arxiv-260514317-guided-diffusion-sampling-for-precipitation-forecast-interve]]"
-processed_at: "2026-05-16T05:13:27Z"
-created_at: "2026-05-16T05:13:27Z"
+- '[[arxiv-260514317-guided-diffusion-sampling-for-precipitation-forecast-interve]]'
+title: Guided Diffusion Sampling for Precipitation Intervention
+type: concept
 ---
 
 # Guided Diffusion Sampling for Precipitation Intervention

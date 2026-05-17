@@ -1,12 +1,13 @@
 ---
-title: "Text-Attribution Mechanism"
-slug: "text-attribution-mechanism"
-type: concept
+created_at: '2026-05-16T05:12:59Z'
 generated_stub: true
+modified_at: '2026-05-17T05:24:39Z'
+processed_at: '2026-05-16T05:12:59Z'
+slug: text-attribution-mechanism
 source_papers:
-  - "[[arxiv-260514422-what-if-tomorrow-is-the-world-cup-final-counterfactual-time]]"
-processed_at: "2026-05-16T05:12:59Z"
-created_at: "2026-05-16T05:12:59Z"
+- '[[arxiv-260514422-what-if-tomorrow-is-the-world-cup-final-counterfactual-time]]'
+title: Text-Attribution Mechanism
+type: concept
 ---
 
 # Text-Attribution Mechanism

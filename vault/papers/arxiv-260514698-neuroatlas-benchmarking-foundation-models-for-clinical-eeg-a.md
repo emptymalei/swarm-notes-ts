@@ -27,18 +27,18 @@ paper_id: "2605.14698"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "nlp"
+  []
 architectures:
   []
 datasets:
-  []
+  - "neuroatlas"
 concept_slugs:
   - "neuroatlas"
 dataset_slugs:
-  []
+  - "neuroatlas"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:11:54Z"
-created_at: "2026-05-16T05:11:54Z"
+processed_at: "2026-05-17T05:23:33Z"
+created_at: "2026-05-17T05:23:33Z"
 ---
 
 # NeuroAtlas: Benchmarking Foundation Models for Clinical EEG and Brain-Computer Interfaces
@@ -49,33 +49,35 @@ created_at: "2026-05-16T05:11:54Z"
 
 ## Summary
 
-NeuroAtlas is a comprehensive benchmark for evaluating foundation models in clinical EEG and brain-computer interfaces, aggregating 42 datasets to assess model performance across diverse tasks. The paper reveals that current EEG-specialized models lack consistent advantages over generic time-series models and emphasizes that standard machine learning metrics fail to capture clinical utility. By proposing task-specific clinical evaluation metrics, the authors expose significant gaps in the current state of unified EEG foundation models.
+NeuroAtlas is a large-scale benchmark designed to rigorously evaluate foundation models on 260k hours of clinical EEG and brain-computer interface data. The study reveals that domain-specific EEG foundation models offer minimal performance gains over generic time-series models, indicating that unified EEG modeling remains an open challenge. Furthermore, the authors establish the necessity of using domain-specific clinical metrics rather than standard ML loss metrics to accurately assess the real-world utility of EEG models.
 
 ## Key Contributions
 
-- Introduces NeuroAtlas, a large-scale benchmark for EEG foundation models containing 42 datasets and 260k hours of data.
-- Demonstrates that specialized EEG foundation models do not consistently outperform generic time-series foundation models.
-- Establishes that traditional machine learning metrics are inadequate for clinical EEG and proposes domain-specific metrics for epilepsy, sleep medicine, and brain age estimation.
+- Introduces NeuroAtlas, a comprehensive benchmark featuring 42 clinical EEG datasets and 260k hours of data covering epilepsy, sleep, and brain-age estimation.
+- Demonstrates that existing EEG-specific foundation models do not consistently outperform generic time-series models, challenging the assumption that domain-specific pretraining is currently superior.
+- Highlights the insufficiency of standard ML metrics and proposes clinical-utility metrics such as event-level decision quality, hypnogram-derived features, and brain-age gap for rigorous EEG evaluation.
 
 ## Open Questions & Future Work
 
-- [[clinically-relevant-eeg-metrics]]
-- [[eeg-fm-vs-ts-fm-utility]]
+- [[clinical-utility-eeg-benchmarking]]
 
 ## Key Concepts
 
-- [[neuroatlas]]: A comprehensive large-scale benchmark for EEG foundation models aggregating multiple clinical datasets and task-specific clinical evaluation metrics.
+- [[neuroatlas]]: A large-scale benchmark comprising 42 datasets and 260k hours of EEG data for evaluating foundation models in clinical and brain-computer interface applications.
 
 ## Archivist Review
 
-Approved the NeuroAtlas benchmark and two related open questions that directly address the core methodological critiques of the paper regarding clinical utility and the necessity of domain-specific architectures. I applied a restrictive filter, focusing only on the high-level benchmark contribution and the two fundamental research questions identified in the abstract and findings. No specific datasets were approved as 'NeuroAtlas' functions as the aggregate benchmark itself.
+I approved the NeuroAtlas benchmark and the associated open question regarding the insufficiency of standard ML metrics for clinical utility. These items directly address the need for standardized evaluation practices in clinical AI and are highly reusable. I rejected no candidates as all submitted items were high-quality and unique.
 
 ### Approved Concepts
-- NeuroAtlas: It establishes a standardized large-scale evaluation suite for EEG foundation models, addressing the lack of clinical-relevance in existing metrics.
+- NeuroAtlas: Provides the largest standardized evaluation suite for EEG foundation models, enabling cross-dataset benchmarking.
 
 ### Approved Open Questions
-- Clinically Relevant EEG Benchmarking: This question is crucial for bridging the gap between algorithmic performance in benchmarks and actual effectiveness in clinical settings.
-- Necessity of Specialized EEG Architectures: This addresses a fundamental efficiency and design question: whether the field should invest in domain-specific EEG models or focus on improving general-purpose temporal models.
+- Benchmarking Clinical EEG Utility: Distinguishing between technical performance and clinical utility is a major bottleneck in adopting foundation models for neurology.
+
+## Datasets
+
+- [[neuroatlas]]
 
 ## Links
 

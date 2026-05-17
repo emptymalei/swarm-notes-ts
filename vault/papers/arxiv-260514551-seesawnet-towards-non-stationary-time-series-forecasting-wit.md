@@ -19,8 +19,9 @@ paper_source: "arxiv"
 domain: "time-series"
 tags:
   - "forecasting"
+  - "time-series-forecasting"
   - "non-stationary"
-  - "multivariate-time-series"
+  - "attention-mechanism"
 architectures:
   []
 datasets:
@@ -30,8 +31,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:12:41Z"
-created_at: "2026-05-16T05:12:41Z"
+processed_at: "2026-05-17T05:24:23Z"
+created_at: "2026-05-17T05:24:23Z"
 ---
 
 # SeesawNet: Towards Non-stationary Time Series Forecasting with Balanced Modeling of Common and Specific Dependencies
@@ -42,31 +43,31 @@ created_at: "2026-05-16T05:12:41Z"
 
 ## Summary
 
-SeesawNet addresses the limitations of instance normalization in time series forecasting, which often obscures instance-specific structural information. The framework utilizes a novel Adaptive Stationary-Nonstationary Attention (ASNA) mechanism to dynamically fuse common patterns derived from normalized sequences with instance-specific dependencies from raw data. By alternating between dedicated temporal and channel modeling, SeesawNet effectively captures complex non-stationary dynamics and cross-variable dependencies.
+SeesawNet is a unified architecture designed to mitigate the over-smoothing effects of instance normalization in non-stationary time series forecasting. It introduces the Adaptive Stationary-Nonstationary Attention (ASNA) module, which dynamically captures and fuses common dependencies from normalized data and instance-specific dependencies from raw sequences. By alternating between dedicated temporal and channel modeling, the model effectively balances heterogeneous dependencies to outperform current state-of-the-art forecasting methods.
 
 ## Key Contributions
 
-- Proposes SeesawNet, a unified architecture for non-stationary multivariate time series forecasting that dynamically balances common and instance-specific dependencies.
-- Introduces Adaptive Stationary-Nonstationary Attention (ASNA) to compute and fuse dependencies from both normalized and raw sequences based on instance non-stationarity.
-- Achieves consistent state-of-the-art performance across multiple real-world time series forecasting benchmarks by alternating temporal and channel relationship modeling.
+- SeesawNet addresses the over-smoothing limitation of Instance Normalization by dynamically balancing common and instance-specific dependencies.
+- The proposed ASNA module adaptively fuses features derived from normalized and raw sequences to handle instance-level non-stationarity.
+- The architecture alternates between temporal and channel relationship modeling to capture cross-variable and long-range dependencies effectively.
 
 ## Open Questions & Future Work
 
-- [[non-stationary-dependency-modeling-balance]]
+- [[impact-of-non-stationary-patterns-on-dependency-balance]]
 
 ## Key Concepts
 
-- [[adaptive-stationary-nonstationary-attention-asna]]: An attention mechanism that adaptively balances common and instance-specific dependencies by processing both normalized and raw sequences based on instance-level non-stationarity.
+- [[adaptive-stationary-nonstationary-attention-asna]]: An attention mechanism that adaptively fuses common dependencies from normalized data and specific dependencies from raw data based on instance non-stationarity.
 
 ## Archivist Review
 
-I approved the ASNA mechanism as a novel approach to the tension between global normalization and local instance-specific structure in non-stationary forecasting, which is a reusable architectural idea. I approved the open question on non-stationary dependency balance as a fundamental research challenge for the community that moves beyond standard performance benchmarking. No datasets were approved as they were described only as aggregate real-world benchmarks.
+I approved the ASNA mechanism because it addresses a fundamental trade-off in non-stationary time series forecasting—the over-smoothing of instance-specific features by instance normalization—in a way that is highly modular and reusable. The open question was approved for its focus on the interaction between different types of non-stationarity and model adaptivity, which is a major research gap in the field. No other candidates were found to meet the high bar for permanent vault storage.
 
 ### Approved Concepts
-- Adaptive Stationary-Nonstationary Attention (ASNA): It is the central technical innovation proposed to solve the tension between modeling common patterns and instance-specific dependencies in non-stationary time series.
+- Adaptive Stationary-Nonstationary Attention (ASNA): ASNA is the central mechanism for balancing common and instance-specific dependencies in non-stationary forecasting.
 
 ### Approved Open Questions
-- Non-stationary dependency modeling balance: Understanding the sensitivity of adaptive models to varying non-stationary regimes is critical for designing more robust forecasting architectures that can dynamically adjust to diverse temporal behaviors without relying on heuristic-driven design choices.
+- Non-stationary patterns and dependency balance: This is critical for developing more robust and interpretable time series forecasting models that can adaptively handle different types of distribution shifts encountered in real-world applications.
 
 ## Links
 

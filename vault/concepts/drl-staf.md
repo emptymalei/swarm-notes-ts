@@ -1,12 +1,13 @@
 ---
-title: "DRL-STAF"
-slug: "drl-staf"
-type: concept
+created_at: '2026-05-16T05:12:14Z'
 generated_stub: true
+modified_at: '2026-05-17T05:23:56Z'
+processed_at: '2026-05-16T05:12:14Z'
+slug: drl-staf
 source_papers:
-  - "[[arxiv-260514632-drl-staf-a-deep-reinforcement-learning-framework-for-state-a]]"
-processed_at: "2026-05-16T05:12:14Z"
-created_at: "2026-05-16T05:12:14Z"
+- '[[arxiv-260514632-drl-staf-a-deep-reinforcement-learning-framework-for-state-a]]'
+title: DRL-STAF
+type: concept
 ---
 
 # DRL-STAF

@@ -15,7 +15,7 @@ paper_id: "2605.15016"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "nlp"
+  []
 architectures:
   []
 datasets:
@@ -25,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   - "healthbench"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:11:15Z"
-created_at: "2026-05-16T05:11:15Z"
+processed_at: "2026-05-17T05:22:55Z"
+created_at: "2026-05-17T05:22:55Z"
 ---
 
 # COTCAgent: Preventive Consultation via Probabilistic Chain-of-Thought Completion
@@ -37,34 +37,34 @@ created_at: "2026-05-16T05:11:15Z"
 
 ## Summary
 
-COTCAgent is a hierarchical reasoning framework designed for longitudinal electronic health record (EHR) analysis, addressing LLM hallucinations in clinical trend and metric interpretation. By implementing a Temporal-Statistics Adapter for quantitative reasoning and a Chain-of-Thought Completion layer for risk-aware symptom-disease mapping, the model ensures rigorous clinical inference. The architecture decouples statistical computation from language generation, demonstrating superior performance over existing medical agents on both custom datasets and HealthBench.
+COTCAgent is a hierarchical reasoning framework designed for longitudinal electronic health record (EHR) analysis, addressing current LLM limitations in statistical reasoning and long-range temporal dependency modeling. The framework utilizes a Temporal-Statistics Adapter for standardized trend output and a Chain-of-Thought Completion layer that incorporates a symptom-trend-disease knowledge base for evidence-based disease risk evaluation. By decoupling computation from generation, it effectively mitigates diagnostic hallucinations and improves clinical reasoning reliability on temporal health data.
 
 ## Key Contributions
 
-- COTCAgent improves clinical decision support by introducing the Temporal-Statistics Adapter for standardized quantitative trend outputs.
-- The framework achieves 90.47% Top-1 accuracy on a self-built longitudinal EHR dataset and 70.41% on HealthBench.
-- Decouples statistical computation, feature matching, and text generation to improve clinical reasoning reliability while reducing computational overhead.
+- Introduces COTCAgent, a hierarchical reasoning framework that decouples statistical computation, feature matching, and language generation for EHR analysis.
+- Implements a Temporal-Statistics Adapter (TSA) to translate analytical plans into executable code, reducing hallucinations in quantitative clinical trend analysis.
+- Achieves 90.47% Top-1 accuracy on a private dataset and 70.41% on HealthBench, demonstrating superior performance over existing medical LLM agents.
 
 ## Open Questions & Future Work
 
-- [[clinical-risk-calibration-and-deployment]]
+- [[calibrated-longitudinal-clinical-risk-prediction]]
 
 ## Key Concepts
 
-- [[probabilistic-chain-of-thought-completion]]: A hierarchical reasoning architecture that bridges quantitative statistical trend analysis with qualitative clinical knowledge to improve longitudinal data interpretation.
+- [[probabilistic-chain-of-thought-completion]]: A hierarchical reasoning framework that uses weighted scoring and structured knowledge bases to generate rigorous, evidence-backed clinical inferences for longitudinal EHR data.
 
 ## Archivist Review
 
-The Probabilistic Chain-of-Thought Completion framework was approved as a significant architectural approach to longitudinal time-series reasoning. HealthBench was approved as a standard benchmark dataset in this domain. The open question was refined to emphasize the gap between benchmark performance and real-world clinical safety. Other components like the Temporal-Statistics Adapter were rejected as sub-components of the primary framework.
+The paper proposes a structured reasoning framework (Probabilistic Chain-of-Thought Completion) which I have approved for its contribution to reducing LLM hallucinations in temporal medical tasks. I have rejected the 'Temporal-Statistics Adapter' as it functions as a subcomponent of the primary framework. The open question is approved for highlighting the critical path between research-grade reasoning and clinically-verified trust. HealthBench is approved as a central evaluation dataset for clinical LLMs.
 
 ### Approved Concepts
-- Probabilistic Chain-of-Thought Completion (COTC): Provides a modular framework for decoupling statistical computation, feature matching, and natural language generation, mitigating hallucination risks in quantitative clinical temporal reasoning.
+- Probabilistic Chain-of-Thought Completion: It provides a structured, knowledge-grounded mechanism to constrain language model reasoning in longitudinal EHR analysis, specifically mitigating hallucinations of clinical trends.
 
 ### Approved Open Questions
-- Clinical Risk Calibration Reliability: Addresses the critical gap between model performance on benchmarks and the safety standards required for clinical decision support systems.
+- Calibrated Longitudinal Clinical Risk Prediction: This is crucial for transitioning research-grade clinical decision support agents into verified, trustworthy bedside tools that can safely handle the complexities of patient-specific longitudinal data.
 
 ### Rejected Candidates
-- [concept] Temporal-Statistics Adapter (TSA) (`temporal-statistics-adapter`) - subcomponent_of_broader_mechanism: This is a sub-module of the overarching COTC framework; it is better to track the framework as a whole.
+- [concept] Temporal-Statistics Adapter (`temporal-statistics-adapter`) - subcomponent_of_broader_mechanism: This is an internal modular implementation detail for code generation that is secondary to the overarching Probabilistic Chain-of-Thought Completion framework.
 
 ## Datasets
 

@@ -1,12 +1,13 @@
 ---
-title: "NeuroAtlas"
-slug: "neuroatlas"
-type: concept
+created_at: '2026-05-16T05:11:54Z'
 generated_stub: true
+modified_at: '2026-05-17T05:23:33Z'
+processed_at: '2026-05-16T05:11:54Z'
+slug: neuroatlas
 source_papers:
-  - "[[arxiv-260514698-neuroatlas-benchmarking-foundation-models-for-clinical-eeg-a]]"
-processed_at: "2026-05-16T05:11:54Z"
-created_at: "2026-05-16T05:11:54Z"
+- '[[arxiv-260514698-neuroatlas-benchmarking-foundation-models-for-clinical-eeg-a]]'
+title: NeuroAtlas
+type: concept
 ---
 
 # NeuroAtlas

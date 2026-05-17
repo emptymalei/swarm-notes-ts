@@ -1,12 +1,13 @@
 ---
-title: "Retrieval-Augmented Multimodal Alignment"
-slug: "retrieval-augmented-multimodal-alignment"
-type: concept
+created_at: '2026-05-16T05:10:38Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:18Z'
+processed_at: '2026-05-16T05:10:38Z'
+slug: retrieval-augmented-multimodal-alignment
 source_papers:
-  - "[[arxiv-260515168-text-knows-what-tables-know-when-clinical-timeline-reconstru]]"
-processed_at: "2026-05-16T05:10:38Z"
-created_at: "2026-05-16T05:10:38Z"
+- '[[arxiv-260515168-text-knows-what-tables-know-when-clinical-timeline-reconstru]]'
+title: Retrieval-Augmented Multimodal Alignment
+type: concept
 ---
 
 # Retrieval-Augmented Multimodal Alignment

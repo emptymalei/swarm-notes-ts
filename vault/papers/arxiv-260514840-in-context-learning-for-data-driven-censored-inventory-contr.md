@@ -16,21 +16,21 @@ paper_id: "2605.14840"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
+  - "time-series"
   - "forecasting"
-  - "meta-learning"
-  - "decision-making"
-  - "inventory-control"
+  - "stochastic-optimization"
+  - "in-context-learning"
 architectures:
   []
 datasets:
-  []
+  - "superstore"
 concept_slugs:
   - "in-context-generative-posterior-sampling-icgps"
 dataset_slugs:
-  []
+  - "superstore"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:11:45Z"
-created_at: "2026-05-16T05:11:45Z"
+processed_at: "2026-05-17T05:23:25Z"
+created_at: "2026-05-17T05:23:25Z"
 ---
 
 # In-Context Learning for Data-Driven Censored Inventory Control
@@ -41,34 +41,35 @@ created_at: "2026-05-16T05:11:45Z"
 
 ## Summary
 
-This paper addresses decision-dependent censored inventory control by proposing In-context Generative Posterior Sampling (ICGPS), a framework that leverages meta-trained generative models to perform online decision-making through autoregressive completion of latent demand. By combining offline learning with in-context inference, ICGPS avoids the brittleness of traditional parametric Thompson sampling under prior mismatch. Experiments using the SuperStore dataset demonstrate that the proposed ChronosFlow-ICGPS instantiation is robust to distribution shifts and achieves superior performance under heavy censoring compared to myopic and UCB-based baselines.
+This paper introduces In-context Generative Posterior Sampling (ICGPS), a novel framework for inventory control with decision-dependent censoring that avoids the brittleness of parametric Thompson sampling. ICGPS utilizes meta-trained generative models to perform online in-context autoregressive completions of latent demand, which are then used to select optimal actions. The authors establish theoretical bounds on Bayesian regret and demonstrate the method's robustness to prior mismatch and distribution shift compared to standard UCB and myopic baselines, particularly on the SuperStore benchmark.
 
 ## Key Contributions
 
-- Introduces ICGPS, a meta-trained in-context generative framework for censored decision-making that bridges the gap between offline imputation and online Thompson sampling.
-- Proves that the Bayesian regret of ICGPS is bounded by the regret of an ideal TS benchmark plus a deployment penalty related to the online completion mismatch.
-- Demonstrates that ChronosFlow-ICGPS achieves sublinear Bayesian regret in the repeated newsvendor setting and outperforms UCB-style baselines, particularly under heavy censoring and distribution shifts.
+- Introduces In-context Generative Posterior Sampling (ICGPS), a framework that leverages meta-trained generative models for online decision-making under censored feedback.
+- Proves that the Bayesian regret of ICGPS is bounded by a TS-like term plus a deployment penalty scaling with the completion mismatch.
+- Demonstrates through the SuperStore dataset that ChronosFlow-ICGPS outperforms traditional UCB and myopic baselines, particularly under heavy censoring conditions.
 
 ## Open Questions & Future Work
 
-- [[identifiability-in-censored-demand]]
+- [[offline-to-online-transfer-conditions]]
 
 ## Key Concepts
 
-- [[in-context-generative-posterior-sampling-icgps]]: A meta-learning framework that performs online decision-making by using in-context autoregressive generation to sample from learned completions of latent demand.
+- [[in-context-generative-posterior-sampling-icgps]]: A decision-making framework that meta-trains generative models offline to perform online in-context autoregressive posterior sampling for censored demand completion.
 
 ## Archivist Review
 
-I have approved the ICGPS framework as a foundational concept for decision-dependent censored learning and the open question regarding identifiability barriers in censored demand. I rejected the contextual/non-stationary extension as it is a standard, open-ended research direction rather than a specific unresolved problem. No datasets were approved as 'SuperStore' is a routine industry dataset.
+I approved the ICGPS framework and the open question regarding offline-to-online transfer conditions as they represent a significant theoretical and algorithmic contribution to data-driven operational decision-making. The SuperStore dataset is approved as a recurring benchmark for these problems. Other candidates were either too specific to the paper's implementation (e.g., specific contextual extensions) or lacked the breadth required for a permanent vault note.
 
 ### Approved Concepts
-- In-context Generative Posterior Sampling (ICGPS): ICGPS provides a meta-learning-based, in-context approach to decision-dependent censored inventory control, addressing brittleness in traditional parametric Thompson sampling.
+- In-context Generative Posterior Sampling (ICGPS): It provides a novel plug-in template for operational decision-making problems by leveraging generative models for latent demand completion in online settings.
 
 ### Approved Open Questions
-- Identifiability in Censored Demand: Understanding these identifiability barriers is essential for developing theoretically sound algorithms that can handle real-world inventory settings with extreme stockout rates where traditional estimation techniques fail.
+- Offline-to-online transfer conditions: Understanding the necessary and sufficient conditions for offline-to-online transfer is crucial for the reliability of data-driven decision-making in the presence of censored feedback, which is ubiquitous in inventory management and revenue management.
 
-### Rejected Candidates
-- [open_question] Contextual and Non-stationary Control (`contextual-non-stationary-inventory-control`) - low_impact: The proposal is a broad request for extensions rather than a specific unresolved research bottleneck.
+## Datasets
+
+- [[superstore]]
 
 ## Links
 

@@ -19,10 +19,7 @@ paper_id: "2605.14600"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "forecasting"
-  - "scientific-discovery"
-  - "reasoning"
-  - "benchmark"
+  - "nlp"
 architectures:
   []
 datasets:
@@ -32,8 +29,8 @@ concept_slugs:
 dataset_slugs:
   - "scipaths"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:12:28Z"
-created_at: "2026-05-16T05:12:28Z"
+processed_at: "2026-05-17T05:24:10Z"
+created_at: "2026-05-17T05:24:10Z"
 ---
 
 # SciPaths: Forecasting Pathways to Scientific Discovery
@@ -44,31 +41,31 @@ created_at: "2026-05-16T05:12:28Z"
 
 ## Summary
 
-SciPaths introduces discovery pathway forecasting, a task that requires models to reverse-engineer scientific discoveries by identifying and grounding the necessary enabling contributions in prior literature. The authors release the SciPaths benchmark, which includes expert-annotated and silver-labeled pathways within ML and NLP research. Their evaluation reveals that current LLMs struggle with end-to-end pathway recovery, particularly in capturing core methodological dependencies, highlighting a critical gap in scientific forecasting capabilities.
+SciPaths addresses the lack of benchmarks for reasoning about the causal dependencies behind scientific breakthroughs by introducing the discovery pathway forecasting task. This task requires models to identify the enabling contributions needed for a target scientific achievement and ground them in existing literature. Through the evaluation of several frontier language models, the authors demonstrate that current models struggle with complex methodological dependencies, establishing a new challenging benchmark for AI4Science.
 
 ## Key Contributions
 
-- Introduced discovery pathway forecasting as a formal task for identifying the hierarchical dependencies and enabling contributions behind scientific discoveries.
-- Released SciPaths, a benchmark consisting of 262 expert-annotated gold pathways and 2,444 silver pathways derived from the ML and NLP literature.
-- Evaluated frontier and open-weight models, demonstrating that end-to-end pathway recovery is limited by decomposition performance, with core methodological dependencies presenting the greatest challenge.
+- Introduces discovery pathway forecasting, a task focusing on identifying enabling contributions and prior-work dependencies for scientific research.
+- Presents SciPaths, a benchmark consisting of 262 expert-annotated gold pathways and 2,444 silver pathways from ML and NLP literature.
+- Evaluates frontier LLMs on the benchmark, showing that core methodological dependencies are a major bottleneck with current models achieving only 0.189 F1.
 
 ## Open Questions & Future Work
 
-- [[scientific-dependency-decomposition-bottleneck]]
+- [[methodological-dependency-inference]]
 
 ## Key Concepts
 
-- [[discovery-pathway-forecasting]]: A task-based framework for identifying and grounding the sequences of enabling contributions that lead to a specific scientific discovery.
+- [[discovery-pathway-forecasting]]: A task that requires reasoning backward from a scientific contribution to its required enabling contributions and prior work dependencies.
 
 ## Archivist Review
 
-The approved items establish a new task-based framework for scientific forecasting that moves beyond simple citation metrics. I have prioritized the definition of the 'discovery pathway forecasting' task and its primary performance bottleneck as they represent fundamental conceptual advances for future research in AI-driven scientific reasoning. Other candidates were rejected to maintain strict adherence to the scarcity guidelines and the focus on reusable, high-level structural contributions.
+I approved the task definition and the associated dataset as they represent a novel, research-focused shift from traditional citation-based metrics to causal dependency chain modeling. The open question was approved for capturing the specific, non-trivial bottleneck identified by the authors in methodological dependency recovery. Other candidates were rejected to maintain the strict standard for scientific concept/question permanence.
 
 ### Approved Concepts
-- Discovery pathway forecasting: This task frames scientific discovery as a structural dependency problem rather than simple link prediction or retrieval, shifting how scientific progress can be evaluated.
+- Discovery Pathway Forecasting: Defines a new evaluation paradigm in AI4Science that focuses on causal dependency chains in scientific literature rather than simple citation prediction.
 
 ### Approved Open Questions
-- Scientific Dependency Decomposition Bottleneck: Addressing this bottleneck is essential for transitioning scientific AI from retrieval and link prediction tasks to systems capable of reasoning about the actual functional dependency structure of scientific advancement.
+- Recovering Core Methodological Dependencies: The difficulty in recovering core methodological dependencies is a critical bottleneck in automated scientific forecasting.
 
 ## Datasets
 

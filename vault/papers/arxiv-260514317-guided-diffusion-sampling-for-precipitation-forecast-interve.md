@@ -15,10 +15,7 @@ paper_id: "2605.14317"
 paper_source: "arxiv"
 domain: "time-series"
 tags:
-  - "time-series"
-  - "forecasting"
-  - "diffusion-models"
-  - "physics-informed-machine-learning"
+  []
 architectures:
   []
 datasets:
@@ -28,8 +25,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-16T05:13:27Z"
-created_at: "2026-05-16T05:13:27Z"
+processed_at: "2026-05-17T05:25:09Z"
+created_at: "2026-05-17T05:25:09Z"
 ---
 
 # Guided Diffusion Sampling for Precipitation Forecast Interventions
@@ -40,33 +37,34 @@ created_at: "2026-05-16T05:13:27Z"
 
 ## Summary
 
-This paper introduces a novel gradient-based guidance framework for controlling weather forecasts, specifically targeting precipitation reduction using diffusion-based models. Unlike traditional adversarial methods that rely on model artifacts, this approach steers the diffusion sampling trajectory to ensure interventions remain consistent with the learned atmospheric distribution. Extensive experiments on extreme weather events from WeatherBench2 confirm that the proposed method effectively reduces predicted precipitation while maintaining higher physical plausibility than baseline adversarial perturbations.
+This paper introduces a novel approach to weather control by implementing gradient-based guidance within diffusion-based precipitation forecasting models. Unlike traditional adversarial methods that exploit model artifacts, this framework steers the model's diffusion sampling trajectory to reduce forecasted precipitation while ensuring the resulting atmospheric state remains physically plausible. The method is validated through a rigorous evaluation protocol, including latent-space analysis and cross-model transferability, showing superior physical consistency compared to direct perturbation techniques on the WeatherBench2 dataset.
 
 ## Key Contributions
 
-- Proposed a gradient-based guidance framework that enables controlled precipitation reduction within diffusion-based weather models.
-- Developed an intervention method that maintains atmospheric consistency by steering the diffusion sampling trajectory rather than directly perturbing initial states.
-- Demonstrated that the proposed framework achieves significant precipitation reduction while maintaining higher physical plausibility compared to adversarial perturbation methods across WeatherBench2 extreme events.
+- Proposes a gradient-based guidance framework to steer precipitation forecasting trajectories in diffusion models.
+- Establishes a multi-perspective evaluation protocol (vertical profiles, latent deviation, cross-model transfer) for physical plausibility of interventions.
+- Demonstrates effective precipitation reduction on WeatherBench2, outperforming adversarial attack baselines in maintaining physical consistency.
 
 ## Open Questions & Future Work
 
-- [[nwp-validation-of-interventions]]
-- [[spatial-intervention-flexibility]]
+- [[nwp-validation-of-data-driven-interventions]]
 
 ## Key Concepts
 
-- [[guided-diffusion-sampling-for-precipitation-intervention]]: A gradient-based guidance framework that steers diffusion sampling trajectories in weather models to achieve controlled precipitation reduction.
+- [[guided-diffusion-sampling-for-precipitation-intervention]]: A gradient-based guidance framework that steers diffusion model sampling trajectories to reduce precipitation forecasts while preserving atmospheric physical plausibility.
 
 ## Archivist Review
 
-The approved concept represents a novel intervention methodology for generative atmospheric models, distinct from standard adversarial perturbation. The approved open questions identify critical challenges in integrating data-driven forecasting interventions with established physical modeling standards and practical logistical constraints. WeatherBench2 was rejected as a standard benchmark dataset already well-documented in the literature.
+I approved the concept of using gradient-based guidance in diffusion models for precipitation intervention, as this is a distinct methodological contribution to generative weather forecasting. I also approved the open question regarding the validation gap between data-driven interventions and numerical weather prediction, as this represents a fundamental research challenge for the utility and physical validity of such AI-driven interventions. The spatial flexibility candidate was rejected as it describes a standard implementation requirement rather than a research bottleneck.
 
 ### Approved Concepts
-- Guided Diffusion Sampling for Precipitation Intervention: It introduces a novel framework for manipulating weather forecasting outputs in a physically constrained manner, distinct from standard adversarial attacks.
+- Guided Diffusion Sampling for Precipitation Intervention: Introduces a novel paradigm for weather control by steering diffusion generation trajectories towards lower precipitation outcomes, contrasting with simple adversarial attacks.
 
 ### Approved Open Questions
-- NWP Validation of Interventions: NWP models are the current operational standard; bridging the gap between data-driven interventions and NWP verification is essential for establishing the practical credibility of weather control strategies.
-- Spatial Intervention Flexibility: The utility of weather intervention is constrained by the ability to act upon specific, restricted geographic areas; improved spatial control is necessary for real-world feasibility.
+- Validating Interventions in NWP: This is a critical validation gap; without cross-model consistency between data-driven interventions and NWP, it remains unclear whether these artificial interventions have meaningful, real-world physical analogs or are merely exploiting internal artifacts of the specific neural model architecture.
+
+### Rejected Candidates
+- [open_question] Increasing Intervention Spatial Flexibility (`spatial-flexibility-weather-intervention`) - generic: This is a generic request for greater control rather than a fundamental scientific bottleneck, as current spatial constraints are usually handled by mask-based optimization.
 
 ## Links
 

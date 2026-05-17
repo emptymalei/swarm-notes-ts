@@ -1,12 +1,13 @@
 ---
-title: "Forecastability Loss"
-slug: "forecastability-loss"
-type: concept
+created_at: '2026-05-16T05:10:47Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:27Z'
+processed_at: '2026-05-16T05:10:47Z'
+slug: forecastability-loss
 source_papers:
-  - "[[arxiv-260515134-training-ml-models-with-predictable-failures]]"
-processed_at: "2026-05-16T05:10:47Z"
-created_at: "2026-05-16T05:10:47Z"
+- '[[arxiv-260515134-training-ml-models-with-predictable-failures]]'
+title: Forecastability Loss
+type: concept
 ---
 
 # Forecastability Loss

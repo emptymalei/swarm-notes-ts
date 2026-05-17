@@ -1,12 +1,13 @@
 ---
-title: "NaCl equivalent height"
-slug: "nacl-equivalent-height"
-type: concept
+created_at: '2026-05-16T05:10:51Z'
 generated_stub: true
+modified_at: '2026-05-17T05:22:31Z'
+processed_at: '2026-05-16T05:10:51Z'
+slug: nacl-equivalent-height
 source_papers:
-  - "[[arxiv-260515101-the-emergence-of-photonic-crystalline-order-and-time-series]]"
-processed_at: "2026-05-16T05:10:51Z"
-created_at: "2026-05-16T05:10:51Z"
+- '[[arxiv-260515101-the-emergence-of-photonic-crystalline-order-and-time-series]]'
+title: NaCl equivalent height
+type: concept
 ---
 
 # NaCl equivalent height
