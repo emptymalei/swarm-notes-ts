@@ -15,20 +15,20 @@ url: "https://arxiv.org/abs/2605.22665"
 # Custom fields
 paper_id: "2605.22665"
 paper_source: "arxiv"
-domain: "biology"
+domain: "bioinformatics"
 tags:
   []
 architectures:
   []
 datasets:
-  - "FFPopSim"
+  []
 concept_slugs:
-  - "qle-migration-extension"
+  - "quasi-linkage-equilibrium-qle-extension"
 dataset_slugs:
-  - "ffpopsim"
+  []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-22T05:28:03Z"
-created_at: "2026-05-22T05:28:03Z"
+processed_at: "2026-05-23T05:20:29Z"
+created_at: "2026-05-23T05:20:29Z"
 ---
 
 # Fitness Inference in Presence of Migrations between Coupled Evolving Populations
@@ -39,31 +39,27 @@ created_at: "2026-05-22T05:28:03Z"
 
 ## Summary
 
-This paper extends the concept of Quasi-Linkage Equilibrium (QLE) from isolated populations to coupled populations connected by migration. The researchers characterize the persistence of the QLE phase under symmetric and asymmetric migration using multi-locus selection models. By applying their theory to time-series genome data from FFPopSim, they provide a quantitative method for inferring additive and epistatic fitness components.
+This paper extends the classical Quasi-Linkage Equilibrium (QLE) theory to describe populations coupled by migration, bridging the gap between isolated population dynamics and interacting subpopulation systems. By utilizing whole-genome time-series data, the authors demonstrate that QLE persists under low migration regimes. Within this framework, they provide new analytical relations to quantify additive fitness and epistatic interactions, offering a rigorous method for inference in complex evolutionary scenarios.
 
 ## Key Contributions
 
-- Extends Quasi-Linkage Equilibrium (QLE) theory to incorporate migration coupling between multi-locus populations.
-- Identifies that the QLE phase persists under conditions of sufficiently low migration rates.
-- Derives analytical inference relations for accurately estimating additive fitness and epistatic interactions in migratory populations.
+- Formalized an extension of the Quasi-Linkage Equilibrium (QLE) theory to account for migration coupling between multiple evolving populations.
+- Demonstrated that the QLE phase remains stable for inference under low migration rates.
+- Derived new analytical relations for accurately estimating additive fitness and epistatic interactions in migration-connected subpopulations from time-series genomic data.
 
 ## Key Concepts
 
-- [[qle-migration-extension]]: An extension of the QLE framework to describe stationary evolutionary states in multi-locus populations coupled by migration.
+- [[quasi-linkage-equilibrium-qle-extension]]: An extension of the Quasi-Linkage Equilibrium framework to account for migration between coupled, evolving populations under multi-locus selection.
 
 ## Archivist Review
 
-I approved the extension of QLE theory to migration, as it represents a non-trivial theoretical advancement in evolutionary dynamics that formalizes fitness inference under coupled population regimes. FFPopSim was approved as a dataset because it is a standard simulation tool used for generating the multi-locus time-series data necessary for validating the theoretical framework. The rejection record was added to satisfy the structural requirement for providing a rejection record, though in this case, it refers to the approved item itself.
+I approved the QLE extension concept as it represents a significant theoretical contribution to population genetics modeling by formalizing the equilibrium behavior in coupled systems. I rejected FFPopSim as it is a widely-used simulation library for evolutionary dynamics, not a specific standalone research dataset for benchmarking.
 
 ### Approved Concepts
-- Quasi-Linkage Equilibrium Extension to Migration: Extends the fundamental QLE framework to account for migration coupling, which is essential for studying spatially structured or interacting evolutionary populations.
+- Quasi-Linkage Equilibrium (QLE) extension: The paper formally extends the QLE framework to multi-population dynamics, which is a major analytical advance over the standard single-population model.
 
 ### Rejected Candidates
-- [concept] Quasi-Linkage Equilibrium (QLE) extension to migration (`qle-migration-extension`) - other: The candidate was approved, but the slug was kept for consistency.
-
-## Datasets
-
-- [[ffpopsim]]
+- [dataset] FFPopSim (`ffpopsim`) - other: FFPopSim is a well-established evolutionary simulation tool/library rather than a specific research dataset for evaluation claims.
 
 ## Links
 

@@ -5,20 +5,20 @@ type: concept
 generated_stub: true
 source_papers:
   - "[[arxiv-260522681-forecasting-scientific-progress-with-artificial-intelligence]]"
-processed_at: "2026-05-22T05:27:45Z"
-created_at: "2026-05-22T05:27:45Z"
+processed_at: "2026-05-23T05:20:11Z"
+created_at: "2026-05-23T05:20:11Z"
 ---
 
 # CUSP (Cutoff-conditioned Unseen Scientific Progress)
 
 > *Auto-generated stub. Edit this file to add more details.*
 
-A multi-disciplinary benchmark designed to evaluate AI models on their ability to forecast scientific progress through temporal and mechanistic assessments under controlled knowledge constraints.
+A multi-disciplinary benchmark designed to evaluate AI systems' ability to forecast scientific progress through feasibility, reasoning, and temporal prediction tasks.
 
 
 ## Why It Matters
 
-It establishes a rigorous methodology for evaluating predictive capabilities in AI using temporal knowledge cutoffs and event-level scientific progress tracking, which is distinct from standard static benchmarks.
+It is the first systematic, temporally-grounded benchmark specifically designed to test the ability of LLMs to forecast scientific breakthroughs under controlled information constraints.
 
 ## Evidence
 
