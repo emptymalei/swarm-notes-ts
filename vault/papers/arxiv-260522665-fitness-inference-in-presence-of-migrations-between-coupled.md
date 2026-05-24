@@ -15,9 +15,10 @@ url: "https://arxiv.org/abs/2605.22665"
 # Custom fields
 paper_id: "2605.22665"
 paper_source: "arxiv"
-domain: "bioinformatics"
+domain: "time-series"
 tags:
-  []
+  - "time-series"
+  - "evolutionary-genetics"
 architectures:
   []
 datasets:
@@ -27,8 +28,8 @@ concept_slugs:
 dataset_slugs:
   []
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-23T05:20:29Z"
-created_at: "2026-05-23T05:20:29Z"
+processed_at: "2026-05-24T05:25:32Z"
+created_at: "2026-05-24T05:25:32Z"
 ---
 
 # Fitness Inference in Presence of Migrations between Coupled Evolving Populations
@@ -39,27 +40,27 @@ created_at: "2026-05-23T05:20:29Z"
 
 ## Summary
 
-This paper extends the classical Quasi-Linkage Equilibrium (QLE) theory to describe populations coupled by migration, bridging the gap between isolated population dynamics and interacting subpopulation systems. By utilizing whole-genome time-series data, the authors demonstrate that QLE persists under low migration regimes. Within this framework, they provide new analytical relations to quantify additive fitness and epistatic interactions, offering a rigorous method for inference in complex evolutionary scenarios.
+This paper extends the concept of Quasi-Linkage Equilibrium (QLE) to populations connected by migration, treating it as a stable state analogous to statistical mechanical equilibrium. The authors demonstrate that this QLE regime is maintained under low migration rates and multi-locus selection. They develop analytical inference methods to accurately estimate additive fitness and epistatic interactions, validating their framework with genomic time-series data simulated via FFPopSim.
 
 ## Key Contributions
 
-- Formalized an extension of the Quasi-Linkage Equilibrium (QLE) theory to account for migration coupling between multiple evolving populations.
-- Demonstrated that the QLE phase remains stable for inference under low migration rates.
-- Derived new analytical relations for accurately estimating additive fitness and epistatic interactions in migration-connected subpopulations from time-series genomic data.
+- Extends Quasi-Linkage Equilibrium (QLE) theory to account for migration between multiple coupled evolutionary subpopulations under multi-locus selection.
+- Demonstrates that the QLE phase persists in coupled populations when migration rates are sufficiently low.
+- Derives analytical inference relations enabling the accurate quantitative estimation of additive fitness and epistatic interactions from genomic time-series data.
 
 ## Key Concepts
 
-- [[quasi-linkage-equilibrium-qle-extension]]: An extension of the Quasi-Linkage Equilibrium framework to account for migration between coupled, evolving populations under multi-locus selection.
+- [[quasi-linkage-equilibrium-qle-extension]]: A theoretical framework extending Quasi-Linkage Equilibrium to account for migration between interacting evolutionary subpopulations.
 
 ## Archivist Review
 
-I approved the QLE extension concept as it represents a significant theoretical contribution to population genetics modeling by formalizing the equilibrium behavior in coupled systems. I rejected FFPopSim as it is a widely-used simulation library for evolutionary dynamics, not a specific standalone research dataset for benchmarking.
+I approved the extension of Quasi-Linkage Equilibrium as it represents a significant theoretical contribution to evolutionary population modeling, fulfilling the criteria for reusability in future theoretical biology research. I rejected FFPopSim as it is a simulation engine/software tool rather than a dataset, and no other candidates were presented.
 
 ### Approved Concepts
-- Quasi-Linkage Equilibrium (QLE) extension: The paper formally extends the QLE framework to multi-population dynamics, which is a major analytical advance over the standard single-population model.
+- Quasi-Linkage Equilibrium (QLE) Extension: The paper provides a theoretical extension of QLE, a core concept in evolutionary genetics, to handle coupled populations with migration.
 
 ### Rejected Candidates
-- [dataset] FFPopSim (`ffpopsim`) - other: FFPopSim is a well-established evolutionary simulation tool/library rather than a specific research dataset for evaluation claims.
+- [dataset] FFPopSim (`ffpopsim`) - other: This is a simulation software package/framework, not a primary research dataset.
 
 ## Links
 
