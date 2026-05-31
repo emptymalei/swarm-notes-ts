@@ -5,20 +5,20 @@ type: concept
 generated_stub: true
 source_papers:
   - "[[arxiv-260530344-tiny-but-trusted-efficient-vision-language-reasoning-for-tim]]"
-processed_at: "2026-05-30T05:22:18Z"
-created_at: "2026-05-30T05:22:18Z"
+processed_at: "2026-05-31T05:36:28Z"
+created_at: "2026-05-31T05:36:28Z"
 ---
 
 # VisAnomReasoner
 
 > *Auto-generated stub. Edit this file to add more details.*
 
-A parameter-efficient Vision-Language Model specifically fine-tuned for grounded and interpretable time-series anomaly detection.
+A parameter-efficient Vision-Language Model specifically fine-tuned for grounded time-series anomaly detection.
 
 
 ## Why It Matters
 
-It represents a specific architecture-training methodology for bridging VLM reasoning capabilities with sequential data anomaly tasks using natural-language explanations.
+It represents a specialized, parameter-efficient VLM architecture for time-series anomaly localization that outperforms generic baselines.
 
 ## Evidence
 

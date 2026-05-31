@@ -5,8 +5,7 @@ author:
   - literal: "Xiaona Zhou"
   - literal: "Muntasir Wahed"
   - literal: "Tianjiao Yu"
-  - literal: "Constantin Brif"
-  - literal: "Ismini Lourentzou"
+  - literal: "Constantin Brif, Ismini Lourentzou"
 issued:
   date-parts:
     - [2026, 5, 28]
@@ -17,19 +16,18 @@ paper_id: "2605.30344"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "nlp"
+  []
 architectures:
   []
 datasets:
-  - "VisAnomBench"
+  - "visanombench"
 concept_slugs:
   - "visanomreasoner"
-  - "visanombench"
 dataset_slugs:
   - "visanombench"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-30T05:22:18Z"
-created_at: "2026-05-30T05:22:18Z"
+processed_at: "2026-05-31T05:36:28Z"
+created_at: "2026-05-31T05:36:28Z"
 ---
 
 # Tiny but Trusted: Efficient Vision-Language Reasoning for Time-Series Anomaly Detection
@@ -40,26 +38,27 @@ created_at: "2026-05-30T05:22:18Z"
 
 ## Summary
 
-This paper introduces VisAnomReasoner, an efficient vision-language model tailored for time-series anomaly detection. To address the lack of grounded explanations in existing sequential data benchmarks, the authors curate VisAnomBench, which incorporates high-quality, VLM-derived anomaly rationales. Fine-tuning on this benchmark enables the model to produce interpretable, grounded decisions, significantly outperforming existing baseline methods in both anomaly localization and classification tasks. Furthermore, the approach demonstrates strong generalization performance across different benchmark datasets.
+The authors introduce VisAnomBench, a novel benchmark that addresses the scarcity of natural-language rationales in existing time-series anomaly detection tasks by augmenting data with expert-quality explanations. They leverage this to train VisAnomReasoner, a parameter-efficient vision-language model designed for interpretable anomaly localization. Experimental validation shows substantial performance gains over existing baselines on both the new benchmark and the TSB-AD-U dataset, confirming the model's effectiveness and generalization capability.
 
 ## Key Contributions
 
-- Introduced VisAnomBench, a novel dataset for time-series anomaly detection augmented with high-quality, VLM-generated natural-language rationales.
+- Introduced VisAnomBench, a new benchmark for time-series anomaly detection that includes high-quality natural language rationales.
 - Developed VisAnomReasoner, a parameter-efficient VLM that achieves significant performance gains in anomaly localization, improving precision by 21.23% and F1 by 23.87% on VisAnomBench.
-- Demonstrated superior cross-benchmark generalization capability, with VisAnomReasoner improving precision by 9.57% and F1 by 13.39% on the TSB-AD-U benchmark.
+- Demonstrated strong cross-benchmark generalization on the TSB-AD-U benchmark, yielding 9.57% and 13.39% improvements in precision and F1 respectively.
 
 ## Key Concepts
 
-- [[visanomreasoner]]: A parameter-efficient Vision-Language Model specifically fine-tuned for grounded and interpretable time-series anomaly detection.
-- [[visanombench]]: A curated benchmark for time-series anomaly detection augmented with high-quality anomaly explanations derived from multiple large VLMs.
+- [[visanomreasoner]]: A parameter-efficient Vision-Language Model specifically fine-tuned for grounded time-series anomaly detection.
 
 ## Archivist Review
 
-I approved the proposed model architecture and the accompanying benchmark because they collectively establish a novel pipeline for grounding time-series anomaly detection in natural-language rationales. These contributions provide a reusable framework for future research on interpretable anomaly detection, moving beyond simple classification tasks. Other candidates were not submitted as open questions, and I have strictly limited the dataset approvals to the primary benchmark.
+The paper's primary methodological contribution is the VisAnomReasoner model, which demonstrates a successful paradigm for adapting vision-language models to sequential anomaly detection using rationale-based fine-tuning. The dataset, VisAnomBench, is approved as a standalone resource for benchmarking these models, but the concept candidate for the same was rejected to maintain a clear distinction between data and methodology. No significant open questions were proposed that transcend the paper's specific evaluation setup.
 
 ### Approved Concepts
-- VisAnomReasoner: It represents a specific architecture-training methodology for bridging VLM reasoning capabilities with sequential data anomaly tasks using natural-language explanations.
-- VisAnomBench: This is a foundational dataset resource that addresses the structural lack of natural-language rationales in existing anomaly detection benchmarks.
+- VisAnomReasoner: It represents a specialized, parameter-efficient VLM architecture for time-series anomaly localization that outperforms generic baselines.
+
+### Rejected Candidates
+- [concept] VisAnomBench (`visanombench`) - other: This is a dataset, not a methodological concept, and should be categorized as a dataset note instead.
 
 ## Datasets
 

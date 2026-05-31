@@ -22,20 +22,18 @@ paper_id: "2605.29631"
 paper_source: "arxiv"
 domain: "nlp"
 tags:
-  - "causal-inference"
-  - "large-language-models"
-  - "benchmarking"
+  []
 architectures:
   []
 datasets:
-  - "query2effect"
+  - "Query2Effect"
 concept_slugs:
-  - "query2effect"
+  []
 dataset_slugs:
   - "query2effect"
 skill: "TimeSeriesSkill"
-processed_at: "2026-05-30T05:25:02Z"
-created_at: "2026-05-30T05:25:02Z"
+processed_at: "2026-05-31T05:39:20Z"
+created_at: "2026-05-31T05:39:20Z"
 ---
 
 # Predicting Causal Effects from Natural Language Queries using Structured Representations
@@ -46,24 +44,20 @@ created_at: "2026-05-30T05:25:02Z"
 
 ## Summary
 
-This paper investigates the feasibility of using LLMs to forecast causal effect sizes from natural language queries. The authors introduce the Query2Effect benchmark, which challenges models to interpret diverse queries with varying degrees of implicitness, abstraction, and ambiguity. They propose a two-step framework that first converts natural language queries into structured representations before performing supervised effect size estimation. This separation of semantic interpretation and numerical prediction improves performance and enhances out-of-domain generalization.
+This paper investigates the feasibility of using large language models to forecast causal effect sizes from natural language queries. The authors introduce Query2Effect, a benchmark of 72,000 queries designed to test model performance across varying levels of abstraction and ambiguity. They propose a two-step approach that synthesizes a structured query representation before employing a supervised encoder for estimation. Results indicate that decoupling semantic interpretation from numerical prediction significantly improves generalization, particularly when fine-tuned on the provided benchmark.
 
 ## Key Contributions
 
-- Introduced Query2Effect, a large-scale benchmark of over 72,000 natural language queries paired with experimental descriptions to evaluate causal effect estimation.
-- Proposed a two-step causal effect forecasting framework that separates semantic query interpretation from numerical effect estimation using a structured representation.
-- Demonstrated that finetuning significantly outperforms zero-shot LLM prompts, reducing absolute error by 27% to 71% across the evaluated tasks.
-
-## Key Concepts
-
-- [[query2effect]]: A large-scale benchmark containing over 72,000 natural language questions aligned with experiment descriptions for causal effect size forecasting.
+- Introduced Query2Effect, a large-scale benchmark of 72,000 natural language queries mapped to causal experiment descriptions.
+- Proposed a two-step causal effect forecasting framework that decouples semantic query interpretation from numerical estimation.
+- Demonstrated that fine-tuning on structured representations reduces absolute error by 27% to 71% compared to zero-shot LLM prompts.
 
 ## Archivist Review
 
-I approved the Query2Effect benchmark as a standalone dataset and concept note, as it provides a standardized, large-scale resource for causal effect forecasting that is likely to be a recurring reference point in the literature. I rejected no other candidates, as none were proposed by the user, and the paper's primary contribution is the benchmark itself rather than a novel, reusable algorithmic mechanism.
+I approved Query2Effect as a critical dataset for evaluating causal effect forecasting from natural language. I rejected the concept candidate because it was fundamentally a dataset artifact, which is already handled appropriately within the approved datasets list.
 
-### Approved Concepts
-- Query2Effect: This is the primary benchmark introduced to standardize the task of predicting causal effect sizes from natural language queries.
+### Rejected Candidates
+- [concept] Query2Effect (`query2effect`) - subcomponent_of_broader_mechanism: The benchmark Query2Effect is primarily a dataset, and its inclusion in the datasets category is sufficient.
 
 ## Datasets
 
