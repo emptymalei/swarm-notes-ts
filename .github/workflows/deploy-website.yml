@@ -49,11 +49,13 @@ jobs:
       - name: Install dependencies
         run: npm install
         working-directory: ${{ env.BUILD_PATH }}
-        
+
       - name: Build with Astro
         run: npm run build
         working-directory: ${{ env.BUILD_PATH }}
-        
+        env:
+          NODE_OPTIONS: "--max-old-space-size=4096"
+              
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
