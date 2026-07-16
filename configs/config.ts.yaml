@@ -1,5 +1,5 @@
 # Example research-cruise configuration
-llm_model: "google:gemini-flash-lite-latest"
+llm_model: "google:gemini-3.1-flash-lite-preview"
 paper_search:
   # source: "openalex"  # "arxiv", "semantic_scholar", or "openalex"
   source: "arxiv"  # "arxiv", "semantic_scholar", or "openalex"
