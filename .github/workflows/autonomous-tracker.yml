@@ -33,7 +33,7 @@ jobs:
         run: uv python install 3.11
 
       - name: Install swarm-notes
-        run: uv tool install swarm-notes==0.3.5
+        run: uv tool install swarm-notes==0.3.6
 
       - name: Run agent pipeline
         env:
@@ -41,6 +41,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.LLM_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL || vars.LLM_MODEL }}
           CONFIG_FILE: ${{ github.event.inputs.config_file || 'configs/config.ts.yaml' }}
         run: uvx swarm-notes --config "$CONFIG_FILE"

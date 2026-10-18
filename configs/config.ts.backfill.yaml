@@ -3,6 +3,8 @@
 # Same as config.ts.yaml, but looks back further and skips the domain expert.
 # llm_model: "google:gemini-3.1-flash-lite-preview"
 llm_model: "google:gemini-3-flash-preview"
+# Used whenever a Gemini call fails (needs the ANTHROPIC_API_KEY secret)
+llm_fallback_model: "anthropic:claude-haiku-5-5"
 # llm_model: "openai:gpt-5.4-mini"
 paper_search:
   # source: "openalex"  # "arxiv", "semantic_scholar", or "openalex"
